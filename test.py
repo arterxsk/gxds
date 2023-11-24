@@ -35,8 +35,9 @@ def main():
     logox()
     print("\033[1;97m  [A] START CLONING FB ID\n  [B] EXIT TOOL")
     print(cox)
-    os.system('clear')
     want=input("  [•] CHOOSE OPTION: ")
+    os.system('clear')
+    print(logo)
     if want in ["A","a","1","01"]:
         file_iclone()
     elif want in ["B","b","2","02"]:
