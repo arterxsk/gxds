@@ -25,7 +25,7 @@ logo=f"""
  Y888P  YP    YP Y8888D' `8888Y' 
                                  
   FB: FACEBOOK.COM/ARTLINCXLN     
-  TOOL: FB CRACKING / CLONING
+  TOOL: FB CRACKING ID CLONING
   VERSION: MODIFIED\n\n"""
  
 def logox():
