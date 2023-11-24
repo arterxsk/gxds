@@ -44,6 +44,7 @@ def main():
     elif want in ["B","b","2","02"]:
         print(cox)
         print("  [•] K, BYE.")
+        os.system('xdg-open https://facebook.com/artlincxln/')
         print(cox)
         sys.exit()
     else:
