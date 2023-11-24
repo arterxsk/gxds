@@ -25,7 +25,7 @@ logo=f"""
                                  
  {cyan} FB: FACEBOOK.COM/ARTLINCXLN     
   TOOL: FB CRACKING ID CLONING
-  VERSION: MODIFIED\n\n"""
+  VERSION: 0.0.1\n"""
  
 def logox():
     os.system('clear')
