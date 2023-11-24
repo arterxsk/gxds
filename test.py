@@ -6,6 +6,13 @@ import json
 import uuid
 
 
+try:
+import pycurl
+from io import BytesIO
+except:
+os.system('pip install pycurl')
+import pycurl
+from io import BytesIO
 
 green = '\033[32m'
 blue = '\033[94m'
