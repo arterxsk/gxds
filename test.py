@@ -73,7 +73,7 @@ def auto_pass(fileeee):
     print("  [-] TIP: ON/OFF THE DATA EVERY 5 MINUTES\n           TO SPEED UP THE PROCESS. \n")
     print("\033[38;5;46m  [•] TOTAL ID IN FILE: "+tl)
     print("  [•] PASSWORD LIST: AUTOMATIC ")
-    print("  [•] CRACKED FILE: /sdcard/GOXDIES.txt\n  \033[38;5;46m=================================")
+    print("  [•] CRACKED FILE: /sdcard/GOXDIES.txt")
     print(cox)
     with ThreadPool (max_workers=120) as feel:
         for data in fileeee:
@@ -91,6 +91,7 @@ def auto_pass(fileeee):
                 else:
                     pwx.append(nam1+'123')
                     pwx.append(name1+'12')
+                    pwx.append(name1+'123')
                     pwx.append(name1+'123')
                     pwx.append(name1+'1234')
                     pwx.append(name1+'12345')
