@@ -34,7 +34,7 @@ def logox():
 
 def main():
     logox()
-    print("\033[1;97m  [01] START CLONING FB ID\n  [02] EXIT TOOL")
+    print("\033[1;97m  [01] START HTTING FB\n  [02] EXIT TOOL")
     print(cox)
     want=input("  [•] CHOOSE OPTION: ")
     os.system('clear')
