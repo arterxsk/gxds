@@ -73,7 +73,7 @@ def auto_pass(fileeee):
     print("  [-] TIP: ON/OFF THE DATA EVERY 5 MINUTES\n           TO SPEED UP THE PROCESS. \n")
     print("\033[38;5;46m  [•] TOTAL ID IN FILE: "+tl)
     print("  [•] PASSWORD LIST: AUTOMATIC ")
-    print("  [•] HIT FILE: /sdcard/GOXDIES.txt")
+    print("  [•] HIT FILE: /sdcard/GOXDIES.txt\n")
     
     want1=input("  [•] EXIT? Y/N: ")
     os.system('clear')
