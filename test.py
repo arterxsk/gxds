@@ -33,7 +33,7 @@ def logox():
 
 def main():
     logox()
-    print("\033[1;97m  [A] START CLONING FB ID\n  [B] EXIT TOOL")
+    print("\033[1;97m  [01] START CLONING FB ID\n  [02] EXIT TOOL")
     print(cox)
     want=input("  [•] CHOOSE OPTION: ")
     os.system('clear')
@@ -159,7 +159,7 @@ oks=[]
 cps=[]
 def file_subb(uid,pwx):
     global oks,loop,cps
-    sys.stdout.write(f"\r \033[1;35m [CHECKED]: {loop} \033[1;33m [CRACKED]: {str(len(oks))}");sys.stdout.flush()
+    sys.stdout.write(f"\r \033[1;35m [CHECKED]: 0{loop} \033[1;33m [CRACKED]: 0{str(len(oks))}");sys.stdout.flush()
     session=requests.Session()
     try:
         for ps in pwx:
