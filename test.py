@@ -28,7 +28,7 @@ logo=f"""
          ░  ░   ░ 
          
     TOOL: FB CRACKING / CLONING
-    VERSION: MODIFIED 0.0.1 """
+    VERSION: 0.0.1\n\n"""
  
 def logox():
     os.system('clear')
