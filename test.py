@@ -52,11 +52,11 @@ def file_clone(self):
 os.system('clear')
 print(self.logo)
 try:
-file = input(f' ( {
+file = input(f'{
   green
 }• {
   reset
-}) File: ')
+} File: ')
 for x in open(file, 'r').readlines():
 self.idz.append(x.strip())
 except Exception as e:
@@ -68,17 +68,17 @@ self.select_password()
 def select_password(self):
 os.system('clear')
 print(logo)
-how = input(f' ( {
+how = input(f'{
   green
 }• {
   reset
-}) Password Limit: ')
+}Password Limit: ')
 for x in range(int(how)):
-self.passwords.append(input(f' ( {
+self.passwords.append(input(f' {
   green
 }• {
   reset
-}) Input Password: {
+}Input Password: {
   1 + x
 }: '))
 self.cloning_process()
