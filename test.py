@@ -103,22 +103,13 @@ height = random.randint(1280, 2560)
 network_carriers = ["Verizon", "AT&T", "T-Mobile", "Sprint"]
 network_carrier = random.choice(network_carriers)
 network_type = random.choice(["WiFi", "4G", "3G"])
-ip_address = f" {
-  random.randint(1, 255)}. {
-  random.randint(0, 255)}. {
-  random.randint(0, 255)}. {
-  random.randint(1, 255)}"
+ip_address = f" {random.randint(1, 255)}. {random.randint(0, 255)}. {random.randint(0, 255)}. {random.randint(1, 255)}"
 fbcr = ''.join(random.choices('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', k = 10))
 fban = random.choice(["FB4A", "FB5A", "FB6A"])
 fbpn = random.choice(["com.facebook.katana", "com.facebook.orca", "com.facebook.lite"])
 fbbd = 'Samsung'
-user_agent = f"Dalvik/1.6.0 (Linux; U; {
-  android_version
-}; {
-  model_
-} Build/ {
-  build
-}) " \
+user_agent = f"Dalvik/1.6.0 (Linux; U; {android_version
+}; {model_} Build/ {build}) " \
 f"[FBAN/ {
   fban
 };FBAV/ {
