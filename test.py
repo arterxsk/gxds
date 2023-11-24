@@ -217,6 +217,6 @@ def file_subb(uid,pwx):
                 continue
         loop+=1
     except:
-        time.sleep(3)
+        time.sleep(4)
 
 main()
