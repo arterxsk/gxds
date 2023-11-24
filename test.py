@@ -94,7 +94,7 @@ self.cloning_process()
 def cloning_process(self):
 os.system('clear')
 print(logo)
-print(f'{
+print(f' {
   green
 }• {
   reset
@@ -105,7 +105,7 @@ print(f' {
 }• {
   reset
 }Program Started... ')
-print(f'{
+print(f' {
   green
 }• {
   reset
@@ -128,11 +128,11 @@ print(f'\n {
 }Completed <3! ')
 exit()
 def cloning(self,uid,first,last):
-sys.stdout.write(f"{
+sys.stdout.write(f" {
   green
 }• {
   reset
-}{
+} {
   str(self.loop)}/ {
   str(len(self.idz))} ( {
   green
