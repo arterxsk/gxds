@@ -1,6 +1,4 @@
-#---EHC CYBER 99 (GOXDIES)
-#Open-source-01 (Gift)
-#-----------------------------------
+
 import os, random, sys, json, uuid, time
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
 
