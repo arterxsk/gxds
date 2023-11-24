@@ -75,12 +75,12 @@ def auto_pass(fileeee):
     print("  [•] PASSWORD LIST: AUTOMATIC ")
     print("  [•] HIT FILE: /sdcard/GOXDIES.txt\n")
     
-    want1=input("  [•] EXIT? Y/N: ")
+    want1=input("  [?] EXIT? Y/N: ")
     os.system('clear')
     print(logo)
     if want1 in ["Y","y"]:
         print(cox)
-        print("  [•] K, BYE.")
+        print("  [•] THANK YOU FOR USING THE GXDS TOOL, ALL HITS YOU HAVE AUTOMATICALLY SAVED IN YOUR FILE SDCARD/GOXDIES.TXT")
         print(cox)
         sys.exit()
         
