@@ -21,7 +21,7 @@ logo=f"""
  ▒▒   ▓▒█░░ ▒▓ ░▒▓░  ▒ ░░   
   ▒   ▒▒ ░  ░▒ ░ ▒░    ░    
   ░   ▒     ░░   ░   ░      
-      ░  ░   ░              
+      ░  ░   ░  FB CRACKING / CLONING (MODIFIED)       
 \033[38;5;46m================================="""
 def logox():
     os.system('clear')
