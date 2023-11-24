@@ -34,7 +34,7 @@ def logox():
 
 def main():
     logox()
-    print("  [A] RUN THE PROGRAM\n  [B] EXIT TOOL")
+    print("\033[1;97m  [A] RUN THE PROGRAM\n  [B] EXIT TOOL")
     print(cox)
     want=input("  [•] CHOOSE OPTION: ")
     if want in ["A","a","1","01"]:
