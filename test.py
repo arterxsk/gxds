@@ -66,11 +66,7 @@ os.system('clear')
 print(logo)
 how = input(f' {green}• {reset}Password Limit: ')
 for x in range(int(how)):
-self.passwords.append(input(f' {green}• {
-  reset
-}Input Password: {
-  1 + x
-}: '))
+self.passwords.append(input(f' {green} {reset}InputPassword: {1 + x}: '))
 self.cloning_process()
 
 def cloning_process(self):
