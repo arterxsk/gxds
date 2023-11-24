@@ -48,7 +48,7 @@ def main():
         sys.exit()
     else:
         print(cox)
-        print("  [X] CHOOSE A RIGHT OPTION.")
+        print("  [X] ERROR!")
         print(cox)
         time.sleep(3)
         main()
