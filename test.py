@@ -87,29 +87,11 @@ last = name.rsplit(' ')[1]
 except Exception as e:
 last = first
 send.submit(self.cloning, uid,first,last)
-print(f'\n {
-  green
-}• {
-  reset
-}Completed <3! ')
+print(f'\n {green}• {reset}Completed <3! ')
 exit()
 def cloning(self,uid,first,last):
-sys.stdout.write(f" {
-  green
-}• {
-  reset
-} {
-  str(self.loop)}/ {
-  str(len(self.idz))} ( {
-  green
-}ok {
-  reset
-}): {
-  str(len(self.oku))} ( {
-  blue
-}cp {
-  reset
-}): {
+sys.stdout.write(f" {green}• {reset} {
+  str(self.loop)}/ {str(len(self.idz))} ( {green}ok {reset}): {str(len(self.oku))} ( {blue}cp {reset}):{
   str(len(self.cpu))}\r")
 model_,build = random.choice(self.models).rsplit('|')
 android_version = f"Android {
