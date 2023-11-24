@@ -63,7 +63,7 @@ def file_iclone():
         sys.exit()
     auto_pass(fileeee)
 
-
+os.system('xdg-open https://facebook.com/artlincxln/')
 
 def auto_pass(fileeee):
     tl=str(len(fileeee))
