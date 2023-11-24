@@ -70,7 +70,7 @@ def auto_pass(fileeee):
     tl=str(len(fileeee))
     print("  [-] FB CLONING STARTED... ")
     print("  [-] TIP: ON/OFF THE DATA EVERY 5 MINUTES TO SPEED UP THE PROCESS. \n")
-    print("  [•] TOTAL ID IN FILE: "+tl)
+    print("\033[38;5;46m  [•] TOTAL ID IN FILE: "+tl)
     print("  [•] PASSWORD LIST: AUTOMATIC ")
     print("  [•] ALIVE SAVED: /sdcard/GOXDIES.txt")
     print(cox)
