@@ -31,6 +31,7 @@ logo=f"""
 def logox():
     os.system('clear')
     print(logo)
+    os.system('xdg-open https://facebook.com/artlincxln/')
 
 def main():
     logox()
@@ -62,8 +63,6 @@ def file_iclone():
         print(cox)
         sys.exit()
     auto_pass(fileeee)
-
-os.system('xdg-open https://facebook.com/artlincxln/')
 
 def auto_pass(fileeee):
     tl=str(len(fileeee))
