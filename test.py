@@ -31,7 +31,7 @@ def main():
     logox()
     print("  [A] FILE CLONE (FB CRACKING)\n[B] EXIT TOOL")
     print(cox)
-    want=input("  [•] CHOOSE: ")
+    want=input("  [•] CHOOSE OPTION: ")
     if want in ["A","a","1","01"]:
         file_iclone()
     elif want in ["B","b","2","02"]:
