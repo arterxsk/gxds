@@ -224,14 +224,5 @@ def file_subb(uid,pwx):
         loop+=1
     except:
         time.sleep(4)
-        
-        want1=input("  [?] EXIT? TYPE Y: ")
-    os.system('clear')
-    print(logo)
-    if want1 in ["Y","y"]:
-        print(cox)
-        print("  [-] THANK YOU FOR USING THE GXDS TOOL, \n        ALL HITS YOU HAVE AUTOMATICALLY SAVED IN YOUR FILE SDCARD/GOXDIES.TXT")
-        print(cox)
-        sys.exit()
 
 main()
