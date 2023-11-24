@@ -155,7 +155,7 @@ def auto_pass(fileeee):
                     pwx.append(name1+' '+mid_name+' '+sur_name+'123')
             except:pass
             feel.submit(file_subb,uid,pwx)
-            print(cox)
+
 loop=0
 oks=[]
 cps=[]
