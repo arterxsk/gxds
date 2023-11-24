@@ -35,6 +35,7 @@ def main():
     logox()
     print("\033[1;97m  [A] START CLONING FB ID\n  [B] EXIT TOOL")
     print(cox)
+    os.system('clear')
     want=input("  [•] CHOOSE OPTION: ")
     if want in ["A","a","1","01"]:
         file_iclone()
@@ -49,11 +50,10 @@ def main():
         print(cox)
         time.sleep(3)
         main()
-    os.system('clear')
 
 def file_iclone():
     print(cox)
-    fl=input("\033[38;5;46m  [•] FILE PATH: ")
+    fl=input("\033[38;5;46m  [•] INPUT FILE PATH: ")
     print(cox)
     try:
         fileeee=open(fl,"r").read().splitlines()
