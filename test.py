@@ -55,7 +55,7 @@ def file_iclone():
     try:
         fileeee=open(fl,"r").read().splitlines()
     except:
-        print("  [X] \033[38;5;46mFILE NOT FOUND.")
+        print(" [X] \033[38;5;46mFILE NOT FOUND.")
         print(cox)
         sys.exit()
     auto_pass(fileeee)
