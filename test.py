@@ -38,16 +38,8 @@ except:
 pass
 os.system('clear')
 print(self.logo)
-print(f' {
-  green
-}1 {
-  reset
-} File Cloning')
-print(f' {
-  green
-}2 {
-  reset
-}) Contact Art')
+print(f' {green}1 {reset} File Cloning')
+print(f' {green}2 {reset} Contact Art')
 print(47 * '-')
 select = input(f' Select: ')
 if select == '1':
