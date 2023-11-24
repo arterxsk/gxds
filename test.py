@@ -4,15 +4,13 @@ import random
 import sys
 import json
 import uuid
-
+import pycurl
+from io import BytesIO
 
 try:
-import pycurl
-from io import BytesIO
 except:
 os.system('pip install pycurl')
-import pycurl
-from io import BytesIO
+
 
 green = '\033[32m'
 blue = '\033[94m'
