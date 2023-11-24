@@ -125,7 +125,7 @@ def auto_pass(fileeee):
                     pwx.append(name1+' '+mid_name+'123')
                     pwx.append(name1+' '+mid_name+'143')
                     pwx.append(name1+' '+mid_name+'1234')
-                    pwx.append(name1+' '+surname+)
+                    pwx.append(name1+' '+sur_name+)
             except:pass
             try:
                 sur_name=name.split(" ")[2]
