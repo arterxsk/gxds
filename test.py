@@ -11,6 +11,7 @@ except:
 li = "\033[38;5;46m="
 blue = "\033[94m"
 white = "\033[1;97m"
+cyan = "\033[0;36m"
 
 cox=str(f"{white}"*37)
 logo=f"""
@@ -159,7 +160,8 @@ oks=[]
 cps=[]
 def file_subb(uid,pwx):
     global oks,loop,cps
-    sys.stdout.write(f"\r \033[1;35m [CHECKED]: 0{loop} \033[1;33m [CRACKED]: 0{str(len(oks))}");sys.stdout.flush()
+    sys.stdout.write(f"\n\r \033[1;35m [CHECKED]: 0{loop} \033[1;33m [CRACKED]:
+    0{str(len(oks))}\033[0;36m");sys.stdout.flush()
     session=requests.Session()
     try:
         for ps in pwx:
