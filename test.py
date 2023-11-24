@@ -26,6 +26,7 @@ logo=f"""
      ▒   ▒▒ ░  ░▒ ░ ▒░    ░    
      ░   ▒     ░░   ░   ░  
          ░  ░   ░ 
+         
  TOOL: FB CRACKING / CLONING
  VERSION: MODIFIED 0.0.1
 \033[38;5;46m================================="""
