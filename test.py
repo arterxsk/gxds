@@ -73,7 +73,17 @@ def auto_pass(fileeee):
     print("  [-] TIP: ON/OFF THE DATA EVERY 5 MINUTES\n           TO SPEED UP THE PROCESS. \n")
     print("\033[38;5;46m  [•] TOTAL ID IN FILE: "+tl)
     print("  [•] PASSWORD LIST: AUTOMATIC ")
-    print("  [•] CRACKED FILE: /sdcard/GOXDIES.txt")
+    print("  [•] HIT FILE: /sdcard/GOXDIES.txt")
+    
+    want1=input("  [•] EXIT? Y/N: ")
+    os.system('clear')
+    print(logo)
+    if want1 in ["Y","y"]:
+        print(cox)
+        print("  [•] K, BYE.")
+        print(cox)
+        sys.exit()
+        
     print(cox)
     with ThreadPool (max_workers=120) as feel:
         for data in fileeee:
@@ -161,7 +171,7 @@ oks=[]
 cps=[]
 def file_subb(uid,pwx):
     global oks,loop,cps
-    sys.stdout.write(f"\r \033[1;35m [CHECKED]: 0{loop} \033[1;33m [CRACKED]: 0{str(len(oks))}");sys.stdout.flush()
+    sys.stdout.write(f"\r \033[1;35m [CHECKED]: 0{loop} \033[1;33m [HITS]: 0{str(len(oks))}");sys.stdout.flush()
     session=requests.Session()
     try:
         for ps in pwx:
