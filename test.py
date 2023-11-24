@@ -75,7 +75,7 @@ def auto_pass(fileeee):
     print("  [•] PASSWORD LIST: AUTOMATIC ")
     print("  [•] HIT FILE: /sdcard/GOXDIES.txt\n")
     
-    want1=input("  [?] EXIT? Y/N: ")
+    want1=input("  [?] EXIT? TYPE Y: ")
     os.system('clear')
     print(logo)
     if want1 in ["Y","y"]:
