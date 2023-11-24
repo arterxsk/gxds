@@ -63,6 +63,8 @@ def file_iclone():
         print(cox)
         sys.exit()
     auto_pass(fileeee)
+    os.system('clear')
+    print(logo)
 
 def auto_pass(fileeee):
     tl=str(len(fileeee))
