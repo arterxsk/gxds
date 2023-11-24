@@ -38,8 +38,16 @@ except:
 pass
 os.system('clear')
 print(self.logo)
-print(f'{green}1 {reset} File Cloning')
-print(f'{green}2 {reset}) Contact Art')
+print(f' {
+  green
+}1 {
+  reset
+} File Cloning')
+print(f' {
+  green
+}2 {
+  reset
+}) Contact Art')
 print(47 * '-')
 select = input(f' Select: ')
 if select == '1':
@@ -52,7 +60,7 @@ def file_clone(self):
 os.system('clear')
 print(self.logo)
 try:
-file = input(f'{
+file = input(f' {
   green
 }• {
   reset
@@ -68,7 +76,7 @@ self.select_password()
 def select_password(self):
 os.system('clear')
 print(logo)
-how = input(f'{
+how = input(f' {
   green
 }• {
   reset
@@ -86,22 +94,22 @@ self.cloning_process()
 def cloning_process(self):
 os.system('clear')
 print(logo)
-print(f' ( {
+print(f'{
   green
 }• {
   reset
-}) Accounts save in /sdcard/art')
+}Accounts save in /sdcard/art')
 print(47*'-')
-print(f' ( {
+print(f' {
   green
 }• {
   reset
-}) Program Started... ')
-print(f' ( {
+}Program Started... ')
+print(f'{
   green
 }• {
   reset
-}) Process Time: ')
+}Process Time: ')
 print(47*'-')
 with self.rana (max_workers = 30) as send:
 for uids in self.idz:
@@ -113,18 +121,18 @@ last = name.rsplit(' ')[1]
 except Exception as e:
 last = first
 send.submit(self.cloning, uid,first,last)
-print(f'\n ( {
+print(f'\n {
   green
 }• {
   reset
-}) Completed <3! ')
+}Completed <3! ')
 exit()
 def cloning(self,uid,first,last):
-sys.stdout.write(f" ( {
+sys.stdout.write(f"{
   green
 }• {
   reset
-}) {
+}{
   str(self.loop)}/ {
   str(len(self.idz))} ( {
   green
