@@ -68,6 +68,7 @@ def file_iclone():
 def auto_pass(fileeee):
     tl=str(len(fileeee))
     print("  [•] TOTAL ID IN FILE: "+tl)
+    print("  [•] PASSWORD LIST: AUTO ")
     print("  [•] ALIVE SAVED: /sdcard/GOXDIES.txt")
     print(cox)
     with ThreadPool (max_workers=120) as feel:
