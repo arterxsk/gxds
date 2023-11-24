@@ -29,7 +29,7 @@ def logox():
 
 def main():
     logox()
-    print("  [A] FILE CLONE  |  [B] EXIT TOOL")
+    print("  [A] FILE CLONE (FB CRACKING)\n[B] EXIT TOOL")
     print(cox)
     want=input("  [•] CHOOSE: ")
     if want in ["A","a","1","01"]:
