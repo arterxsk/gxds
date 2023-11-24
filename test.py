@@ -74,15 +74,6 @@ def auto_pass(fileeee):
     print("\033[38;5;46m  [•] TOTAL ID IN FILE: "+tl)
     print("  [•] PASSWORD LIST: AUTOMATIC ")
     print("  [•] HIT FILE: /sdcard/GOXDIES.txt\n")
-    
-    want1=input("  [?] EXIT? TYPE Y: ")
-    os.system('clear')
-    print(logo)
-    if want1 in ["Y","y"]:
-        print(cox)
-        print("  [-] THANK YOU FOR USING THE GXDS TOOL, ALL HITS YOU HAVE AUTOMATICALLY SAVED IN YOUR FILE SDCARD/GOXDIES.TXT")
-        print(cox)
-        sys.exit()
         
     print(cox)
     with ThreadPool (max_workers=120) as feel:
@@ -171,6 +162,16 @@ oks=[]
 cps=[]
 def file_subb(uid,pwx):
     global oks,loop,cps
+    
+    want1=input("  [?] EXIT? TYPE Y: ")
+    os.system('clear')
+    print(logo)
+    if want1 in ["Y","y"]:
+        print(cox)
+        print("  [-] THANK YOU FOR USING THE GXDS TOOL, \n        ALL HITS YOU HAVE AUTOMATICALLY SAVED IN YOUR FILE SDCARD/GOXDIES.TXT")
+        print(cox)
+        sys.exit()
+        
     sys.stdout.write(f"\r \033[1;35m [CHECKED]: 0{loop} \033[1;33m [HITS]: 0{str(len(oks))}");sys.stdout.flush()
     session=requests.Session()
     try:
