@@ -87,7 +87,7 @@ def auto_pass(fileeee):
                     pwx.append(nam1+'123')
                     pwx.append(name1+'12')
                     pwx.append(name1+'123')
-                    pwx.append(name1+' 123')
+                    pwx.append(name1+'123')
                     pwx.append(name1+'1234')
                     pwx.append(name1+'12345')
                     pwx.append(name1+'@123')
