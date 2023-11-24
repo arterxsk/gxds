@@ -26,6 +26,7 @@ logo=f"""
      ▒   ▒▒ ░  ░▒ ░ ▒░    ░    
      ░   ▒     ░░   ░   ░  
          ░  ░   ░ 
+         
  TOOL: FB CRACKING / CLONING
  VERSION: MODIFIED 0.0.1 """
  
@@ -216,6 +217,6 @@ def file_subb(uid,pwx):
                 continue
         loop+=1
     except:
-        time.sleep(4)
+        time.sleep(3)
 
 main()
