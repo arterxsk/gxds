@@ -10,7 +10,9 @@ except:
     os.system("pip install requests -y")
     import requests
 
-li="\033[38;5;46m="
+li = "\033[38;5;46m="
+blue = "\033[94m"
+
 cox=str(f"{li}"*37)
 logo=f"""
  ▄▄▄       ██▀███  ▄▄▄█████▓
