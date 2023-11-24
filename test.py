@@ -17,18 +17,16 @@ white = "\033[1;97m"
 cox=str(f"{white}"*37)
 logo=f"""
 
-     ▄▄▄       ██▀███  ▄▄▄█████▓
-   ▒████▄    ▓██ ▒ ██▒▓  ██▒ ▓▒
-   ▒██  ▀█▄  ▓██ ░▄█ ▒▒ ▓██░ ▒░
-   ░██▄▄▄▄██ ▒██▀▀█▄  ░ ▓██▓ ░ 
-    ▓█   ▓██▒░██▓ ▒██▒  ▒██▒ ░ 
-    ▒▒   ▓▒█░░ ▒▓ ░▒▓░  ▒ ░░   
-     ▒   ▒▒ ░  ░▒ ░ ▒░    ░    
-     ░   ▒     ░░   ░   ░  
-         ░  ░   ░ 
-         
-    TOOL: FB CRACKING / CLONING
-    VERSION: 0.0.1\n\n"""
+ d888b  db    db d8888b. .d8888. 
+88' Y8b `8b  d8' 88  `8D 88'  YP 
+88       `8bd8'  88   88 `8bo.   
+88  ooo  .dPYb.  88   88   `Y8b. 
+88. ~8~ .8P  Y8. 88  .8D db   8D 
+ Y888P  YP    YP Y8888D' `8888Y' 
+                                 
+  FB: FACEBOOK.COM/ARTLINCXLN     
+  TOOL: FB CRACKING / CLONING
+  VERSION: MODIFIED\n\n"""
  
 def logox():
     os.system('clear')
@@ -217,6 +215,6 @@ def file_subb(uid,pwx):
                 continue
         loop+=1
     except:
-        time.sleep(4)
+        time.sleep(3)
 
 main()
