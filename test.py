@@ -407,7 +407,7 @@ print(f'( {
 }) This tool is for only professional cloners')
 os.system('xdg-open https://www.facebook.com/profile.php?id=100094054980090')
 #time.sleep(5)
-logo = f'''
+logo = '''
 
  ▄▄▄       ██▀███  ▄▄▄█████▓
 ▒████▄    ▓██ ▒ ██▒▓  ██▒ ▓▒
