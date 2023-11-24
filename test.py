@@ -52,11 +52,7 @@ def file_clone(self):
 os.system('clear')
 print(self.logo)
 try:
-file = input(f' {
-  green
-}• {
-  reset
-} File: ')
+file = input(f' {green}• {reset} File: ')
 for x in open(file, 'r').readlines():
 self.idz.append(x.strip())
 except Exception as e:
@@ -68,11 +64,7 @@ self.select_password()
 def select_password(self):
 os.system('clear')
 print(logo)
-how = input(f' {
-  green
-}• {
-  reset
-}Password Limit: ')
+how = input(f' {green}• {reset}Password Limit: ')
 for x in range(int(how)):
 self.passwords.append(input(f' {
   green
@@ -86,22 +78,10 @@ self.cloning_process()
 def cloning_process(self):
 os.system('clear')
 print(logo)
-print(f' {
-  green
-}• {
-  reset
-}Accounts save in /sdcard/art')
+print(f' {green}• {reset}Accounts save in /sdcard/art')
 print(47*'-')
-print(f' {
-  green
-}• {
-  reset
-}Program Started... ')
-print(f' {
-  green
-}• {
-  reset
-}Process Time: ')
+print(f' {green}• {reset}Program Started... ')
+print(f' {green}• {reset}Process Time: ')
 print(47*'-')
 with self.rana (max_workers = 30) as send:
 for uids in self.idz:
