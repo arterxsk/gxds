@@ -54,7 +54,7 @@ def main():
 
 def file_iclone():
     print(cox)
-    fl=input("  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n  \033[38;5;46m[•] FILE PATH: ")
+    fl=input("  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n  \033[1;33m[•] FILE PATH: ")
     os.system('clear')
     print(logo)
     print(cox)
