@@ -109,40 +109,8 @@ fban = random.choice(["FB4A", "FB5A", "FB6A"])
 fbpn = random.choice(["com.facebook.katana", "com.facebook.orca", "com.facebook.lite"])
 fbbd = 'Samsung'
 user_agent = f"Dalvik/1.6.0 (Linux; U; {android_version
-}; {model_} Build/ {build}) " \
-f"[FBAN/ {
-  fban
-};FBAV/ {
-  facebook_version
-};FBBV/ {
-  fbbv
-};FBDM/ {{
-    density= {
-      density:.1f
-    },width= {
-      width
-    },height= {
-      height
-    }}};FBLC/it_IT;FBRV/ {
-  fbrv
-};FBCR/ {
-  fbcr
-};FBMF/ {
-  model_
-};FBBD/ {
-  fbbd
-};FBPN/ {
-  fbpn
-};FBDV/ {
-  model_.replace(' ', '_')};FBSV/ {
-  fbsv
-};FBOP/1;FBCA/x86:armeabi-v7a;FBNT/ {
-  network_type
-};FBCN/ {
-  network_carrier
-};FBSR/ {
-  ip_address
-};]"
+}; {model_} Build/ {build}) " \ f"[FBAN/ {fban};FBAV/ {facebook_version};FBBV/ {fbbv};FBDM/ {{density= {density:.1f},width= {width},height= {height}}};FBLC/it_IT;FBRV/ {fbrv};FBCR/ {fbcr};FBMF/ {model_};FBBD/ {fbbd};FBPN/ {fbpn};FBDV/ {model_.replace(' ', '_')};FBSV/ {fbsv};FBOP/1;FBCA/x86:armeabi-v7a;FBNT/ {network_type};FBCN/ {network_carrier};FBSR/ {ip_address};]"
+
 for pw in self.passwords:
 try:
 pw = pw.replace("first", first).replace("last", last).replace("First", first.capitalize()).replace("Last", last.capitalize())
