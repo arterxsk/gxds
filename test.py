@@ -80,7 +80,7 @@ def auto_pass(fileeee):
     print(logo)
     if want1 in ["Y","y"]:
         print(cox)
-        print("  [•] THANK YOU FOR USING THE GXDS TOOL, ALL HITS YOU HAVE AUTOMATICALLY SAVED IN YOUR FILE SDCARD/GOXDIES.TXT")
+        print("  [-] THANK YOU FOR USING THE GXDS TOOL, ALL HITS YOU HAVE AUTOMATICALLY SAVED IN YOUR FILE SDCARD/GOXDIES.TXT")
         print(cox)
         sys.exit()
         
