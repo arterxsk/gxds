@@ -48,12 +48,12 @@ def main():
 
 def file_iclone():
     print(cox)
-    fl=input("  [✓]\033[38;5;46m FILE PATH: ")
+    fl=input("  [•]\033[38;5;46m FILE PATH: ")
     print(cox)
     try:
         fileeee=open(fl,"r").read().splitlines()
     except:
-        print("  [✓] \033[38;5;46mFILE NOT FOUND.")
+        print("  [X] \033[38;5;46mFILE NOT FOUND.")
         print(cox)
         sys.exit()
     auto_pass(fileeee)
