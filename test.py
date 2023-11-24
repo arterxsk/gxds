@@ -24,7 +24,7 @@ logo=f"""
 88. ~8~ .8P  Y8. 88  .8D db   8D 
  Y888P  YP    YP Y8888D' `8888Y' 
                                  
-  FB: FACEBOOK.COM/ARTLINCXLN     
+ {blue} FB: FACEBOOK.COM/ARTLINCXLN     
   TOOL: FB CRACKING ID CLONING
   VERSION: MODIFIED\n\n"""
  
