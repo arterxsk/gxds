@@ -218,7 +218,7 @@ def file_subb(uid,pwx):
                 open("/sdcard/GOXDIES.txt","a+").write(uid+" : "+ps+"\n")
                 oks.append(uid)
             elif "www.facebook.com" in q:
-                print(f"\r\r\033[0;36m  [X] {uid} : {ps}")
+                print(f"\r\r\033[1;91m  [X] {uid} : {ps}")
                 cps.append(uid)
             else:
                 continue
