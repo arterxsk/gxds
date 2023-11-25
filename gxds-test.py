@@ -27,7 +27,7 @@ os.system('clear')
 animation = ["[■□□□□□□□□□]","[■■□□□□□□□□]", "[■■■□□□□□□□]", "[■■■■□□□□□□]", "[■■■■■□□□□□]", "[■■■■■■□□□□]", "[■■■■■■■□□□]", "[■■■■■■■■□□]", "[■■■■■■■■■□]", "[■■■■■■■■■■]"]
 
 gxdsprnt=str(f"{white}"*37)
-for gxdsloading in range(20):
+for gxdsloading in range(30):
     time.sleep(0.7)
     print("\n\n\n\n\n")
     sys.stdout.write("\r     LOADING.... " + animation[gxdsloading % len(animation)])
