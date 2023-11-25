@@ -28,7 +28,7 @@ gxdsanmtn4 = ["G", "GO", "GOX", "GOXD", "GOXDI", "GOXDIE", "GOXDIES"]
 gxdsprnt=str(f"{white}"*37)
 for gxdsloading in range(28):
     time.sleep(0.3)
-    sys.stdout.write("\r     LOADING: " + gxdsanmtn4[gxdsloading %
+    sys.stdout.write("\r      " + gxdsanmtn4[gxdsloading %
     len(gxdsanmtn4)])
     sys.stdout.flush()
 lxgo=f"""{light_gray}
