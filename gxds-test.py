@@ -57,6 +57,10 @@ def main():
     gxdsoption=input("  [•] CHOOSE OPTION: ")
     os.system('clear')
     print(lxgo)
+    time.sleep(0.3)
+    sys.stdout.write("\r     LOADING... " + gxdsanmtn3[gxdsloading %
+    len(gxdsanmtn3)])
+    sys.stdout.flush()
     if gxdsoption in ["A","a","1","01"]:
         gxdsfiles()
     elif gxdsoption in ["B","b","2","02"]:
