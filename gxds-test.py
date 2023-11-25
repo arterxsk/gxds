@@ -75,7 +75,7 @@ def gxdsforward(id_file):
     print("  \033[38;5;46m========================================")
     print("\033[1;97m  [•] TOTAL ID IN FILE:\033[1;33m "+tl)
     print("\033[1;97m  [•] PASSWORD LIST:\033[1;33m AUTOMATIC ")
-    print("\033[1;97m  [•] HIT FILE:\033[1;33m /sdcard/goxdies.txt\n")
+    print("\033[1;97m  [•] FILE SAVE IN:\033[1;33m /sdcard/goxdies.txt\n")
     print("  \033[38;5;46m========================================")
         
     print(gxdsprnt)
