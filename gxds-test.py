@@ -28,8 +28,7 @@ gxdsanmtn3 = ["[■□□□□□□□□□]","[■■□□□□□□□�
 
 gxdsprnt=str(f"{white}"*37)
 for gxdsloading in range(30):
-    time.sleep(0.7)
-    print("\n\n\n\n\n")
+    time.sleep(0.3)
     sys.stdout.write("\r     LOADING... " + gxdsanmtn3[gxdsloading %
     len(gxdsanmtn3)])
     sys.stdout.flush()
