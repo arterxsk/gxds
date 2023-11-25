@@ -169,7 +169,7 @@ def file_subb(uid,pwx):
     session=requests.Session()
     try:
         for ps in pwx:
-            user_agent="Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/114.0.5735.99 Mobile/15E148 Safari/604.1"
+            user_agent="Dalvik/2.1.0 (Linux; U; Android 10; Redmi Build/SP1A.281674.804) [FBAN/FB4A;FBAV/520.0.0.31279;FBBV/669573459;FBRV/0;FBPN/com.facebook.mlite;FBLC/bn_IN;FBMF/Note 9;FBBD/Note 9;FBDV/Redmi;FBSV/10;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.625,width=1080,height=1794};FB_FW/1"
             data = {
             "adid": str(uuid.uuid4()),
             "format": "json",
