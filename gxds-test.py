@@ -18,14 +18,6 @@ light_gray = "\033[1;37m"
 light_purple = "\033[1;35m"
 light_green = "\033[1;32m"
 
-uuidd = str(os.geteuid()) + str(os.getlogin()) + str(os.getuid())
-gxdsid = "".join(uuidd).replace("_","").replace("360","AHS").replace("u","9").replace("a","A")
-plat = platform.version()[14:][:21][::-1].upper()+platform.release()[5:][::-1].upper()+platform.version()[:8]
-xp = plat.replace(' ', '').replace('-', '').replace('#', '').replace(':', '').replace('.', '').replace(')', '').replace('(', '').replace('?', '').replace('=', '').replace('+', '').replace(';', '').replace('*', '').replace('_', '').replace('?', '').replace('  ', '')
-bxd = ""
-bumper = gxdsid+bxd+xp
-myweb2 = requests.get('https://github.com/SKBER-CYBER/Green-Lover/blob/main/Lover.txt').ThreadPoolExecutor
-
 os.system('clear')
 
 gxdsanmtn1 = "|/-\\"
@@ -55,54 +47,6 @@ def gxdslogo():
     os.system('clear')
     print(lxgo)
     os.system('xdg-open https://www.facebook.com/goxdies')
-    
-def qsbuy():
-        try:
-                os.system('clear')
-                print(lxgo)
-                x = requests.get('https://github.com/SKBER-CYBER/Green-Lover/blob/main/Lover.txt').text
-                if str("upppdate") in update:
-                        os.system('clear')
-                        exit('script is in update / maintanance be patient ')
-                elif str("res-sseett") in update:
-                        os.system('')
-                        os.system('')
-                        os.system('')
-                        exit('Dont Try To Bypass')
-                elif bumper in myweb2:
-                        main()
-                else:
-                        os.system("clear");print(lxgo)
-                        print(f"{lr}   Your Device License Key Is Not Approved{s}")
-                        print(50*"-")
-                        print(f"{light_gray} Key : {bumper}{s}")
-                        print(50*"-")
-                        #print(f" Note : Tool is Paid")
-                      #  print("\n  ")
-                        print(50*"-")
-                        print(f"{light_gray}15-Days Price : 350")
-                        print(f"{light_gray}1-Month Price : 500")
-                        print(50*"-")
-                        print (f"{light_gray}Massage : Your Key Not Registered")
-                        print(50*"-")
-                        print(f"{light_gray}Your Key Not Registered")
-                        print(50*"-")
-                        print(f"{light_gray}Note: If You Are Free User Dont Come IB")
-                        print(50*"-")
-                        print(f"{light_gray}  [•] File cloning\n  [•] Random cloning\n  [•] gmail cloning \n  [•] join whatsap group \n  [•] Exit menu \n  [1] Upgrade Tool To")
-                        print(50*"-")
-                        input(" Choose Option : ")
-                        input("[Press Enter To Send Key To Admin]")
-                        os.system(f"termux-open-url https://wa.me/+8801917466867?text={bumper}")
-                        qsbuy()
-        except requests.exceptions.ConnectionError:
-                exit(' No internet connection ..')
-
-def rrrr():
-        if bumper in myweb2:
-                pass
-        else:
-                qsbuy()
 
 def main():
     gxdslogo()
