@@ -43,7 +43,7 @@ lxgo=f"""{light_gray}
     `?88P'`88b d8P' `?8b`?88P'`88b`?888P'     
            )88  {cyan}FB CLONING ID V1
 {light_purple}           ,88P                               
-       `?8888P                                \n"""
+       `?8888P                  {white}              \n"""
  
 def gxdslogo():
     os.system('clear')
