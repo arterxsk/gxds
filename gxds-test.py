@@ -70,10 +70,10 @@ def gxdsfiles():
 def gxdsforward(id_file):
     tl=str(len(id_file))
     print("\033[38;5;46m=================================")
-    print("  [-] FB CLONING STARTED... ")
+    print("\033[1;97m  [-] FB CLONING STARTED... ")
     print("  [-] TIP: ON/OFF THE DATA EVERY 5 MINUTES\n           TO SPEED UP THE PROCESS. \n")
     print("\033[38;5;46m=================================")
-    print("  [•] TOTAL ID IN FILE: "+tl)
+    print("\033[1;97m  [•] TOTAL ID IN FILE: "+tl)
     print("  [•] PASSWORD LIST: AUTOMATIC ")
     print("  [•] HIT FILE: /sdcard/goxdies.txt\n")
     print("\033[38;5;46m=================================")
@@ -165,7 +165,7 @@ oks=[]
 cps=[]
 def file_subb(uid,pwx):
     global oks,loop,cps
-    sys.stdout.write(f"\r \033[1;35m [CHECKED]: {loop} || [HITS]: {str(len(oks))}");sys.stdout.flush()
+    sys.stdout.write(f"\r \033[1;97m [CHECKED]: {loop} || [HITS]: {str(len(oks))}");sys.stdout.flush()
     session=requests.Session()
     try:
         for ps in pwx:
