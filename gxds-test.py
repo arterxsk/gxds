@@ -23,13 +23,11 @@ os.system('clear')
 gxdsanmtn1 = "|/-\\"
 gxdsanmtn2 = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]
 gxdsanmtn3 = ["[■□□□□□□□□□]","[■■□□□□□□□□]", "[■■■□□□□□□□]", "[■■■■□□□□□□]", "[■■■■■□□□□□]", "[■■■■■■□□□□]", "[■■■■■■■□□□]", "[■■■■■■■■□□]", "[■■■■■■■■■□]", "[■■■■■■■■■■]"]
-gxdsanmtn4 = ["G.", "GO..", "GOX...", "GOXD....", "GOXDI.....", "GOXDIE......",
-"GOXDIES......."]
 
 gxdsprnt=str(f"{white}"*37)
 for gxdsloading in range(28):
     time.sleep(0.3)
-    sys.stdout.write("\r      " + gxdsanmtn4[gxdsloading %
+    sys.stdout.write("\r      " + gxdsanmtn3[gxdsloading %
     len(gxdsanmtn4)])
     sys.stdout.flush()
 lxgo=f"""{light_gray}
