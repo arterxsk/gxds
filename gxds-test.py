@@ -28,7 +28,7 @@ animation = ["[■□□□□□□□□□]","[■■□□□□□□□□
 
 gxdsprnt=str(f"{white}"*37)
 for gxdsloading in range(20):
-    time.sleep(2)
+    time.sleep(0.2)
     sys.stdout.write("\rLOADING.... " + animation[gxdsloading % len(animation)])
     sys.stdout.flush()
 lxgo=f"""{light_gray}
@@ -72,11 +72,6 @@ def main():
         main()
 
 def gxdsfiles():
-  for gxdsloading in range(20):
-    time.sleep(2)
-    sys.stdout.write("\rLOADING.... " + animation[gxdsloading % len(animation)])
-    sys.stdout.flush()
-    
     print(gxdsprnt)
     fl=input("  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n  \033[1;33m[•] FILE PATH: ")
     os.system('clear')
