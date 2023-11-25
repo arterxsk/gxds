@@ -26,7 +26,7 @@ lxgo=f"""{white}
       88. ~8~ .8P  Y8. 88  .8D db   8D 
        Y888P  YP    YP Y8888D' `8888Y'
  
-              {bold}{cyan}FB CLONING ID V1{white}\n"""
+              \033[1m{cyan}FB CLONING ID V1{white}\n"""
  
 def gxdslogo():
     os.system('clear')
