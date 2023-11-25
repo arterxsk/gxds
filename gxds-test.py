@@ -27,7 +27,7 @@ gxdsanmtn2 = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "10
 gxdsanmtn3 = ["[■□□□□□□□□□]","[■■□□□□□□□□]", "[■■■□□□□□□□]", "[■■■■□□□□□□]", "[■■■■■□□□□□]", "[■■■■■■□□□□]", "[■■■■■■■□□□]", "[■■■■■■■■□□]", "[■■■■■■■■■□]", "[■■■■■■■■■■]"]
 
 gxdsprnt=str(f"{white}"*37)
-for gxdsloading in range(30):
+for gxdsloading in range(20):
     time.sleep(0.3)
     sys.stdout.write("\r     LOADING: " + gxdsanmtn3[gxdsloading %
     len(gxdsanmtn3)])
