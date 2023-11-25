@@ -165,7 +165,7 @@ oks=[]
 cps=[]
 def file_subb(uid,pwx):
     global oks,loop,cps
-    sys.stdout.write(f"\r \033[1;97m [CHECKED]: {loop} || [HITS]: {str(len(oks))}");sys.stdout.flush()
+    sys.stdout.write(f"\r \033[1;97m [CHECKED]: {loop} || [HITS]: str(len(oks))} || [CHECKPOINT]: {str(len(cps))}");sys.stdout.flush()
     session=requests.Session()
     try:
         for ps in pwx:
