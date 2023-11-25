@@ -28,7 +28,7 @@ animation = ["[■□□□□□□□□□]","[■■□□□□□□□□
 
 gxdsprnt=str(f"{white}"*37)
 for gxdsloading in range(20):
-    time.sleep(1)
+    time.sleep(0.7)
     print("\n\n\n\n\n")
     sys.stdout.write("\r     LOADING.... " + animation[gxdsloading % len(animation)])
     sys.stdout.flush()
