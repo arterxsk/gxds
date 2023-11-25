@@ -14,7 +14,7 @@ white = "\033[1;97m"
 cyan = "\033[0;36m"
 yellow = "\033[1;33m"
 light_red = "\033[1;31m"
-light_gray = "\033[0;37m""
+light_gray = "\033[0;37m"
 
 gxdsprnt=str(f"{white}"*37)
 lxgo=f"""{light_gray}
