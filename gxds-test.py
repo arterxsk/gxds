@@ -88,6 +88,7 @@ def gxdsforward(id_file):
             pwx.append('P@ssw0rd')
             pwx.append('123456')
             pwx.append('iloveyou')
+            pwx.append('iloveyou123')
             pwx.append('1234567890')
             pwx.append('password')
             pwx.append('Password')
