@@ -70,7 +70,6 @@ def gxdsfiles():
 def gxdsforward(id_file):
     tl=str(len(id_file))
     print("  \033[38;5;46m========================================")
-    print("\033[1;97m  [-] FB CLONING STARTED... ")
     print("  [-] TIP: ON/OFF THE DATA EVERY 5 MINUTES\n           TO SPEED UP THE PROCESS. \n")
     print("  \033[38;5;46m========================================")
     print("\033[1;97m  [•] TOTAL ID IN FILE:\033[1;33m "+tl)
