@@ -13,6 +13,7 @@ blue = "\033[94m"
 white = "\033[1;97m"
 cyan = "\033[0;36m"
 yellow = "\033[1;33m"
+light_red = "\033[1;31m"
 
 gxdsprnt=str(f"{white}"*37)
 lxgo=f"""{white}
@@ -70,7 +71,7 @@ def gxdsfiles():
 def gxdsforward(id_file):
     tl=str(len(id_file))
     print("  \033[38;5;46m========================================")
-    print("  [-] TIP: ON/OFF THE DATA EVERY 5 MINUTES\n           TO SPEED UP THE PROCESS. \n")
+    print("\033[1;31m  [-] TIP: ON/OFF THE DATA EVERY 5 MINUTES\n           TO SPEED UP THE PROCESS. \n")
     print("  \033[38;5;46m========================================")
     print("\033[1;97m  [•] TOTAL ID IN FILE:\033[1;33m "+tl)
     print("\033[1;97m  [•] PASSWORD LIST:\033[1;33m AUTOMATIC ")
