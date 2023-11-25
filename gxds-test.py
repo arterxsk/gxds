@@ -17,14 +17,14 @@ yellow = "\033[1;33m"
 gxdsprnt=str(f"{white}"*37)
 lxgo=f"""{white}
 
- d888b  db    db d8888b. .d8888. 
-88' Y8b `8b  d8' 88  `8D 88'  YP 
-88       `8bd8'  88   88 `8bo.   
-88  ooo  .dPYb.  88   88   `Y8b. 
-88. ~8~ .8P  Y8. 88  .8D db   8D 
- Y888P  YP    YP Y8888D' `8888Y'
+       d888b  db    db d8888b. .d8888. 
+      88' Y8b `8b  d8' 88  `8D 88'  YP 
+      88       `8bd8'  88   88 `8bo.   
+      88  ooo  .dPYb.  88   88   `Y8b. 
+      88. ~8~ .8P  Y8. 88  .8D db   8D 
+       Y888P  YP    YP Y8888D' `8888Y'
  
-       {cyan}FB CLONING ID V1{white}\n"""
+             {cyan}FB CLONING ID V1{white}\n"""
  
 def gxdslogo():
     os.system('clear')
