@@ -91,7 +91,9 @@ def gxdsforward(id_file):
             pwx.append('iloveyou123')
             pwx.append('1234567890')
             pwx.append('password')
+            pwx.append('password123')
             pwx.append('Password')
+            pwx.append('Password123')
             pwx.append('qwerty123')
             pwx.append('123456789')
             nam=data.split("|")[1]
