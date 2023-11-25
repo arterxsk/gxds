@@ -20,9 +20,9 @@ light_green = "\033[1;32m"
 
 os.system('clear')
 
-#gxdsanmtn1 = "|/-\\"
+gxdsanmtn1 = "|/-\\"
 
-#gxdsanmtn2 = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]
+gxdsanmtn2 = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]
 
 gxdsanmtn3 = ["[■□□□□□□□□□]","[■■□□□□□□□□]", "[■■■□□□□□□□]", "[■■■■□□□□□□]", "[■■■■■□□□□□]", "[■■■■■■□□□□]", "[■■■■■■■□□□]", "[■■■■■■■■□□]", "[■■■■■■■■■□]", "[■■■■■■■■■■]"]
 
@@ -57,6 +57,11 @@ def main():
     gxdsoption=input("  [•] CHOOSE OPTION: ")
     os.system('clear')
     print(lxgo)
+    for gxdsloading in range(30):
+    time.sleep(0.3)
+    sys.stdout.write("\r     LOADING... " + gxdsanmtn1[gxdsloading %
+    len(gxdsanmtn1)])
+    sys.stdout.flush()
     if gxdsoption in ["A","a","1","01"]:
         gxdsfiles()
     elif gxdsoption in ["B","b","2","02"]:
