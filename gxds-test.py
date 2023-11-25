@@ -58,8 +58,8 @@ def main():
     os.system('clear')
     print(lxgo)
     time.sleep(0.3)
-    sys.stdout.write("\r     LOADING... " + gxdsanmtn3[gxdsloading %
-    len(gxdsanmtn3)])
+    sys.stdout.write("\r     LOADING... " + gxdsanmtn1[gxdsloading %
+    len(gxdsanmtn1)])
     sys.stdout.flush()
     if gxdsoption in ["A","a","1","01"]:
         gxdsfiles()
