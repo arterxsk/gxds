@@ -196,7 +196,7 @@ def file_subb(uid,pwx):
             'sec-ch-ua-mobile': '?1',
             'sec-ch-ua-model': '"23021RAAEG"',
             'sec-ch-ua-platform': '"Android"',
-            'sec-ch-ua-platform-version': '"13.0.0"',
+            'sec-ch-ua-platform-version': '"10.0.0"',
             'sec-fetch-dest': 'document',
             'sec-fetch-mode': 'navigate',
             'sec-fetch-site': 'none',
