@@ -15,6 +15,7 @@ cyan = "\033[1;36m"
 yellow = "\033[1;33m"
 light_red = "\033[1;31m"
 light_gray = "\033[1;37m"
+light_purple = "\033[1;35m"
 
 gxdsprnt=str(f"{white}"*37)
 lxgo=f"""{light_gray}
@@ -23,7 +24,7 @@ lxgo=f"""{light_gray}
                               88P             
                              d88              
       d888b8b  ?88,  88P d888888   .d888b,    
-     d8P' ?88   `?8bd8P'd8P' ?88   ?8b,       
+{light_purple}     d8P' ?88   `?8bd8P'd8P' ?88   ?8b,       
      88b  ,88b  d8P?8b, 88b  ,88b    `?8b     
     `?88P'`88b d8P' `?8b`?88P'`88b`?888P'     
            )88  {cyan}FB CLONING ID V1
