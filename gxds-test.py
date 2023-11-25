@@ -28,7 +28,7 @@ gxdsprnt=str(f"{white}"*37)
 for gxdsloading in range(20):
     time.sleep(0.3)
     sys.stdout.write("\r      LOADING: " + gxdsanmtn3[gxdsloading %
-    len(gxdsanmtn4)])
+    len(gxdsanmtn3)])
     sys.stdout.flush()
 lxgo=f"""{light_gray}
 
