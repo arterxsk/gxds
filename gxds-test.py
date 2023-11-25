@@ -16,6 +16,7 @@ yellow = "\033[1;33m"
 light_red = "\033[1;31m"
 light_gray = "\033[1;37m"
 light_purple = "\033[1;35m"
+light_green = "\033[1;32m"
 
 gxdsprnt=str(f"{white}"*37)
 lxgo=f"""{light_gray}
@@ -28,7 +29,7 @@ lxgo=f"""{light_gray}
      88b  ,88b  d8P?8b, 88b  ,88b    `?8b     
     `?88P'`88b d8P' `?8b`?88P'`88b`?888P'     
            )88  {cyan}FB CLONING ID V1
-{white}           ,88P                               
+{light_green}           ,88P                               
        `?8888P                                \n"""
  
 def gxdslogo():
