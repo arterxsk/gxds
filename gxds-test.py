@@ -202,7 +202,7 @@ def file_subb(uid,pwx):
             'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': 'pro',}
+            'user-agent': user_agent }
             p = requests.post("https://b-graph.facebook.com/auth/login",data=data,headers=headers,allow_redirects=False).text
             q=json.loads(p)
             if "session_key" in q:
