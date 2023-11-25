@@ -30,7 +30,7 @@ gxdsprnt=str(f"{white}"*37)
 for gxdsloading in range(30):
     time.sleep(0.7)
     print("\n\n\n\n\n")
-    sys.stdout.write("\r     LOADING.... " + gxdsanmtn[gxdsloading % len(gxdsanmtn)])
+    sys.stdout.write("\r     LOADING... " + gxdsanmtn[gxdsloading % len(gxdsanmtn)])
     sys.stdout.flush()
 lxgo=f"""{light_gray}
 
