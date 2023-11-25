@@ -18,6 +18,14 @@ light_gray = "\033[1;37m"
 light_purple = "\033[1;35m"
 light_green = "\033[1;32m"
 
+uuidd = str(os.geteuid()) + str(os.getlogin()) + str(os.getuid())
+gxdsid = "".join(uuidd).replace("_","").replace("360","AHS").replace("u","9").replace("a","A")
+plat = platform.version()[14:][:21][::-1].upper()+platform.release()[5:][::-1].upper()+platform.version()[:8]
+xp = plat.replace(' ', '').replace('-', '').replace('#', '').replace(':', '').replace('.', '').replace(')', '').replace('(', '').replace('?', '').replace('=', '').replace('+', '').replace(';', '').replace('*', '').replace('_', '').replace('?', '').replace('  ', '')
+bxd = ""
+bumper = gxdsid+bxd+xp
+myweb2 = requests.get('https://github.com/SKBER-CYBER/Green-Lover/blob/main/Lover.txt').ThreadPoolExecutor
+
 os.system('clear')
 
 gxdsanmtn1 = "|/-\\"
