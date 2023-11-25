@@ -18,6 +18,17 @@ light_gray = "\033[1;37m"
 light_purple = "\033[1;35m"
 light_green = "\033[1;32m"
 
+#animation = "|/-\\"
+
+#animation = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]
+
+animation = ["[■□□□□□□□□□]","[■■□□□□□□□□]", "[■■■□□□□□□□]", "[■■■■□□□□□□]", "[■■■■■□□□□□]", "[■■■■■■□□□□]", "[■■■■■■■□□□]", "[■■■■■■■■□□]", "[■■■■■■■■■□]", "[■■■■■■■■■■]"]
+
+for i in range(20):
+    time.sleep(0.1)
+    sys.stdout.write("\rLOADING.... " + animation[i % len(animation)])
+    sys.stdout.flush()
+
 gxdsprnt=str(f"{white}"*37)
 lxgo=f"""{light_gray}
 
