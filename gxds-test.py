@@ -14,10 +14,10 @@ white = "\033[1;97m"
 cyan = "\033[0;36m"
 yellow = "\033[1;33m"
 light_red = "\033[1;31m"
-bold = "\033[1m"
+light_gray = "\033[0;37m""
 
 gxdsprnt=str(f"{white}"*37)
-lxgo=f"""{white}
+lxgo=f"""{light_gray}
 
        d888b  db    db d8888b. .d8888. 
       88' Y8b `8b  d8' 88  `8D 88'  YP 
