@@ -181,17 +181,7 @@ def file_subb(uid,pwx):
             "source": "device_based_login",
             "email": uid,
             "password": ps,
-            "access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
-            "generate_session_cookies": "1",
-            "meta_inf_fbmeta": "",
-            "advertiser_id": str(uuid.uuid4()),
-            "currently_logged_in_userid": "0",
-            "locale": "en_US",
-            "client_country_code": "JP",
-            "method": "auth.login",
-            "fb_api_req_friendly_name": "authenticate",
-            "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
-            "api_key": "882a8490361da98702bf97a021ddc14d"}
+            "login":"Log In"}
             headers = {
             'authority': 'mbasic.facebook.com',
             'method': 'GET',
