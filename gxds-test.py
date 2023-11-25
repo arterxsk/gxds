@@ -20,17 +20,18 @@ light_green = "\033[1;32m"
 
 os.system('clear')
 
-#gxdsanmtn = "|/-\\"
+#gxdsanmtn1 = "|/-\\"
 
-#gxdsanmtn = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]
+#gxdsanmtn2 = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]
 
-gxdsanmtn = ["[■□□□□□□□□□]","[■■□□□□□□□□]", "[■■■□□□□□□□]", "[■■■■□□□□□□]", "[■■■■■□□□□□]", "[■■■■■■□□□□]", "[■■■■■■■□□□]", "[■■■■■■■■□□]", "[■■■■■■■■■□]", "[■■■■■■■■■■]"]
+gxdsanmtn3 = ["[■□□□□□□□□□]","[■■□□□□□□□□]", "[■■■□□□□□□□]", "[■■■■□□□□□□]", "[■■■■■□□□□□]", "[■■■■■■□□□□]", "[■■■■■■■□□□]", "[■■■■■■■■□□]", "[■■■■■■■■■□]", "[■■■■■■■■■■]"]
 
 gxdsprnt=str(f"{white}"*37)
 for gxdsloading in range(30):
     time.sleep(0.7)
     print("\n\n\n\n\n")
-    sys.stdout.write("\r     LOADING... " + gxdsanmtn[gxdsloading % len(gxdsanmtn)])
+    sys.stdout.write("\r     LOADING... " + gxdsanmtn3[gxdsloading %
+    len(gxdsanmtn3)])
     sys.stdout.flush()
 lxgo=f"""{light_gray}
 
