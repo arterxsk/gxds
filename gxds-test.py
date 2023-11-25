@@ -10,11 +10,11 @@ except:
 
 li = "\033[38;5;46m"
 blue = "\033[94m"
-white = "\033[1;97m"
-cyan = "\033[0;36m"
+white = "\033[0;97m"
+cyan = "\033[1;36m"
 yellow = "\033[1;33m"
 light_red = "\033[1;31m"
-light_gray = "\033[0;37m"
+light_gray = "\033[1;37m"
 
 gxdsprnt=str(f"{white}"*37)
 lxgo=f"""{light_gray}
@@ -26,7 +26,7 @@ lxgo=f"""{light_gray}
      d8P' ?88   `?8bd8P'd8P' ?88   ?8b,       
      88b  ,88b  d8P?8b, 88b  ,88b    `?8b     
     `?88P'`88b d8P' `?8b`?88P'`88b`?888P'     
-           )88  {cyan}FB CLONING ID V1{white}
+           )88  {cyan}FB CLONING ID V1
            ,88P                               
        `?8888P                                \n"""
  
@@ -37,7 +37,7 @@ def gxdslogo():
 
 def main():
     gxdslogo()
-    print("  [1] START HITTING FB\n  [2] EXIT TOOL")
+    print("\033[0;97m  [1] START HITTING FB\n  [2] EXIT TOOL")
     print(gxdsprnt)
     gxdsoption=input("  [•] CHOOSE OPTION: ")
     os.system('clear')
