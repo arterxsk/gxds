@@ -162,11 +162,11 @@ def gxdsforward(id_file):
             gxdspwd.append("Password123")
             gxdspwd.append("qwerty123")
             gxdspwd.append("123456789")
-            nam = data.split("|")[1]
-            name = nam.lower()
+            gxdsnam = data.split("|")[1]
+            name = gxdsnam.lower()
             try:
                 f_name = name.split(" ")[0]
-                gxdsnam1 = nam.split(" ")[0]
+                gxdsnam1 = gxdsnam.split(" ")[0]
                 if len(f_name) < 3:
                     pass
                 else:
@@ -185,7 +185,7 @@ def gxdsforward(id_file):
                 pass
             try:
                 mid_name = name.split(" ")[1]
-                nam2 = nam.split(" ")[1]
+                nam2 = gxdsnam.split(" ")[1]
                 if len(mid_name) < 3:
                     pass
                 else:
@@ -219,7 +219,7 @@ def gxdsforward(id_file):
                 pass
             try:
                 sur_name = name.split(" ")[2]
-                nam3 = nam.split(" ")[2]
+                nam3 = gxdsnam.split(" ")[2]
                 if len(sur_name) < 3:
                     pass
                 else:
