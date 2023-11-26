@@ -206,6 +206,7 @@ def gxdsforward(id_file):
                 if len(sur_name) < 3:
                     pass
                 else:
+                    gxdspwd.append(gxdsnam1 + " " + gxdsnam3)
                     gxdspwd.append(sur_name + "123")
                     gxdspwd.append(sur_name + "1234")
                     gxdspwd.append(sur_name + "12345")
