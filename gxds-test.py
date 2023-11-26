@@ -77,7 +77,6 @@ def main():
         main()
 
 def gxdsfiles():
-  
     gxdsoption1=input("  [•] ENTER YOUR CODE: ")
     os.system('clear')
     print(lxgo)
@@ -94,7 +93,6 @@ def gxdsfiles():
         print(gxdsprnt)
         sys.exit()
     gxdsforward(id_file)
-    
     
 def gxdsforward(id_file):
     tl=str(len(id_file))
