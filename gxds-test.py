@@ -86,7 +86,6 @@ def main():
         time.sleep(3)
         main()
 
-
 def cxde():
     gxdslogo()
     print("\033[1;97m  [1] ASK FOR CODE\n  [2] EXIT TOOL")
