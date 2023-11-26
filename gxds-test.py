@@ -53,7 +53,7 @@ lxgo = f"""{light_gray}
      d8P' ?88   `?8bd8P'd8P' ?88   ?8b,       
      88b  ,88b  d8P?{light_purple}8b, 88b  ,88b    `?8b     
     `?88P'`88b d8P' `?8b`?88P'`88b`?888P'     
-           )88  {cyan}FB CLONING ID V1
+           )88  {cyan}TOOLS V1
 {light_purple}           ,88P                               
        `?8888P                  {white}              \n"""
 
@@ -66,7 +66,7 @@ def gxdslogo():
 
 def main():
     gxdslogo()
-    print("\033[1;97m  [1] START HITTING FB\n  [2] EXIT TOOL")
+    print("\033[1;97m  [1] FB CLONING\n  [2] EXIT TOOL")
     print(gxdsprnt)
     gxdsoption = input("  [•] ENTER YOUR OPTION: ")
     os.system("clear")
