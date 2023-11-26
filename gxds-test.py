@@ -66,9 +66,9 @@ def gxdslogo():
 
 def main():
     gxdslogo()
-    print("\033[0;97m  [1] START HITTING FB\n  [2] EXIT TOOL")
+    print("\033[1;97m  [1] START HITTING FB\n  [2] EXIT TOOL")
     print(gxdsprnt)
-    gxdsoption = input("   [•] ENTER YOUR OPTION: ")
+    gxdsoption = input("  [•] ENTER YOUR OPTION: ")
     os.system("clear")
     print(lxgo)
     if gxdsoption in ["1"]:
@@ -89,10 +89,10 @@ def main():
 
 def cxde():
     gxdslogo()
-    print("\033[0;97m  [1] ASK FOR CODE\n  [2] EXIT TOOL")
+    print("\033[1;97m  [1] ASK FOR CODE\n  [2] EXIT TOOL")
     print(gxdsprnt)
-    print("\033[1;33m   IF YOU ALREADY HAVE CODE ENTER IT.\n   IF YOU DON'T HAVE ONE, PRESS 1.")
-    gxdsoption1 = input("\033[0;97m   [•] ENTER YOUR CODE: ")
+    print("\033[1;33m  IF YOU ALREADY HAVE CODE ENTER IT.\n  IF YOU DON'T HAVE ONE, PRESS 1.")
+    gxdsoption1 = input("\033[0;97m  [•] ENTER YOUR CODE: ")
     os.system("clear")
     print(lxgo)
     if gxdsoption1 in ["GXDS"]:
@@ -119,7 +119,7 @@ def cxde():
 def gxdsfiles():
     print(gxdsprnt)
     fl = input(
-        "  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n   \033[1;33m[•] FILE PATH: "
+        "  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n  \033[1;33m[•] FILE PATH: "
     )
     os.system("clear")
     print(lxgo)
