@@ -262,7 +262,7 @@ def file_subb(uid, gxdspw):
                 "meta_inf_fbmeta": "",
                 "advertiser_id": str(uuid.uuid4()),
                 "currently_logged_in_userid": "0",
-                "locale": "en_GB",
+                "locale": "en_US",
                 "client_country_code": "PH",
                 "method": "auth.login",
                 "fb_api_req_friendly_name": "authenticate",
