@@ -95,10 +95,14 @@ def cxde():
     print(lxgo)
     if gxdsoption1 in ["GXDS"]:
         gxdsfiles()
-    elif gxdsoption1 in ["2"]:
+    elif gxdsoption1 in ["1"]:
         print(gxdsprnt)
         print(lxgo)
         print("  [•] REDIRECTING...")
+        os.system("xdg-open https://www.facebook.com/goxdies")
+    elif gxdsoption in ["2"]:
+        print(gxdsprnt)
+        print("  [•] K, BYE.")
         os.system("xdg-open https://www.facebook.com/goxdies")
         print(gxdsprnt)
         sys.exit()
