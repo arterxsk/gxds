@@ -239,7 +239,7 @@ cps = []
 def file_subb(uid, gxdspw):
     global oks, loop, cps
     sys.stdout.write(
-        f"\r \033[1;97m [CHECKED]: {loop} [HITS]: {str(len(oks))} [CHECKPOINT]: {str(len(cps))}"
+        f"\r \033[1;97m [CHECKED]: {loop}{ro} [HITS]: {str(len(oks))}{rp} [CHECKPOINT]: {str(len(cps))}"
     )
     sys.stdout.flush()
     session = requests.Session()
