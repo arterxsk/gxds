@@ -57,12 +57,10 @@ lxgo = f"""{light_gray}
 {light_purple}           ,88P                               
        `?8888P                  {white}              \n"""
 
-
 def gxdslogo():
     os.system("clear")
     print(lxgo)
     os.system("xdg-open https://www.facebook.com/goxdies")
-
 
 def main():
     gxdslogo()
