@@ -77,7 +77,7 @@ def main():
     gxdsoption1 = input("\033[1;36m  [•] ENTER YOUR CODE: ")
     os.system("clear")
     print(lxgo)
-    if gxdsoption1 in ["GXDS"]:
+    if gxdsoption1 in ["GXDS", "gxds"]:
         gxdsfiles()
     elif gxdsoption1 in ["1"]:
         print(gxdsprnt)
