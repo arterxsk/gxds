@@ -37,6 +37,14 @@ light_gray = "\033[1;37m"
 light_purple = "\033[1;35m"
 light_green = "\033[1;32m"
 
+#--(rare-colors)--#
+holaa="38;5"
+ro=(f"\033[{holaa};208")
+rb=(f"\033[{holaa};32")
+rc=(f"\033[{holaa};122m")
+rg= (f"\033[{holaa};112m")
+rp=(f"\033[{holaa};147m")
+
 os.system("clear")
 
 gxdsprnt = str(f"{white}" * 37)
@@ -53,7 +61,7 @@ lxgo = f"""{light_gray}
      d8P' ?88   `?8bd8P'd8P' ?88   ?8b,       
      88b  ,88b  d8P?{light_purple}8b, 88b  ,88b    `?8b     
     `?88P'`88b d8P' `?8b`?88P'`88b`?888P'     
-           )88  {cyan}TOOLS V1
+           )88      {rg}TOOLS V1
 {light_purple}           ,88P                               
        `?8888P                  {white}              \n"""
 
@@ -93,7 +101,7 @@ def cxde():
     gxdslogo()
     print("\033[1;97m  [1] ASK FOR CODE\n  [2] EXIT TOOL")
     print(gxdsprnt)
-    print("\033[1;33m  IF YOU ALREADY HAVE CODE ENTER IT.\n  IF YOU DON'T HAVE ONE, PRESS 1.")
+    print("\033[1;33m[-]  IF YOU ALREADY HAVE CODE ENTER IT.\n  IF YOU DON'T HAVE ONE, PRESS 1.")
     gxdsoption1 = input("\033[0;97m  [•] ENTER YOUR CODE: ")
     os.system("clear")
     print(lxgo)
