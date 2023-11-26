@@ -34,8 +34,8 @@ cyan = "\033[1;36m"
 yellow = "\033[1;33m"
 lr = "\033[1;31m"
 lg = "\033[1;37m"
-light_purple = "\033[1;35m"
-light_green = "\033[1;32m"
+lp = "\033[1;35m"
+lgr = "\033[1;32m"
 
 mxclrs="38;5"
 ro=(f"\033[{mxclrs};208")
@@ -58,10 +58,10 @@ lxgo = f"""{lg}
                              d88              
       d888b8b  ?88,  88P d888888   .d888b,    
      d8P' ?88   `?8bd8P'd8P' ?88   ?8b,       
-     88b  ,88b  d8P?{light_purple}8b, 88b  ,88b    `?8b     
+     88b  ,88b  d8P?{lp}8b, 88b  ,88b    `?8b     
     `?88P'`88b d8P' `?8b`?88P'`88b`?888P'     
            )88      {rc}FB CLONING V1
-{light_purple}           ,88P                               
+{lp}           ,88P                               
        `?8888P                  {white}              \n"""
 
 def gxdslogo():
