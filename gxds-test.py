@@ -18,6 +18,7 @@ light_gray = "\033[1;37m"
 light_purple = "\033[1;35m"
 light_green = "\033[1;32m"
 gxdsakses = requests.get('https://github.com/SKBER-CYBER/Green-Lover/blob/main/Lover.txt').text
+cxds = "gxds-2000"
 
 os.system('clear')
 
@@ -53,17 +54,11 @@ def main():
     gxdslogo()
     print("\033[0;97m  [1] START HITTING FB\n  [2] EXIT TOOL")
     print(gxdsprnt)
-    gxdsoption=input("  [•] ENTER YOUR OPTION: ")
+    cxds=input("  [•] ENTER YOUR OPTION: ")
     os.system('clear')
     print(lxgo)
-    if gxdsoption in gxdsakses:
+    if cxds in gxdsakses:
         gxdsfiles()
-    elif gxdsoption in ["B","b","2","02"]:
-        print(gxdsprnt)
-        print("  [•] K, BYE.")
-        os.system('xdg-open https://www.facebook.com/goxdies')
-        print(gxdsprnt)
-        sys.exit()
     else:
         print(gxdsprnt)
         print("  [X] INVALID CODE!")
