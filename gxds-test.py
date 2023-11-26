@@ -71,33 +71,6 @@ def gxdslogo():
 
 def main():
     gxdslogo()
-    print("\033[1;97m  [1] FB CLONING\n  [2] EXIT TOOL")
-    print(gxdsprnt)
-    gxdsoption = input("\033[1;36m  [•] ENTER YOUR OPTION: ")
-    os.system("clear")
-    print(lxgo)
-    if gxdsoption in ["1"]:
-        cxde()
-    elif gxdsoption in ["2"]:
-        print(gxdsprnt)
-        print("  [•] SOON")
-        time.sleep(3)
-        main()
-    elif gxdsoption in ["3"]:
-        print(gxdsprnt)
-        print("  [•] K, BYE.")
-        os.system("xdg-open https://www.facebook.com/goxdies")
-        print(gxdsprnt)
-        sys.exit()
-    else:
-        print(gxdsprnt)
-        print("  [X] INVALID OPTION!")
-        print(gxdsprnt)
-        time.sleep(3)
-        main()
-
-def cxde():
-    gxdslogo()
     print("\033[1;97m  [1] ASK FOR CODE\n  [2] EXIT TOOL")
     print(gxdsprnt)
     print("\033[1;33m  [-] IF YOU ALREADY HAVE CODE ENTER IT.\n  IF YOU DON'T HAVE ONE, PRESS 1.")
