@@ -64,7 +64,7 @@ def gxdslogo():
 
 def main():
     gxdslogo()
-    print("\033[1;97m  [1] FB CLONING\n  [2] EXIT TOOL")
+    print("\033[1;97m  [1] FB CLONING\n  [2] ENCRYPTION PY\n  [3] EXIT TOOL")
     print(gxdsprnt)
     gxdsoption = input("  [•] ENTER YOUR OPTION: ")
     os.system("clear")
