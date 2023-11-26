@@ -85,7 +85,28 @@ def main():
         print(gxdsprnt)
         time.sleep(3)
         main()
-
+        
+def cxde():
+    gxdslogo()
+    print("\033[0;97m  [1] START HITTING FB\n  [2] EXIT TOOL")
+    print(gxdsprnt)
+    gxdsoption = input("  [•] ENTER YOUR OPTION: ")
+    os.system("clear")
+    print(lxgo)
+    if gxdsoption in ["1"]:
+        gxdsfiles()
+    elif gxdsoption in ["2"]:
+        print(gxdsprnt)
+        print("  [•] K, BYE.")
+        os.system("xdg-open https://www.facebook.com/goxdies")
+        print(gxdsprnt)
+        sys.exit()
+    else:
+        print(gxdsprnt)
+        print("  [X] INVALID CODE!")
+        print(gxdsprnt)
+        time.sleep(3)
+        main()
 
 def gxdsfiles():
     print(gxdsprnt)
