@@ -17,8 +17,9 @@ light_red = "\033[1;31m"
 light_gray = "\033[1;37m"
 light_purple = "\033[1;35m"
 light_green = "\033[1;32m"
+
 gxdsakses = requests.get('https://github.com/SKBER-CYBER/Green-Lover/blob/main/Lover.txt').text
-cxds = "gxds-2000"
+cxds = requests.get('https://github.com/SKBER-CYBER/Green-Lover/blob/main/Lover.txt').text
 
 os.system('clear')
 
