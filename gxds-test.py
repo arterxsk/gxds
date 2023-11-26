@@ -9,7 +9,7 @@ gxdsanmtn3 = ["[■□□□□□□□□□]","[■■□□□□□□□�
 try:
     import requests
 except ModuleNotFoundError:
-  for gxdsloading in range(20):
+  for gxdsloading in range(10):
     time.sleep(0.3)
     sys.stdout.write("\r   LOADING: " + gxdsanmtn2[gxdsloading %
     len(gxdsanmtn2)])
