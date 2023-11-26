@@ -11,6 +11,9 @@ try:
 except ModuleNotFoundError:
   for gxdsloading in range(10):
     time.sleep(0.3)
+    os.system('')
+    os.system('')
+    os.system('')
     sys.stdout.write("\r   LOADING: " + gxdsanmtn2[gxdsloading %
     len(gxdsanmtn2)])
     sys.stdout.flush()
@@ -29,6 +32,9 @@ light_purple = "\033[1;35m"
 light_green = "\033[1;32m"
 
 os.system('clear')
+os.system('')
+os.system('')
+os.system('')
 
 gxdsprnt=str(f"{white}"*37)
 for gxdsloading in range(20):
