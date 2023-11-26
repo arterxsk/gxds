@@ -220,6 +220,8 @@ def gxdsforward(id_file):
                     gxdspwd.append(f_name + mid_name + sur_name + "@@")
                     gxdspwd.append(f_name + mid_name + sur_name + "@")
                     gxdspwd.append(f_name + " " + sur_name)
+                    gxdspwd.append(f_name + " " + sur_name + "123")
+                    gxdspwd.append(f_name + " " + sur_name + "143")
                     gxdspwd.append(f_name + " " + mid_name + " " + sur_name)
                     gxdspwd.append(f_name + " " + mid_name + " " + sur_name + "123")
             except:
