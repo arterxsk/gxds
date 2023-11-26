@@ -232,7 +232,10 @@ cps = []
 
 
 def file_subb(uid, gxdspw):
-    global oks, loop, cps
+    global oks
+    global loop
+    global cps
+    
     sys.stdout.write(
         f"\r{white}  [CHECKED]: {loop} [HITS]: {str(len(oks))} [CHECKPOINT]: {str(len(cps))}"
     )
