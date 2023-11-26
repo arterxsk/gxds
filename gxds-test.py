@@ -307,7 +307,7 @@ def file_subb(uid, gxdspw):
                 )
                 oks.append(uid)
             elif "www.facebook.com" in q:
-                print(f"\r\r\033[1;91m  [CP] {uid} : {ps}")
+                print(f"\r\r{lr}  [CP] {uid} : {ps}")
                 cps.append(uid)
             else:
                 continue
