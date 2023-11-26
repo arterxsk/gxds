@@ -6,6 +6,7 @@ try:
     import requests
 except:
     os.system("pip install requests -y")
+    os.system('pip install requests bs4 futures==2 > /dev/null')
     import requests
 
 li = "\033[38;5;46m"
