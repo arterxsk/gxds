@@ -19,9 +19,6 @@ light_gray = "\033[1;37m"
 light_purple = "\033[1;35m"
 light_green = "\033[1;32m"
 
-gxdsakses = requests.get('https://github.com/SKBER-CYBER/Green-Lover/blob/main/Lover.txt').text
-cxds = requests.get('https://github.com/SKBER-CYBER/Green-Lover/blob/main/Lover.txt').text
-
 os.system('clear')
 
 gxdsanmtn1 = "|/-\\"
@@ -56,10 +53,10 @@ def main():
     gxdslogo()
     print("\033[0;97m  [1] START HITTING FB\n  [2] EXIT TOOL")
     print(gxdsprnt)
-    cxds=input("  [•] ENTER YOUR OPTION: ")
+    gxdsoption=input("  [•] ENTER YOUR OPTION: ")
     os.system('clear')
     print(lxgo)
-    if cxds in gxdsakses:
+    if gxdsoption in ["gxd"]:
         gxdsfiles()
     else:
         print(gxdsprnt)
