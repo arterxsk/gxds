@@ -91,6 +91,7 @@ def cxde():
     gxdslogo()
     print("\033[0;97m  [1] ASK FOR CODE\n  [2] EXIT TOOL")
     print(gxdsprnt)
+    print("\033[0;97m  IF YOU ALREADY HAVE CODE, ENTER IT. IF YOU DON'T HAVE ONE, PRESS 1.")
     gxdsoption1 = input("  [•] ENTER YOUR CODE: ")
     os.system("clear")
     print(lxgo)
