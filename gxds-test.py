@@ -29,7 +29,7 @@ except ModuleNotFoundError:
 
 li = "\033[38;5;46m"
 blue = "\033[94m"
-white = "\033[0;97m"
+white = "\033[1;97m"
 cyan = "\033[1;36m"
 yellow = "\033[1;33m"
 lr = "\033[1;31m"
