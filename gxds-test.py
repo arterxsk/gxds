@@ -88,16 +88,17 @@ def main():
         
 def cxde():
     gxdslogo()
-    print("\033[0;97m  [1] START HITTING FB\n  [2] EXIT TOOL")
+    print("\033[0;97m  [1] ASK FOR CODE\n  [2] EXIT TOOL")
     print(gxdsprnt)
-    gxdsoption = input("  [•] ENTER YOUR OPTION: ")
+    gxdsoption1 = input("  [•] ENTER YOUR CODE: ")
     os.system("clear")
     print(lxgo)
-    if gxdsoption in ["1"]:
+    if gxdsoption1 in ["GXDS"]:
         gxdsfiles()
-    elif gxdsoption in ["2"]:
+    elif gxdsoption1 in ["2"]:
         print(gxdsprnt)
-        print("  [•] K, BYE.")
+        print(lxgo)
+        print("  [•] REDIRECTING...")
         os.system("xdg-open https://www.facebook.com/goxdies")
         print(gxdsprnt)
         sys.exit()
