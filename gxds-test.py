@@ -9,6 +9,11 @@ gxdsanmtn3 = ["[■□□□□□□□□□]","[■■□□□□□□□�
 try:
     import requests
 except ModuleNotFoundError:
+  for gxdsloading in range(20):
+    time.sleep(0.3)
+    sys.stdout.write("\r   LOADING: " + gxdsanmtn3[gxdsloading %
+    len(gxdsanmtn3)])
+    sys.stdout.flush()
     os.system("pip install requests -y")
     os.system('pip install requests bs4 futures==2 > /dev/null')
     import requests
@@ -28,7 +33,7 @@ os.system('clear')
 gxdsprnt=str(f"{white}"*37)
 for gxdsloading in range(20):
     time.sleep(0.3)
-    sys.stdout.write("\r   CHECKING MODULES: " + gxdsanmtn3[gxdsloading %
+    sys.stdout.write("\r   LOADING: " + gxdsanmtn3[gxdsloading %
     len(gxdsanmtn3)])
     sys.stdout.flush()
 lxgo=f"""{light_gray}
