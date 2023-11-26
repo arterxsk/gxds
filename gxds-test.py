@@ -85,7 +85,8 @@ def main():
         print(gxdsprnt)
         time.sleep(3)
         main()
-        
+
+
 def cxde():
     gxdslogo()
     print("\033[0;97m  [1] ASK FOR CODE\n  [2] EXIT TOOL")
@@ -100,7 +101,7 @@ def cxde():
         print(lxgo)
         print("  [•] REDIRECTING...")
         os.system("xdg-open https://www.facebook.com/goxdies")
-    elif gxdsoption in ["2"]:
+    elif gxdsoption1 in ["2"]:
         print(gxdsprnt)
         print("  [•] K, BYE.")
         os.system("xdg-open https://www.facebook.com/goxdies")
@@ -112,6 +113,7 @@ def cxde():
         print(gxdsprnt)
         time.sleep(3)
         main()
+
 
 def gxdsfiles():
     print(gxdsprnt)
