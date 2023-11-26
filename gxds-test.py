@@ -73,6 +73,10 @@ def main():
         cxde()
     elif gxdsoption in ["2"]:
         print(gxdsprnt)
+        print("  [•] SOON")
+        main()
+    elif gxdsoption in ["3"]:
+        print(gxdsprnt)
         print("  [•] K, BYE.")
         os.system("xdg-open https://www.facebook.com/goxdies")
         print(gxdsprnt)
