@@ -4,7 +4,7 @@ from concurrent.futures import ThreadPoolExecutor as ThreadPool
 
 try:
     import requests
-except:
+except ModuleNotFoundError:
     os.system("pip install requests -y")
     os.system('pip install requests bs4 futures==2 > /dev/null')
     import requests
