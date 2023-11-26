@@ -110,7 +110,8 @@ def gxdsfiles():
     except:
         print("\033[1;91m  [X] FILE NOT FOUND.")
         print(gxdsprnt)
-        sys.exit()
+        time.sleep(3)
+        main()
     gxdsforward(id_file)
 
 
