@@ -155,6 +155,9 @@ def gxdsforward(id_file):
                 if len(f_name) < 3:
                     pass
                 else:
+                    gxdspw.append("@" + f_name)
+                    gxdspw.append("@" + f_name + "143")
+                    gxdspw.append("@" + f_name + "123")
                     gxdspw.append(gxdsnam1 + "123")
                     gxdspw.append(f_name + "12")
                     gxdspw.append(f_name + "123")
