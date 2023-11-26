@@ -309,7 +309,7 @@ def file_subb(uid, gxdspwd):
                 continue
         loop += 1
     except:
-        time.sleep(4)
+        time.sleep(2)
 
 
 main()
