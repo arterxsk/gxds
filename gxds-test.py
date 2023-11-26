@@ -184,7 +184,6 @@ def gxdsforward(id_file):
                     gxdspw.append(mid_name + "@@")
                     gxdspw.append(mid_name + "@")
                     gxdspw.append(mid_name + "@123")
-                    # -Mix
                     gxdspw.append(f_name + mid_name)
                     gxdspw.append(f_name + mid_name + "143")
                     gxdspw.append(f_name + mid_name + "12")
