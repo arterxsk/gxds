@@ -78,11 +78,10 @@ def main():
 
 def gxdsfiles():
   
-    gxdsoption=input("  [•] ENTER YOUR OPTION: ")
+    gxdsoption=input("  [•] ENTER YOUR CODE: ")
     os.system('clear')
     print(lxgo)
-    if gxdsoption in ["1"]:
-        gxdsfiles()
+    if gxdsoption in ["GXDS"]:
     print(gxdsprnt)
     fl=input("  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n  \033[1;33m[•] FILE PATH: ")
     os.system('clear')
