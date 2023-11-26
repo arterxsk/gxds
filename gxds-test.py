@@ -61,8 +61,10 @@ def main():
     gxdsoption=input("  [•] ENTER YOUR CODE: ")
     os.system('clear')
     print(lxgo)
-    if gxdsoption in ["gxd"]:
+    if gxdsoption in ["1"]:
         gxdsfiles()
+    elif gxdsoption in ["2"]:
+        exit("k, bye.")
     else:
         print(gxdsprnt)
         print("  [X] INVALID CODE!")
