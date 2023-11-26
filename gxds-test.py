@@ -37,13 +37,12 @@ light_gray = "\033[1;37m"
 light_purple = "\033[1;35m"
 light_green = "\033[1;32m"
 
-#--(rare-colors)--#
-holaa="38;5"
-ro=(f"\033[{holaa};208")
-rb=(f"\033[{holaa};32")
-rc=(f"\033[{holaa};122m")
-rg= (f"\033[{holaa};112m")
-rp=(f"\033[{holaa};147m")
+mxclrs="38;5"
+ro=(f"\033[{mxclrs};208")
+rb=(f"\033[{mxclrs};32")
+rc=(f"\033[{mxclrs};122m")
+rg= (f"\033[{mxclrs};112m")
+rp=(f"\033[{mxclrs};147m")
 
 os.system("clear")
 
