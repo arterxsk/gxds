@@ -85,12 +85,6 @@ def gxdsfiles():
      print(gxdsprnt)
     fl=input("  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n  \033[1;33m[•] FILE PATH: ")
     os.system('clear')
-    else:
-     print(gxdsprnt)
-     print("  [X] INVALID CODE!")
-     print(gxdsprnt)
-     time.sleep(3)
-     main()
     print(lxgo)
     print(gxdsprnt)
     try:
@@ -100,6 +94,7 @@ def gxdsfiles():
         print(gxdsprnt)
         sys.exit()
     gxdsforward(id_file)
+    
     
 def gxdsforward(id_file):
     tl=str(len(id_file))
