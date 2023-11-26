@@ -58,7 +58,7 @@ def main():
     gxdslogo()
     print("\033[0;97m  [1] START HITTING FB\n  [2] EXIT TOOL")
     print(gxdsprnt)
-    gxdsoption=input("  [•] ENTER YOUR CODE: ")
+    gxdsoption=input("  [•] ENTER YOUR OPTION: ")
     os.system('clear')
     print(lxgo)
     if gxdsoption in ["1"]:
