@@ -64,7 +64,11 @@ def main():
     if gxdsoption in ["1"]:
         gxdsfiles()
     elif gxdsoption in ["2"]:
-        exit("k, bye.")
+        print(gxdsprnt)
+        print("  [•] K, BYE.")
+        os.system('xdg-open https://www.facebook.com/goxdies')
+        print(gxdsprnt)
+        sys.exit()
     else:
         print(gxdsprnt)
         print("  [X] INVALID CODE!")
