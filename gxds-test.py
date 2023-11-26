@@ -32,8 +32,8 @@ blue = "\033[94m"
 white = "\033[0;97m"
 cyan = "\033[1;36m"
 yellow = "\033[1;33m"
-light_red = "\033[1;31m"
-light_gray = "\033[1;37m"
+lr = "\033[1;31m"
+lg = "\033[1;37m"
 light_purple = "\033[1;35m"
 light_green = "\033[1;32m"
 
@@ -51,7 +51,7 @@ for gxdsloading in range(20):
     time.sleep(0.3)
     sys.stdout.write("\r   LOADING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
     sys.stdout.flush()
-lxgo = f"""{light_gray}
+lxgo = f"""{lg}
 
                               d8b             
                               88P             
