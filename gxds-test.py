@@ -2,6 +2,10 @@
 import os, random, sys, json, uuid, time
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
 
+gxdsanmtn1 = "|/-\\"
+gxdsanmtn2 = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]
+gxdsanmtn3 = ["[■□□□□□□□□□]","[■■□□□□□□□□]", "[■■■□□□□□□□]", "[■■■■□□□□□□]", "[■■■■■□□□□□]", "[■■■■■■□□□□]", "[■■■■■■■□□□]", "[■■■■■■■■□□]", "[■■■■■■■■■□]", "[■■■■■■■■■■]"]
+
 try:
     import requests
 except ModuleNotFoundError:
@@ -20,10 +24,6 @@ light_purple = "\033[1;35m"
 light_green = "\033[1;32m"
 
 os.system('clear')
-
-gxdsanmtn1 = "|/-\\"
-gxdsanmtn2 = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]
-gxdsanmtn3 = ["[■□□□□□□□□□]","[■■□□□□□□□□]", "[■■■□□□□□□□]", "[■■■■□□□□□□]", "[■■■■■□□□□□]", "[■■■■■■□□□□]", "[■■■■■■■□□□]", "[■■■■■■■■□□]", "[■■■■■■■■■□]", "[■■■■■■■■■■]"]
 
 gxdsprnt=str(f"{white}"*37)
 for gxdsloading in range(20):
