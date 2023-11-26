@@ -185,11 +185,11 @@ def gxdsforward(id_file):
                 pass
             try:
                 mid_name = name.split(" ")[1]
-                nam2 = gxdsnam.split(" ")[1]
+                gxdsnam2 = gxdsnam.split(" ")[1]
                 if len(mid_name) < 3:
                     pass
                 else:
-                    gxdspwd.append(gxdsnam1 + " " + nam2)
+                    gxdspwd.append(gxdsnam1 + " " + gxdsnam2)
                     gxdspwd.append(mid_name + "12")
                     gxdspwd.append(mid_name + "123")
                     gxdspwd.append(mid_name + " 123")
@@ -219,7 +219,7 @@ def gxdsforward(id_file):
                 pass
             try:
                 sur_name = name.split(" ")[2]
-                nam3 = gxdsnam.split(" ")[2]
+                gxdsnam3 = gxdsnam.split(" ")[2]
                 if len(sur_name) < 3:
                     pass
                 else:
