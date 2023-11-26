@@ -74,6 +74,7 @@ def main():
     elif gxdsoption in ["2"]:
         print(gxdsprnt)
         print("  [•] SOON")
+        time.sleep(3)
         main()
     elif gxdsoption in ["3"]:
         print(gxdsprnt)
