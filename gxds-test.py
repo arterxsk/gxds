@@ -73,7 +73,7 @@ def main():
     gxdslogo()
     print("\033[1;97m  [1] FB CLONING\n  [2] ENCRYPTION PY\n  [3] EXIT TOOL")
     print(gxdsprnt)
-    gxdsoption = input(f"{ro}  [•] ENTER YOUR OPTION: ")
+    gxdsoption = input("\033[1;36m  [•] ENTER YOUR OPTION: ")
     os.system("clear")
     print(lxgo)
     if gxdsoption in ["1"]:
@@ -101,7 +101,7 @@ def cxde():
     print("\033[1;97m  [1] ASK FOR CODE\n  [2] EXIT TOOL")
     print(gxdsprnt)
     print("\033[1;33m[-]  IF YOU ALREADY HAVE CODE ENTER IT.\n  IF YOU DON'T HAVE ONE, PRESS 1.")
-    gxdsoption1 = input(f"{ro}  [•] ENTER YOUR CODE: ")
+    gxdsoption1 = input("\033[1;36m  [•] ENTER YOUR CODE: ")
     os.system("clear")
     print(lxgo)
     if gxdsoption1 in ["GXDS"]:
