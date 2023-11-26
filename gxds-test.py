@@ -72,7 +72,7 @@ def main():
     os.system("clear")
     print(lxgo)
     if gxdsoption in ["1"]:
-        gxdsfiles()
+        cxde()
     elif gxdsoption in ["2"]:
         print(gxdsprnt)
         print("  [•] K, BYE.")
