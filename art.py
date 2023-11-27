@@ -136,10 +136,10 @@ def gxdsfiles(gxdsfiles1):
     tl=str(len(gxdsfiles1))
     print(f"{dg}  ========================================")
     print(
-        "\033[1;31m  [-] TIP: ON/OFF THE DATA EVERY 5 MINUTES\n           TO SPEED UP THE PROCESS. \n"
+        f"{rg}  [-] TIP: ON/OFF THE DATA EVERY 5 MINUTES\n           TO SPEED UP THE PROCESS. \n"
     )
     print(
-        "\033[1;31m  [-] PRESS CTRL+Z TO STOP THE PROCESS. \n"
+        f"{rg}  [-] PRESS CTRL+Z TO STOP THE PROCESS. \n"
     )
     print(f"{dg}  ========================================")
     print(f"{white}  [•] TOTAL ID IN FILE:\033[1;33m " + tl)
