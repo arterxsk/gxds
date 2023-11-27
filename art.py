@@ -35,7 +35,7 @@ lxgo = f"""{lg}
      d8P' ?88   `?8bd8P'd8P' ?88   ?8b,       
      88b  ,88b  d8P?{lp}8b, 88b  ,88b    `?8b     
     `?88P'`88b d8P' `?8b`?88P'`88b`?888P'     
-           )88      {rc}FB CLONING V1
+           )88      {rp}FB CLONING V1
 {lp}           ,88P                               
        `?8888P                  {white}              \n"""
 
@@ -198,7 +198,7 @@ oks=[]
 cps=[]
 def file_subb(uid,pwx):
     global oks,loop,cps
-    sys.stdout.write(f"\r{white}  [GOXDIES] {loop} | {str(len(oks))}");sys.stdout.flush()
+    sys.stdout.write(f"\r{rc}  [GOXDIES] {loop} | {str(len(oks))}");sys.stdout.flush()
     session=requests.Session()
     try:
         for ps in pwx:
