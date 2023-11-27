@@ -97,13 +97,13 @@ def main():
         print(gxdsprnt)
         sys.exit()
     else:
-        time.sleep(4)
+        time.sleep(2)
         print(f"\n{lr}  [X] INVALID CODE!")
         time.sleep(2)
         main()
 
 def gxdsclone():
-    time.sleep(4)
+    time.sleep(2)
     fl = input(
         f"{lg}  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n{lg}  [•] FILE PATH:{rc} "
     )
