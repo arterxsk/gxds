@@ -17,6 +17,7 @@ cyan = "\033[1;36m"
 yellow = "\033[1;33m"
 lr = "\033[1;31m"
 lg = "\033[1;37m"
+dg = "\033[1;30m"
 lp = "\033[1;35m"
 lgr = "\033[1;32m"
 
@@ -67,7 +68,7 @@ def gxdslogo():
 def main():
     gxdslogo()
     print(f"\n{white}  [1] ASK FOR CODE\n  [2] EXIT TOOL\n")
-    print(f"{lg}  ========================================")
+    print(f"{dg}  ========================================")
     print(f"{rg}  [!] IF YOU ALREADY HAVE CODE ENTER IT.\n      IF YOU DON'T HAVE ONE, PRESS 1.")
     gxdsoption1 = input("\033[1;36m  [•] ENTER YOUR CODE: ")
     os.system("clear")
@@ -115,18 +116,18 @@ def gxdsclone():
 
 def gxdsfiles(gxdsfiles1):
     tl=str(len(gxdsfiles1))
-    print(f"{lg}  ========================================")
+    print(f"{dg}  ========================================")
     print(
         "\033[1;31m  [-] TIP: ON/OFF THE DATA EVERY 5 MINUTES\n           TO SPEED UP THE PROCESS. \n"
     )
     print(
         "\033[1;31m  [-] PRESS CTRL+Z TO STOP THE PROCESS. \n"
     )
-    print(f"{lg}  ========================================")
+    print(f"{dg}  ========================================")
     print(f"{white}  [•] TOTAL ID IN FILE:\033[1;33m " + tl)
     print(f"{white}  [•] PASSWORD LIST:\033[1;33m AUTOMATIC ")
     print(f"{white}  [•] FILE SAVE IN:\033[1;33m /sdcard/gxds.txt\n")
-    print(f"{lg}  ========================================")
+    print(f"{dg}  ========================================")
     print(gxdsprnt)
     with ThreadPool (max_workers=120) as feel:
         for data in gxdsfiles1:
