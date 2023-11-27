@@ -87,8 +87,18 @@ def auto_pass(fileeee):
         for data in fileeee:
             uid=data.split("|")[0]
             pwx=[]
-            pwx.append('57273200')
-            pwx.append('59039200')
+            pwx.append("12345678")
+            pwx.append("P@ssw0rd")
+            pwx.append("123456")
+            pwx.append("iloveyou")
+            pwx.append("iloveyou123")
+            pwx.append("1234567890")
+            pwx.append("password")
+            pwx.append("password123")
+            pwx.append("Password")
+            pwx.append("Password123")
+            pwx.append("qwerty123")
+            pwx.append("123456789")
             nam=data.split("|")[1]
             name=nam.lower()
             try:
