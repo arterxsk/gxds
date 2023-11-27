@@ -102,12 +102,8 @@ def main():
         print(gxdsprnt)
         sys.exit()
     else:
-        print(" ")
         print(f"\n{lg}  [X] INVALID CODE!")
         time.sleep(2)
-        print(f"{lg}  [!] GOING BACK TO MENU!")
-        print(gxdsprnt)
-        time.sleep(3)
         main()
 
 def gxdsclone():
