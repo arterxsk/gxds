@@ -118,7 +118,7 @@ def main():
 def gxdsclone():
     print(gxdsprnt)
     fl = input(
-        f"{rg}  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n{yellow}  [•] FILE PATH:{rb} /sdcard/"
+        f"{rg}  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n{yellow}  [•] FILE PATH:{rb}  /sdcard/"
     )
     os.system("clear")
     print(lxgo)
