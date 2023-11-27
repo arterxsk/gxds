@@ -42,16 +42,16 @@ gxdsanmtn3 = [
 ]
 gxdsanmtn1 = "|/-\\"
 
-lxgo = f"""{dg}
+lxgo = f"""{lg}
                               d8b             
                               88P             
                              d88              
       d888b8b  ?88,  88P d888888   .d888b,    
      d8P' ?88   `?8bd8P'd8P' ?88   ?8b,       
-     88b  ,88b  d8P?{lg}8b, 88b  ,88b    `?8b     
+     88b  ,88b  d8P?{dg}8b, 88b  ,88b    `?8b     
     `?88P'`88b d8P' `?8b`?88P'`88b`?888P'     
            )88      {black}FACEBOOK ID CLONING
-{lg}           ,88P                               
+{dg}           ,88P                               
        `?8888P                  {white}              \n"""
 
 os.system('clear')
