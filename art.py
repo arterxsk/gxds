@@ -98,8 +98,6 @@ def main():
         print(gxdsprnt)
         sys.exit()
     else:
-        os.system('clear')
-        print(lxgo)
         for gxdsloading in range(20):
           time.sleep(0.2)
           sys.stdout.write("\r           CHECKING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
