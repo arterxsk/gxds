@@ -237,7 +237,7 @@ def gxdsfiles(gxdsfiles1):
 loop=0
 oks=[]
 cps=[]
-def file_subb(uid,pwx,tl):
+def file_subb(uid,pwx):
     global oks,loop,cps
     sys.stdout.write(f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))} | [CHECKPOINT] {str(len(cps))} ");sys.stdout.flush()
     session=requests.Session()
