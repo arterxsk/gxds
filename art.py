@@ -47,10 +47,10 @@ lxgo = f"""{dg}
                              d88              
       d888b8b  ?88,  88P d888888   .d888b,    
      d8P' ?88   `?8bd8P'd8P' ?88   ?8b,       
-     88b  ,88b  d8P?{lp}8b, 88b  ,88b    `?8b     
+     88b  ,88b  d8P?{lg}8b, 88b  ,88b    `?8b     
     `?88P'`88b d8P' `?8b`?88P'`88b`?888P'     
            )88      {rp}FB ID CLONING
-{lp}           ,88P                               
+{lg}           ,88P                               
        `?8888P                  {white}              \n"""
 
 os.system('clear')
