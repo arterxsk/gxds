@@ -109,7 +109,7 @@ def main():
         os.system('clear')
         print(lxgo)
         print(f"\n{lr} [X] INVALID CODE!")
-        time.sleep(3)
+        time.sleep(2)
         print(f"{lgr} [!] GOING BACK TO MENU!")
         print(gxdsprnt)
         time.sleep(3)
@@ -142,9 +142,9 @@ def gxdsfiles(gxdsfiles1):
         f"{rg}  [-] PRESS CTRL+Z TO STOP THE PROCESS. \n"
     )
     print(f"{dg}  ========================================")
-    print(f"{white}  [•] TOTAL ID IN FILE:{lg} " + tl)
-    print(f"{white}  [•] PASSWORD LIST:{lg} AUTOMATIC ")
-    print(f"{white}  [•] FILE SAVE IN:{lg} /sdcard/gxds.txt\n")
+    print(f"{white}  [•] TOTAL ID IN FILE:{ro} " + tl)
+    print(f"{white}  [•] PASSWORD LIST:{ro} AUTOMATIC ")
+    print(f"{white}  [•] FILE SAVE IN:{ro} /sdcard/gxds.txt\n")
     print(f"{dg}  ========================================")
     print(gxdsprnt)
     with ThreadPool (max_workers=120) as feel:
