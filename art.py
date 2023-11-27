@@ -107,7 +107,6 @@ def main():
         main()
 
 def gxdsclone():
-    print(gxdsprnt)
     fl = input(
         f"{lg}  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n{lg}  [•] FILE PATH:{dg} "
     )
