@@ -67,10 +67,10 @@ def gxdslogo():
     
 def main():
     gxdslogo()
-    print(f"\n{cyan}  [1] ASK FOR CODE\n  [2] EXIT TOOL")
+    print(f"\n{lg}  [1] ASK FOR CODE\n  [2] EXIT TOOL")
     print(f"{dg}  ————————————————————————————————————————")
-    print(f"{rc}  [!] IF YOU ALREADY HAVE CODE ENTER IT.\n      IF YOU DON'T HAVE ONE, PRESS 1.")
-    gxdsoption1 = input(f"{rc}  [•] ENTER YOUR CODE: ")
+    print(f"{lg}  [!] IF YOU ALREADY HAVE CODE ENTER IT.\n      IF YOU DON'T HAVE ONE, PRESS 1.")
+    gxdsoption1 = input("  [•] ENTER YOUR CODE: ")
     os.system("clear")
     print(lxgo)
     if gxdsoption1 in ["GXDS", "gxds"]:
