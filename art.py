@@ -129,7 +129,7 @@ def gxdsclone():
         print("\033[1;91m  [X] FILE NOT FOUND.")
         print(gxdsprnt)
         time.sleep(3)
-        main()
+        gxdsclone()
     gxdsfiles(gxdsfiles1)
 
 def gxdsfiles(gxdsfiles1):
