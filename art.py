@@ -79,8 +79,6 @@ def main():
       sys.stdout.flush()
 
     if gxdsoption1 in ["GXDS", "gxds"]:
-      os.system('clear')
-      print(lxgo)
       gxdsclone()
     elif gxdsoption1 in ["1"]:
         os.system("clear")
@@ -100,8 +98,7 @@ def main():
         print(gxdsprnt)
         sys.exit()
     else:
-        os.system('clear')
-        print(lxgo)
+        print(f"{dg}  ————————————————————————————————————————")
         print(f"\n{lg}  [X] INVALID CODE!")
         time.sleep(2)
         print(f"{lg}  [!] GOING BACK TO MENU!")
