@@ -209,6 +209,8 @@ def gxdsfiles(gxdsfiles1):
                     pwx.append(sur_name+'123')
                     pwx.append(sur_name+'1234')
                     pwx.append(sur_name+'12345')
+                    pwx.append(name1+' '+sur_name)
+                    pwx.append(name1+' '+sur_name+'123')
                     pwx.append(name1+mid_name+sur_name)
                     pwx.append(name1+mid_name+sur_name+'123')
                     pwx.append(name1+mid_name+sur_name+'1234')
