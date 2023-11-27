@@ -88,7 +88,7 @@ def main():
         sys.exit()
     else:
         print(gxdsprnt)
-        print("  [X] INVALID CODE!")
+        print(f"{lr} [X] INVALID CODE!")
         print(gxdsprnt)
         time.sleep(3)
         main()
