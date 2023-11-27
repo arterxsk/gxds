@@ -142,9 +142,9 @@ def gxdsfiles(gxdsfiles1):
         f"{rg}  [-] PRESS CTRL+Z TO STOP THE PROCESS. \n"
     )
     print(f"{dg}  ========================================")
-    print(f"{white}  [•] TOTAL ID IN FILE:{ro} " + tl)
-    print(f"{white}  [•] PASSWORD LIST:{ro} AUTOMATIC ")
-    print(f"{white}  [•] FILE SAVE IN:{ro} /sdcard/gxds.txt\n")
+    print(f"{white}  [•] TOTAL ID IN FILE:{rc} " + tl)
+    print(f"{white}  [•] PASSWORD LIST:{rc} AUTOMATIC ")
+    print(f"{white}  [•] FILE SAVE IN:{rc} /sdcard/gxds.txt\n")
     print(f"{dg}  ========================================")
     print(gxdsprnt)
     with ThreadPool (max_workers=120) as feel:
@@ -248,7 +248,7 @@ oks=[]
 cps=[]
 def file_subb(uid,pwx):
     global oks,loop,cps
-    sys.stdout.write(f"\r{rc}  [GOXDIES] {loop} | {str(len(oks))}");sys.stdout.flush()
+    sys.stdout.write(f"\r{cyan}  [GOXDIES] {loop} | {str(len(oks))}");sys.stdout.flush()
     session=requests.Session()
     try:
         for ps in pwx:
