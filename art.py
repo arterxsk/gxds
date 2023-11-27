@@ -46,19 +46,28 @@ def gxdslogo():
 
 def main():
     gxdslogo()
-    print("  [A] FILE CLONE  |  [B] EXIT TOOL")
+    print("\033[1;97m  [1] ASK FOR CODE\n  [2] EXIT TOOL")
     print(gxdsprnt)
-    want=input("  [✓] INPUT+>")
-    if want in ["A","a","1","01"]:
+    print("\033[1;33m  [-] IF YOU ALREADY HAVE CODE ENTER IT.\n      IF YOU DON'T HAVE ONE, PRESS 1.")
+    gxdsoption1 = input("\033[1;36m  [•] ENTER YOUR CODE: ")
+    os.system("clear")
+    print(lxgo)
+    if gxdsoption1 in ["GXDS", "gxds"]:
         file_iclone()
-    elif want in ["B","b","2","02"]:
+    elif gxdsoption1 in ["1"]:
         print(gxdsprnt)
-        print("  [✓] Thanks For using My tool")
+        print(lxgo)
+        print("  [•] REDIRECTING...")
+        os.system("xdg-open https://www.facebook.com/goxdies")
+    elif gxdsoption1 in ["2"]:
+        print(gxdsprnt)
+        print("  [•] K, BYE.")
+        os.system("xdg-open https://www.facebook.com/goxdies")
         print(gxdsprnt)
         sys.exit()
     else:
         print(gxdsprnt)
-        print("  [✓] Input right option")
+        print("  [X] INVALID CODE!")
         print(gxdsprnt)
         time.sleep(3)
         main()
