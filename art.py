@@ -53,7 +53,7 @@ lxgo = f"""{lg}
      d8P' ?88   `?8bd8P'd8P' ?88   ?8b,       
      88b  ,88b  d8P?{dg}8b, 88b  ,88b    `?8b     
     `?88P'`88b d8P' `?8b`?88P'`88b`?888P'     
-           )88      {white}FACEBOOK ID CLONING
+           )88      
 {dg}           ,88P                               
        `?8888P                  {white}              \n"""
 
@@ -70,7 +70,7 @@ def gxdslogo():
     
 def main():
     gxdslogo()
-    print(f"\n{lg}  [=] FILE CLONING\n  [=] VERSION 0.1")
+    print(f"\n{rp}  [=] FILE CLONING\n  [=] VERSION 0.1")
     print(f"{dg}  ————————————————————————————————————————")
     print(f"{lg}  [!] IF YOU ALREADY HAVE CODE ENTER IT.\n      IF YOU DON'T HAVE ONE,{rg} PRESS 1.")
     gxdsoption1 = input(f"{lg}  [•] ENTER YOUR CODE:{rc} ")
