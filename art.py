@@ -108,10 +108,10 @@ def gxdsclone():
     fl = input(
         f"{lg}  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n{lg}  [•] FILE PATH:{rc} "
     )
+    time.sleep(3)
     try:
         gxdsfiles1=open(fl,"r").read().splitlines()
     except:
-        time.sleep(3)
         print(f"\n{lr}  [X] FILE NOT FOUND.")
         print(gxdsprnt)
         time.sleep(3)
