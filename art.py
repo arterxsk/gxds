@@ -124,11 +124,10 @@ def gxdsfiles(gxdsfiles1):
     tl=str(len(gxdsfiles1))
     print(f"{dg}  ————————————————————————————————————————")
     print(
-        f"{lg}  [-] PRESS {rc}CTRL+Z{lg} TO STOP THE PROCESS."
+        f"\n{lg}  [-] PRESS {rc}CTRL+Z{lg} TO STOP THE PROCESS.\n"
     )
     print(f"{dg}  ————————————————————————————————————————")
     print(f"{lg}  [•] TOTAL ID IN FILE:{rc} " + tl)
-    print(f"{lg}  [•] PASSWORD LIST:{rc} AUTOMATIC ")
     print(f"{lg}  [•] FILE SAVE IN:{rc} /sdcard/gxds.txt")
     print(f"{dg}  ————————————————————————————————————————")
     print(gxdsprnt)
