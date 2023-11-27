@@ -72,13 +72,13 @@ def main():
     print(f"{dg}  ————————————————————————————————————————")
     print(f"{lg}  [!] IF YOU ALREADY HAVE CODE ENTER IT.\n      IF YOU DON'T HAVE ONE,{dg} PRESS 1.")
     gxdsoption1 = input(f"{lg}  [•] ENTER YOUR CODE:{dg} ")
-    if gxdsoption1 in ["GXDS", "gxds"]:
+    for gxdsloading in range(20):
+      time.sleep(0.2)
+      sys.stdout.write("\r           CHECKING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
+      sys.stdout.flush()
       os.system('clear')
       print(lxgo)
-      for gxdsloading in range(20):
-          time.sleep(0.2)
-          sys.stdout.write("\r           CHECKING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
-          sys.stdout.flush()
+    if gxdsoption1 in ["GXDS", "gxds"]:
       os.system('clear')
       print(lxgo)
       gxdsclone()
@@ -101,12 +101,6 @@ def main():
         sys.exit()
     else:
         os.system('clear')
-        print(lxgo)
-        for gxdsloading in range(20):
-          time.sleep(0.2)
-          sys.stdout.write("\r           CHECKING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
-          sys.stdout.flush()
-          os.system('clear')
         print(lxgo)
         print(f"\n{lg}  [X] INVALID CODE!")
         time.sleep(2)
