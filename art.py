@@ -99,7 +99,7 @@ def main():
           time.sleep(0.2)
           sys.stdout.write("\r           CHECKING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
           sys.stdout.flush()
-        print(f"{lr} [X] INVALID CODE!")
+        print(f"\n{lr} [X] INVALID CODE!")
         time.sleep(3)
         print(f"{lgr} [!] GOING BACK TO MENU!")
         print(gxdsprnt)
