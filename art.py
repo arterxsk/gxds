@@ -221,7 +221,7 @@ def file_subb(uid,pwx):
                 open("/sdcard/gxds-ce.txt","a").write(uid+"|"+ps+"\n")
                 oks.append(uid)
             elif "www.facebook.com" in q:
-                print(f"\r\r  [CP] {uid} | {ps}      ")
+                print(f"\r\r{lr}  [CP] {uid} | {ps}      ")
                 cps.append(uid)
             else:
                 continue
