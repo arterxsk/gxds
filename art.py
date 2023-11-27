@@ -80,7 +80,6 @@ def main():
       sys.stdout.write("\r           CHECKING: " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
       sys.stdout.flush()
     print(" ")
-    print(f"{dg}  ————————————————————————————————————————")
     if gxdsoption1 in ["GXDS", "gxds"]:
       print(" ")
       gxdsclone()
