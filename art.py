@@ -13,6 +13,7 @@ blue = "\033[94m"
 white = "\033[1;97m"
 cyan = "\033[1;36m"
 yellow = "\033[1;33m"
+black = "\033[1;30m"
 lr = "\033[1;31m"
 lg = "\033[1;37m"
 dg = "\033[1;30m"
@@ -49,7 +50,7 @@ lxgo = f"""{dg}
      d8P' ?88   `?8bd8P'd8P' ?88   ?8b,       
      88b  ,88b  d8P?{lg}8b, 88b  ,88b    `?8b     
     `?88P'`88b d8P' `?8b`?88P'`88b`?888P'     
-           )88      {rp}FACEBOOK ID CLONING
+           )88      {black}FACEBOOK ID CLONING
 {lg}           ,88P                               
        `?8888P                  {white}              \n"""
 
