@@ -76,7 +76,7 @@ def main():
     gxdsoption1 = input(f"{lg}  [•] ENTER YOUR CODE:{rc} ")
     print(f"{dg}")
     for gxdsloading in range(10):
-      time.sleep(0.2)
+      time.sleep(0.4)
       sys.stdout.write("\r                     " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
       sys.stdout.flush()
     print("  ")
