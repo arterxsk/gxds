@@ -54,7 +54,7 @@ def main():
     if gxdsoption1 in ["GXDS", "gxds"]:
         gxdsclone()
     elif gxdsoption1 in ["1"]:
-        print(gxdsprnt)
+        os.system("clear")
         print(lxgo)
         print("  [•] REDIRECTING...")
         os.system("xdg-open https://www.facebook.com/goxdies")
