@@ -99,7 +99,7 @@ def main():
     else:
         time.sleep(2)
         print(f"\n{lr}  [X] INVALID CODE!")
-        time.sleep(2)
+        time.sleep(3)
         main()
 
 def gxdsclone():
