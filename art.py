@@ -85,7 +85,7 @@ def main():
       gxdsclone()
     elif gxdsoption1 in ["1"]:
         print(" ")
-        print(f"{lg}  Redirecting...")
+        print(f"{lg}   Redirecting...")
         time.sleep(3)
         os.system("xdg-open https://www.facebook.com/goxdies")
         main()
