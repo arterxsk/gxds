@@ -79,9 +79,18 @@ def file_iclone():
 
 def auto_pass(fileeee):
     tl=str(len(fileeee))
-    print("  [✓] Total id in File : "+tl)
-    print(cox)
-    print("  [✓] Id Save: /sdcard/EMRAN.txt")
+    print("  \033[38;5;46m========================================")
+    print(
+        "\033[1;31m  [-] TIP: ON/OFF THE DATA EVERY 5 MINUTES\n           TO SPEED UP THE PROCESS. \n"
+    )
+    print(
+        "\033[1;31m  [-] PRESS CTRL+Z TO STOP THE PROCESS. \n"
+    )
+    print("  \033[38;5;46m========================================")
+    print(f"{white}  [•] TOTAL ID IN FILE:\033[1;33m " + tl)
+    print(f"{white}  [•] PASSWORD LIST:\033[1;33m AUTOMATIC ")
+    print(f"{white}  [•] FILE SAVE IN:\033[1;33m /sdcard/gxds.txt\n")
+    print("  \033[38;5;46m========================================")
     print(cox)
     with ThreadPool (max_workers=120) as feel:
         for data in fileeee:
