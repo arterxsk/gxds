@@ -67,7 +67,7 @@ def gxdslogo():
 def main():
     gxdslogo()
     print(f"\n{white}  [1] ASK FOR CODE\n  [2] EXIT TOOL\n")
-    print(f"{dg}  ========================================")
+    print(f"{dg}  ————————————————————————————————————————")
     print(f"{rg}  [!] IF YOU ALREADY HAVE CODE ENTER IT.\n      IF YOU DON'T HAVE ONE, PRESS 1.")
     gxdsoption1 = input("\033[1;36m  [•] ENTER YOUR CODE: ")
     os.system("clear")
@@ -134,18 +134,18 @@ def gxdsclone():
 
 def gxdsfiles(gxdsfiles1):
     tl=str(len(gxdsfiles1))
-    print(f"{dg}  ========================================")
+    print(f"{dg}  ————————————————————————————————————————")
     print(
         f"{rg}  [-] TIP: ON/OFF THE DATA EVERY 5 MINUTES\n           TO SPEED UP THE PROCESS. \n"
     )
     print(
         f"{rg}  [-] PRESS CTRL+Z TO STOP THE PROCESS. \n"
     )
-    print(f"{dg}  ========================================")
+    print(f"{dg}  ————————————————————————————————————————")
     print(f"{white}  [•] TOTAL ID IN FILE:{rc} " + tl)
     print(f"{white}  [•] PASSWORD LIST:{rc} AUTOMATIC ")
     print(f"{white}  [•] FILE SAVE IN:{rc} /sdcard/gxds.txt\n")
-    print(f"{dg}  ========================================")
+    print(f"{dg}  ————————————————————————————————————————")
     print(gxdsprnt)
     with ThreadPool (max_workers=60) as feel:
         for data in gxdsfiles1:
