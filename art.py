@@ -89,6 +89,8 @@ def main():
     else:
         print(gxdsprnt)
         print(f"{lr} [X] INVALID CODE!")
+        time.sleep(3)
+        print(f"{lgr} [!] GOING BACK TO MENU!")
         print(gxdsprnt)
         time.sleep(3)
         main()
