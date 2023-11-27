@@ -40,12 +40,12 @@ lxgo=f"""
 {lp}           ,88P                               
        `?8888P                  {white}              \n"""
 
-def logox():
+def gxdslogo():
     os.system('clear')
     print(lxgo)
 
 def main():
-    logox()
+    gxdslogo()
     print("  [A] FILE CLONE  |  [B] EXIT TOOL")
     print(gxdsprnt)
     want=input("  [✓] INPUT+>")
