@@ -27,15 +27,17 @@ rc=(f"\033[{mxclrs};122m")
 rg= (f"\033[{mxclrs};112m")
 rp=(f"\033[{mxclrs};147m")
 gxdsprnt=str(f"{li}"*37)
-lxgo=f"""
-
-{lr}      ▄▄ • ▐▄• ▄ ·▄▄▄▄  .▄▄ ·
-{lg}     ▐█ ▀ ▪ █▌█▌▪██· ██ ▐█ ▀.
-{lp}     ▄█ ▀█▄ ·██· ▐█▪ ▐█▌▄▀▀▀█▄
-{lgr}     ▐█▄▪▐█▪▐█·█▌██. ██ ▐█▄▪▐█
-{li}     ·▀▀▀▀ •▀▀ ▀▀▀▀▀▀▀•  ▀▀▀▀ 
-{white}
-\n"""
+lxgo = f"""{lg}
+                              d8b             
+                              88P             
+                             d88              
+      d888b8b  ?88,  88P d888888   .d888b,    
+     d8P' ?88   `?8bd8P'd8P' ?88   ?8b,       
+     88b  ,88b  d8P?{lp}8b, 88b  ,88b    `?8b     
+    `?88P'`88b d8P' `?8b`?88P'`88b`?888P'     
+           )88      {rc}FB CLONING V1
+{lp}           ,88P                               
+       `?8888P                  {white}              \n"""
 
 def gxdslogo():
     os.system('clear')
