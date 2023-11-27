@@ -74,9 +74,10 @@ def file_iclone():
     try:
         fileeee=open(fl,"r").read().splitlines()
     except:
-        print("  [✓] \033[38;5;46mFile Does not found")
+        print("\033[1;91m  [X] FILE NOT FOUND.")
         print(gxdsprnt)
-        sys.exit()
+        time.sleep(3)
+        main()
     auto_pass(fileeee)
 
 
