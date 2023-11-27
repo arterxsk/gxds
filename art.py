@@ -90,9 +90,8 @@ def main():
           sys.stdout.write("\r         REDIRECTING: " + gxdsanmtn1[gxdsloading %
           len(gxdsanmtn1)])
           sys.stdout.flush()
-        os.system('clear')
-        print(lxgo)
         os.system("xdg-open https://www.facebook.com/goxdies")
+        main()
     elif gxdsoption1 in ["2"]:
         print(gxdsprnt)
         print("  [•] K, BYE.")
