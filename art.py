@@ -57,6 +57,7 @@ def main():
         os.system("clear")
         print(lxgo)
         print(f"{cyan}  [•] REDIRECTING...")
+        time.sleep(3)
         os.system("xdg-open https://www.facebook.com/goxdies")
     elif gxdsoption1 in ["2"]:
         print(gxdsprnt)
