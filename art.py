@@ -79,7 +79,6 @@ def main():
       time.sleep(0.4)
       sys.stdout.write("\r                     " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
       sys.stdout.flush()
-      time.sleep(4)
     print("  ")
     if gxdsoption1 in ["GXDS", "gxds"]:
       print(" ")
@@ -98,11 +97,13 @@ def main():
         print(gxdsprnt)
         sys.exit()
     else:
+        time.sleep(4)
         print(f"\n{lr}  [X] INVALID CODE!")
         time.sleep(2)
         main()
 
 def gxdsclone():
+    time.sleep(4)
     fl = input(
         f"{lg}  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n{lg}  [•] FILE PATH:{rc} "
     )
