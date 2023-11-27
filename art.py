@@ -65,7 +65,11 @@ def main():
 
 def file_iclone():
     print(gxdsprnt)
-    fl=input("  [✓]\033[38;5;46m File Path:")
+    fl = input(
+        "\033[1;97m  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n  \033[1;33m[•] FILE PATH: "
+    )
+    os.system("clear")
+    print(lxgo)
     print(gxdsprnt)
     try:
         fileeee=open(fl,"r").read().splitlines()
