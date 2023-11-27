@@ -83,6 +83,7 @@ def main():
     elif gxdsoption1 in ["2"]:
         print(gxdsprnt)
         print("  [•] K, BYE.")
+        time.sleep(3)
         os.system("xdg-open https://www.facebook.com/goxdies")
         print(gxdsprnt)
         sys.exit()
