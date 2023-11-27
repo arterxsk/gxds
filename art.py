@@ -93,7 +93,12 @@ def main():
         print(gxdsprnt)
         sys.exit()
     else:
-        print(gxdsprnt)
+        os.system('clear')
+        print(lxgo)
+        for gxdsloading in range(20):
+          time.sleep(0.2)
+          sys.stdout.write("\r           CHECKING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
+          sys.stdout.flush()
         print(f"{lr} [X] INVALID CODE!")
         time.sleep(3)
         print(f"{lgr} [!] GOING BACK TO MENU!")
