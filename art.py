@@ -59,8 +59,8 @@ lxgo = f"""{lg}
 
 os.system('clear')
 print(lxgo)
-for gxdsloading in range(20):
-    time.sleep(0.2)
+for gxdsloading in range(60):
+    time.sleep(0.1)
     sys.stdout.write("\r           LOADING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
     sys.stdout.flush()
     
