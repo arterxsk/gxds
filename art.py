@@ -79,6 +79,7 @@ def main():
       time.sleep(0.4)
       sys.stdout.write("\r                     " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
       sys.stdout.flush()
+      time.sleep(4)
     print("  ")
     if gxdsoption1 in ["GXDS", "gxds"]:
       print(" ")
