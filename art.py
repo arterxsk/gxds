@@ -110,8 +110,6 @@ def gxdsclone():
         main()
     gxdsfiles(gxdsfiles1)
 
-
-
 def gxdsfiles(gxdsfiles1):
     tl=str(len(gxdsfiles1))
     print(f"{lg}  ========================================")
