@@ -79,6 +79,7 @@ def main():
           sys.stdout.write("\r           CHECKING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
           sys.stdout.flush()
       os.system('clear')
+      print(lxgo)
       gxdsclone()
     elif gxdsoption1 in ["1"]:
         os.system("clear")
@@ -101,6 +102,7 @@ def main():
           sys.stdout.write("\r           CHECKING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
           sys.stdout.flush()
         os.system('clear')
+        print(lxgo)
         print(f"\n{lr} [X] INVALID CODE!")
         time.sleep(3)
         print(f"{lgr} [!] GOING BACK TO MENU!")
