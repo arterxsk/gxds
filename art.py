@@ -72,8 +72,8 @@ def main():
     gxdslogo()
     print(f"\n{lg}  [1] ASK FOR CODE\n  [2] EXIT TOOL")
     print(f"{dg}  ————————————————————————————————————————")
-    print(f"{lg}  [!] IF YOU ALREADY HAVE CODE ENTER IT.\n      IF YOU DON'T HAVE ONE,{white} PRESS 1.")
-    gxdsoption1 = input(f"{lg}  [•] ENTER YOUR CODE:{white} ")
+    print(f"{lg}  [!] IF YOU ALREADY HAVE CODE ENTER IT.\n      IF YOU DON'T HAVE ONE,{rg} PRESS 1.")
+    gxdsoption1 = input(f"{lg}  [•] ENTER YOUR CODE:{rc} ")
     print(f"{dg}")
     for gxdsloading in range(10):
       time.sleep(0.2)
@@ -101,13 +101,13 @@ def main():
         print(gxdsprnt)
         sys.exit()
     else:
-        print(f"\n{lg}  [X] INVALID CODE!")
+        print(f"\n{lr}  [X] INVALID CODE!")
         time.sleep(2)
         main()
 
 def gxdsclone():
     fl = input(
-        f"{lg}  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n{lg}  [•] FILE PATH:{dg} "
+        f"{lg}  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n{lg}  [•] FILE PATH:{rc} "
     )
     os.system("clear")
     print(lxgo)
@@ -115,7 +115,7 @@ def gxdsclone():
     try:
         gxdsfiles1=open(fl,"r").read().splitlines()
     except:
-        print(f"{lg}  [X] FILE NOT FOUND.")
+        print(f"{lr}  [X] FILE NOT FOUND.")
         print(gxdsprnt)
         time.sleep(3)
         gxdsclone()
@@ -125,12 +125,12 @@ def gxdsfiles(gxdsfiles1):
     tl=str(len(gxdsfiles1))
     print(f"{dg}  ————————————————————————————————————————")
     print(
-        f"{lg}  [-] PRESS {white}CTRL+Z{lg} TO STOP THE PROCESS."
+        f"{lg}  [-] PRESS {rc}CTRL+Z{lg} TO STOP THE PROCESS."
     )
     print(f"{dg}  ————————————————————————————————————————")
-    print(f"{white}  [•] TOTAL ID IN FILE:{lg} " + tl)
-    print(f"{white}  [•] PASSWORD LIST:{lg} AUTOMATIC ")
-    print(f"{white}  [•] FILE SAVE IN:{lg} /sdcard/gxds.txt")
+    print(f"{lg}  [•] TOTAL ID IN FILE:{rc} " + tl)
+    print(f"{lg}  [•] PASSWORD LIST:{rc} AUTOMATIC ")
+    print(f"{lg}  [•] FILE SAVE IN:{rc} /sdcard/gxds.txt")
     print(f"{dg}  ————————————————————————————————————————")
     print(gxdsprnt)
     with ThreadPool (max_workers=60) as feel:
