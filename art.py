@@ -39,6 +39,7 @@ gxdsanmtn3 = [
     "[■■■■■■■■■□]",
     "[■■■■■■■■■■]",
 ]
+gxdsanmtn1 = "|/-\\"
 
 lxgo = f"""{lg}
                               d8b             
@@ -84,8 +85,13 @@ def main():
     elif gxdsoption1 in ["1"]:
         os.system("clear")
         print(lxgo)
-        print(f"{cyan}  [•] REDIRECTING...")
-        time.sleep(3)
+        for gxdsloading in range(20):
+          time.sleep(0.2)
+          sys.stdout.write("\r         REDIRECTING: " + gxdsanmtn1[gxdsloading %
+          len(gxdsanmtn1)])
+          sys.stdout.flush()
+        os.system('clear')
+        print(lxgo)
         os.system("xdg-open https://www.facebook.com/goxdies")
     elif gxdsoption1 in ["2"]:
         print(gxdsprnt)
