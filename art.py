@@ -84,13 +84,9 @@ def main():
       print(" ")
       gxdsclone()
     elif gxdsoption1 in ["1"]:
-        os.system("clear")
-        print(lxgo)
-        for gxdsloading in range(20):
-          time.sleep(0.2)
-          sys.stdout.write("\r         REDIRECTING: " + gxdsanmtn1[gxdsloading %
-          len(gxdsanmtn1)])
-          sys.stdout.flush()
+        print(" ")
+        print(f"{lg} Redirecting...")
+        time.sleep(3)
         os.system("xdg-open https://www.facebook.com/goxdies")
         main()
     elif gxdsoption1 in ["2"]:
