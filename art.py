@@ -74,7 +74,7 @@ def main():
     gxdsoption1 = input(f"{lg}  [•] ENTER YOUR CODE:{dg} ")
     for gxdsloading in range(20):
       time.sleep(0.2)
-      sys.stdout.write("\r           CHECKING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
+      sys.stdout.write("\n\r           CHECKING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
       sys.stdout.flush()
 
     if gxdsoption1 in ["GXDS", "gxds"]:
