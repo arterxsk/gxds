@@ -111,6 +111,7 @@ def gxdsclone():
     try:
         gxdsfiles1=open(fl,"r").read().splitlines()
     except:
+        time.sleep(3)
         print(f"\n{lr}  [X] FILE NOT FOUND.")
         print(gxdsprnt)
         time.sleep(3)
