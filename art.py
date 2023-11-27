@@ -53,14 +53,16 @@ lxgo = f"""{lg}
 {lp}           ,88P                               
        `?8888P                  {white}              \n"""
 
-def gxdslogo():
-    os.system('clear')
-    print(lxgo)
-    
+os.system('clear')
+print(lxgo)
 for gxdsloading in range(20):
     time.sleep(0.3)
     sys.stdout.write("\r   LOADING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
     sys.stdout.flush()
+    
+def gxdslogo():
+    os.system('clear')
+    print(lxgo)
     
 def main():
     gxdslogo()
