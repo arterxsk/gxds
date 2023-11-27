@@ -72,6 +72,7 @@ def main():
     print(f"{dg}  ————————————————————————————————————————")
     print(f"{lg}  [!] IF YOU ALREADY HAVE CODE ENTER IT.\n      IF YOU DON'T HAVE ONE,{dg} PRESS 1.")
     gxdsoption1 = input(f"{lg}  [•] ENTER YOUR CODE:{dg} ")
+    print(" ")
     for gxdsloading in range(20):
       time.sleep(0.2)
       sys.stdout.write("\r           CHECKING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
