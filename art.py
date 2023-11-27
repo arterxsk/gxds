@@ -12,7 +12,7 @@ li = "\033[38;5;46m"
 blue = "\033[94m"
 white = "\033[1;97m"
 cyan = "\033[1;36m"
-yellow = "\033[1;33m"
+yellow = "\033[0;33m"
 black = "\033[0;30m"
 lr = "\033[1;31m"
 lg = "\033[0;37m"
@@ -85,7 +85,7 @@ def main():
       gxdsclone()
     elif gxdsoption1 in ["1"]:
         print(" ")
-        print(f"{lg} Redirecting...")
+        print(f"{lg}   Redirecting...")
         time.sleep(3)
         os.system("xdg-open https://www.facebook.com/goxdies")
         main()
