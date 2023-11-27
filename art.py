@@ -122,7 +122,7 @@ def gxdsclone():
     try:
         gxdsfiles1=open(fl,"r").read().splitlines()
     except:
-        print("\033[1;91m  [X] FILE NOT FOUND.")
+        print(f"{lg}  [X] FILE NOT FOUND.")
         print(gxdsprnt)
         time.sleep(3)
         gxdsclone()
@@ -132,7 +132,7 @@ def gxdsfiles(gxdsfiles1):
     tl=str(len(gxdsfiles1))
     print(f"{dg}  ————————————————————————————————————————")
     print(
-        f"{rg}  [-] PRESS CTRL+Z TO STOP THE PROCESS."
+        f"{lg}  [-] PRESS {white}CTRL+Z{lg} TO STOP THE PROCESS."
     )
     print(f"{dg}  ————————————————————————————————————————")
     print(f"{white}  [•] TOTAL ID IN FILE:{lg} " + tl)
