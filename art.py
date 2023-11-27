@@ -67,7 +67,7 @@ def gxdslogo():
     
 def main():
     gxdslogo()
-    print(f"\n{white}  [1] ASK FOR CODE\n  [2] EXIT TOOL")
+    print(f"\n{rc}  [1] ASK FOR CODE\n  [2] EXIT TOOL")
     print(f"{dg}  ————————————————————————————————————————")
     print(f"{rg}  [!] IF YOU ALREADY HAVE CODE ENTER IT.\n      IF YOU DON'T HAVE ONE, PRESS 1.")
     gxdsoption1 = input("\033[1;36m  [•] ENTER YOUR CODE: ")
