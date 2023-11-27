@@ -70,7 +70,7 @@ def gxdslogo():
     
 def main():
     gxdslogo()
-    print(f"\n{rp}  [=] FILE CLONING\n  [=] VERSION 0.1")
+    print(f"\n{yellow}  [=] FILE CLONING\n  [=] VERSION 0.1\n")
     print(f"{dg}  ————————————————————————————————————————")
     print(f"{lg}  [!] IF YOU ALREADY HAVE CODE ENTER IT.\n      IF YOU DON'T HAVE ONE,{rg} PRESS 1.")
     gxdsoption1 = input(f"{lg}  [•] ENTER YOUR CODE:{rc} ")
