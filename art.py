@@ -70,7 +70,7 @@ def main():
     print(f"\n{lg}  [1] ASK FOR CODE\n  [2] EXIT TOOL")
     print(f"{dg}  ————————————————————————————————————————")
     print(f"{lg}  [!] IF YOU ALREADY HAVE CODE ENTER IT.\n      IF YOU DON'T HAVE ONE,{dg} PRESS 1.")
-    gxdsoption1 = input(f"  [•] ENTER YOUR CODE:{dg} ")
+    gxdsoption1 = input(f"{lg}  [•] ENTER YOUR CODE:{dg} ")
     os.system("clear")
     print(lxgo)
     if gxdsoption1 in ["GXDS", "gxds"]:
