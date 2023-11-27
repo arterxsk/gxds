@@ -27,7 +27,7 @@ rc=(f"\033[{mxclrs};122m")
 rg= (f"\033[{mxclrs};112m")
 rp=(f"\033[{mxclrs};147m")
 gxdsprnt=str(f"{li}"*37)
-logo=f"""
+lxgo=f"""
 
                               d8b             
                               88P             
@@ -42,7 +42,7 @@ logo=f"""
 
 def logox():
     os.system('clear')
-    print(logo)
+    print(lxgo)
 
 def main():
     logox()
