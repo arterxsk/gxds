@@ -146,6 +146,7 @@ def auto_pass(fileeee):
                 if len(sur_name) <3:
                     pass
                 else:
+                    pwx.append(nam1+" "+nam2+" "+nam3)
                     pwx.append(sur_name+'123')
                     pwx.append(sur_name+'1234')
                     pwx.append(sur_name+'12345')
