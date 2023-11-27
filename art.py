@@ -154,6 +154,7 @@ def gxdsfiles(gxdsfiles1):
                     pass
                 else:
                     pwx.append(nam1+'123')
+                    pwx.append(name1+'143')
                     pwx.append(name1+'12')
                     pwx.append(name1+'123')
                     pwx.append(name1+' 123')
