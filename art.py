@@ -114,18 +114,18 @@ def gxdsclone():
 
 def gxdsfiles(gxdsfiles1):
     tl=str(len(gxdsfiles1))
-    print("  \033[38;5;46m========================================")
+    print(f"{lg}  ========================================")
     print(
         "\033[1;31m  [-] TIP: ON/OFF THE DATA EVERY 5 MINUTES\n           TO SPEED UP THE PROCESS. \n"
     )
     print(
         "\033[1;31m  [-] PRESS CTRL+Z TO STOP THE PROCESS. \n"
     )
-    print("  \033[38;5;46m========================================")
+    print(f"{lg}  ========================================")
     print(f"{white}  [•] TOTAL ID IN FILE:\033[1;33m " + tl)
     print(f"{white}  [•] PASSWORD LIST:\033[1;33m AUTOMATIC ")
     print(f"{white}  [•] FILE SAVE IN:\033[1;33m /sdcard/gxds.txt\n")
-    print("  \033[38;5;46m========================================")
+    print(f"{lg}  ========================================")
     print(gxdsprnt)
     with ThreadPool (max_workers=120) as feel:
         for data in gxdsfiles1:
