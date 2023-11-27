@@ -42,6 +42,8 @@ gxdsanmtn3 = [
     "[■■■■■■■■■■]",
 ]
 gxdsanmtn1 = "|/-\\"
+gxdsanmtn2 = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%",
+"100%"]
 
 lxgo = f"""{lg}
                               d8b             
@@ -73,9 +75,9 @@ def main():
     print(f"{lg}  [!] IF YOU ALREADY HAVE CODE ENTER IT.\n      IF YOU DON'T HAVE ONE,{dg} PRESS 1.")
     gxdsoption1 = input(f"{lg}  [•] ENTER YOUR CODE:{dg} ")
     print(" ")
-    for gxdsloading in range(20):
+    for gxdsloading in range(10):
       time.sleep(0.2)
-      sys.stdout.write("\r           CHECKING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
+      sys.stdout.write("\r           CHECKING: " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
       sys.stdout.flush()
 
     if gxdsoption1 in ["GXDS", "gxds"]:
