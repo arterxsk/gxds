@@ -27,6 +27,20 @@ rc=(f"\033[{mxclrs};122m")
 rg= (f"\033[{mxclrs};112m")
 rp=(f"\033[{mxclrs};147m")
 gxdsprnt=str(f"{li}"*37)
+
+gxdsanmtn3 = [
+    "[■□□□□□□□□□]",
+    "[■■□□□□□□□□]",
+    "[■■■□□□□□□□]",
+    "[■■■■□□□□□□]",
+    "[■■■■■□□□□□]",
+    "[■■■■■■□□□□]",
+    "[■■■■■■■□□□]",
+    "[■■■■■■■■□□]",
+    "[■■■■■■■■■□]",
+    "[■■■■■■■■■■]",
+]
+
 lxgo = f"""{lg}
                               d8b             
                               88P             
@@ -42,7 +56,12 @@ lxgo = f"""{lg}
 def gxdslogo():
     os.system('clear')
     print(lxgo)
-
+    
+for gxdsloading in range(20):
+    time.sleep(0.3)
+    sys.stdout.write("\r   LOADING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
+    sys.stdout.flush()
+    
 def main():
     gxdslogo()
     print(f"{white}  [1] ASK FOR CODE\n  [2] EXIT TOOL\n")
