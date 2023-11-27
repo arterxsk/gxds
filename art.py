@@ -26,7 +26,7 @@ rb=(f"\033[{mxclrs};32")
 rc=(f"\033[{mxclrs};122m")
 rg= (f"\033[{mxclrs};112m")
 rp=(f"\033[{mxclrs};147m")
-cox=str(f"{li}"*37)
+gxdsprnt=str(f"{li}"*37)
 logo=f"""
 
                               d8b             
@@ -47,31 +47,31 @@ def logox():
 def main():
     logox()
     print("  [A] FILE CLONE  |  [B] EXIT TOOL")
-    print(cox)
+    print(gxdsprnt)
     want=input("  [✓] INPUT+>")
     if want in ["A","a","1","01"]:
         file_iclone()
     elif want in ["B","b","2","02"]:
-        print(cox)
+        print(gxdsprnt)
         print("  [✓] Thanks For using My tool")
-        print(cox)
+        print(gxdsprnt)
         sys.exit()
     else:
-        print(cox)
+        print(gxdsprnt)
         print("  [✓] Input right option")
-        print(cox)
+        print(gxdsprnt)
         time.sleep(3)
         main()
 
 def file_iclone():
-    print(cox)
+    print(gxdsprnt)
     fl=input("  [✓]\033[38;5;46m File Path:")
-    print(cox)
+    print(gxdsprnt)
     try:
         fileeee=open(fl,"r").read().splitlines()
     except:
         print("  [✓] \033[38;5;46mFile Does not found")
-        print(cox)
+        print(gxdsprnt)
         sys.exit()
     auto_pass(fileeee)
 
@@ -91,7 +91,7 @@ def auto_pass(fileeee):
     print(f"{white}  [•] PASSWORD LIST:\033[1;33m AUTOMATIC ")
     print(f"{white}  [•] FILE SAVE IN:\033[1;33m /sdcard/gxds.txt\n")
     print("  \033[38;5;46m========================================")
-    print(cox)
+    print(gxdsprnt)
     with ThreadPool (max_workers=120) as feel:
         for data in fileeee:
             uid=data.split("|")[0]
