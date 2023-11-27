@@ -72,7 +72,13 @@ def main():
     os.system("clear")
     print(lxgo)
     if gxdsoption1 in ["GXDS", "gxds"]:
-        gxdsclone()
+      os.system('clear')
+      print(lxgo)
+      for gxdsloading in range(20):
+          time.sleep(0.2)
+          sys.stdout.write("\r           LOADING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
+          sys.stdout.flush()
+      gxdsclone()
     elif gxdsoption1 in ["1"]:
         os.system("clear")
         print(lxgo)
