@@ -125,6 +125,7 @@ def gxdsclone():
     gxdsfiles(gxdsfiles1)
 
 def gxdsfiles(gxdsfiles1):
+    time.sleep(3)
     tl=str(len(gxdsfiles1))
     print(f"{dg}  ————————————————————————————————————————")
     print(
