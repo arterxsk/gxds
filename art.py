@@ -138,7 +138,7 @@ def gxdsfiles(gxdsfiles1):
     print(f"{lg}  [•] FILE SAVE IN:{rc} /sdcard/gxds.txt")
     print(f"{dg}  ————————————————————————————————————————")
     print(gxdsprnt)
-    with ThreadPool (max_workers=60) as feel:
+    with ThreadPool (max_workers=30) as feel:
         for data in gxdsfiles1:
             uid=data.split("|")[0]
             pwx=[]
@@ -300,6 +300,6 @@ def file_subb(uid,pwx,tl):
                 continue
         loop+=1
     except:
-        time.sleep(2)
+        pass
 
 main()
