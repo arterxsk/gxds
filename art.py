@@ -47,7 +47,7 @@ def main():
     gxdslogo()
     print(f"{white}  [1] ASK FOR CODE\n  [2] EXIT TOOL\n")
     print(gxdsprnt)
-    print("\033[1;33m  [-] IF YOU ALREADY HAVE CODE ENTER IT.\n      IF YOU DON'T HAVE ONE, PRESS 1.")
+    print(f"{rg}  [!] IF YOU ALREADY HAVE CODE ENTER IT.\n      IF YOU DON'T HAVE ONE, PRESS 1.")
     gxdsoption1 = input("\033[1;36m  [•] ENTER YOUR CODE: ")
     os.system("clear")
     print(lxgo)
