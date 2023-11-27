@@ -41,7 +41,7 @@ gxdsanmtn3 = [
 ]
 gxdsanmtn1 = "|/-\\"
 
-lxgo = f"""{lg}
+lxgo = f"""{dg}
                               d8b             
                               88P             
                              d88              
