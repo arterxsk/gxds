@@ -1,6 +1,4 @@
-#---EHC CYBER 99 (EMRAN)
-#Open-source-01 (Gift)
-#-----------------------------------
+
 import os, random, sys, json, uuid, time
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
 
@@ -50,7 +48,7 @@ lxgo = f"""{lg}
      d8P' ?88   `?8bd8P'd8P' ?88   ?8b,       
      88b  ,88b  d8P?{lp}8b, 88b  ,88b    `?8b     
     `?88P'`88b d8P' `?8b`?88P'`88b`?888P'     
-           )88      {rp}FB CLONING V1
+           )88      {rp}FB ID CLONING
 {lp}           ,88P                               
        `?8888P                  {white}              \n"""
 
