@@ -77,6 +77,8 @@ def main():
           time.sleep(0.2)
           sys.stdout.write("\r           CHECKING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
           sys.stdout.flush()
+      os.system('clear')
+      print(lxgo)
       gxdsclone()
     elif gxdsoption1 in ["1"]:
         os.system("clear")
