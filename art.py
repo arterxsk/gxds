@@ -94,8 +94,10 @@ def menu():
         print(" ")
         print(f"{lgr}   GETTING CODE...")
         time.sleep(3)
-        print(f"{grn}   CODE:" +gxdsid)
-        time.sleep(6)
+        print(f"{grn}  "+gxdsid)
+        time.sleep(3)
+        print(f"{lg}   COPY YOUR CODE AND SEND THIS TO ME. YOU WILL BE REDIRECTED TO MY PROFILE IN A FEW SECONDS.")
+        time.sleep(20)
         menu()
     elif gxdsoption1 in ["2"]:
         print(gxdsprnt)
