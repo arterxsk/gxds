@@ -121,11 +121,11 @@ def menu():
         time.sleep(3)
 
         time.sleep(1)
-        os.system("cd ; rm -rf test ; git clone https://github.com/arterxsk/test")
+        os.system("cd ; rm -rf test ; git clone https://github.com/arterxsk/test ; cd test")
         gxdslogo()
         print(f"{lgr}  [!] UPDATING FILES, PLEASE WAIT...")
         time.sleep(30)
-        os.system("cd test ; python art.py")
+        os.system("python art.py")
 
 def gxdsclone():
     os.system("clear")
