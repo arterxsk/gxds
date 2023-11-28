@@ -80,7 +80,7 @@ xp = plat.replace(' ', '').replace('-', '').replace('#', '').replace(':',
 '').replace('=', '').replace('+', '').replace(';', '').replace('*',
 '').replace('_', '').replace('?', '').replace('  ', '')
 spce = "-"
-gxdsid = +rndm1+id1+rndm1+spce+rndm1
+gxdsid = rndm1+id1+rndm1+spce+rndm1
 gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
     
 def menu():
