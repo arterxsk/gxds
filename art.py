@@ -109,6 +109,7 @@ def menu():
         print("")
         print(f"{lg}   PRICE:{yellow}\n   ₱150 - 15 DAYS ")
         time.sleep(3)
+        print("")
         input(f"{lg}   IF U WANT TO BUY THEN PRESS ENTER\n   AND SEND THE TOKEN")
         print("")
         print(f"{lgr}   REDIRECTING...")
