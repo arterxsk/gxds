@@ -89,35 +89,22 @@ def menu():
     print(f"{dg}  ————————————————————————————————————————")
     print(f"\n{yellow}  [-] FILE CLONING VERSION 0.1\n")
     print(f"{dg}  ————————————————————————————————————————")
-    print(f"{lg}  [!] IF YOU ALREADY HAVE CODE ENTER IT.\n      IF YOU DON'T HAVE ONE,{rg} PRESS 1.")
-    gxdsoption1 = input(f"{lg}  [•] ENTER YOUR CODE:{rc} ")
     print(f"{dg}")
     for gxdsloading in range(10):
       time.sleep(0.2)
       sys.stdout.write("\r                     " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
       sys.stdout.flush()
     print("  ")
-    if gxdsoption1 in gxdsAccess:
+    if gxdsid in gxdsAccess:
       print(" ")
       gxdsclone()
-    elif gxdsoption1 in ["1"]:
+    else:
+        time.sleep(2)
         print(" ")
         print(f"{lgr}   GETTING CODE...")
         time.sleep(3)
         print(f"{grn}   "+gxdsid)
         time.sleep(3)
-        
-        menu()
-    elif gxdsoption1 in ["2"]:
-        print(gxdsprnt)
-        print(f"{lg}  [•] K, BYE.")
-        time.sleep(3)
-        os.system("xdg-open https://www.facebook.com/goxdies")
-        print(gxdsprnt)
-        sys.exit()
-    else:
-        time.sleep(2)
-        print(f"\n{lr}  [X] INVALID CODE!")
         time.sleep(3)
         menu()
 
