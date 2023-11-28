@@ -107,6 +107,7 @@ def menu():
         time.sleep(3)
         print(f"{grn}   TOKEN:{rc} "+gxdsid)
         print("")
+        time.sleep(3)
         input(f"{lg}   IF U WANT TO BUY THEN PRESS ENTER\n   AND SEND THE TOKEN")
         print("")
         print(f"{lgr}   REDIRECTING...")
