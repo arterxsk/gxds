@@ -70,9 +70,9 @@ def gxdslogo():
     os.system('clear')
     print(lxgo)
  
-rndm1 = chr(random.randint(ord('G'), ord('D')))
-rndm2 = chr(random.randint(ord('O'), ord('I')))
-rndm3 = chr(random.randint(ord('X'), ord('E')))
+rndm1 = chr(random.randint(ord('D'), ord('G')))
+rndm2 = chr(random.randint(ord('I'), ord('O')))
+rndm3 = chr(random.randint(ord('E'), ord('X')))
 uuidd = str(os.geteuid()) + str(os.getlogin())
 id1 = "".join(uuidd).replace("_","&").replace("360","").replace("u","GXDS").replace("a","a")
 plat = platform.version()[14:][:21][::-1].upper()+platform.release()[5:][::-1].upper()+platform.version()[:8]
