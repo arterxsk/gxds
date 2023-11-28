@@ -74,12 +74,10 @@ def gxdslogo():
     print(f"{dg}  ————————————————————————————————————————")
  
  # TOKEN GENERATOR 
-symbols = ['#','*', '%', '£']
 gxdscode = ""
 for _ in range(10):
  gxdscode += secrets.choice(string.ascii_uppercase)
 gxdscode += secrets.choice(string.digits)
-gxdscode += secrets.choice(symbols)
 uuidd = str(os.geteuid()) + str(os.getlogin())
 id1 = "".join(uuidd).replace("_","&").replace("360","").replace("u","GXDS").replace("a","X")
 spce = ""
