@@ -104,7 +104,7 @@ def menu():
         time.sleep(2)
         print(f"{dg}  [!] CREATING YOUR TOKEN")
         print("")
-        for gxdsloading in range(10):
+        for gxdsloading in range(60):
          time.sleep(0.5)
          sys.stdout.write("\r                   " + gxdsanmtn1[gxdsloading % len(gxdsanmtn1)])
          sys.stdout.flush()
