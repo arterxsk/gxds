@@ -74,8 +74,9 @@ rndm1 = chr(random.randint(ord('D'), ord('G')))
 rndm2 = chr(random.randint(ord('I'), ord('O')))
 rndm3 = chr(random.randint(ord('E'), ord('X')))
 uuidd = str(os.geteuid()) + str(os.getlogin())
-id1 = "".join(uuidd).replace("_","&").replace("360","").replace("u","GXDS").replace("a","a")
-plat = platform.version()[14:][:21][::-1].upper()+platform.release()[5:][::-1].upper()+platform.version()[:8]
+id1 = "".join(uuidd).replace("_","&").replace("360","").replace("u","GXDS").replace("a","X")
+plat =
+platform.version()[14:][:21][::-1].upper()+platform.release()[5:][::-1].upper()+platform.version()[:8]
 xp = plat.replace(' ', '').replace('-', '').replace('#', '').replace(':',
 '').replace('.', '').replace(')', '').replace('(', '').replace('?',
 '').replace('=', '').replace('+', '').replace(';', '').replace('*',
