@@ -96,7 +96,7 @@ def menu():
       gxdsclone()
     else:
         time.sleep(2)
-        print(f"{lg}  [!] INVALID TOKEN")
+        print(f"{lg}  [!] INVALID DEVICE TOKEN")
         time.sleep(3)
         print(f"{lg}  [-] GETTING YOUR TOKEN...")
         time.sleep(3)
