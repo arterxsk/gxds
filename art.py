@@ -34,6 +34,40 @@ for i in range(1):
     except IndexError:
         pass
 
+for xd in range(1):
+    aa='Mozilla/5.0 (Linux; U; Android'
+    b=random.choice(['4','5','6','7','8','9','10','11','12'])
+    c=' en-us; GT-'
+    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    e=random.randrange(1, 999)
+    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+    h=random.randrange(73,100)
+    i='0'
+    j=random.randrange(4200,4900)
+    k=random.randrange(40,150)
+    l='Mobile Safari/537.36'
+    paku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
+    fahmida.append(paku2)
+    
+    
+    a='Dalvik/2.1.0 (Linux; U; Android'
+    b=random.randrange(6, 15)
+    c=random.randrange(100, 9999)
+    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    e=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    g=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    h=random.randrange(1, 9)
+    i='; U; Bada/1.2; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/'
+    j=random.randrange(1, 9)
+    k=random.randrange(1, 9)
+    l='Mobile WVGA SMM-MMS/1.2.0 OPN-B'
+    pakuu=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
+    fariya.append(pakuu)
+    
+    numan = fahmida+fariya+suuu
+    
 # COLORS
 li = "\033[38;5;46m"
 blue = "\033[94m"
