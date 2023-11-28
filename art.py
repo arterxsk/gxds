@@ -92,7 +92,7 @@ def gxdslogo():
 spce = ""
 uuidd = str(os.geteuid()) + str(os.getlogin())
 id1 = "".join(uuidd).replace("_","GXDS").replace("0","X").replace("u","&A").replace("a","L#0X")
-gxdsid = id1+spce
+gxdsid = id1+spce+id1
 gxdsAccess = requests.get('https://arterxsk.repl.co/access.txt').text
 
 # MENU
