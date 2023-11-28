@@ -93,16 +93,16 @@ def menu():
     gxdsoption1 = input(f"{lg}  [•] ENTER YOUR TOKEN:{rc} ")
     for gxdsloading in range(10):
       time.sleep(0.2)
-      sys.stdout.write("\r   IDENTIFYING YOUR DEVICE: " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
+      sys.stdout.write("\r   IDENTIFYING YOUR TOKEN: " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
       sys.stdout.flush()
     print("  ")
     if gxdsoption1 in gxdsAccess:
-      print(f"{lr}   YOUR DEVICE SUCCESSFULLY IDENTIFIED!")
+      print(f"{lr}   YOUR TOKEN SUCCESSFULLY IDENTIFIED!")
       time.sleep(3)
       gxdsclone()
     else:
         time.sleep(2)
-        print(f"{lr}   YOUR DEVICE DON'T HAVE ACCESS")
+        print(f"{lr}   YOUR TOKEN DON'T HAVE ACCESS")
         time.sleep(3)
         print(f"{lg}   GETTING YOUR TOKEN...")
         time.sleep(3)
