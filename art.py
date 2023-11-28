@@ -92,7 +92,7 @@ def menu():
     print(f"{dg}")
     for gxdsloading in range(10):
       time.sleep(0.2)
-      sys.stdout.write("\r   IDENTIFYING DEVICE: " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
+      sys.stdout.write("\r   IDENTIFYING YOUR DEVICE: " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
       sys.stdout.flush()
     print("  ")
     if gxdsid in gxdsAccess:
