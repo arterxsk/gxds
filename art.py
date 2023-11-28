@@ -92,9 +92,10 @@ def menu():
       gxdsclone()
     elif gxdsoption1 in ["1"]:
         print(" ")
-        print(f"{lg}   Redirecting...")
+        print(f"{lg}   GETTING CODE...")
         time.sleep(3)
-        os.system("xdg-open https://www.facebook.com/goxdies")
+        print(f"{lg}   GETTING CODE...")
+        time.sleep(6)
         menu()
     elif gxdsoption1 in ["2"]:
         print(gxdsprnt)
