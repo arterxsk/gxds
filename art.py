@@ -92,7 +92,7 @@ def menu():
       gxdsclone()
     elif gxdsoption1 in ["1"]:
         print(" ")
-        print(f"{lg}   GETTING CODE...")
+        print(f"{lgr}   GETTING CODE...")
         time.sleep(3)
         print(f"{grn}   CODE:" +gxdsid)
         time.sleep(6)
