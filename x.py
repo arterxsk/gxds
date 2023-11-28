@@ -831,12 +831,11 @@ def gxdsfiles(gxdsfiles1):
                     pass
                 else:
                     pwx.append(nam1)
-                    pwx.append(fxrst + "143")
-                    pwx.append(fxrst + "12")
                     pwx.append(fxrst + "pogi")
                     pwx.append(fxrst + "ganda")
+                    pwx.append(fxrst + "12")
                     pwx.append(fxrst + "123")
-                    pwx.append(fxrst + " 123")
+                    pwx.append(fxrst + "143")
                     pwx.append(fxrst + "1234")
                     pwx.append(fxrst + "12345")
             except:
