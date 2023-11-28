@@ -818,11 +818,11 @@ def gxdsfiles(gxdsfiles1):
         for data in gxdsfiles1:
             uid = data.split("|")[0]
             pxss = []
-            nam = data.split("|")[1]
-            name = nam.lower()
+            nxme = data.split("|")[1]
+            name = nxme.lower()
             try:
                 fxrst = name.split(" ")[0]
-                nxme1 = nam.split(" ")[0]
+                nxme1 = nxme.split(" ")[0]
                 if len(fxrst) < 3:
                     pass
                 else:
@@ -837,7 +837,7 @@ def gxdsfiles(gxdsfiles1):
                 pass
             try:
                 lxst = name.split(" ")[2]
-                nxme2 = nam.split(" ")[2]
+                nxme2 = nxme.split(" ")[2]
                 if len(lxst) < 3:
                     pass
                 else:
