@@ -339,7 +339,7 @@ def gxds_files(uid,pwx):
     session=requests.Session()
     try:
         for ps in pwx:
-            user_agent="Dalvik/2.1.0 (Linux; U; Android 9; moto e6 Build/PCB29.73-65-3) [FBAN/Orca-Android;FBAV/235.1.0.9.122;FBPN/com.facebook.orca;FBLC/en_US;FBBV/175782189;FBCR/Metro by T-Mobile;FBMF/motorola;FBBD/motorola;FBDV/moto e6;FBSV/9;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=720,height=1344};FB_FW/1;]"
+            user_agent=gxdsUArndm
             data={'adid': str(uuid.uuid4()),
                     'format': 'json',
                     'device_id': str(uuid.uuid4()),
