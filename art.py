@@ -46,8 +46,8 @@ for xd in range(1):
     i='0'
     j=random.randrange(4200,4900)
     k=random.randrange(40,150)
-    l='Mobile Safari/537.36'
-    paku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
+    xx='Mobile Safari/537.36'
+    paku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {xx}'
     fahmida.append(paku2)
     
     
