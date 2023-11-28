@@ -84,13 +84,12 @@ gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/
 def menu():
     gxdslogo()
     print(f"{dg}")
-    gxdsoption1 = input(f"{lg}  [•] ENTER YOUR TOKEN:{rc} ")
     for gxdsloading in range(10):
       time.sleep(0.2)
       sys.stdout.write(f"\r{dg}  [?] IDENTIFYING YOUR TOKEN: " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
       sys.stdout.flush()
 
-    if gxdsoption1 in gxdsAccess:
+    if gxdsid in gxdsAccess:
       time.sleep(3)
       print(f"{lgr}  [✓] YOUR TOKEN SUCCESSFULLY IDENTIFIED!")
       time.sleep(3)
