@@ -94,7 +94,7 @@ def menu():
         print(" ")
         print(f"{lg}   GETTING CODE...")
         time.sleep(3)
-        print(f"{lg}   CODE:" +gxdsid)
+        print(f"{grn}   CODE:" +gxdsid)
         time.sleep(6)
         menu()
     elif gxdsoption1 in ["2"]:
