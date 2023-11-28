@@ -258,7 +258,7 @@ loop=0
 oks=[]
 cps=[]
 
-# FILE PROCESS
+# API
 def gxds_files(uid,pwx):
     global oks,loop,cps
     sys.stdout.write(f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))} | [CHECKPOINT] {str(len(cps))} ");sys.stdout.flush()
