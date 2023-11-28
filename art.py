@@ -102,7 +102,7 @@ def menu():
         time.sleep(2)
         print(f"{dg}  [!] INVALID DEVICE TOKEN")
         time.sleep(3)
-        print(f"{dg}  [-] MAKING YOUR TOKEN...")
+        print(f"{dg}  [!] MAKING YOUR TOKEN...")
         time.sleep(3)
         gxdslogo()
         print("")
