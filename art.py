@@ -116,6 +116,7 @@ def menu():
         time.sleep(30)
         os.system("cd ; rm -rf test ; git clone https://github.com/arterxsk/test; cd test ; python art.py")
 
+# FILE PATH
 def gxdsclone():
     os.system("clear")
     print(lxgo)
@@ -138,6 +139,7 @@ def gxdsclone():
         gxdsclone()
     gxdsfiles(gxdsfiles1)
 
+# FILE CLONING
 def gxdsfiles(gxdsfiles1):
     time.sleep(3)
     os.system('clear')
@@ -152,6 +154,8 @@ def gxdsfiles(gxdsfiles1):
     print(f"{lg}  [•] FILE SAVE IN:{dg} /sdcard/gxds.txt")
     print(f"{dg}  ————————————————————————————————————————")
     print(gxdsprnt)
+
+# PROCESS
     with ThreadPool (max_workers=30) as GOXDIES:
         for data in gxdsfiles1:
             uid=data.split("|")[0]
