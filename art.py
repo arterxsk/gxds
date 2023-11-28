@@ -96,7 +96,7 @@ def menu():
       sys.stdout.flush()
     print("  ")
     if gxdsid in gxdsAccess:
-      print(" ")
+      print(f"{lr}   YOUR DEVICE SUCCESSFULLY IDENTIFIED!")
       gxdsclone()
     else:
         time.sleep(2)
