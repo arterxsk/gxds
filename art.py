@@ -105,7 +105,7 @@ def menu():
         print(f"{dg}  [-] MAKING YOUR TOKEN...")
         time.sleep(3)
         gxdslogo()
-        print("")
+        print(f"{dg}  ————————————————————————————————————————")
         print(f"{lg}  [-] TOKEN:{dg} "+gxdsid)
         print(f"{lg}  [-] PRICE:{dg} ₱150 - 15 DAYS ")
         print("")
