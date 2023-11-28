@@ -65,11 +65,7 @@ for gxdsloading in range(60):
     time.sleep(0.1)
     sys.stdout.write("\r           LOADING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
     sys.stdout.flush()
-
-def gxdslogo():
-    os.system('clear')
-    print(lxgo)
-
+    
 def main():
   os.system('clear')
   print(lxgo)
@@ -100,7 +96,7 @@ def main():
     sys.exit()
     
 def menu():
-    gxdslogo()
+    
     print(f"{dg}  ————————————————————————————————————————")
     print(f"\n{yellow}  [-] FILE CLONING VERSION 0.1\n")
     print(f"{dg}  ————————————————————————————————————————")
