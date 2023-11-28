@@ -57,7 +57,7 @@ def main():
     print(' [2] Base64  ')
     print(' [3] Zlib    ')
     print(' [4] Cython  ')
-    print(' [4] Cython1  ')
+    print(' [5] Cython1  ')
     print(' [0] Exit ')
     line()
     option=input('\033[1;93m [?] CHOICE MENU : ')
