@@ -1,5 +1,5 @@
 
-import os, string, sys, json, uuid, time, random
+import os, platform, string, sys, json, uuid, time, random
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
 
 try:
