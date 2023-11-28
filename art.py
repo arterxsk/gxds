@@ -101,7 +101,6 @@ def menu():
         print("")
         time.sleep(2)
         print(f"{dg}  [!] INVALID DEVICE TOKEN")
-        time.sleep(3)
         for gxdsloading in range(30):
          time.sleep(0.2)
         sys.stdout.write(f"\r{dg}  [!] MAKING YOUR TOKEN: " + gxdsanmtn1[gxdsloading % len(gxdsanmtn1)])
