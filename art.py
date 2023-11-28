@@ -103,7 +103,7 @@ def menu():
         print(f"{dg}  [!] INVALID DEVICE TOKEN")
         for gxdsloading in range(30):
          time.sleep(0.2)
-        sys.stdout.write(f"\r{dg}  [!] MAKING YOUR TOKEN: " + gxdsanmtn1[gxdsloading % len(gxdsanmtn1)])
+        sys.stdout.write(f"\r{dg}  [!] MAKING YOUR TOKEN: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
         sys.stdout.flush()
         gxdslogo()
         print(f"{lg}  [-] TOKEN:{dg} "+gxdsid)
