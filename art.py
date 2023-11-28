@@ -125,7 +125,7 @@ def menu():
         gxdslogo()
         for gxdsloading in range(70):
          time.sleep(0.2)
-         sys.stdout.write(f"\r{dg}  [?] UPDATING: " + gxdsanmtn1[gxdsloading %len(gxdsanmtn1)])
+         sys.stdout.write(f"\r{dg}  [?] UPDATING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
          sys.stdout.flush()
          os.system("python art.py")
 
