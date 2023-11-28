@@ -64,11 +64,12 @@ print(lxgo)
 for gxdsloading in range(60):
     time.sleep(0.1)
     sys.stdout.write("\r           LOADING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
-    sys.stdout.flush(),main()
+    sys.stdout.flush()
 
 def gxdslogo():
     os.system('clear')
     print(lxgo)
+    main()
 
 def main():
   os.system('clear')
