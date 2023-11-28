@@ -74,18 +74,10 @@ def gxdslogo():
     print(f"{dg}  ————————————————————————————————————————")
  
  # TOKEN GENERATOR
-gxdsToken = ""
 spce = ""
-gxdsymbol = ["%","∆","#","@","₱","&"]
 uuidd = str(os.geteuid()) + str(os.getlogin())
 id1 = "".join(uuidd).replace("_","GXDS").replace("360","").replace("u","&").replace("a","X")
-for _ in range(3):
- gxdsToken += secrets.choice(string.ascii_uppercase)
-for _ in range(2):
- gxdsToken += secrets.choice(gxdsymbol)
-for _ in range(3):
- gxdsToken += secrets.choice(string.digits)
-gxdsid = id1+spce+gxdsToken
+gxdsid = id1+spce
 gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
 
 # MENU
