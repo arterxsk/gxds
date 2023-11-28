@@ -116,7 +116,7 @@ def menu():
         print(f"{lg}  [✘] TOKEN:{dg} INVALID")
         time.sleep(1)
         for gxdsloading in range(11):
-         time.sleep(0.2)
+         time.sleep(0.3)
          sys.stdout.write(f"\r{lg}  [!] MAKING TOKEN:{dg} " + gxdsanmtn4[gxdsloading % len(gxdsanmtn4)])
          sys.stdout.flush()
         print(f"\n{dg}  ————————————————————————————————————————")
