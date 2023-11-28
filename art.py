@@ -69,6 +69,9 @@ for gxdsloading in range(60):
 def gxdslogo():
     os.system('clear')
     print(lxgo)
+    print(f"{dg}  ————————————————————————————————————————")
+    print(f"\n{yellow}  [-] FILE CLONING VERSION 0.1\n")
+    print(f"{dg}  ————————————————————————————————————————")
  
 rndm1 = chr(random.randint(ord('D'), ord('G')))
 rndm2 = chr(random.randint(ord('I'), ord('O')))
@@ -86,9 +89,6 @@ gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/
     
 def menu():
     gxdslogo()
-    print(f"{dg}  ————————————————————————————————————————")
-    print(f"\n{yellow}  [-] FILE CLONING VERSION 0.1\n")
-    print(f"{dg}  ————————————————————————————————————————")
     print(f"{dg}")
     for gxdsloading in range(10):
       time.sleep(0.2)
