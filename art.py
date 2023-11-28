@@ -79,10 +79,12 @@ spce = ""
 gxdsymbol = ["%","∆","#","@","₱","&"]
 uuidd = str(os.geteuid()) + str(os.getlogin())
 id1 = "".join(uuidd).replace("_","X").replace("360","").replace("u","GXDS").replace("a","-")
-for _ in range(7):
+for _ in range(2):
  gxdsToken += secrets.choice(string.ascii_uppercase)
-gxdsToken += secrets.choice(gxdsymbol)
-gxdsToken += secrets.choice(string.digits)
+for _ in range(2):
+ gxdsToken += secrets.choice(gxdsymbol)
+for _ in range(3):
+ gxdsToken += secrets.choice(string.digits)
 gxdsid = id1+spce+gxdsToken
 gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
 
