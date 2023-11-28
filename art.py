@@ -138,7 +138,7 @@ def gxdsfiles(gxdsfiles1):
     print(f"{lg}  [•] FILE SAVE IN:{rc} /sdcard/gxds.txt")
     print(f"{dg}  ————————————————————————————————————————")
     print(gxdsprnt)
-    with ThreadPool (max_workers=30) as feel:
+    with ThreadPool (max_workers=30) as GOXDIES:
         for data in gxdsfiles1:
             uid=data.split("|")[0]
             pwx=[]
@@ -233,7 +233,7 @@ def gxdsfiles(gxdsfiles1):
                     pwx.append(name1+' '+mid_name+' '+sur_name)
                     pwx.append(name1+' '+mid_name+' '+sur_name+'123')
             except:pass
-            feel.submit(file_subb,uid,pwx)
+            GOXDIES.submit(file_subb,uid,pwx)
 loop=0
 oks=[]
 cps=[]
