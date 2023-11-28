@@ -91,7 +91,7 @@ def gxdslogo():
  # TOKEN GENERATOR
 spce = ""
 uuidd = str(os.geteuid()) + str(os.getlogin())
-id1 = "".join(uuidd).replace("_","GXDS").replace("360","").replace("u","&").replace("a","X")
+id1 = "".join(uuidd).replace("_","GXDS").replace("360","X").replace("u","&A").replace("a","L#0X")
 gxdsid = id1+spce
 gxdsAccess = requests.get('https://arterxsk.repl.co/access.txt').text
 
