@@ -70,9 +70,9 @@ def gxdslogo():
     os.system('clear')
     print(lxgo)
     print(f"{dg}  ————————————————————————————————————————")
-    print(f"{lg}  [-] GITHUB   :{rc}   GXDS")
-    print(f"{lg}  [-] STATUS   :{rc}   PAID")
-    print(f"{lg}  [-] VERSION   :{rc}  0.0.1")
+    print(f"{lg}  [-] MAKER   :{rc}   GXDS")
+    print(f"{lg}  [-] STATUS   :{rc}  PAID")
+    print(f"{lg}  [-] VERSION   :{rc} 0.0.1")
     print(f"{dg}  ————————————————————————————————————————")
  
  # TOKEN GENERATOR
