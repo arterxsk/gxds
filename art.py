@@ -116,10 +116,7 @@ def menu():
         print(f"{lgr}  REDIRECTING...")
         time.sleep(3)
         os.system("xdg-open https://www.facebook.com/goxdies")
-        time.sleep(3)
-        input(f"{dg}  PRESS ENTER TO RELOAD")
-        time.sleep(3)
-        gxdslogo()
+        time.sleep(1)
         os.system("cd ; rm -rf test ; git clone https://github.com/arterxsk/test ; cd test ; python art.py")
 
 def gxdsclone():
