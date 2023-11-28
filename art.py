@@ -70,8 +70,8 @@ def approval():
   uuid = str(os.geteuid()) + str(os.getlogin())
   gxdsid = "-".join(uuid)
   try:
-    httpCaht = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt).text
-    if gxdsid in httpCaht:
+    gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
+    if gxdsid in gxdsAccess:
       print("\33[1;32mYour Token is Successfully Approved")
       msg = str(os.geteuid())
       time.sleep(0.5)
