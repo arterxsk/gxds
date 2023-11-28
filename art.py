@@ -339,7 +339,7 @@ def gxds_files(uid,pwx):
     session=requests.Session()
     try:
         for ps in pwx:
-            user_agent=gxdsUArndm
+            user_agent=random.choice(gxdsUArndm)
             data={'adid': str(uuid.uuid4()),
                     'format': 'json',
                     'device_id': str(uuid.uuid4()),
