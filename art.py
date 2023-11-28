@@ -70,11 +70,13 @@ def gxdslogo():
     os.system('clear')
     print(lxgo)
 
+gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
+gxdsid = "-".join(uuid)
+uuid = str(os.geteuid()) + str(os.getlogin())
+
 def main():
   os.system('clear')
   print(lxgo)
-  uuid = str(os.geteuid()) + str(os.getlogin())
-  gxdsid = "-".join(uuid)
   try:
     gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
     if gxdsid in gxdsAccess:
@@ -112,7 +114,7 @@ def menu():
       sys.stdout.write("\r                     " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
       sys.stdout.flush()
     print("  ")
-    if gxdsoption1 in ["GXDS", "gxds"]:
+    if gxdsoption1 in gxdsAccess:
       print(" ")
       gxdsclone()
     elif gxdsoption1 in ["1"]:
