@@ -118,6 +118,9 @@ def menu():
         os.system("xdg-open https://www.facebook.com/goxdies")
         time.sleep(3)
         input(f"{dg}   PRESS ENTER TO RELOAD")
+        time.sleep(3)
+        gxdslogo()
+        os.system("python art.py")
 
 def gxdsclone():
     time.sleep(2)
