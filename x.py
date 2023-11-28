@@ -823,7 +823,7 @@ def gxdsfiles(gxdsfiles1):
                 ls = fs
             uid = data.split("|")[0]
             pwx = [fs + "123", +fs + "143"]
-            except : pass
+            pass
             GOXDIES.submit(gxds_files, uid, pwx)
 
 
