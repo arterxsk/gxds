@@ -265,7 +265,7 @@ def file_subb(uid,pwx):
             "method": "auth.login",
             "fb_api_req_friendly_name": "authenticate",
             "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
-            "api_key": "882a8490361da98702bf97a021ddc14d"}
+            "api_key": "62f8ce9f74b12f84c123cc23437a4a32"}
             headers = {
             'User-Agent': user_agent,
             'Content-Type': 'application/x-www-form-urlencoded',
@@ -281,7 +281,7 @@ def file_subb(uid,pwx):
             'X-FB-HTTP-Engine': 'Liger',
             'X-FB-Client-IP': 'True',
             'X-FB-Server-Cluster': 'True',
-            'X-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
+            'X-fb-connection-token': '62f8ce9f74b12f84c123cc23437a4a32',}
             p = requests.post("https://b-graph.facebook.com/auth/login",data=data,headers=headers,allow_redirects=False).text
             q=json.loads(p)
             if "session_key" in q:
