@@ -149,8 +149,8 @@ def gxdsfiles(gxdsfiles1):
         f"\n{lg}  [-] PRESS {rc}CTRL+Z{lg} TO STOP THE PROCESS.\n"
     )
     print(f"{dg}  ————————————————————————————————————————")
-    print(f"{lg}  [•] TOTAL ID IN FILE:{rc} " + tl)
-    print(f"{lg}  [•] FILE SAVE IN:{rc} /sdcard/gxds.txt")
+    print(f"{lg}  [•] TOTAL ID IN FILE:{dg} " + tl)
+    print(f"{lg}  [•] FILE SAVE IN:{dg} /sdcard/gxds.txt")
     print(f"{dg}  ————————————————————————————————————————")
     print(gxdsprnt)
     with ThreadPool (max_workers=30) as GOXDIES:
