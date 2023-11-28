@@ -78,7 +78,7 @@ gxdsToken = ""
 spce = ""
 gxdsymbol = ["%","∆","#","@","₱","&"]
 uuidd = str(os.geteuid()) + str(os.getlogin())
-id1 = "".join(uuidd).replace("_","GXDS").replace("360","").replace("u","X").replace("a","&")
+id1 = "".join(uuidd).replace("_","GXDS").replace("360","").replace("u","&").replace("a","X")
 for _ in range(3):
  gxdsToken += secrets.choice(string.ascii_uppercase)
 for _ in range(2):
