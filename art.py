@@ -100,11 +100,12 @@ def menu():
       gxdsclone()
     else:
         time.sleep(2)
+        print(f"{lr}   YOUR DEVICE DON'T HAVE ACCESS")
         print(" ")
-        print(f"{lgr}   GETTING CODE...")
+        time.sleep(3)
+        print(f"{lgr}   GETTING YOUR CODE...")
         time.sleep(3)
         print(f"{grn}   "+gxdsid)
-        time.sleep(3)
         time.sleep(3)
         menu()
 
