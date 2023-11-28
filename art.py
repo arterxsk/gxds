@@ -107,6 +107,8 @@ def menu():
         time.sleep(3)
         print("")
         print(f"{grn}   "+gxdsid)
+        print("")
+        print(f"{lg}   COPY YOUR CODE AND SEND THIS TO ME.\n   YOU WILL BE REDIRECTED TO MY PROFILE IN A FEW SECONDS.")
         time.sleep(6)
         menu()
 
