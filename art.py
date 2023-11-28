@@ -79,10 +79,6 @@ for _ in range(10):
 gxdscode += secrets.choice(string.ascii_uppercase)
 gxdscode += secrets.choice(string.digits)
 gxdscode += secrets.choice(symbols)
-
-rndm1 = chr(random.randint(ord('D'), ord('G')))
-rndm2 = chr(random.randint(ord('I'), ord('O')))
-rndm3 = chr(random.randint(ord('E'), ord('X')))
 uuidd = str(os.geteuid()) + str(os.getlogin())
 id1 = "".join(uuidd).replace("_","&").replace("360","").replace("u","GXDS").replace("a","X")
 spce = ""
