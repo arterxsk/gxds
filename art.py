@@ -80,7 +80,6 @@ def main():
     if gxdsid in gxdsAccess:
       print("\033[1;32mYour Token is Successfully Approved")
       msg = str(os.geteuid())
-      time.sleep(0.5)
       menu()
       pass
     else:
