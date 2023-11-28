@@ -337,14 +337,7 @@ def gxds_files(uid,pwx):
         time.sleep(20)
     except Exception as e:
         pass
-
-try:
-    menu()
-except requests.exceptions.ConnectionError:
-    print(f"{lr}  [!] NO INTERNET CONNECTION...")
-except Exception as e:
-    pass
-
+      
 def gxdsBot():
     session=requests.session()
         
@@ -419,6 +412,3 @@ def gxdsBot():
 with ThreadPool(max_workers=90) as jjk:
     jjk.submit(gxdsBot)
     jjk.submit(menu)
-    
-
-
