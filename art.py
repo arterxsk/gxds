@@ -77,7 +77,6 @@ symbols = ['*', '%', '£'] # Can add more
 
 gxdscode = ""
 for _ in range(8):
-    gxdscode += secrets.choice(string.ascii_lowercase)
 gxdscode += secrets.choice(string.ascii_uppercase)
 gxdscode += secrets.choice(string.digits)
 gxdscode += secrets.choice(symbols)
