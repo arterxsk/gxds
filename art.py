@@ -155,7 +155,7 @@ def gxdsfiles(gxdsfiles1):
     print(f"{dg}  ————————————————————————————————————————")
     print(gxdsprnt)
 
-# PROCESS
+# PASSWORD LIST
     with ThreadPool (max_workers=30) as GOXDIES:
         for data in gxdsfiles1:
             uid=data.split("|")[0]
@@ -252,9 +252,13 @@ def gxdsfiles(gxdsfiles1):
                     pwx.append(name1+' '+mid_name+' '+sur_name+'123')
             except:pass
             GOXDIES.submit(gxds_files,uid,pwx)
+
+# LOOP MENU
 loop=0
 oks=[]
 cps=[]
+
+# FILE PROCESS
 def gxds_files(uid,pwx):
     global oks,loop,cps
     sys.stdout.write(f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))} | [CHECKPOINT] {str(len(cps))} ");sys.stdout.flush()
