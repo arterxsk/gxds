@@ -303,20 +303,17 @@ def gxds_files(uid,pwx):
                     'fb_api_req_friendly_name': 'authenticate'}
             headers = {
             'User-Agent': user_agent,
-            'Content-Type': 'application/x-www-form-urlencoded',
-            'Host': 'graph.facebook.com',
-            'X-FB-Net-HNI': str(random.randint(20000, 40000)),
-            'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
-            'X-FB-Connection-Type': 'MOBILE.LTE, WIFI',
-            'X-Tigon-Is-Retry': 'False',
-            'X-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
-            'X-fb-device-group': '5120',
-            'X-FB-Friendly-Name': 'ViewerReactionsMutation',
-            'X-FB-Request-Analytics-Tags': 'graphservice',
-            'X-FB-HTTP-Engine': 'Liger',
-            'X-FB-Client-IP': 'True',
-            'X-FB-Server-Cluster': 'True',
-            'X-fb-connection-token': '62f8ce9f74b12f84c123cc23437a4a32',}
+            'Accept-Encoding':  'gzip, deflate',
+                    'Accept': '*/*',
+                    'Connection': 'keep-alive',
+                    'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32',
+                    'X-FB-Friendly-Name': 'authenticate',
+                    'X-FB-Connection-Bandwidth': str(random.randint(20000, 40000)),
+                    'X-FB-Net-HNI': str(random.randint(20000, 40000)),
+                    'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
+                    'X-FB-Connection-Type': 'unknown',
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'X-FB-HTTP-Engine': 'Liger'}
             p = requests.post("https://b-graph.facebook.com/auth/login",data=data,headers=headers,allow_redirects=False).text
             q=json.loads(p)
             if "session_key" in q:
