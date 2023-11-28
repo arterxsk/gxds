@@ -112,7 +112,7 @@ def menu():
         print("")
         print(f"{lgr}  REDIRECTING...")
         time.sleep(3)
-        os.system("xdg-open https://www.facebook.com/goxdies")
+        os.system("xdg-open https://m.me/goxdies")
         time.sleep(1)
         gxdslogo()
         print(f"{lgr}  [!] UPDATING FILES, PLEASE WAIT...")
