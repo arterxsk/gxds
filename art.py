@@ -110,7 +110,6 @@ def menu():
         print(f"{lg}   TOKEN:{rc} "+gxdsid)
         print("")
         print(f"{lg}   PRICE:{yellow}\n   ₱150 - 15 DAYS ")
-        time.sleep(3)
         print("")
         input(f"{dg}   IF YOU WANT TO BUY THEN PRESS ENTER")
         print("")
