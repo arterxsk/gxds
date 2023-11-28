@@ -73,6 +73,7 @@ def gxdslogo():
     print(f"\n{yellow}  [-] FILE CLONING VERSION 0.1\n")
     print(f"{dg}  ————————————————————————————————————————")
  
+ # TOKEN GENERATOR 
 symbols = ['#','*', '%', '£']
 gxdscode = ""
 for _ in range(10):
