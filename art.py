@@ -129,7 +129,7 @@ def gxdsclone():
     print(lxgo)
     time.sleep(2)
     fl = input(
-        f"{lg}  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n{lg}  [-] USE A GOOD ID DUMP FOR A GOOD RESULT.\n{lg}  [•] FILE PATH:{rc} "
+        f"{lg}  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n{lg}  [-] USE A GOOD ID DUMP FOR A GOOD RESULT.\n{yellow}  [•] FILE PATH:{rc} "
     )
     print(f"{dg}")
     for gxdsloading in range(10):
