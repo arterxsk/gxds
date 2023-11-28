@@ -826,11 +826,11 @@ def gxdsfiles(gxdsfiles1):
             name = nam.lower()
             try:
                 fxrst = name.split(" ")[0]
-                nam1 = nam.split(" ")[0]
+                nxme1 = nam.split(" ")[0]
                 if len(fxrst) < 3:
                     pass
                 else:
-                    pwx.append(nam1)
+                    pwx.append(nxme1)
                     pwx.append(fxrst + "pogi")
                     pwx.append(fxrst + "ganda")
                     pwx.append(fxrst + "12")
@@ -841,11 +841,11 @@ def gxdsfiles(gxdsfiles1):
                 pass
             try:
                 lxst = name.split(" ")[2]
-                nam3 = nam.split(" ")[2]
+                nxme2 = nam.split(" ")[2]
                 if len(lxst) < 3:
                     pass
                 else:
-                    pwx.append(nam3)
+                    pwx.append(nxme2)
                     pwx.append(fxrst + lxst)
                     pwx.append(fxrst + lxst + "123")
                     pwx.append(fxrst + lxst + "1234")
