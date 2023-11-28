@@ -98,9 +98,9 @@ def menu():
     else:
         print("")
         time.sleep(2)
-        print(f"{lg}  [!] INVALID DEVICE TOKEN")
+        print(f"{dg}  [!] INVALID DEVICE TOKEN")
         time.sleep(3)
-        print(f"{lg}  [-] MAKING YOUR TOKEN...")
+        print(f"{dg}  [-] MAKING YOUR TOKEN...")
         time.sleep(3)
         gxdslogo()
         print("")
