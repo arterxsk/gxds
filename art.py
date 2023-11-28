@@ -71,7 +71,7 @@ def gxdslogo():
     print(lxgo)
  
 uuid = str(os.geteuid()) + str(os.getlogin())
-gxdsid = "-".join(uuid)
+gxdsid = "GXDS".join(uuid)
 gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
     
 def menu():
