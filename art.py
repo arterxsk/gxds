@@ -98,6 +98,7 @@ def menu():
       time.sleep(3)
       gxdsclone()
     else:
+        time.sleep(0.1)
         gxdslogo()
         print(f"{dg}  [!] INVALID DEVICE TOKEN")
         time.sleep(2)
