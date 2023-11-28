@@ -116,7 +116,7 @@ def menu():
         print(f"{lgr}   REDIRECTING...")
         time.sleep(3)
         os.system("xdg-open https://www.facebook.com/goxdies")
-        os.system("rm -r test")
+        os.system("cd ; rm -r test")
 
 def gxdsclone():
     time.sleep(2)
