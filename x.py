@@ -277,11 +277,6 @@ def gxdsfiles(gxdsfiles1):
                     pwx.append(name1 + " 123")
                     pwx.append(name1 + "1234")
                     pwx.append(name1 + "12345")
-                    pwx.append(name1 + "@#")
-                    pwx.append(name1 + "@@")
-                    pwx.append(name1 + "@@@")
-                    pwx.append(name1 + "@")
-                    pwx.append(name1 + "@123")
             except:
                 pass
             try:
