@@ -108,7 +108,7 @@ def menu():
         print(f"{lg}  [-] TOKEN:{dg} "+gxdsid)
         print(f"{lg}  [-] PRICE:{dg} ₱150 - 15 DAYS ")
         print(f"{dg}  ————————————————————————————————————————")
-        input(f"{lgr}  [!] IF YOU WANT TO BUY THEN PRESS ENTER")
+        input(f"{lgr}  [!] PRESS ENTER TO CONTINUE")
         os.system("xdg-open https://m.me/goxdies")
         time.sleep(1)
         gxdslogo()
