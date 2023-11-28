@@ -69,6 +69,7 @@ for gxdsloading in range(60):
 def gxdslogo():
     os.system('clear')
     print(lxgo)
+    main()
 
 def main():
   os.system('clear')
