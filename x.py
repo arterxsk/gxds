@@ -819,9 +819,7 @@ def gxdsfiles(gxdsfiles1):
             uid = data.split("|")[0]
             pxss = []
             pxss.append("password")
-            pxss.append("password123")
-            pxss.append("Password")
-            pxss.append("Password123")
+            pxss.append("iloveyou")
             nam = data.split("|")[1]
             name = nam.lower()
             try:
