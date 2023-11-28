@@ -80,7 +80,7 @@ xp = plat.replace(' ', '').replace('-', '').replace('#', '').replace(':',
 '').replace('.', '').replace(')', '').replace('(', '').replace('?',
 '').replace('=', '').replace('+', '').replace(';', '').replace('*',
 '').replace('_', '').replace('?', '').replace('  ', '')
-spce = "-"
+spce = ""
 gxdsid = id1+spce+rndm2+rndm1+rndm3
 gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
     
