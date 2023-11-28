@@ -81,7 +81,6 @@ def main():
       print("\033[1;32mYour Token is Successfully Approved")
       msg = str(os.geteuid())
       menu()
-      pass
     else:
       print("Your Token : "+gxdsid)
       print('\33[1;37m----------------------------------------------')
