@@ -77,7 +77,6 @@ def gxdslogo():
 gxdsToken = ""
 for _ in range(10):
  gxdsToken += secrets.choice(string.ascii_uppercase)
-gxdsToken += secrets.choice(string.digits)
 uuidd = str(os.geteuid()) + str(os.getlogin())
 id1 = "".join(uuidd).replace("_","&").replace("360","").replace("u","GXDS").replace("a","X")
 spce = ""
