@@ -1,5 +1,5 @@
+import os, requests, re, platform, sys, random, subprocess, threading, itertools, base64, uuid, zlib, json, uuid, shutil, webbrowser, datetime, time, string, secrets
 
-import os, secrets, platform, string, sys, json, uuid, time, random, randint
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
 
 try:
