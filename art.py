@@ -76,7 +76,7 @@ id1 = "".join(uuidd).replace("_","").replace("360","GXDS").replace("u","X").repl
 plat = platform.version()[14:][:21][::-1].upper()+platform.release()[5:][::-1].upper()+platform.version()[:8]
 xp = plat.replace(' ', '').replace('-', '').replace('#', '').replace(':', '').replace('.', '').replace(')', '').replace('(', '').replace('?', '').replace('=', '').replace('+', '').replace(';', '').replace('*', '').replace('_', '').replace('?', '').replace('  ', '')
 bxd = ""
-gxdsid = id1+bxd+xp
+gxdsid = id1+bxd+rndmLttrs
 gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
     
 def menu():
