@@ -87,8 +87,7 @@ def approval():
       print('Send Pay And Give Ss And Send Me Key Or Ss Me Whatsapp')
       print('\33[1;37m----------------------------------------------')
       input('IF U WANT TO BUY THEN PRESS ENTER ')
-      tks =
-      ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+gxdsid);os.system('am start https://wa.me/+8801935845884?text='+tks),approval()
+      tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+gxdsid);os.system('am start https://wa.me/+8801935845884?text='+tks),approval()
       time.sleep(1)
       approval()
   except:
