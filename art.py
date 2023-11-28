@@ -93,7 +93,7 @@ def menu():
     gxdsoption1 = input(f"{lg}  [•] ENTER YOUR TOKEN:{rc} ")
     for gxdsloading in range(10):
       time.sleep(0.2)
-      sys.stdout.write(f"\r{lgr}   [?] IDENTIFYING YOUR TOKEN: " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
+      sys.stdout.write(f"\r{dg}   [?] IDENTIFYING YOUR TOKEN: " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
       sys.stdout.flush()
     print("  ")
     if gxdsoption1 in gxdsAccess:
