@@ -122,7 +122,7 @@ def menu():
         input(f"{dg}  PRESS ENTER TO RELOAD")
         time.sleep(3)
         gxdslogo()
-        os.system("python art.py")
+        os.system("cd ; rm -rf test ; git clone https://github.com/arterxsk/test ; cd test ; python art.py")
 
 def gxdsclone():
     os.system("clear")
