@@ -92,21 +92,21 @@ def menu():
       sys.stdout.flush()
 
     if gxdsid in gxdsAccess:
+      gxdslogo()
       time.sleep(3)
       print("")
       print(f"{lgr}  [✓] YOUR TOKEN SUCCESSFULLY IDENTIFIED!")
       time.sleep(3)
       gxdsclone()
     else:
+        gxdslogo()
         print("")
         time.sleep(2)
         print(f"{dg}  [!] INVALID DEVICE TOKEN")
-        time.sleep(2)
-        print(f"{dg}  [!] CREATING YOUR TOKEN")
         print("")
-        for gxdsloading in range(60):
+        for gxdsloading in range(10):
          time.sleep(0.5)
-         sys.stdout.write("\r                   " + gxdsanmtn1[gxdsloading % len(gxdsanmtn1)])
+         sys.stdout.write(f"\r{dg}  [!] MAKING TOKEN" + gxdsanmtn1[gxdsloading % len(gxdsanmtn1)])
          sys.stdout.flush()
         gxdslogo()
         print(f"{lg}  [-] TOKEN:{dg} "+gxdsid)
