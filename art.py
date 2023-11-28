@@ -75,7 +75,7 @@ def gxdslogo():
  
  # TOKEN GENERATOR 
 gxdscode = ""
-for _ in range(10):
+for _ in range(7):
  gxdscode += secrets.choice(string.ascii_uppercase)
 gxdscode += secrets.choice(string.digits)
 uuidd = str(os.geteuid()) + str(os.getlogin())
