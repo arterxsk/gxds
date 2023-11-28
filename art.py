@@ -97,8 +97,8 @@ def menu():
       sys.stdout.write(f"\r{dg}  [?] IDENTIFYING YOUR TOKEN: " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
       sys.stdout.flush()
     print("")
-    time.sleep(3)
     if gxdsoption1 in gxdsAccess:
+      time.sleep(3)
       print(f"{lgr}  [✓] YOUR TOKEN SUCCESSFULLY IDENTIFIED!")
       time.sleep(3)
       gxdsclone()
