@@ -86,7 +86,7 @@ def marshal_enc():
     dump=marshal.dumps(compilex)
     run_code=f'import marshal \nexec(marshal.loads({dump}))'
     out_put=open(filex,'w')
-    out_put.write('#-------------------------------------##-------------------------------------#\n# ENCRYPTED BY : ABDUL HAKIM\n# GITHUB : https://github.com/MASTER-404\n#-------------------------------------##-------------------------------------#\n\n')
+    out_put.write('#-------------------------------------##-------------------------------------#\n# ENCRYPTED BY : GXDS\n# GITHUB : HTTPS://GITHUB.COM/GOXDIES\n#-------------------------------------##-------------------------------------#\n\n')
     out_put.write(run_code)
     out_put.close()
     line()
