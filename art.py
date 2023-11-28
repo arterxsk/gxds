@@ -99,7 +99,7 @@ gxdsAccess = requests.get('https://arterxsk.repl.co/access.txt').text
 def menu():
     gxdslogo()
     print(f"{dg}")
-    for gxdsloading in range(11):
+    for gxdsloading in range(10):
       time.sleep(0.2)
       sys.stdout.write(f"\r{dg}  [?] IDENTIFYING YOUR DEVICE TOKEN: " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
       sys.stdout.flush()
