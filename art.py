@@ -1,5 +1,5 @@
 
-import os, random, sys, json, uuid, time, random
+import os, string, sys, json, uuid, time, random
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
 
 try:
@@ -70,13 +70,11 @@ def gxdslogo():
     os.system('clear')
     print(lxgo)
  
-rndm = (random.randint(0,99))
+rndmNmbrs = (random.randint(0,99))
+rndmLttrs = (random.randint(a,z))
 uuidd = str(os.geteuid()) + str(os.getlogin()) + str(os.geteuid())
 id1 = "".join(uuidd).replace("_","").replace("360","AHS").replace("u","9").replace("a","A")
-plat = platform.version()[14:][:21][::-1].upper()+platform.release()[5:][::-1].upper()+platform.version()[:8]
-xp = plat.replace(' ', '').replace('-', '').replace('#', '').replace(':', '').replace('.', '').replace(')', '').replace('(', '').replace('?', '').replace('=', '').replace('+', '').replace(';', '').replace('*', '').replace('_', '').replace('?', '').replace('  ', '')
-bxd = ""
-gxdsid = id1+bxd+xp
+gxdsid = id1+rndmLttrs+rndmNmbrs
 gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
     
 def menu():
