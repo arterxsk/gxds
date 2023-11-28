@@ -292,6 +292,7 @@ def gxds_files(uid,pwx):
             elif "www.facebook.com" in q['error']['message']:
                 print(f"\r\r{lr}  [GXDS-CP] {uid}|{ps}")
                 cps.append(uid)
+                break
             else:
                 continue
         loop+=1
