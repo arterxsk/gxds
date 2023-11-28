@@ -66,7 +66,7 @@ for xd in range(1):
     pakuu=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {xx}'
     gxdsUA4.append(pakuu)
     
-    user_agent = gxdsUA3+gxdsUA4+gxdsUA1
+    gxdsUArndm = gxdsUA3+gxdsUA4+gxdsUA1
     
 # COLORS
 li = "\033[38;5;46m"
