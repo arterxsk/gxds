@@ -58,7 +58,7 @@ gxdsanmtn4 = [
 ]
 gxdsanmtn1 = "|/-\\"
 gxdsanmtn2 = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%",
-"100%"]
+"100%", "✓"]
 
 lxgo = f"""{lg}
                               d8b             
@@ -99,7 +99,7 @@ gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/
 def menu():
     gxdslogo()
     print(f"{dg}")
-    for gxdsloading in range(10):
+    for gxdsloading in range(11):
       time.sleep(0.2)
       sys.stdout.write(f"\r{dg}  [?] IDENTIFYING YOUR DEVICE TOKEN: " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
       sys.stdout.flush()
