@@ -312,7 +312,7 @@ def gxds_files(uid, pwx):
     session = requests.Session()
     try:
         for ps in pwx:
-                data = {
+            data = {
                     "adid": str(uuid.uuid4()),
                     "format": "json",
                     "device_id": str(uuid.uuid4()),
