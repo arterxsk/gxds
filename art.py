@@ -88,17 +88,19 @@ def menu():
       time.sleep(0.2)
       sys.stdout.write(f"\r{dg}  [?] IDENTIFYING YOUR DEVICE TOKEN: " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
       sys.stdout.flush()
-      print("")
+
     if gxdsid in gxdsAccess:
       time.sleep(3)
+      print("")
       print(f"{lgr}  [✓] YOUR TOKEN SUCCESSFULLY IDENTIFIED!")
       time.sleep(3)
       gxdsclone()
     else:
+        print("")
         time.sleep(2)
         print(f"{lg}  [!] INVALID DEVICE TOKEN")
         time.sleep(3)
-        print(f"{lg}  [-] GETTING YOUR TOKEN...")
+        print(f"{lg}  [-] MAKING YOUR TOKEN...")
         time.sleep(3)
         gxdslogo()
         print("")
