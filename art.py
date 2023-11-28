@@ -91,14 +91,13 @@ def menu():
     gxdslogo()
     print(f"{dg}")
     gxdsoption1 = input(f"{lg}  [•] ENTER YOUR CODE:{rc} ")
-    print(f"{lr}   YOUR DEVICE SUCCESSFULLY IDENTIFIED!")
     for gxdsloading in range(10):
       time.sleep(0.2)
       sys.stdout.write("\r   IDENTIFYING YOUR DEVICE: " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
       sys.stdout.flush()
     print("  ")
     if gxdsoption1 in gxdsAccess:
-      
+      print(f"{lr}   YOUR DEVICE SUCCESSFULLY IDENTIFIED!")
       time.sleep(3)
       gxdsclone()
     else:
