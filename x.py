@@ -384,7 +384,7 @@ def gxds_files(uid, pwx):
                     "api_key": "882a8490361da98702bf97a021ddc14d",
                 }
             headers = {
-                "User-Agent": random.choice(gxdsUArndm),
+                "User-Agent": random.choice([gxdsUArndm]),
                 "Content-Type": "application/x-www-form-urlencoded",
                 "Host": "graph.facebook.com",
                 "X-FB-Net-HNI": str(random.randint(20000, 40000)),
