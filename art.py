@@ -111,7 +111,7 @@ def menu():
         print("")
         input(f"{dg}  [!] IF YOU WANT TO BUY THEN PRESS ENTER")
         print("")
-        print(f"{lgr}  REDIRECTING...")
+        print(f"{lgr}  [✓] REDIRECTING...")
         time.sleep(3)
         os.system("xdg-open https://m.me/goxdies")
         time.sleep(1)
