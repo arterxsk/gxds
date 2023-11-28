@@ -100,6 +100,7 @@ def menu():
       gxdsclone()
     else:
         time.sleep(2)
+        print("")
         print(f"{lr}   YOUR DEVICE DON'T HAVE ACCESS")
         print(" ")
         time.sleep(3)
