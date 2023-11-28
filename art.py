@@ -134,8 +134,10 @@ def menu():
 # FILE PATH
 def gxdsclone():
     gxdslogo()
+    print(f"{lg} [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n  [-] USE A GOOD ID COMBO FOR A GOOD RESULT.")
+    print(f"\n{dg}  ————————————————————————————————————————")
     fl = input(
-        f"{lg}  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n{lg}  [-] USE A GOOD ID COMBO FOR A GOOD RESULT.\n{lgr}  [•] FILE PATH:{dg} "
+        f"{lgr}  [•] FILE PATH:{dg} "
     )
     print(f"{dg}")
     for gxdsloading in range(10):
