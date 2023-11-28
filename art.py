@@ -103,7 +103,10 @@ def menu():
         print(f"{dg}  [!] INVALID DEVICE TOKEN")
         time.sleep(2)
         print(f"{dg}  [!] CREATING YOUR TOKEN")
-        time.sleep(3)
+        for gxdsloading in range(60):
+         time.sleep(0.1)
+         sys.stdout.write("\r           LOADING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
+         sys.stdout.flush()
         gxdslogo()
         print(f"{lg}  [-] TOKEN:{dg} "+gxdsid)
         print(f"{lg}  [-] PRICE:{dg} ₱150 - 15 DAYS ")
