@@ -73,15 +73,15 @@ def gxdslogo():
 rndm1 = chr(random.randint(ord('a'), ord('z')))
 rndm2 = chr(random.randint(ord('a'), ord('z')))
 rndm3 = chr(random.randint(ord('a'), ord('z')))
-rndm4 = chr(random.randint(ord('A'), ord('Z')))
 uuidd = str(os.geteuid()) + str(os.getlogin())
-id1 = "".join(uuidd).replace("_","&").replace("360","").replace("u","GXDS").replace("a","a")
+id1 = "".join(uuidd).replace("_","&").replace("360","").replace("u","GXDS").replace("a","a").replace("0","X")
 plat = platform.version()[14:][:21][::-1].upper()+platform.release()[5:][::-1].upper()+platform.version()[:8]
 xp = plat.replace(' ', '').replace('-', '').replace('#', '').replace(':',
 '').replace('.', '').replace(')', '').replace('(', '').replace('?',
 '').replace('=', '').replace('+', '').replace(';', '').replace('*',
 '').replace('_', '').replace('?', '').replace('  ', '')
-gxdsid = rndm1+id1+rndm2+rndm3+rndm4
+spce = "-"
+gxdsid = rndm3+id1+rndm2+rndm1
 gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
     
 def menu():
