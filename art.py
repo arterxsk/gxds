@@ -70,13 +70,13 @@ def gxdslogo():
     os.system('clear')
     print(lxgo)
 
-gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
-gxdsid = "-".join(uuid)
-uuid = str(os.geteuid()) + str(os.getlogin())
-
 def main():
   os.system('clear')
   print(lxgo)
+  gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
+gxdsid = "-".join(uuid)
+uuid = str(os.geteuid()) + str(os.getlogin())
+
   try:
     gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
     if gxdsid in gxdsAccess:
