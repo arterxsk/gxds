@@ -109,7 +109,7 @@ def menu():
         print("")
         print(f"{grn}   "+gxdsid)
         print("")
-        print(f"{lg}   COPY YOUR CODE AND SEND THIS TO ME.\n   YOU WILL BE REDIRECTED TO MY PROFILE IN A FEW SECONDS.")
+        print(f"{lg}   COPY YOUR TOKEN AND SEND THIS TO ME.\n   YOU WILL BE REDIRECTED TO MY PROFILE\n   IN A FEW SECONDS.")
         time.sleep(6)
         menu()
 
