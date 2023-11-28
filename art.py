@@ -141,10 +141,8 @@ def gxdsclone():
 # FILE CLONING
 def gxdsfiles(gxdsfiles1):
     time.sleep(3)
-    os.system('clear')
-    print(lxgo)
+    gxdslogo()
     tl=str(len(gxdsfiles1))
-    print(f"{dg}  ————————————————————————————————————————")
     print(
         f"{lg}  [+] PRESS {rc}CTRL+Z{lg} TO STOP THE PROCESS."
     )
