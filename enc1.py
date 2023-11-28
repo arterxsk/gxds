@@ -104,7 +104,7 @@ def base64_enc():
     compile=base64.b64encode(file_open.encode())
     run_code=f'import base64\nexec(base64.b64decode({compile}))'
     out_put=open(output_file,'w')
-    out_put.write('#-------------------------------------##-------------------------------------#\n# ENCRYPTED BY : GXDS\n# GITHUB : https://github.com/goxdies\n#-------------------------------------##-------------------------------------#\n\n')
+    out_put.write('#-------------------------------------##-------------------------------------#\n# ENCRYPTED BY : GXDS\n# GITHUB : HTTPS://GITHUB.COM/GOXDIES\n#-------------------------------------##-------------------------------------#\n\n')
     out_put.write(run_code)
     out_put.close()
     print(' [✓✓] ENCRYPTION COMPLETE :/')
@@ -121,7 +121,7 @@ def zlib_enc():
     compile_zlib=zlib.compress(src_file.encode())
     run_code=f'import zlib\nexec(zlib.decompress({compile_zlib}).decode())'
     out_put=open(save_file,'w')
-    out_put.write('#-------------------------------------##-------------------------------------#\n# ENCRYPTED BY : ABDUL HAKIM\n# GITHUB : https://github.com/MASTER-404\n#-------------------------------------##-------------------------------------#\n\n')
+    out_put.write('#-------------------------------------##-------------------------------------#\n# ENCRYPTED BY : GXDS\n# GITHUB : HTTPS://GITHUB.COM/GOXDIES\n#-------------------------------------##-------------------------------------#\n\n')
     out_put.write(run_code)
     out_put.close()
     print(' [✓✓] ENCRYPTION COMPLETE :/')
