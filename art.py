@@ -136,7 +136,7 @@ def gxdsclone():
     os.system("clear")
     print(lxgo)
     fl = input(
-        f"{lg}  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n{lg}  [-] USE A GOOD ID COMBO FOR A GOOD RESULT.\n{lg}  [•] FILE PATH:{dg} "
+        f"{lg}  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n{lg}  [-] USE A GOOD ID COMBO FOR A GOOD RESULT.\n{lgr}  [•] FILE PATH:{dg} "
     )
     print(f"{dg}")
     for gxdsloading in range(10):
