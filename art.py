@@ -71,7 +71,7 @@ def gxdslogo():
     print(lxgo)
  
 rndmNmbrs = (random.randint(0,99))
-rndmLttrs = (random.randint(a,z))
+rndmLttrs = chr(random.randint(ord('a'), ord('z')))
 uuidd = str(os.geteuid()) + str(os.getlogin()) + str(os.geteuid())
 id1 = "".join(uuidd).replace("_","").replace("360","AHS").replace("u","9").replace("a","A")
 gxdsid = id1+rndmLttrs+rndmNmbrs
