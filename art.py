@@ -113,7 +113,7 @@ def menu():
     else:
         time.sleep(0.1)
         gxdslogo()
-        print(f"{lg}  [!] TOKEN:{dg} INVALID")
+        print(f"{lg}  [✘] TOKEN:{dg} INVALID")
         time.sleep(1)
         for gxdsloading in range(11):
          time.sleep(0.2)
@@ -148,7 +148,7 @@ def gxdsclone():
         gxdsfiles1=open(fl,"r").read().splitlines()
     except:
         time.sleep(3)
-        print(f"\n{lr}  [X] FILE NOT FOUND.")
+        print(f"\n{lr}  [✘] FILE NOT FOUND.")
         print(gxdsprnt)
         time.sleep(3)
         gxdsclone()
