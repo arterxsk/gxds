@@ -104,7 +104,7 @@ def menu():
         print(f"{lr}   YOUR DEVICE DON'T HAVE ACCESS")
         print(" ")
         time.sleep(3)
-        print(f"{lgr}   GETTING YOUR CODE...")
+        print(f"{lgr}   GETTING YOUR TOKEN...")
         time.sleep(3)
         print("")
         print(f"{grn}   "+gxdsid)
