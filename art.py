@@ -82,7 +82,8 @@ id1 = "".join(uuidd).replace("_","&").replace("360","").replace("u","GXDS").repl
 spce = ""
 gxdsid = id1+spce+gxdsToken
 gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
-    
+
+# MENU
 def menu():
     gxdslogo()
     print(f"{dg}")
