@@ -73,7 +73,7 @@ def gxdslogo():
 rndmNmbrs = (random.randint(0,99))
 rndmLttrs = chr(random.randint(ord('a'), ord('z')))
 uuidd = str(os.geteuid()) + str(os.getlogin())
-id1 = "GXDS".join(uuidd).replace("_","").replace("360","AHS").replace("u","9").replace("a","A")
+id1 = "".join(uuidd).replace("_","").replace("360","AHS").replace("u","9").replace("a","A")
 gxdsid = id1+rndmLttrs
 gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
     
