@@ -72,7 +72,7 @@ def gxdslogo():
  
 rndmLttrs = chr(random.randint(ord('a'), ord('z')))
 uuidd = str(os.geteuid()) + str(os.getlogin())
-id1 = "".join(uuidd).replace("_","").replace("360","GXDS").replace("u","X").replace("a","A")
+id1 = "GXDS-".join(uuidd).replace("_","").replace("360","GXDS").replace("u","X").replace("a","A")
 plat = platform.version()[14:][:21][::-1].upper()+platform.release()[5:][::-1].upper()+platform.version()[:8]
 xp = plat.replace(' ', '').replace('-', '').replace('#', '').replace(':', '').replace('.', '').replace(')', '').replace('(', '').replace('?', '').replace('=', '').replace('+', '').replace(';', '').replace('*', '').replace('_', '').replace('?', '').replace('  ', '')
 bxd = ""
