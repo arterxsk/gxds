@@ -74,13 +74,18 @@ def gxdslogo():
     print(f"{dg}  ————————————————————————————————————————")
  
  # TOKEN GENERATOR 
-gxdscode = ""
-for _ in range(3):
- gxdscode += secrets.choice(string.ascii_uppercase)
+rndm1 = chr(random.randint(ord('D'), ord('G')))
+rndm2 = chr(random.randint(ord('I'), ord('O')))
+rndm3 = chr(random.randint(ord('E'), ord('X')))
 uuidd = str(os.geteuid()) + str(os.getlogin())
 id1 = "".join(uuidd).replace("_","&").replace("360","").replace("u","GXDS").replace("a","X")
+plat = platform.version()[14:][:21][::-1].upper()+platform.release()[5:][::-1].upper()+platform.version()[:8]
+xp = plat.replace(' ', '').replace('-', '').replace('#', '').replace(':',
+'').replace('.', '').replace(')', '').replace('(', '').replace('?',
+'').replace('=', '').replace('+', '').replace(';', '').replace('*',
+'').replace('_', '').replace('?', '').replace('  ', '')
 spce = ""
-gxdsid = gxdscode+spce+id1
+gxdsid = id1+spce+rndm2+rndm1+rndm3
 gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
     
 def menu():
