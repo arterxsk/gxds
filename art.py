@@ -4,8 +4,10 @@ from concurrent.futures import ThreadPoolExecutor as ThreadPool
 
 try:
     import requests
-except:
+except ModuleNotFoundError:
     os.system("pip install requests -y")
+    os.system('pip install mechanize requests futures bs4==2 > /dev/null')
+    os.system('pip install bs4')
     import requests
 
 li = "\033[38;5;46m"
