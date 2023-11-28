@@ -304,5 +304,5 @@ try:
   main()
 except requests.exceptions.ConnectionError:
      print(f"{lr}  [!] NO INTERNET CONNECTION...")
-     except Exception as e:
+    except Exception as e:
      pass
