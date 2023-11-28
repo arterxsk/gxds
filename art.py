@@ -147,7 +147,7 @@ def gxdsfiles(gxdsfiles1):
     tl=str(len(gxdsfiles1))
     print(f"{dg}  ————————————————————————————————————————")
     print(
-        f"{lg}  [-] PRESS {rc}CTRL+Z{lg} TO STOP THE PROCESS."
+        f"{lg}  [+] PRESS {rc}CTRL+Z{lg} TO STOP THE PROCESS."
     )
     print(f"{dg}  ————————————————————————————————————————")
     print(f"{lg}  [•] TOTAL ID IN FILE:{dg} " + tl)
