@@ -93,8 +93,8 @@ def menu():
     gxdslogo()
     print(f"{dg}")
     gxdsoption1 = input(f"{lg}  [•] ENTER YOUR TOKEN:{rc} ")
-    print("")
     for gxdsloading in range(10):
+      print("")
       time.sleep(0.2)
       sys.stdout.write(f"\r{dg}  [?] IDENTIFYING YOUR TOKEN: " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
       sys.stdout.flush()
