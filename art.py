@@ -296,9 +296,10 @@ def gxds_files(uid,pwx):
                 continue
         loop+=1
     except requests.exceptions.ConnectionError:
-     print(f"{lr}  [!] NO INTERNET CONNECTION...")
-     time.sleep(4)
-    except:
+     time.sleep(20)
+    except Exception as e:
         pass
-
-main()
+try: main()
+except requests.exceptions.ConnectionError:
+     print(f"{lr}  [!] NO INTERNET CONNECTION...")
+     except Exception as e:pass
