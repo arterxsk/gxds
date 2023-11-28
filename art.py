@@ -110,7 +110,7 @@ def menu():
         print("")
         print(f"{grn}   "+gxdsid)
         print("")
-        input(f"{lg} IF U WANT TO BUY THEN PRESS ENTER\n   AND SEND THE TOKEN")
+        input(f"{lg}   IF U WANT TO BUY THEN PRESS ENTER\n   AND SEND THE TOKEN")
         os.system("xdg-open https://www.facebook.com/goxdies")
 
 def gxdsclone():
