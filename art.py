@@ -106,7 +106,7 @@ def menu():
          time.sleep(0.5)
          sys.stdout.write(f"\r{dg}  [!] MAKING TOKEN: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
          sys.stdout.flush()
-        gxdslogo()
+        print(f"{dg}  ————————————————————————————————————————")
         print(f"{lg}  [-] TOKEN:{dg} "+gxdsid)
         print(f"{lg}  [-] PRICE:{dg} ₱150 - 15 DAYS ")
         print(f"{dg}  ————————————————————————————————————————")
