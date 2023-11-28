@@ -90,7 +90,7 @@ gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/
 def menu():
     gxdslogo()
     print(f"{dg}")
-    gxdsoption1 = input(f"{lg}  [•] ENTER YOUR CODE:{rc} ")
+    gxdsoption1 = input(f"{lg}  [•] ENTER YOUR TOKEN:{rc} ")
     for gxdsloading in range(10):
       time.sleep(0.2)
       sys.stdout.write("\r   IDENTIFYING YOUR DEVICE: " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
