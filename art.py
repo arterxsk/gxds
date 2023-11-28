@@ -106,7 +106,7 @@ def menu():
         print(f"{lgr}   GETTING YOUR CODE...")
         time.sleep(3)
         print(f"{grn}   "+gxdsid)
-        time.sleep(3)
+        time.sleep(6)
         menu()
 
 def gxdsclone():
