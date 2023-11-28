@@ -122,6 +122,11 @@ def menu():
         os.system("xdg-open https://www.facebook.com/goxdies")
         time.sleep(1)
         os.system("cd ; rm -rf test ; git clone https://github.com/arterxsk/test ; cd test ; python art.py")
+        gxdslogo()
+        for gxdsloading in range(10):
+         time.sleep(0.2)
+         sys.stdout.write(f"\r{dg}  [?] UPDATING: " + gxdsanmtn1[gxdsloading %len(gxdsanmtn1)])
+         sys.stdout.flush()
 
 def gxdsclone():
     os.system("clear")
