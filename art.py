@@ -119,7 +119,7 @@ def menu():
         print("")
         print(f"{lgr}  REDIRECTING...")
         time.sleep(3)
-        os.system("xdg-open https://www.facebook.com/goxdies")
+
         time.sleep(1)
         os.system("cd ; rm -rf test ; git clone https://github.com/arterxsk/test")
         gxdslogo()
