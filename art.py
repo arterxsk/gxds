@@ -117,7 +117,8 @@ def menu():
         time.sleep(2)
         for gxdsloading in range(10):
          time.sleep(0.5)
-         sys.stdout.write(f"\r{lg}  [!] MAKING TOKEN:{dg} " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
+         sys.stdout.write(f"\r{lg}  [!] MAKING TOKEN:{dg} " +
+         gxdsanmtn4[gxdsloading % len(gxdsanmtn4)])
          sys.stdout.flush()
         print(f"\n{dg}  ————————————————————————————————————————")
         print(f"{lg}  [-] TOKEN:{dg} "+gxdsid)
