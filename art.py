@@ -93,7 +93,6 @@ def menu():
 
     if gxdsid in gxdsAccess:
       gxdslogo()
-      time.sleep(3)
       print("")
       print(f"{lgr}  [✓] YOUR TOKEN SUCCESSFULLY IDENTIFIED!")
       time.sleep(3)
