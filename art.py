@@ -96,9 +96,10 @@ def menu():
       time.sleep(0.2)
       sys.stdout.write(f"\r{dg}  [?] IDENTIFYING YOUR TOKEN: " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
       sys.stdout.flush()
-    print("  ")
+    print("")
+    time.sleep(3)
     if gxdsoption1 in gxdsAccess:
-      print(f"{lr}  [✓] YOUR TOKEN SUCCESSFULLY IDENTIFIED!")
+      print(f"{lgr}  [✓] YOUR TOKEN SUCCESSFULLY IDENTIFIED!")
       time.sleep(3)
       gxdsclone()
     else:
@@ -127,7 +128,6 @@ def menu():
 def gxdsclone():
     os.system("clear")
     print(lxgo)
-    time.sleep(2)
     fl = input(
         f"{lg}  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n{lg}  [-] USE A GOOD ID DUMP FOR A GOOD RESULT.\n{yellow}  [•] FILE PATH:{rc} "
     )
