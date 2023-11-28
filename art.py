@@ -69,34 +69,10 @@ for gxdsloading in range(60):
 def gxdslogo():
     os.system('clear')
     print(lxgo)
-    main()
-
-def main():
-  os.system('clear')
-  print(lxgo)
-  uuid = str(os.geteuid()) + str(os.getlogin())
-  gxdsid = "-".join(uuid)
-  try:
-    gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
-    if gxdsid in gxdsAccess:
-      print("\033[1;32mYour Token is Successfully Approved")
-      msg = str(os.geteuid())
-      menu()
-    else:
-      print("Your Token : "+gxdsid)
-      print('\33[1;37m----------------------------------------------')
-      print("\33[1;32mImportant Note")
-      print("\33[1;37m----------------------------------------------")
-      print("\33[1;37mFor 15 Days main Price 200Tk One Month Price 400 Tk")
-      print('BKASH PERSONAL - +8801935845884')
-      print('Send Pay And Give Ss And Send Me Key Or Ss Me Whatsapp')
-      print('\33[1;37m----------------------------------------------')
-      input('IF U WANT TO BUY THEN PRESS ENTER ')
-      tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+gxdsid);os.system('am start https://wa.me/+8801935845884?text='+tks),main()
-      time.sleep(1)
-      main()
-  except:
-    sys.exit()
+ 
+uuid = str(os.geteuid()) + str(os.getlogin())
+gxdsid = "-".join(uuid)
+gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
     
 def menu():
     gxdslogo()
