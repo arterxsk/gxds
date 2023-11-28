@@ -87,7 +87,7 @@ def menu():
       sys.stdout.write("\r                     " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)])
       sys.stdout.flush()
     print("  ")
-    if gxdsoption1 in ["GXDS", "gxds"]:
+    if gxdsoption1 in gxdsAccess:
       print(" ")
       gxdsclone()
     elif gxdsoption1 in ["1"]:
