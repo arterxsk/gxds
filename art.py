@@ -17,8 +17,6 @@ def gxdsUArndm():
     gxjo = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+GXJX
     return gxjo
 
-head = {'Host': 'adsmanager.facebook.com', 'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"', 'viewport-width': '980'}
-
 # COLORS
 li = "\033[38;5;46m"
 blue = "\033[94m"
