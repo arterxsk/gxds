@@ -70,8 +70,9 @@ def gxdslogo():
     os.system('clear')
     print(lxgo)
  
+rndm = (random.randint(0,99))
 uuid = str(os.geteuid()) + str(os.getlogin())
-gxdsid = "GXDS".join(uuid)
+gxdsid = rndm.join(uuid)
 gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
     
 def menu():
