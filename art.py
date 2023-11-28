@@ -12,6 +12,11 @@ except ModuleNotFoundError:
 
 
 # UA RANDOMIZER
+suuu = []
+samiya=[]
+fahmida = []
+fariya=[]
+
 for i in range(1):
     fbs = random.choice([
         'com.facebook.adsmanager',
