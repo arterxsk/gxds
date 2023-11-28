@@ -847,7 +847,8 @@ def gxdsfiles(gxdsfiles1):
                     pass
                 else:
                     pwx.append(nam3)
-                    pwx.append(first + lxst)
+                    pwx.append(fxrst + lxst)
+                    pwx.append(fxrst + lxst + "123")
                     pwx.append(lxst + "123")
                     pwx.append(lxst + "1234")
                     pwx.append(lxst + "12345")
