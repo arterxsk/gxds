@@ -146,6 +146,9 @@ def gxdsfiles(gxdsfiles1):
     print(
         f"\n{lg}  [-] PRESS {rc}CTRL+Z{lg} TO STOP THE PROCESS.\n"
     )
+    print(
+        f"\n{lg}  [-] USE A GOOD ID DUMP FOR A GOOD RESULT.\n"
+    )
     print(f"{dg}  ————————————————————————————————————————")
     print(f"{lg}  [•] TOTAL ID IN FILE:{rc} " + tl)
     print(f"{lg}  [•] FILE SAVE IN:{rc} /sdcard/gxds.txt")
