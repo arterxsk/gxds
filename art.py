@@ -119,7 +119,7 @@ def menu():
 def gxdsclone():
     time.sleep(2)
     fl = input(
-        f"{lg}  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n{lg}  [•] FILE PATH:{rc} "
+        f"{lg}  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n{lg}   [-] USE A GOOD ID DUMP FOR A GOOD RESULT.\n{lg}  [•] FILE PATH:{rc} "
     )
     print(f"{dg}")
     for gxdsloading in range(10):
@@ -145,9 +145,6 @@ def gxdsfiles(gxdsfiles1):
     print(f"{dg}  ————————————————————————————————————————")
     print(
         f"\n{lg}  [-] PRESS {rc}CTRL+Z{lg} TO STOP THE PROCESS.\n"
-    )
-    print(
-        f"\n{lg}  [-] USE A GOOD ID DUMP FOR A GOOD RESULT.\n"
     )
     print(f"{dg}  ————————————————————————————————————————")
     print(f"{lg}  [•] TOTAL ID IN FILE:{rc} " + tl)
