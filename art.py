@@ -106,7 +106,6 @@ def menu():
         print(f"{lg}   GETTING YOUR TOKEN...")
         time.sleep(3)
         gxdslogo()
-        time.sleep(3)
         print("")
         print(f"{lg}   TOKEN:{rc} "+gxdsid)
         print("")
