@@ -825,46 +825,32 @@ def gxdsfiles(gxdsfiles1):
             nam = data.split("|")[1]
             name = nam.lower()
             try:
-                name1 = name.split(" ")[0]
+                fxrst = name.split(" ")[0]
                 nam1 = nam.split(" ")[0]
-                if len(name1) < 3:
+                if len(fxrst) < 3:
                     pass
                 else:
-                    pwx.append(nam1 + "123")
-                    pwx.append(name1 + "143")
-                    pwx.append(name1 + "12")
-                    pwx.append(name1 + "pogi")
-                    pwx.append(name1 + "ganda")
-                    pwx.append(name1 + "123")
-                    pwx.append(name1 + " 123")
-                    pwx.append(name1 + "1234")
-                    pwx.append(name1 + "12345")
+                    pwx.append(nam1)
+                    pwx.append(fxrst + "143")
+                    pwx.append(fxrst + "12")
+                    pwx.append(fxrst + "pogi")
+                    pwx.append(fxrst + "ganda")
+                    pwx.append(fxrst + "123")
+                    pwx.append(fxrst + " 123")
+                    pwx.append(fxrst + "1234")
+                    pwx.append(fxrst + "12345")
             except:
                 pass
             try:
-                sur_name = name.split(" ")[2]
+                lxst = name.split(" ")[2]
                 nam3 = nam.split(" ")[2]
-                if len(sur_name) < 3:
+                if len(lxst) < 3:
                     pass
                 else:
                     pwx.append(nam3)
-                    pwx.append(sur_name + "123")
-                    pwx.append(sur_name + "1234")
-                    pwx.append(sur_name + "12345")
-                    pwx.append(name1 + sur_name)
-                    pwx.append(name1 + sur_name + "143")
-                    pwx.append(name1 + sur_name + "123")
-                    pwx.append(name1 + " " + sur_name + "143")
-                    pwx.append(name1 + " " + sur_name + "123")
-                    pwx.append(name1 + mid_name + sur_name)
-                    pwx.append(name1 + mid_name + sur_name + "123")
-                    pwx.append(name1 + mid_name + sur_name + "1234")
-                    pwx.append(name1 + mid_name + sur_name + "12345")
-                    pwx.append(name1 + mid_name + sur_name + "@#")
-                    pwx.append(name1 + mid_name + sur_name + "@@")
-                    pwx.append(name1 + mid_name + sur_name + "@")
-                    pwx.append(name1 + " " + mid_name + " " + sur_name)
-                    pwx.append(name1 + " " + mid_name + " " + sur_name + "123")
+                    pwx.append(lxst + "123")
+                    pwx.append(lxst + "1234")
+                    pwx.append(lxst + "12345")
             except:
                 pass
 
