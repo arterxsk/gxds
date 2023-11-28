@@ -97,14 +97,14 @@ def menu():
       sys.stdout.flush()
     print("  ")
     if gxdsoption1 in gxdsAccess:
-      print(f"{lr}   YOUR TOKEN SUCCESSFULLY IDENTIFIED!")
+      print(f"{lr}   [✓] YOUR TOKEN SUCCESSFULLY IDENTIFIED!")
       time.sleep(3)
       gxdsclone()
     else:
         time.sleep(2)
-        print(f"{lr}   YOUR TOKEN DON'T HAVE ACCESS")
+        print(f"{lr}   [!] INVALID TOKEN")
         time.sleep(3)
-        print(f"{lg}   GETTING YOUR TOKEN...")
+        print(f"{lg}   [-] GETTING YOUR TOKEN...")
         time.sleep(3)
         gxdslogo()
         print("")
