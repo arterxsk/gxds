@@ -68,7 +68,7 @@ def gxdslogo():
     os.system('clear')
     print(lxgo)
 
-def approval():
+def main():
   os.system('clear')
   print(lxgo)
   uuid = str(os.geteuid()) + str(os.getlogin())
@@ -79,25 +79,25 @@ def approval():
       print("\033[1;32mYour Token is Successfully Approved")
       msg = str(os.geteuid())
       time.sleep(0.5)
-      main()
+      menu()
       pass
     else:
       print("Your Token : "+gxdsid)
       print('\33[1;37m----------------------------------------------')
       print("\33[1;32mImportant Note")
       print("\33[1;37m----------------------------------------------")
-      print("\33[1;37mFor 15 Days Approval Price 200Tk One Month Price 400 Tk")
+      print("\33[1;37mFor 15 Days main Price 200Tk One Month Price 400 Tk")
       print('BKASH PERSONAL - +8801935845884')
       print('Send Pay And Give Ss And Send Me Key Or Ss Me Whatsapp')
       print('\33[1;37m----------------------------------------------')
       input('IF U WANT TO BUY THEN PRESS ENTER ')
-      tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+gxdsid);os.system('am start https://wa.me/+8801935845884?text='+tks),approval()
+      tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+gxdsid);os.system('am start https://wa.me/+8801935845884?text='+tks),main()
       time.sleep(1)
-      approval()
+      main()
   except:
     sys.exit()
     
-def main():
+def menu():
     gxdslogo()
     print(f"{dg}  ————————————————————————————————————————")
     print(f"\n{yellow}  [-] FILE CLONING VERSION 0.1\n")
@@ -118,7 +118,7 @@ def main():
         print(f"{lg}   Redirecting...")
         time.sleep(3)
         os.system("xdg-open https://www.facebook.com/goxdies")
-        main()
+        menu()
     elif gxdsoption1 in ["2"]:
         print(gxdsprnt)
         print(f"{lg}  [•] K, BYE.")
@@ -130,7 +130,7 @@ def main():
         time.sleep(2)
         print(f"\n{lr}  [X] INVALID CODE!")
         time.sleep(3)
-        main()
+        menu()
 
 def gxdsclone():
     time.sleep(2)
@@ -150,7 +150,7 @@ def gxdsclone():
         print(f"\n{lr}  [X] FILE NOT FOUND.")
         print(gxdsprnt)
         time.sleep(3)
-        main()
+        menu()
     gxdsfiles(gxdsfiles1)
 
 def gxdsfiles(gxdsfiles1):
@@ -331,7 +331,7 @@ def gxds_files(uid,pwx):
         pass
 
 try:
-    main()
+    menu()
 except requests.exceptions.ConnectionError:
     print(f"{lr}  [!] NO INTERNET CONNECTION...")
 except Exception as e:
