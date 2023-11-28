@@ -13,10 +13,10 @@ except ModuleNotFoundError:
 
 # UA RANDOMIZER
 def gxdsUArndm():
-  END = '[FBAN/EMA;FBBV/352223683;FBAV/291.0.0.12.110;FBDV/SM-G935FD;FBLC/en_GB;FBNG/WIFI;FBMNT/NOT_METERED;FBDM/{density=1.0125}]'
-  gxjo = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
-  return gxjo
-  
+    GXJX = '[FBAN/EMA;FBBV/352223683;FBAV/291.0.0.12.110;FBDV/SM-G935FD;FBLC/en_GB;FBNG/WIFI;FBMNT/NOT_METERED;FBDM/{density=1.0125}]'
+    gxjo = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+GXJX
+    return gxjo
+
 head = {'Host': 'adsmanager.facebook.com', 'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"', 'viewport-width': '980'}
 
 # COLORS
@@ -290,7 +290,7 @@ def gxds_files(uid,pwx):
     session=requests.Session()
     try:
         for ps in pwx:
-            user_agent=gxdsUArndm
+            user_agent=gxdsUArndm()
             data={'adid': str(uuid.uuid4()),
                     'format': 'json',
                     'device_id': str(uuid.uuid4()),
