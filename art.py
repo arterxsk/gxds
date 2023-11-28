@@ -73,10 +73,11 @@ def gxdslogo():
     print(f"\n{yellow}  [-] FILE CLONING VERSION 0.1\n")
     print(f"{dg}  ————————————————————————————————————————")
  
- # TOKEN GENERATOR 
-rndm1 = chr(random.randint(ord('D'), ord('G')))
-rndm2 = chr(random.randint(ord('I'), ord('O')))
-rndm3 = chr(random.randint(ord('E'), ord('X')))
+ # TOKEN GENERATOR
+gxdsToken = ""
+for _ in range(10):
+ gxdsToken += secrets.choice(string.ascii_uppercase)
+gxdsToken += secrets.choice(string.digits)
 uuidd = str(os.geteuid()) + str(os.getlogin())
 id1 = "".join(uuidd).replace("_","&").replace("360","").replace("u","GXDS").replace("a","X")
 plat = platform.version()[14:][:21][::-1].upper()+platform.release()[5:][::-1].upper()+platform.version()[:8]
@@ -85,7 +86,7 @@ xp = plat.replace(' ', '').replace('-', '').replace('#', '').replace(':',
 '').replace('=', '').replace('+', '').replace(';', '').replace('*',
 '').replace('_', '').replace('?', '').replace('  ', '')
 spce = ""
-gxdsid = id1+spce+rndm2+rndm1+rndm3
+gxdsid = id1+spce+gxdsToken
 gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
     
 def menu():
