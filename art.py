@@ -127,6 +127,7 @@ def menu():
          time.sleep(0.2)
          sys.stdout.write(f"\r{dg}  [?] UPDATING: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)])
          sys.stdout.flush()
+         time.sleep(20)
          input(f"{lg}  [!] PRESS ENTER TO CONTINUE")
          os.system("cd test ; python art.py")
 
