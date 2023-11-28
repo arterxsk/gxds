@@ -140,7 +140,7 @@ def gxdsclone():
         print(f"\n{lr}  [X] FILE NOT FOUND.")
         print(gxdsprnt)
         time.sleep(3)
-        menu()
+        gxdsclone()
     gxdsfiles(gxdsfiles1)
 
 def gxdsfiles(gxdsfiles1):
