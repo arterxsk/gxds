@@ -73,10 +73,9 @@ def gxdslogo():
     print(f"\n{yellow}  [-] FILE CLONING VERSION 0.1\n")
     print(f"{dg}  ————————————————————————————————————————")
  
-symbols = ['*', '%', '£'] # Can add more
-
+symbols = ['#','*', '%', '£']
 gxdscode = ""
-for _ in range(8):
+for _ in range(10):
 gxdscode += secrets.choice(string.ascii_uppercase)
 gxdscode += secrets.choice(string.digits)
 gxdscode += secrets.choice(symbols)
