@@ -62,8 +62,8 @@ for xd in range(1):
     i='; U; Bada/1.2; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/'
     j=random.randrange(1, 9)
     k=random.randrange(1, 9)
-    l='Mobile WVGA SMM-MMS/1.2.0 OPN-B'
-    pakuu=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
+    xx='Mobile WVGA SMM-MMS/1.2.0 OPN-B'
+    pakuu=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {xx}'
     fariya.append(pakuu)
     
     numan = fahmida+fariya+suuu
