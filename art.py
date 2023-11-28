@@ -109,7 +109,7 @@ def menu():
         print("")
         print(f"{lg}   TOKEN:{rc} "+gxdsid)
         print("")
-        print(f"{lg}   PRICE:{yellow}\n   ₱150 - 15 DAYS ")
+        print(f"{lg}   PRICE:{rc}\n   ₱150 - 15 DAYS ")
         print("")
         input(f"{dg}   IF YOU WANT TO BUY THEN PRESS ENTER")
         print("")
