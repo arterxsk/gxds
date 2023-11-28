@@ -105,6 +105,7 @@ def menu():
         time.sleep(3)
         print(f"{lgr}   GETTING YOUR CODE...")
         time.sleep(3)
+        print("")
         print(f"{grn}   "+gxdsid)
         time.sleep(6)
         menu()
