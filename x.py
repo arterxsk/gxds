@@ -824,7 +824,7 @@ def gxdsfiles(gxdsfiles1):
             uid = data.split("|")[0]
             pwx = [fs + "123", +fs + "143"]
 
-            GOXDIES.submit(gxds_files, uid, pwx, tl)
+            GOXDIES.submit(gxds_files, uid, pwx,)
 
 
 # LOOP MENU
@@ -833,7 +833,7 @@ oks = []
 cps = []
 
 # API
-def gxds_files(uid, pwx, tl):
+def gxds_files(uid, pwx):
     global oks, loop, cps
     sys.stdout.write(
         f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))} | [CHECKPOINT] {str(len(cps))} "
