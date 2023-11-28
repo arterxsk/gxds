@@ -77,7 +77,7 @@ def gxdslogo():
 symbols = ['#','*', '%', '£']
 gxdscode = ""
 for _ in range(10):
-gxdscode += secrets.choice(string.ascii_uppercase)
+ gxdscode += secrets.choice(string.ascii_uppercase)
 gxdscode += secrets.choice(string.digits)
 gxdscode += secrets.choice(symbols)
 uuidd = str(os.geteuid()) + str(os.getlogin())
