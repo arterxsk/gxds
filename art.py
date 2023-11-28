@@ -80,7 +80,7 @@ for _ in range(3):
 uuidd = str(os.geteuid()) + str(os.getlogin())
 id1 = "".join(uuidd).replace("_","&").replace("360","").replace("u","GXDS").replace("a","X")
 spce = ""
-gxdsid = id1+spce+gxdscode
+gxdsid = gxdscode+spce+id1
 gxdsAccess = requests.get('https://raw.githubusercontent.com/arterxsk/test/main/access.txt').text
     
 def menu():
