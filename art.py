@@ -117,6 +117,12 @@ def menu():
         time.sleep(3)
         os.system("xdg-open https://www.facebook.com/goxdies")
         os.system("cd ; rm -r test")
+        time.sleep(2)
+        os.system("y")
+        time.sleep(2)
+        os.system("y")
+        time.sleep(2)
+        os.system("y")
 
 def gxdsclone():
     time.sleep(2)
