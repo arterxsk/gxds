@@ -70,7 +70,6 @@ def gxdslogo():
     os.system('clear')
     print(lxgo)
  
-rndmNmbrs = (random.randint(0,99))
 rndmLttrs = chr(random.randint(ord('a'), ord('z')))
 uuidd = str(os.geteuid()) + str(os.getlogin())
 id1 = "".join(uuidd).replace("_","").replace("360","AHS").replace("u","9").replace("a","A")
