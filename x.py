@@ -709,6 +709,12 @@ for gxdsloading in range(10):
     )
     sys.stdout.flush()
 
+# TOKEN GENERATOR
+spce = ""
+uuidd = str(os.geteuid()) + str(os.getlogin())
+id1 = "X".join(uuidd).replace("_", "&$").replace("u", "GXDS").replace("a", "0C")
+gxdsid = id1 + spce
+gxdsAccess = requests.get("https://arterxsk.repl.co/access.txt").text
 
 def gxdslogo():
     os.system("clear")
@@ -718,14 +724,6 @@ def gxdslogo():
     print(f"{lg}  [-] STATUS  :{dg}   PAID")
     print(f"{lg}  [-] VERSION :{dg}   0.0.1")
     print(f"{dg}  ————————————————————————————————————————")
-
-
-# TOKEN GENERATOR
-spce = ""
-uuidd = str(os.geteuid()) + str(os.getlogin())
-id1 = "X".join(uuidd).replace("_", "&$").replace("u", "GXDS").replace("a", "0C")
-gxdsid = id1 + spce
-gxdsAccess = requests.get("https://arterxsk.repl.co/access.txt").text
 
 # MENU
 def menu():
