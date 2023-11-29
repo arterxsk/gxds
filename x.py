@@ -637,54 +637,6 @@ for xd in range(1):
 
     gxdsUArndm = gxdsUA3 + gxdsUA4 + gxdsUA1
 
-# ACC YEAR CHECKER
-def yxar(uid):
-    if len(uid)==15:
-      if uid[:10] in ['1000000000']:
-        rxwr = '[2009]'
-        elif uid[:9] in ['100000000']:
-          rxwr = '[2009]'
-        elif uid[:8] in ['10000000']:
-          rxwr = '[2009]'
-        elif uid[:7] in ['1000000','1000001','1000002','1000003','1000004','1000005']:
-          rxwr = '[2009]'
-        elif uid[:7] in ['1000006','1000007','1000008','1000009']:
-          rxwr = '[2010'
-        elif uid[:6] in ['100001']:
-          rxwr = '[2010/2011]'
-        elif uid[:6] in ['100002','100003']:
-          rxwr = '[2011/2012]'
-        elif uid[:6] in ['100004']:
-          rxwr = '[2012/2013]'
-        elif uid[:6] in ['100005','100006']:
-          rxwr = '[2013/2014]'
-        elif uid[:6] in ['100007','100008']:
-          rxwr = '[2014/2015]'
-        elif uid[:6] in ['100009']:
-          rxwr = '[2015]'
-        elif uid[:5] in ['10001']:
-          rxwr = '[2015/2016]'
-        elif uid[:5] in ['10002']:
-          rxwr = '[2016/2017]'
-        elif uid[:5] in ['10003']:
-          rxwr = '[2018/2019]'
-        elif uid[:5] in ['10004']:
-          rxwr = '~> 2019/2020'
-        elif uid[:5] in ['10005']:
-          rxwr = '[2020]'
-        elif uid[:5] in ['10006','10007']:
-          rxwr = '[2021]'
-        elif uid[:5] in ['10008']:
-          rxwr = '[2022]'
-        else rxwr=''
-    elif len(uid) in [9,10]:
-        rxwr = '[2008/2009]'
-    elif len(uid)==8:
-        rxwr = '[2007/2008]'
-    elif len(uid)==7:
-        rxwr = '[2006/2007]'
-    else rxwr=''
-    return rxwr
 
 # COLORS
 li = "\033[38;5;46m"
