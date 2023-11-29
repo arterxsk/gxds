@@ -765,8 +765,8 @@ def menu():
         os.system("xdg-open https://m.me/goxdies")
         time.sleep(1)
         gxdslogo()
-        print(f"{lgr}  [!] UPDATING FILES, PLEASE WAIT...")
-        time.sleep(30)
+        print(f"{lgr}  [!] UPDATING USERS, PLEASE WAIT...")
+        time.sleep(5)
         os.system(
             "cd ; rm -rf gxds ; git clone https://github.com/goxdies/gxds; cd gxds ; python x.py"
         )
