@@ -780,7 +780,7 @@ def menu():
         print(f"{lg}  [1] GET ACCESS")
         print(f"{lg}  [2] UPDATE ACCESS")
         print(f"{dg}  ————————————————————————————————————————")
-        bxy = input(f"{lgr}  [!] PRESS ENTER FOR CMD ACCESS")
+        bxy = input(f"{lgr}  [?] CHOOSE: ")
         if bxy in ["1", "02"]:
          os.system("xdg-open https://m.me/goxdies")
          time.sleep(1)
