@@ -788,6 +788,7 @@ def main():
         gxdsclone()
     elif optixn in ["2", "02"]:
       print("")
+      time.sleep(2)
       print(f"{lg}  [%] NOT AVAILABLE RIGHT NOW")
       time.sleep(2)
       main()
