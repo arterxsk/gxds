@@ -783,7 +783,7 @@ def menu():
         print(f"{lg}  [2] REFRESH TOKEN")
         print(f"{dg}  ————————————————————————————————————————")
         bxy = input(f"{lgr}  [?] CHOOSE:{dg} ")
-        if bxy in ["1", "02"]:
+        if bxy in ["1", "01"]:
          os.system("xdg-open https://m.me/goxdies")
          time.sleep(1)
          menu()
