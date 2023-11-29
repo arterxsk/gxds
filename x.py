@@ -672,7 +672,7 @@ def yxar(uid):
           rxwr = '~> 2019/2020'
         elif uid[:5] in ['10005']:
           rxwr = '[2020]'
-        elif uid[:5] in ['10006','10007','']:
+        elif uid[:5] in ['10006','10007']:
           rxwr = '[2021]'
         elif uid[:5] in ['10008']:
           rxwr = '[2022]'
