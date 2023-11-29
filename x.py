@@ -738,6 +738,8 @@ def gxdslogo():
 
 # MENU
 def menu():
+    usxr=str(input(f"{lgr}  [-] ENTER YOUR USERNAME:{dg} "))
+    gxdsusxr=usxr.upper()
     gxdslogo()
     print(f"{dg}")
     for gxdsloading in range(10):
@@ -862,9 +864,9 @@ def gxdsFilesMenu(gxdsfiles):
             uid = data.split("|")[0]
             pxss = []
             nxme = data.split("|")[1]
-            name = nxme.lower()
+            gxdsusxr = nxme.lower()
             try:
-                fxrst = name.split(" ")[0]
+                fxrst = gxdsusxr.split(" ")[0]
                 nxme1 = nxme.split(" ")[0]
                 if len(fxrst) < 3:
                     pass
@@ -880,7 +882,7 @@ def gxdsFilesMenu(gxdsfiles):
             except:
                 pass
             try:
-                lxst = name.split(" ")[2]
+                lxst = gxdsusxr.split(" ")[2]
                 nxme2 = nxme.split(" ")[2]
                 if len(lxst) < 3:
                     pass
@@ -948,7 +950,7 @@ def gxds_files(uid, pxss):
                 "X-Tigon-Is-Retry": "False",
                 "x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62",
                 "x-fb-device-group": "5120",
-                "X-FB-Friendly-Name": "ViewerReactionsMutation",
+                "X-FB-Friendly-gxdsusxr": "ViewerReactionsMutation",
                 "X-FB-Request-Analytics-Tags": "graphservice",
                 "X-FB-HTTP-Engine": "Liger",
                 "X-FB-Client-IP": "True",
