@@ -758,7 +758,7 @@ def menu():
             sys.stdout.flush()
         print(f"\n{dg}  ————————————————————————————————————————")
         print(f"{lg}  [-] TOKEN:{dg} " + gxdsid)
-        print(f"{lg}  [-] TRIAL:{dg} ₱000 - 007 DAYS ")
+        print(f"{lg}  [-] TRIAL:{dg} ₱000 - 003 DAYS ")
         print(f"{lg}  [-] PAID:{dg} ₱150 - 015 DAYS ")
         print(f"{dg}  ————————————————————————————————————————")
         input(f"{lgr}  [!] PRESS ENTER TO CONTINUE")
