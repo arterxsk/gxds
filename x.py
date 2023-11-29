@@ -816,11 +816,10 @@ def gxdsclone():
     print(f"  [-] EXAMPLE PATH: {dg}/sdcard/yourFile.txt")
     print(f"\n{dg}  ————————————————————————————————————————")
     fl = input(f"{lgr}  [•] FILE PATH:{dg} ")
-    print(f"{dg}")
     for gxdsloading in range(10):
         time.sleep(0.2)
         sys.stdout.write(
-            "\r                     " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)]
+            f"\r{dg}                     " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)]
         )
         sys.stdout.flush()
     print("  ")
