@@ -826,6 +826,7 @@ def gxdsfiles(gxdsfiles1):
                     pass
                 else:
                     pxss.append(nxme1)
+                    pxss.append(fxrst + fxrst)
                     pxss.append(fxrst + "pogi")
                     pxss.append(fxrst + "ganda")
                     pxss.append(fxrst + "12")
