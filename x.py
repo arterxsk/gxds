@@ -775,7 +775,7 @@ def main():
     gxdslogo()
     print(f"{lg}  [1] FILE ID CRACKING")
     print(f"{lg}  [2] EMAIL CRACKING")
-    print(f"{lg}  [3] EXIT TOOL")
+    print(f"{lg}  [3] CHECK UPDATE")
     print(f"{dg}  ————————————————————————————————————————")
     optixn = input(f"{lgr}  [•] CHOOSE:{dg} ")
     for gxdsloading in range(10):
@@ -791,9 +791,9 @@ def main():
       time.sleep(2)
       main()
     elif optixn in ["3", "03"]:
-      print(f"{lg}  [%] OK, GOOD BYE!")
-      time.sleep(2)
-      exit()
+      os.system(
+            "cd ; rm -rf gxds ; git clone https://github.com/arterxsk/gxds; cd gxds ; python x.py"
+        )
     else:
         gxdslogo()
         print(f"{lg}  [✘] OPTION:{dg} INVALID")
