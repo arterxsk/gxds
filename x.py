@@ -740,7 +740,8 @@ def gxdslogo():
 def menu():
     gxdslogo()
     usxr=str(input(f"{lgr}  [-] ENTER YOUR USERNAME:{dg} "))
-    usxrN = usxr.upper()
+    usxrN1 = usxr.upper()
+    usxrN = f"{cyan}"+usxrN1
     print(f"{dg}")
     for gxdsloading in range(10):
         time.sleep(0.2)
@@ -753,13 +754,13 @@ def menu():
     if gxdsid in gxdsAccess:
         time.sleep(2)
         print("")
-        print(f"{lgr}  [✓] HELLO, "+usxrN+". YOUR TOKEN APPROVED!")
+        print(f"{lgr}  [✓] HELLO, "+usxrN1+". YOUR TOKEN APPROVED!")
         time.sleep(3)
         main()
     else:
         time.sleep(0.1)
         gxdslogo()
-        print(f"{lg}  [✘] "+usxrN+" TOKEN:\033[1;30m INVALID")
+        print(f"{lg}  [✘] "+usxrN1+" TOKEN:\033[1;30m INVALID")
         time.sleep(1)
         for gxdsloading in range(11):
             time.sleep(0.3)
@@ -771,7 +772,7 @@ def menu():
         print(f"\n{dg}  ————————————————————————————————————————")
         print(f"{lg}  [-] TOKEN :{dg} " + gxdsid)
         print(f"\n{dg}  ————————————————————————————————————————")
-        print(f"{rc}   [+] HELLO, "+usxrN+". CHECK OUR PRICELIST.")
+        print(f"{rc}   [+] HELLO, "+usxrN1+". CHECK OUR PRICELIST.")
         print(f"{lg}  [-] TRIAL :{dg} ₱000 - 003 DAYS ")
         print(f"{lg}  [-] PAID  :{dg} ₱150 - 015 DAYS ")
         print(f"{dg}  ————————————————————————————————————————")
