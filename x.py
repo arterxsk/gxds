@@ -659,6 +659,16 @@ rg = f"\033[{mxclrs};112m"
 rp = f"\033[{mxclrs};147m"
 gxdsprnt = str(f"{li}" * 37)
 
+# ANTI BYPASSING
+if not os.path.exists("/data/data/com.termux/files/usr/bin/rm"):
+        print(f"{lgr}   [✓] BYPASSING PASSED!")
+        time.sleep(2)
+        print(f"{lr}  [!] LOL, IT'S A PRANK!")
+        time.sleep(5)
+        exit()
+else:
+        pass
+
 # ANIMATION
 gxdsanmtn3 = [
     "[■□□□□□□□□□]",
