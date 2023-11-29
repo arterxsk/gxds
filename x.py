@@ -776,7 +776,7 @@ def main():
     print(f"{lg}  [1] FILE ID CRACKING")
     print(f"{lg}  [2] EMAIL CRACKING")
     print(f"{lg}  [3] EXIT TOOL")
-    print(f"\n{dg}  ————————————————————————————————————————")
+    print(f"{dg}  ————————————————————————————————————————")
     optixn = input(f"{lgr}  [•] CHOOSE:{dg} ")
     if optixn in ["1", "01"]:
         gxdsclone()
