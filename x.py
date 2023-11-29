@@ -770,6 +770,8 @@ def menu():
             sys.stdout.flush()
         print(f"\n{dg}  ————————————————————————————————————————")
         print(f"{lg}  [-] TOKEN :{dg} " + gxdsid)
+        print(f"\n{dg}  ————————————————————————————————————————")
+        print(f"HELLO, "+gxdsusxr+". CHECK OUR PRICELIST.")
         print(f"{lg}  [-] TRIAL :{dg} ₱000 - 003 DAYS ")
         print(f"{lg}  [-] PAID  :{dg} ₱150 - 015 DAYS ")
         print(f"{dg}  ————————————————————————————————————————")
