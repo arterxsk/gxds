@@ -786,7 +786,7 @@ def main():
     elif optixn in ["3", "03"]:
       print(f"{lg}   [%] OK, GOOD BYE!")
       time.sleep(2)
-      main()
+      exit()
     else:
         time.sleep(0.1)
         gxdslogo()
