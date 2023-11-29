@@ -759,7 +759,7 @@ def menu():
     else:
         time.sleep(0.1)
         gxdslogo()
-        print(f"{lg}  [✘] TOKEN:{dg} INVALID")
+        print(f"{lg}  [✘] "+gxdsusxr+" TOKEN:{dg} INVALID")
         time.sleep(1)
         for gxdsloading in range(11):
             time.sleep(0.3)
