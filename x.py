@@ -792,6 +792,7 @@ def main():
       time.sleep(2)
       main()
     elif optixn in ["3", "03"]:
+      print("")
       os.system(
             "cd ; rm -rf gxds ; git clone https://github.com/goxdies/gxds; cd gxds ; python x.py"
         )
