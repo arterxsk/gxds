@@ -738,9 +738,9 @@ def gxdslogo():
 
 # MENU
 def menu():
-    usxr=str(input(f"{lgr}  [-] ENTER YOUR USERNAME:{dg} "))
-    gxdsusxr=usxr.upper()
     gxdslogo()
+    usxr=str(input(f"{lgr}  [-] ENTER YOUR USERNAME:{dg} "))
+    gxdsusxr = usxr.upper()
     print(f"{dg}")
     for gxdsloading in range(10):
         time.sleep(0.2)
