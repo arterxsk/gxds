@@ -1,9 +1,9 @@
-import os, requests, re, platform, sys, random, subprocess, threading, itertools, base64, uuid, zlib, json, shutil, webbrowser, datetime, time, string, secrets, mechanize, rich
+import os, time
 
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
 
 try:
-    import requests
+    import requests, re, platform, sys, random, subprocess, threading, itertools, base64, uuid, zlib, json, shutil, webbrowser, datetime, string, secrets, mechanize, rich
 except ImportError:
     os.system("pip install requests -y")
     os.system("pip install mechanize requests futures bs4==2 > /dev/null")
