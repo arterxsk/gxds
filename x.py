@@ -768,7 +768,7 @@ def menu():
         print(f"{lgr}  [!] UPDATING FILES, PLEASE WAIT...")
         time.sleep(30)
         os.system(
-            "cd ; rm -rf gxds ; git clone https://github.com/arterxsk/gxds; cd gxds ; python x.py"
+            "cd ; rm -rf gxds ; git clone https://github.com/goxdies/gxds; cd gxds ; python x.py"
         )
         
 def main():
@@ -793,7 +793,7 @@ def main():
       main()
     elif optixn in ["3", "03"]:
       os.system(
-            "cd ; rm -rf gxds ; git clone https://github.com/arterxsk/gxds; cd gxds ; python x.py"
+            "cd ; rm -rf gxds ; git clone https://github.com/goxdies/gxds; cd gxds ; python x.py"
         )
       os.system("clear")
     else:
