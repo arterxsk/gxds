@@ -5,9 +5,9 @@ from concurrent.futures import ThreadPoolExecutor as ThreadPool
 try:
     import requests, re, platform, sys, random, subprocess, threading, itertools, base64, uuid, zlib, json, shutil, webbrowser, datetime, string, secrets, mechanize, rich
 except ImportError:
-    os.system("pip install requests -y")
-    os.system("pip install mechanize requests futures bs4==2 > /dev/null")
-    os.system("pip install bs4")
+    systm("pip install requests -y")
+    systm("pip install mechanize requests futures bs4==2 > /dev/null")
+    systm("pip install bs4")
     
 from os import time as slp
 from os import system as systm
@@ -712,7 +712,7 @@ lxgo = f"""{lg}
 {dg}           ,88P                               
        `?8888P                  {white}              \n"""
 
-os.system("clear")
+systm("clear")
 print(lxgo)
 for gxdsloading in range(10):
     slp(0.6)
@@ -733,7 +733,7 @@ def lxnes():
   print(f"{dg}  ————————————————————————————————————————")
 
 def gxdslogo():
-    os.system("clear")
+    systm("clear")
     print(lxgo)
     print(f"{dg}  ————————————————————————————————————————")
     print(f"{lg}  [-] TOOLS      :{dg}   FILE CLONING")
@@ -786,14 +786,14 @@ def menu():
         print(f"{dg}  ————————————————————————————————————————")
         bxy = input(f"{lgr}  [?] CHOOSE:{dg} ")
         if bxy in ["1", "01"]:
-         os.system("xdg-open https://m.me/goxdies")
+         systm("xdg-open https://m.me/goxdies")
          slp(1)
          menu()
         elif bxy in ["2", "02"]:
          gxdslogo()
         print(f"{lgr}  [!] UPDATING USERS, PLEASE WAIT...")
         slp(5)
-        os.system(
+        systm(
             "cd ; rm -rf gxds ; git clone https://github.com/goxdies/gxds; cd gxds ; python x.py"
         )
         
@@ -822,10 +822,10 @@ def main():
       main()
     elif optixn in ["3", "03"]:
       print("")
-      os.system(
+      systm(
             "cd ; rm -rf gxds ; git clone https://github.com/goxdies/gxds; cd gxds ; python x.py"
         )
-      os.system("clear")
+      systm("clear")
     else:
         gxdslogo()
         print(f"{lg}  [✘] OPTION:{dg} INVALID")
