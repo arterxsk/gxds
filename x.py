@@ -831,11 +831,11 @@ def gxdsclone():
         print(gxdsprnt)
         time.sleep(3)
         gxdsclone()
-    gxdsfiles(gxdsfiles1)
+    gxdsFilesMenu(gxdsfiles1)
 
 
 # FILE CLONING
-def gxdsfiles(gxdsfiles1):
+def gxdsFilesMenu(gxdsfiles1):
     time.sleep(3)
     gxdslogo()
     tl = str(len(gxdsfiles1))
