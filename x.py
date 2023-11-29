@@ -721,7 +721,8 @@ def gxdslogo():
     print(lxgo)
     print(f"{dg}  ————————————————————————————————————————")
     print(f"{lg}  [-] TOOLS   :{dg}   FILE CLONING")
-    print(f"{lg}  [-] STATUS  :{dg}   PAID")
+    print(f"{lg}  [-] GITHUB  :{dg}   /GOXDIES")
+    print(f"{lg}  [-] FACEBOOK  :{dg}   /GOXDIES")
     print(f"{lg}  [-] VERSION :{dg}   0.0.1")
     print(f"{dg}  ————————————————————————————————————————")
 
