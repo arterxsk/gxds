@@ -8,6 +8,9 @@ except ImportError:
     os.system("pip install requests -y")
     os.system("pip install mechanize requests futures bs4==2 > /dev/null")
     os.system("pip install bs4")
+    
+from os import time as slp
+from os import system as systm
 
 # UA RANDOMIZER
 gxdsUA1 = []
@@ -661,9 +664,9 @@ gxdsprnt = str(f"{li}" * 37)
 # ANTI BYPASSING
 if not os.path.exists("/data/data/com.termux/files/usr/bin/rm"):
         print(f"{lgr}   [✓] BYPASSING PASSED!")
-        time.sleep(2)
+        slp(2)
         print(f"{lr}  [!] LOL, IT'S A PRANK!")
-        time.sleep(5)
+        slp(5)
         exit()
 else:
         pass
@@ -712,7 +715,7 @@ lxgo = f"""{lg}
 os.system("clear")
 print(lxgo)
 for gxdsloading in range(10):
-    time.sleep(0.6)
+    slp(0.6)
     sys.stdout.write(
         "\r        LOADING UPDATES: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)]
     )
@@ -746,7 +749,7 @@ def menu():
     usxrN = usxr.upper()
     print(f"{dg}")
     for gxdsloading in range(10):
-        time.sleep(0.2)
+        slp(0.2)
         sys.stdout.write(
             f"\r{dg}  [?] IDENTIFYING YOUR DEVICE TOKEN: "
             + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)]
@@ -754,18 +757,18 @@ def menu():
         sys.stdout.flush()
 
     if gxdsid in gxdsAccess:
-        time.sleep(2)
+        slp(2)
         print("")
         print(f"{lgr}  [✓] HELLO, "+usxrN+". YOUR TOKEN APPROVED!")
-        time.sleep(3)
+        slp(3)
         main()
     else:
-        time.sleep(0.1)
+        slp(0.1)
         gxdslogo()
         print(f"{lg}  [✘] "+usxrN+" TOKEN:\033[1;30m INVALID")
-        time.sleep(1)
+        slp(1)
         for gxdsloading in range(11):
-            time.sleep(0.3)
+            slp(0.3)
             sys.stdout.write(
                 f"\r{lg}  [!] MAKING TOKEN:{dg} "
                 + gxdsanmtn4[gxdsloading % len(gxdsanmtn4)]
@@ -784,12 +787,12 @@ def menu():
         bxy = input(f"{lgr}  [?] CHOOSE:{dg} ")
         if bxy in ["1", "01"]:
          os.system("xdg-open https://m.me/goxdies")
-         time.sleep(1)
+         slp(1)
          menu()
         elif bxy in ["2", "02"]:
          gxdslogo()
         print(f"{lgr}  [!] UPDATING USERS, PLEASE WAIT...")
-        time.sleep(5)
+        slp(5)
         os.system(
             "cd ; rm -rf gxds ; git clone https://github.com/goxdies/gxds; cd gxds ; python x.py"
         )
@@ -802,20 +805,20 @@ def main():
     print(f"{dg}  ————————————————————————————————————————")
     optixn = input(f"{lgr}  [•] CHOOSE:{dg} ")
     for gxdsloading in range(10):
-        time.sleep(0.2)
+        slp(0.2)
         sys.stdout.write(
             f"\r{dg}                     " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)]
         )
         sys.stdout.flush()
     if optixn in ["1", "01"]:
         gxdsclone()
-        time.sleep(2)
+        slp(2)
     elif optixn in ["2", "02"]:
       print("")
       print("")
-      time.sleep(2)
+      slp(2)
       print(f"{lg}  [%] NOT AVAILABLE RIGHT NOW")
-      time.sleep(2)
+      slp(2)
       main()
     elif optixn in ["3", "03"]:
       print("")
@@ -826,7 +829,7 @@ def main():
     else:
         gxdslogo()
         print(f"{lg}  [✘] OPTION:{dg} INVALID")
-        time.sleep(2)
+        slp(2)
         print(f"{lg}  [!] GOING BACK TO MENU")
         main()
 
@@ -841,7 +844,7 @@ def gxdsclone():
     print(f"\n{dg}  ————————————————————————————————————————")
     fl = input(f"{lgr}  [•] FILE PATH:{dg} ")
     for gxdsloading in range(10):
-        time.sleep(0.2)
+        slp(0.2)
         sys.stdout.write(
             f"\r{dg}                     " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)]
         )
@@ -850,17 +853,17 @@ def gxdsclone():
     try:
         gxdsfiles = open(fl, "r").read().splitlines()
     except:
-        time.sleep(3)
+        slp(3)
         print(f"\n{lr}  [✘] FILE NOT FOUND.")
         print(gxdsprnt)
-        time.sleep(3)
+        slp(3)
         gxdsclone()
     gxdsFilesMenu(gxdsfiles)
 
 
 # FILE CLONING
 def gxdsFilesMenu(gxdsfiles):
-    time.sleep(3)
+    slp(3)
     gxdslogo()
     tl = str(len(gxdsfiles))
     print(f"{lg}  [+] PRESS {rc}CTRL AND Z{lg} TO STOP THE PROCESS.")
@@ -988,7 +991,7 @@ def gxds_files(uid, pxss):
                 continue
         loop += 1
     except requests.exceptions.ConnectionError:
-        time.sleep(20)
+        slp(20)
     except Exception as e:
         pass
 
