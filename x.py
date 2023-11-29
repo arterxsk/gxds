@@ -740,15 +740,11 @@ def gxdslogo():
     print(f"{lg}  [-] VERSION    :{dg}   0.0.1")
     print(f"{dg}  ————————————————————————————————————————")
 
-# USERNAME
-def usrnme():
-  gxdslogo()
-  usxr=str(input(f"{lgr}  [-] ENTER YOUR USERNAME:{dg} "))
-  usxrN = usxr.upper()
-
 # MENU
 def menu():
     gxdslogo()
+    usxr=str(input(f"{lgr}  [-] ENTER YOUR USERNAME:{dg} "))
+    usxrN = usxr.upper()
     print(f"{dg}")
     for gxdsloading in range(10):
         time.sleep(0.2)
