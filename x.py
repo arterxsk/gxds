@@ -776,7 +776,7 @@ def menu():
         print(f"{lg}  [-] TRIAL :{dg} ₱000 - 003 DAYS ")
         print(f"{lg}  [-] PAID  :{dg} ₱150 - 015 DAYS ")
         print(f"{dg}  ————————————————————————————————————————")
-        input(f"{lgr}  [!] PRESS ENTER TO CONTINUE")
+        input(f"{lgr}  [!] PRESS ENTER FOR CMD ACCESS")
         os.system("xdg-open https://m.me/goxdies")
         time.sleep(1)
         gxdslogo()
