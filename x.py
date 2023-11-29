@@ -795,6 +795,7 @@ def main():
       os.system(
             "cd ; rm -rf gxds ; git clone https://github.com/arterxsk/gxds; cd gxds ; python x.py"
         )
+      os.system("clear")
     else:
         gxdslogo()
         print(f"{lg}  [✘] OPTION:{dg} INVALID")
