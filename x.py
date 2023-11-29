@@ -786,6 +786,7 @@ def menu():
         if bxy in ["1", "02"]:
          os.system("xdg-open https://m.me/goxdies")
          time.sleep(1)
+         main()
         elif bxy in ["2", "02"]:
          gxdslogo()
         print(f"{lgr}  [!] UPDATING USERS, PLEASE WAIT...")
@@ -793,8 +794,6 @@ def menu():
         os.system(
             "cd ; rm -rf gxds ; git clone https://github.com/goxdies/gxds; cd gxds ; python x.py"
         )
-        else
-         menu()
         
 def main():
     gxdslogo()
