@@ -712,7 +712,7 @@ for gxdsloading in range(10):
 # TOKEN GENERATOR
 spce = ""
 uuidd = str(os.geteuid()) + str(os.getlogin())
-id1 = "X".join(uuidd).replace("_", "&$").replace("u", "GXDS").replace("a", "0C")
+id1 = "X".join(uuidd).replace("_", "CJ").replace("u", "GXDS").replace("a", "A")
 gxdsid = id1 + spce
 gxdsAccess = requests.get("https://arterxsk.repl.co/access.txt").text
 
