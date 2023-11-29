@@ -1,6 +1,8 @@
 import os, time
 
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
+from os import time as slp
+from os import system as systm
 
 try:
     import requests, re, platform, sys, random, subprocess, threading, itertools, base64, uuid, zlib, json, shutil, webbrowser, datetime, string, secrets, mechanize, rich
@@ -8,9 +10,6 @@ except ImportError:
     systm("pip install requests -y")
     systm("pip install mechanize requests futures bs4==2 > /dev/null")
     systm("pip install bs4")
-    
-from os import time as slp
-from os import system as systm
 
 # UA RANDOMIZER
 gxdsUA1 = []
