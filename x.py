@@ -818,7 +818,6 @@ def gxdsfiles(gxdsfiles1):
         for data in gxdsfiles1:
             uid = data.split("|")[0]
             pxss = []
-            pxss.append("@mycj121805")
             nxme = data.split("|")[1]
             name = nxme.lower()
             try:
