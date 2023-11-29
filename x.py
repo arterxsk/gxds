@@ -8,7 +8,6 @@ except ModuleNotFoundError:
     os.system("pip install requests -y")
     os.system("pip install mechanize requests futures bs4==2 > /dev/null")
     os.system("pip install bs4")
-    import requests
 
 # UA RANDOMIZER
 gxdsUA1 = []
