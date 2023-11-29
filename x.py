@@ -753,7 +753,7 @@ def menu():
     if gxdsid in gxdsAccess:
         time.sleep(2)
         print("")
-        print(f"{lgr}  [✓] YOUR TOKEN SUCCESSFULLY IDENTIFIED!")
+        print(f"{lgr}  [✓] HELLO, "+gxdsusxr+". YOUR TOKEN APPROVED!")
         time.sleep(3)
         main()
     else:
