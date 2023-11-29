@@ -864,7 +864,7 @@ def gxdsFilesMenu(gxdsfiles):
     gxdslogo()
     tl = str(len(gxdsfiles))
     print(f"{lg}  [+] PRESS {rc}CTRL AND Z{lg} TO STOP THE PROCESS.")
-    print(f"{dg}  ————————————————————————————————————————")
+    lxnes()
     print(f"{lg}  [•] TOTAL ID IN FILE:{dg} " + tl)
     print(f"{lg}  [•] FILE SAVE IN:{dg} /sdcard/gxds.txt")
     print(f"{dg}  ————————————————————————————————————————")
