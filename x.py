@@ -740,7 +740,7 @@ def gxdslogo():
 def menu():
     gxdslogo()
     usxr=str(input(f"{lgr}  [-] ENTER YOUR USERNAME:{dg} "))
-    gxdsusxr = usxr.upper()
+    usxrN = usxr.upper()
     print(f"{dg}")
     for gxdsloading in range(10):
         time.sleep(0.2)
@@ -753,13 +753,13 @@ def menu():
     if gxdsid in gxdsAccess:
         time.sleep(2)
         print("")
-        print(f"{lgr}  [✓] HELLO, "+gxdsusxr+". YOUR TOKEN APPROVED!")
+        print(f"{lgr}  [✓] HELLO, "+usxrN+". YOUR TOKEN APPROVED!")
         time.sleep(3)
         main()
     else:
         time.sleep(0.1)
         gxdslogo()
-        print(f"{lg}  [✘] "+gxdsusxr+" TOKEN:\033[1;30m INVALID")
+        print(f"{lg}  [✘] "+usxrN+" TOKEN:\033[1;30m INVALID")
         time.sleep(1)
         for gxdsloading in range(11):
             time.sleep(0.3)
@@ -771,7 +771,7 @@ def menu():
         print(f"\n{dg}  ————————————————————————————————————————")
         print(f"{lg}  [-] TOKEN :{dg} " + gxdsid)
         print(f"\n{dg}  ————————————————————————————————————————")
-        print(f"{rc}   [+] HELLO, "+gxdsusxr+". CHECK OUR PRICELIST.")
+        print(f"{rc}   [+] HELLO, "+usxrN+". CHECK OUR PRICELIST.")
         print(f"{lg}  [-] TRIAL :{dg} ₱000 - 003 DAYS ")
         print(f"{lg}  [-] PAID  :{dg} ₱150 - 015 DAYS ")
         print(f"{dg}  ————————————————————————————————————————")
@@ -866,9 +866,9 @@ def gxdsFilesMenu(gxdsfiles):
             uid = data.split("|")[0]
             pxss = []
             nxme = data.split("|")[1]
-            gxdsusxr = nxme.lower()
+            name = nxme.lower()
             try:
-                fxrst = gxdsusxr.split(" ")[0]
+                fxrst = name.split(" ")[0]
                 nxme1 = nxme.split(" ")[0]
                 if len(fxrst) < 3:
                     pass
@@ -884,7 +884,7 @@ def gxdsFilesMenu(gxdsfiles):
             except:
                 pass
             try:
-                lxst = gxdsusxr.split(" ")[2]
+                lxst = name.split(" ")[2]
                 nxme2 = nxme.split(" ")[2]
                 if len(lxst) < 3:
                     pass
@@ -952,7 +952,7 @@ def gxds_files(uid, pxss):
                 "X-Tigon-Is-Retry": "False",
                 "x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62",
                 "x-fb-device-group": "5120",
-                "X-FB-Friendly-gxdsusxr": "ViewerReactionsMutation",
+                "X-FB-Friendly-Name": "ViewerReactionsMutation",
                 "X-FB-Request-Analytics-Tags": "graphservice",
                 "X-FB-HTTP-Engine": "Liger",
                 "X-FB-Client-IP": "True",
