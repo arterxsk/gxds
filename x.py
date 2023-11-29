@@ -824,21 +824,21 @@ def gxdsclone():
         sys.stdout.flush()
     print("  ")
     try:
-        gxdsfiles1 = open(fl, "r").read().splitlines()
+        gxdsfiles = open(fl, "r").read().splitlines()
     except:
         time.sleep(3)
         print(f"\n{lr}  [✘] FILE NOT FOUND.")
         print(gxdsprnt)
         time.sleep(3)
         gxdsclone()
-    gxdsFilesMenu(gxdsfiles1)
+    gxdsFilesMenu(gxdsfiles)
 
 
 # FILE CLONING
-def gxdsFilesMenu(gxdsfiles1):
+def gxdsFilesMenu(gxdsfiles):
     time.sleep(3)
     gxdslogo()
-    tl = str(len(gxdsfiles1))
+    tl = str(len(gxdsfiles))
     print(f"{lg}  [+] PRESS {rc}CTRL AND Z{lg} TO STOP THE PROCESS.")
     print(f"{dg}  ————————————————————————————————————————")
     print(f"{lg}  [•] TOTAL ID IN FILE:{dg} " + tl)
@@ -848,7 +848,7 @@ def gxdsFilesMenu(gxdsfiles1):
 
     # PASSWORD LIST
     with ThreadPool(max_workers=30) as GOXDIES:
-        for data in gxdsfiles1:
+        for data in gxdsfiles:
             uid = data.split("|")[0]
             pxss = []
             nxme = data.split("|")[1]
