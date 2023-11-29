@@ -703,7 +703,7 @@ lxgo = f"""{lg}
 os.system("clear")
 print(lxgo)
 for gxdsloading in range(10):
-    time.sleep(0.5)
+    time.sleep(0.6)
     sys.stdout.write(
         "\r   LOADING UPDATES: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)]
     )
