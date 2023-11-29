@@ -10,7 +10,6 @@ except ModuleNotFoundError:
     os.system("pip install bs4")
     import requests
 
-
 # UA RANDOMIZER
 gxdsUA1 = []
 gxdsUA2 = []
