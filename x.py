@@ -927,7 +927,6 @@ def gxds_files(uid, pxss):
                 cps.append(uid)
                 break
             else:
-                print(uid + "|" + ps)
                 continue
         loop += 1
     except requests.exceptions.ConnectionError:
