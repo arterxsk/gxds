@@ -741,7 +741,7 @@ def menu():
     gxdslogo()
     usxr=str(input(f"{lgr}  [-] ENTER YOUR USERNAME:{dg} "))
     usxrN1 = usxr.upper()
-    usxrN = f"{cyan}"+usxrN1
+    usxrN = f"{rc}"+usxrN1
     print(f"{dg}")
     for gxdsloading in range(10):
         time.sleep(0.2)
@@ -771,8 +771,8 @@ def menu():
             sys.stdout.flush()
         print(f"\n{dg}  ————————————————————————————————————————")
         print(f"{lg}  [-] TOKEN :{dg} " + gxdsid)
-        print(f"\n{dg}  ————————————————————————————————————————")
-        print(f"{rc}   [+] HELLO, "+usxrN1+". CHECK OUR PRICELIST.")
+        print(f"{dg}  ————————————————————————————————————————")
+        print(f"{rc}  [+] HELLO, "+usxrN1+". CHECK OUR PRICELIST.")
         print(f"{lg}  [-] TRIAL :{dg} ₱000 - 003 DAYS ")
         print(f"{lg}  [-] PAID  :{dg} ₱150 - 015 DAYS ")
         print(f"{dg}  ————————————————————————————————————————")
