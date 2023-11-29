@@ -784,10 +784,10 @@ def main():
             f"\r{dg}                     " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)]
         )
         sys.stdout.flush()
-        print("")
     if optixn in ["1", "01"]:
         gxdsclone()
     elif optixn in ["2", "02"]:
+      print("")
       print(f"{lg}  [%] NOT AVAILABLE RIGHT NOW")
       time.sleep(2)
       main()
