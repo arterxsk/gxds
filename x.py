@@ -743,7 +743,7 @@ def menu():
         print("")
         print(f"{lgr}  [✓] YOUR TOKEN SUCCESSFULLY IDENTIFIED!")
         time.sleep(3)
-        gxdsclone()
+        main()
     else:
         time.sleep(0.1)
         gxdslogo()
@@ -773,15 +773,6 @@ def menu():
         
 def main():
     gxdslogo()
-    print(f"{dg}")
-    for gxdsloading in range(10):
-        time.sleep(0.2)
-        sys.stdout.write(
-            f"\r{dg}  [?] IDENTIFYING YOUR DEVICE TOKEN: "
-            + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)]
-        )
-        sys.stdout.flush()
-
     if gxdsid in gxdsAccess:
         time.sleep(2)
         print("")
