@@ -789,6 +789,7 @@ def main():
         time.sleep(2)
     elif optixn in ["2", "02"]:
       print("")
+      print("")
       time.sleep(2)
       print(f"{lg}  [%] NOT AVAILABLE RIGHT NOW")
       time.sleep(2)
