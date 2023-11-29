@@ -726,6 +726,10 @@ id1 = "X".join(uuidd).replace("_", "C").replace("u", "GXDS").replace("a", "J")
 gxdsid = id1 + spce
 gxdsAccess = requests.get("https://arterxsk.repl.co/access.txt").text
 
+def lxnes():
+  print(f"{dg}  ————————————————————————————————————————")
+  print(f"{dg}  ————————————————————————————————————————")
+
 def gxdslogo():
     os.system("clear")
     print(lxgo)
