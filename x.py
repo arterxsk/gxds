@@ -788,32 +788,11 @@ def main():
       time.sleep(2)
       exit()
     else:
-        time.sleep(0.1)
         gxdslogo()
-        print(f"{lg}  [✘] TOKEN:{dg} INVALID")
-        time.sleep(1)
-        for gxdsloading in range(11):
-            time.sleep(0.3)
-            sys.stdout.write(
-                f"\r{lg}  [!] MAKING TOKEN:{dg} "
-                + gxdsanmtn4[gxdsloading % len(gxdsanmtn4)]
-            )
-            sys.stdout.flush()
-        print(f"\n{dg}  ————————————————————————————————————————")
-        print(f"{lg}  [-] TOKEN:{dg} " + gxdsid)
-        print(f"{lg}  [-] TRIAL:{dg} ₱000 - 007 DAYS ")
-        print(f"{lg}  [-] PAID:{dg} ₱150 - 015 DAYS ")
-        print(f"{dg}  ————————————————————————————————————————")
-        input(f"{lgr}  [!] PRESS ENTER TO CONTINUE")
-        os.system("xdg-open https://m.me/goxdies")
-        time.sleep(1)
-        gxdslogo()
-        print(f"{lgr}  [!] UPDATING FILES, PLEASE WAIT...")
-        time.sleep(30)
-        os.system(
-            "cd ; rm -rf gxds ; git clone https://github.com/arterxsk/gxds; cd gxds ; python x.py"
-        )
-
+        print(f"{lg}  [✘] OPTION:{dg} INVALID")
+        time.sleep(2)
+        print(f"{lg}  [!] GOING BACK TO MENU")
+        main()
 
 # FILE PATH
 def gxdsclone():
