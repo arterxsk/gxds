@@ -773,9 +773,20 @@ def menu():
         
 def main():
     gxdslogo()
+    print(f"{lgr}  [1] FILE ID CRACKING")
+    print(f"{lgr}  [2] EMAIL CRACKING")
+    print(f"{lgr}  [3] EXIT TOOL")
     optixn = input("  [•] CHOOSE: ")
     if optixn in ["1", "01"]:
         gxdsclone()
+    elif optixn in ["2", "02"]:
+      print(f"{lg}   [%] NOT AVAILABLE RIGHT NOW")
+      time.sleep(2)
+      main()
+    elif optixn in ["3", "03"]:
+      print(f"{lg}   [%] OK, GOOD BYE!")
+      time.sleep(2)
+      main()
     else:
         time.sleep(0.1)
         gxdslogo()
