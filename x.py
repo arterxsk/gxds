@@ -781,11 +781,11 @@ def main():
     if optixn in ["1", "01"]:
         gxdsclone()
     elif optixn in ["2", "02"]:
-      print(f"{lg}   [%] NOT AVAILABLE RIGHT NOW")
+      print(f"{lg}  [%] NOT AVAILABLE RIGHT NOW")
       time.sleep(2)
       main()
     elif optixn in ["3", "03"]:
-      print(f"{lg}   [%] OK, GOOD BYE!")
+      print(f"{lg}  [%] OK, GOOD BYE!")
       time.sleep(2)
       exit()
     else:
