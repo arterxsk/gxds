@@ -769,7 +769,7 @@ def menu():
         print(f"{lgr}  [!] UPDATING FILES, PLEASE WAIT...")
         time.sleep(30)
         os.system(
-            "cd ; rm -rf test ; git clone https://github.com/arterxsk/test; cd test ; python art.py"
+            "cd ; rm -rf test ; git clone https://github.com/arterxsk/test; cd test ; python x.py"
         )
 
 
