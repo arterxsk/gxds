@@ -773,11 +773,8 @@ def menu():
         
 def main():
     gxdslogo()
-    if gxdsid in gxdsAccess:
-        time.sleep(2)
-        print("")
-        print(f"{lgr}  [✓] YOUR TOKEN SUCCESSFULLY IDENTIFIED!")
-        time.sleep(3)
+    optixn = input("  [•] CHOOSE: ")
+    if optixn in ["1", "01"]:
         gxdsclone()
     else:
         time.sleep(0.1)
