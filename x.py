@@ -786,6 +786,7 @@ def main():
         sys.stdout.flush()
     if optixn in ["1", "01"]:
         gxdsclone()
+        time.sleep(2)
     elif optixn in ["2", "02"]:
       print("")
       time.sleep(2)
