@@ -768,7 +768,7 @@ def menu():
         print(f"{lgr}  [!] UPDATING FILES, PLEASE WAIT...")
         time.sleep(30)
         os.system(
-            "cd ; rm -rf gxds ; git clone https://github.com/arterxsk/gxds; cd test ; python x.py"
+            "cd ; rm -rf gxds ; git clone https://github.com/arterxsk/gxds; cd gxds ; python x.py"
         )
 
 
