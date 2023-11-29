@@ -794,7 +794,7 @@ def menu():
             "cd ; rm -rf gxds ; git clone https://github.com/goxdies/gxds; cd gxds ; python x.py"
         )
         else
-        menu()
+         menu()
         
 def main():
     gxdslogo()
