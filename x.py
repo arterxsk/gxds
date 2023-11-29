@@ -729,8 +729,6 @@ def gxdslogo():
 # MENU
 def menu():
     gxdslogo()
-    gxdsUser = input(f"{lgr}  REGISTER YOUR NAME: ")
-    open("/sdcard/.gxdsUser.txt", "a").write(gxdsUser + "\n")
     print(f"{dg}")
     for gxdsloading in range(10):
         time.sleep(0.2)
