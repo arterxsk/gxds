@@ -776,10 +776,16 @@ def menu():
         print(f"{lg}  [-] TRIAL :{dg} ₱000 - 003 DAYS ")
         print(f"{lg}  [-] PAID  :{dg} ₱150 - 015 DAYS ")
         print(f"{dg}  ————————————————————————————————————————")
-        input(f"{lgr}  [!] PRESS ENTER FOR CMD ACCESS")
-        os.system("xdg-open https://m.me/goxdies")
-        time.sleep(1)
-        gxdslogo()
+        print(f"{dg}  ————————————————————————————————————————")
+        print(f"{lg}  [1] GET ACCESS")
+        print(f"{lg}  [2] UPDATE ACCESS")
+        print(f"{dg}  ————————————————————————————————————————")
+        bxy = input(f"{lgr}  [!] PRESS ENTER FOR CMD ACCESS")
+        if bxy in ["1", "02"]:
+         os.system("xdg-open https://m.me/goxdies")
+         time.sleep(1)
+        elif bxy in ["2", "02"]:
+         gxdslogo()
         print(f"{lgr}  [!] UPDATING USERS, PLEASE WAIT...")
         time.sleep(5)
         os.system(
