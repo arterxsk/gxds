@@ -720,10 +720,10 @@ def gxdslogo():
     os.system("clear")
     print(lxgo)
     print(f"{dg}  ————————————————————————————————————————")
-    print(f"{lg}  [-] TOOLS   :{dg}   FILE CLONING")
-    print(f"{lg}  [-] GITHUB  :{dg}   /GOXDIES")
-    print(f"{lg}  [-] FACEBOOK  :{dg}   /GOXDIES")
-    print(f"{lg}  [-] VERSION :{dg}   0.0.1")
+    print(f"{lg}  [-] TOOLS      :{dg}   FILE CLONING")
+    print(f"{lg}  [-] GITHUB     :{dg}   /GOXDIES")
+    print(f"{lg}  [-] FACEBOOK   :{dg}   /GOXDIES")
+    print(f"{lg}  [-] VERSION    :{dg}   0.0.1")
     print(f"{dg}  ————————————————————————————————————————")
 
 # MENU
@@ -773,10 +773,11 @@ def menu():
         
 def main():
     gxdslogo()
-    print(f"{lgr}  [1] FILE ID CRACKING")
-    print(f"{lgr}  [2] EMAIL CRACKING")
-    print(f"{lgr}  [3] EXIT TOOL")
-    optixn = input("  [•] CHOOSE: ")
+    print(f"{lg}  [1] FILE ID CRACKING")
+    print(f"{lg}  [2] EMAIL CRACKING")
+    print(f"{lg}  [3] EXIT TOOL")
+    print(f"\n{dg}  ————————————————————————————————————————")
+    optixn = input(f"{lgr}  [•] CHOOSE:{dg} ")
     if optixn in ["1", "01"]:
         gxdsclone()
     elif optixn in ["2", "02"]:
