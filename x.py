@@ -784,6 +784,7 @@ def main():
             f"\r{dg}                     " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)]
         )
         sys.stdout.flush()
+        print("")
     if optixn in ["1", "01"]:
         gxdsclone()
     elif optixn in ["2", "02"]:
