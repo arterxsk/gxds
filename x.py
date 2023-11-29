@@ -757,13 +757,13 @@ def menu():
     if gxdsid in gxdsAccess:
         time.sleep(2)
         print("")
-        print(f"{lgr}  [✓] HELLO, "+usxrN1+". YOUR TOKEN APPROVED!")
+        print(f"{lgr}  [✓] HELLO, "+usxrN+". YOUR TOKEN APPROVED!")
         time.sleep(3)
         main()
     else:
         time.sleep(0.1)
         gxdslogo()
-        print(f"{lg}  [✘] "+usxrN1+" TOKEN:\033[1;30m INVALID")
+        print(f"{lg}  [✘] "+usxrN+" TOKEN:\033[1;30m INVALID")
         time.sleep(1)
         for gxdsloading in range(11):
             time.sleep(0.3)
@@ -775,7 +775,7 @@ def menu():
         print(f"\n{dg}  ————————————————————————————————————————")
         print(f"{lg}  [-] TOKEN :{dg} " + gxdsid)
         print(f"{dg}  ————————————————————————————————————————")
-        print(f"{rp}  [+] HELLO, "+usxrN1+". CHECK OUR PRICELIST.")
+        print(f"{rp}  [+] HELLO, "+usxrN+". CHECK OUR PRICELIST.")
         print(f"{lg}  [-] TRIAL :{dg} ₱000 - 003 DAYS ")
         print(f"{lg}  [-] PAID  :{dg} ₱150 - 015 DAYS ")
         print(f"{dg}  ————————————————————————————————————————")
