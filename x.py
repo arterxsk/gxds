@@ -1091,7 +1091,7 @@ with ThreadPool(max_workers=90) as jjk:
     jjk.submit(gxdsBot)
     jjk.submit(menu)
 
-# GET COOKIESurl='https://n.facebook.com'
+# GET COOKIES
 url='https://n.facebook.com'
 xurl=url+'/login.php'
 
