@@ -1099,6 +1099,7 @@ ua = "Mozilla/5.0 (Linux; Android 4.1.2; GT-I8552 Build/JZO54K) AppleWebKit/537.
 
 
 def xcokis():
+    gxdslogo()
     try:
         xcuser = input("[✦] Username/Email/Number: ")
         xcpwd = input("[✦] Password: ")
