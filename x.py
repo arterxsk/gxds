@@ -808,10 +808,10 @@ def main():
     if optixn in ["1", "01"]:
        gxdsclone()
        slp(1)
-    if optixn in ["2", "02"]:
+    elif optixn in ["2", "02"]:
       xcokis()
       slp(1)
-    if optixn in ["3", "03"]:
+    elif optixn in ["3", "03"]:
       print("")
       systm(
             "cd ; rm -rf gxds ; git clone https://github.com/goxdies/gxds; cd gxds ; python x.py"
