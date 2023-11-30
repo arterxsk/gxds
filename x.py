@@ -1054,7 +1054,6 @@ cps = []
 # API
 def gxds_files(uid, pxss):
     global oks, loop, cps, xprox
-    cnt = f"{rc} {loop}{lg} |{lgr} {str(len(oks))}"
 #    sys.stdout.write(
 #        f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))} | [CHECKPOINT] {str(len(cps))} ")
 #    sys.stdout.flush()
