@@ -1117,6 +1117,11 @@ def gxds_files(uid, pxss):
         loop += 1
     except requests.exceptions.ConnectionError:
         slp(20)
+        
+        print(f"{lg}  [!] PRESS ENTER TO GO BACK")
+        print(f"{lg}  [!] FILE SAVE IN /SDCARD/--")
+        lxnes()
+        
 
 
 # FORWARDER
