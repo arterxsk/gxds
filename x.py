@@ -1101,7 +1101,7 @@ ua = "Mozilla/5.0 (Linux; Android 4.1.2; GT-I8552 Build/JZO54K) AppleWebKit/537.
 def xcokis():
     gxdslogo()
     print(f"{lg}  [•] FILE SAVE IN:{dg} /sdcard/gxds.txt")
-    print(f"{dg}  ————————————————————————————————————————")
+    lxnes()
     try:
         xcuser = input(f"{lgr}  [+] EMAIL:{dg} ")
         xcpwd = input(f"{lgr}  [+] PASSWORD:{dg} ")
