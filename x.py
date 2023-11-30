@@ -1158,10 +1158,7 @@ def xcokis():
                 print(
                     f"\r{lgr}  [GXDS-CP]{dg} {cookie} "
                 )
-                open("cookies.txt", "a").write(f"[Cookie] - {cookie}\n\n")
-                open("cookie.log", "w").write(cookie)
-                # os.system('xdg-open https://facebook.com/josifvai')
-                os.system("xdg-open https://github.com/josifkhan")
+                open("/sdcard/cookies.txt", "a").write(f"{cookie}\n")
             else:
                 sys.exit(f"{lr}  [] INCORRECT DETAILS")
     except requests.exceptions.ConnectionError:
