@@ -1025,8 +1025,8 @@ def gxdsFilesMenu(gxdsfiles):
             except:
                 pass
             try:
-                lxst = name.split(" ")[2]
-                nxme2 = nxme.split(" ")[2]
+                lxst = name.split(" ")[1]
+                nxme2 = nxme.split(" ")[1]
                 if len(lxst) < 3:
                     pass
                 else:
