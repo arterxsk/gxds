@@ -1051,7 +1051,7 @@ try:
         "https://api.proxyscrape.com/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all"
     ).text
 except:
-    print(" [✓] INTERNET CONNECTION ERROR")
+    print(f"{lr}  [X] INTERNET CONNECTION ERROR")
     sys.exit()
 open(".prox.txt", "w").write(proxx)
 xprox = open(".prox.txt", "r").read().splitlines()
