@@ -33,7 +33,7 @@ for urlset in urls_array:
     response = urllib2.urlopen(request)
     data = json.loads(response.read())
     for i in range(len(tmp_urls_array)):
-      print data [tmp_urls_array[i]]["share"]["share_count"]
-        with open("result.txt", "a") as f:
+      print (data[tmp_urls_array[i]]["share"]["share_count"])
+      with open("result.txt", "a") as f:
             f.write(str(data[tmp_urls_array[i]]["share"]["share_count"]) + '\n')
     time.sleep(25)
