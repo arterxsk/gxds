@@ -1057,8 +1057,7 @@ def gxds_files(uid, pxss):
     global oks, loop, cps
     sys.stdout.write(
         f"\r{dg}  [CHECKED] {loop} | [LIVE] {str(len(oks))} | [DEAD] {str(len(cps))} "
-    )
-    sys.stdout.flush()
+    );sys.stdout.flush()
     try:
         for ps in pxss:
             qwerty = random.choice(gxdsUArndm)
