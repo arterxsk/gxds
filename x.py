@@ -716,6 +716,8 @@ def yxxr(yx):
             yir = "2020"
         elif yx[:5] in ["10006", "10007", "10008"]:
             yir = "2021-2022"
+        elif yx[:5] in ["61554"]:
+            yir = "2023++"
         else:
             yir = ""
     elif len(yx) in [9, 10]:
