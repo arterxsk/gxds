@@ -1113,7 +1113,6 @@ def gxds_files(uid, pxss):
                 cps.append(uid)
                 break
             else:
-                print("\r\r\033[1;31m  [GXDS-X] " + uid + ":" + ps + "-\033[0;35m " + yxxr(uid))
                 open("/sdcard/gxds-logs.txt", "a").write(uid + "|" + ps + "\n")
                 continue
         loop += 1
