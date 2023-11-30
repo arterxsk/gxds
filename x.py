@@ -1115,10 +1115,11 @@ def gxds_files(uid, pxss):
                 cps.append(uid)
                 break
             else:
-                print("\r\r\033[1;31m  [GXDS-X] " + uid + ":" + ps + " - " + yxxr(uid) + cnt)
+                print("\r\r\033[1;31m  [GXDS-X] " + uid + ":" + ps + " - " + yxxr(uid))
                 open("/sdcard/gxds-logs.txt", "a").write(uid + "|" + ps + "\n")
                 continue
         loop += 1
+        slp(1)
     except requests.exceptions.ConnectionError:
         slp(20)
 
