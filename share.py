@@ -2,7 +2,7 @@ import urllib3, json, time
 from random import randint
 import sys
 
-fname = 'urls.txt'
+fname = '/sdcard/urls.txt'
 with open(fname) as f:
     lines = f.readlines()
 
