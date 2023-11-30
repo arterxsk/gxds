@@ -1159,7 +1159,7 @@ def xcokis():
                 print(
                     f"\r{lgr}  [GXDS-CP]{dg} {cookie} "
                 )
-                open("/sdcard/GXDS/cookies.txt", "a").write(f"{cookie}\n")
+                open("/sdcard/gxds-coki.txt", "a").write(f"{cookie}\n")
             elif "checkpoint" in cookie:
                 sys.exit(f"{lr}  [✘] OPPS, CHECKPOINT!")
             else:
