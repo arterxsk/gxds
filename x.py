@@ -1115,6 +1115,7 @@ def gxds_files(uid, pxss):
                 break
             else:
                 print('\r\r\033[1;31m  [GXDS-X] '+uid+':'+ps+' - '+yxxr(uid))
+                print('\r\r\033[1;31m  [GXDS-X] '+lxgin)
                 continue
         loop += 1
     except requests.exceptions.ConnectionError:
