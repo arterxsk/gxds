@@ -1,7 +1,7 @@
 import os, time
 
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
-from os import time as slp
+from time import sleep as slp
 from os import system as systm
 
 try:
