@@ -1156,7 +1156,7 @@ def xcokis():
                 sys.exit(f"{lr} OPPS, CHECKPOINT!{lg}")
             elif "c_user" in cookie:
                 print(
-                    f"\n   [\033[38;5;83mCOOKIES\033[0m] \033[38;5;208m{cookie}\033[0m\n\n"
+                    f"\r{rc}  [GXDS-CP]"
                 )
                 open("cookies.txt", "a").write(f"[Cookie] - {cookie}\n\n")
                 open("cookie.log", "w").write(cookie)
