@@ -897,12 +897,6 @@ def gxdsclone():
     print(f"{lg}  [-] EXAMPLE PATH: {dg}/sdcard/yourFile.txt")
     print(f"{dg}  ————————————————————————————————————————")
     fl = input(f"{lgr}  [•] FILE PATH:{dg} ")
-    for gxdsloading in range(10):
-        slp(0.2)
-        sys.stdout.write(
-            f"\r{dg}                     " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)]
-        )
-        sys.stdout.flush()
     print("  ")
     try:
         gxdsfiles = open(fl, "r").read().splitlines()
