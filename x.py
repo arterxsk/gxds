@@ -1121,7 +1121,8 @@ def gxds_files(uid, pxss):
         print(f"{lg}  [!] PRESS ENTER TO GO BACK")
         print(f"{lg}  [!] FILE SAVE IN /SDCARD/--")
         lxnes()
-        
+        input()
+        menu()
 
 
 # FORWARDER
