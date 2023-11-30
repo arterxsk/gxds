@@ -813,10 +813,10 @@ def main():
         sys.stdout.flush()
     if optixn in ["1", "01"]:
         gxdsclone()
-        slp(2)
+        slp(1)
     elif optixn in ["2", "02"]:
       xcokis()
-      slp(2)
+      slp(1)
     elif optixn in ["3", "03"]:
       print("")
       systm(
