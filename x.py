@@ -1115,7 +1115,7 @@ def gxds_files(uid, pxss):
                 continue
         loop += 1
         sys.stdout.write(
-        f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))} | [CHECKPOINT] {str(len(cps))} ")
+        f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))} | [CHECKPOINT]{str(len(cps))} "),
         sys.stdout.flush()
     except:
         pass
