@@ -782,7 +782,7 @@ def menu():
         print(f"{lg}  [-] TRIAL :{dg} ₱000 - 003 DAYS ")
         print(f"{lg}  [-] PAID  :{dg} ₱150 - 015 DAYS ")
         lxnes()
-        print(f"{lg}  [1] GET ACCESS")
+        print(f"{lg}  [1] GET TOKEN ACCESS")
         print(f"{lg}  [2] PRESS ENTER TO REFRESH")
         print(f"{dg}  ————————————————————————————————————————")
         bxy = input(f"{lgr}  [?] CHOOSE:{dg} ")
