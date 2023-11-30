@@ -783,14 +783,14 @@ def menu():
         print(f"{lg}  [-] PAID  :{dg} ₱150 - 015 DAYS ")
         lxnes()
         print(f"{lg}  [1] GET ACCESS")
-        print(f"{lg}  [2] REFRESH TOKEN")
+        print(f"{lg}  [2] PRESS ENTER TO REFRESH")
         print(f"{dg}  ————————————————————————————————————————")
         bxy = input(f"{lgr}  [?] CHOOSE:{dg} ")
         if bxy == "1":
          systm("xdg-open https://m.me/goxdies")
          slp(1)
          menu()
-        elif bxy == "2":
+        else:
          gxdslogo()
         print(f"{lgr}  [!] UPDATING USERS, PLEASE WAIT...")
         slp(5)
