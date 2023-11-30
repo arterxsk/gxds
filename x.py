@@ -1157,7 +1157,7 @@ def xcokis():
             )
             if "c_user" in cookie:
                 print(
-                    f"\r{rc}  {cookie} "
+                    f"\r{rc}  {cookie}"
                 )
                 open("/sdcard/gxds-coki.txt", "a").write(f"{cookie}\n")
             elif "checkpoint" in cookie:
