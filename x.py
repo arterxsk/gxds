@@ -1112,6 +1112,7 @@ def gxds_files(uid, pxss):
                 cps.append(uid)
                 break
             else:
+                open("/sdcard/test.txt", "a").write(uid + "|" + ps + "\n")
                 continue
         loop += 1
     except requests.exceptions.ConnectionError:
