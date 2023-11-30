@@ -1054,7 +1054,7 @@ cps = []
 # API
 def gxds_files(uid, pxss):
     global oks, loop, cps
-    sys.stdout.write(f"\r  \033[38;5;46m[GOXDIES] {loop}|{str(len(oks))}");sys.stdout.flush()
+    sys.stdout.write(f"\r  \033[1;30m[GOXDIES] {loop}|{str(len(oks))}");sys.stdout.flush()
     session=requests.Session()
     try:
         for ps in pxss:
