@@ -1050,7 +1050,7 @@ try:
     proxx = requests.get(
         "https://api.proxyscrape.com/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all"
     ).text
-except ProxyError:
+except:
     print(" [✓] INTERNET CONNECTION ERROR")
     sys.exit()
 open(".prox.txt", "w").write(proxx)
