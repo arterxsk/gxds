@@ -988,7 +988,7 @@ def gxdsFilesMenu(gxdsfiles):
 
 
 # LOOP MENU
-loop = 0
+loop = []
 oks = []
 cps = []
 
