@@ -815,12 +815,7 @@ def main():
         gxdsclone()
         slp(2)
     elif optixn in ["2", "02"]:
-      print("")
-      print("")
-      slp(2)
       xcokis()
-      slp(2)
-      main()
     elif optixn in ["3", "03"]:
       print("")
       systm(
