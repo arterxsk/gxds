@@ -816,6 +816,7 @@ def main():
         slp(2)
     elif optixn in ["2", "02"]:
       xcokis()
+      slp(2)
     elif optixn in ["3", "03"]:
       print("")
       systm(
