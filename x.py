@@ -1006,7 +1006,6 @@ def gxdsFilesMenu(gxdsfiles):
         for data in gxdsfiles:
             uid = data.split("|")[0]
             pxss = []
-            pxss.append("@gio.lincoln")
             nxme = data.split("|")[1]
             name = nxme.lower()
             try:
