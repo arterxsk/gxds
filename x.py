@@ -1108,12 +1108,12 @@ def gxds_files(uid, pxss):
                 oks.append(uid)
                 break
             elif "checkpoint" in lxgin:
-                print(f"\r\r{lr}  [GXDS-CP] {uid}:{ps}|"+accYr+"")
+                print(f"\r\r{lr}  [GXDS-CP] {uid}:{ps}|{accYr}")
                 open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
                 cps.append(uid)
                 break
             else:
-                print(f"\r\r{lr}  [GXDS-X] {uid}:{ps}|"+accYr+"")
+                print(f"\r\r{lr}  [GXDS-X] {uid}:{ps}|{accYr}")
                 continue
         loop += 1
     except requests.exceptions.ConnectionError:
