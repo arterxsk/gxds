@@ -806,8 +806,8 @@ def main():
     print(f"{dg}  ————————————————————————————————————————")
     optixn = input(f"{lgr}  [•] CHOOSE:{dg} ")
     if optixn in ["1", "01"]:
-        gxdsclone()
-        slp(1)
+       gxdsclone()
+       slp(1)
     if optixn in ["2", "02"]:
       xcokis()
       slp(1)
