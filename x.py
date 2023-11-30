@@ -1115,13 +1115,12 @@ def gxds_files(uid, pxss):
                 print('\r\r\033[1;31m  [GXDS-X] '+uid+':'+ps+' - '+yxxr(uid))
                 continue
         loop += 1
+        
+        sys.stdout.write(f"\r  \033[1;30m[GOXDIES] {loop} | {str(len(oks))}")
+        sys.stdout.flush()
+    
     except requests.exceptions.ConnectionError:
         slp(20)
-    except Exception as e:
-        pass
-      
-    sys.stdout.write(f"\r  \033[1;30m[GOXDIES] {loop} | {str(len(oks))}")
-    sys.stdout.flush()
 
 
 # FORWARDER
