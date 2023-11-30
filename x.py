@@ -1006,7 +1006,6 @@ def gxdsFilesMenu(gxdsfiles):
             pxss.append(uid[:6])#front 6
             pxss.append(uid[:7])#front 7
             pxss.append(uid[:8])#front 8
-            pxss.append(uid)
             nxme = data.split("|")[1]
             name = nxme.lower()
             try:
