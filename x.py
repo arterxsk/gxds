@@ -1047,13 +1047,13 @@ def gxdsFilesMenu(gxdsfiles):
 
 # PROXIES
 try:
-    proxx = requests.get(
+    xprox = requests.get(
         "https://api.proxyscrape.com/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all"
     ).text
 except ProxyError:
     print(f"{lr}  [X] INTERNET CONNECTION ERROR")
     sys.exit()
-open(".prox.txt", "w").write(proxx)
+open(".prox.txt", "w").write(xprox)
 xprox = open(".prox.txt", "r").read().splitlines()
 
 
