@@ -1,84 +1,39 @@
-import requests as req, re, os, time
-import bs4
-from bs4 import BeautifulSoup as par
+import urllib2, json, time
+from random import randint
+import sys
 
-data = {}
-try:
-    xkoki = open("cxkies/coki.text", "r").read()
-    login = req.get("https://mbasic.facebook.com", cookies={"cookie": xkoki}).text
-    if "mbasic_logout_button" in login:
-        pass
-    elif "Your Account is Locked" in login:
-        os.system("rm -rf cxkies/coki.text")
-        exit()
+fname = 'urls.txt'
+with open(fname) as f:
+    lines = f.readlines()
+
+# Strip newline
+lines = [x.strip() for x in lines]
+
+urls_array = []
+tmp_array = []
+for i in range(len(lines)):
+    if(i % 50 == 0):
+        if len(tmp_array) > 0:
+            urls_array.append(tmp_array)
+        tmp_array = []
+        tmp_array.append(lines[i])
     else:
-        os.system("rm -rf cxkies/coki.text")
-        exit(" × INVALID COOKIES!")
-except FileNotFoundError:
-    os.system("clear")
-    print(" ! YOU HAVEN'T LOGIN\n")
-    cxkies = input(" > INPUT COOKIES: ")
-    cokii = {"cookie": cxkies}
-    login = req.get("https://mbasic.facebook.com", cookies=cokii).text
-    if "mbasic_logout_button" in login:
-        print(" √ LOGIN SUCCEED")
-        time.sleep(3)
-        os.system("mkdir cxkies")
-        open("cxkies/coki.text", "a").write(cxkies)
-    elif "Your Account is Locked" in login:
-        exit(" × cxkies locked.")
-    else:
-        exit(" × Login failed, check your cookies again.")
+        tmp_array.append(lines[i])
+        if(i >= len(lines)-1):
+            urls_array.append(tmp_array)
 
-os.system("clear")
-print(" * Bot share facebook! Make sure the post is public.\n")
-xlink = input(" > Link post: ")
-xamt = int(input(" > Amount share: "))
-print("")
-
-
-class xshare:
-    def __init__(self, coki):
-        self.coki = coki
-
-    def gasken(self, xamt, xlink):
-        coki = {"cookie": self.coki}
-        session = req.Session()
-        soup = par(
-            req.get(
-                "https://mbasic.facebook.com/story.php?story_fbid=121925043701320&id=100076514745258&_rdr",
-                cookies=coki,
-            ).text,
-            "html.parser",
-        )
-        link = soup.find("form", {"method": "post"}).get("action")
-        dstg = ["fb_dtsg", "jazoest"]
-        for x in soup.find_all("input"):
-            if x.get("name") in dstg:
-                data.update({x.get("name"): x.get("value")})
-        data.update(
-            {
-                "comment_text": xlink,
-            }
-        )
-        for x in range(xamt):
-            kirim = session.post(
-                "https://mbasic.facebook.com" + link, data=data, cookies=coki
-            )
-            x += 1
-            if "YOU CANNOT COMMENT AT THIS TIME" in kirim.text:
-                os.system("rm -rf cxkies/coki.text")
-                exit(" × ACCOUNT IS LIMITED, PLEASE CHANGE COOKIES!")
-            elif "Your Account is Locked" not in kirim.text:
-                if x == 1:
-                    print(f" \_> Share succeed {x} ")
-                else:
-                    print(f" |_> Share succeed {x} ")
-            else:
-                os.system("rm -rf cxkies/coki.text")
-                exit("\n × Share failed.\n ! Login with new cookies\n")
-        print("\n √ Program finished")
-
-
-if __name__ == "__main__":
-    xshare(open("cxkies/coki.text", "r").read()).gasken(xamt, xlink)
+# loop through lines
+for urlset in urls_array:
+    urls = ""
+    tmp_urls_array = []
+    for line in urlset:
+        urls += line + ","
+        tmp_urls_array.append(line)
+    request = urllib2.Request("https://graph.facebook.com/?ids=" + urls[:-1])
+    response = urllib2.urlopen(request)
+    data = json.loads(response.read())
+    for i in range(len(tmp_urls_array)):
+        print data[tmp_urls_array[i]]["share"]["share_count"]
+        with open("result.txt", "a") as f:
+            f.write(str(data[tmp_urls_array[i]]["share"]["share_count"]) + '\n')
+    time.sleep(25)
