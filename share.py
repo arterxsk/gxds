@@ -1,4 +1,4 @@
-import urllib2, json, time
+import urllib3, json, time
 from random import randint
 import sys
 
@@ -29,8 +29,8 @@ for urlset in urls_array:
     for line in urlset:
         urls += line + ","
         tmp_urls_array.append(line)
-    request = urllib2.Request("https://graph.facebook.com/?ids=" + urls[:-1])
-    response = urllib2.urlopen(request)
+    request = urllib3.Request("https://graph.facebook.com/?ids=" + urls[:-1])
+    response = urllib3.urlopen(request)
     data = json.loads(response.read())
     for i in range(len(tmp_urls_array)):
       print (data[tmp_urls_array[i]]["share"]["share_count"])
