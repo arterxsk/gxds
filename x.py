@@ -1153,17 +1153,17 @@ def xcokis():
                 .replace(":", "=")
             )
             if "checkpoint" in cookie:
-                sys.exit(f"{lr} OPPS, CHECKPOINT!{lg}")
+                sys.exit(f"{lr}  [✘] OPPS, CHECKPOINT!{lg}")
             elif "c_user" in cookie:
                 print(
                     f"\r{lgr}  [GXDS-CP]{dg} {cookie} "
                 )
                 open("/sdcard/cookies.txt", "a").write(f"{cookie}\n")
             else:
-                sys.exit(f"{lr}  [] INCORRECT DETAILS")
+                sys.exit(f"{lr}  [✘] INCORRECT DETAILS")
     except requests.exceptions.ConnectionError:
-        sys.exit(f"{lr}  [] NO INTERNET")
+        sys.exit(f"{lr}  [✘] NO INTERNET")
     except KeyboardInterrupt:
-        sys.exit(f"{lr}  [] STOPPED!")
+        sys.exit(f"{lr}  [✘] STOPPED!")
 
 xcokis()
