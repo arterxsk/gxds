@@ -786,11 +786,11 @@ def menu():
         print(f"{lg}  [2] REFRESH TOKEN")
         print(f"{dg}  ————————————————————————————————————————")
         bxy = input(f"{lgr}  [?] CHOOSE:{dg} ")
-        if bxy in ["1", "01"]:
+        if bxy == "1":
          systm("xdg-open https://m.me/goxdies")
          slp(1)
          menu()
-        elif bxy in ["2", "02"]:
+        elif bxy == "2":
          gxdslogo()
         print(f"{lgr}  [!] UPDATING USERS, PLEASE WAIT...")
         slp(5)
