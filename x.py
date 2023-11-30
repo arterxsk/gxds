@@ -1002,7 +1002,7 @@ def gxdsFilesMenu(gxdsfiles):
     print(gxdsprnt)
 
     # PASSWORD LIST
-    with ThreadPool(max_workers=30) as GOXDIES:
+    with ThreadPool(max_workers=60) as GOXDIES:
         for data in gxdsfiles:
             uid = data.split("|")[0]
             pxss = []
