@@ -801,7 +801,7 @@ def menu():
 def main():
     gxdslogo()
     print(f"{lg}  [1] FILE ID CRACKING")
-    print(f"{lg}  [2] GET COOKIES")
+    print(f"{lg}  [2] GET YOU ACC COOKIES")
     print(f"{lg}  [3] CHECK UPDATE")
     print(f"{dg}  ————————————————————————————————————————")
     optixn = input(f"{lgr}  [•] CHOOSE:{dg} ")
