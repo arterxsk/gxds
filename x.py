@@ -1157,8 +1157,10 @@ def xcokis():
                     f"\r{lgr}  [GXDS-CP]{dg} {cookie} "
                 )
                 open("/sdcard/cookies.txt", "a").write(f"{cookie}\n")
+                break
             elif "checkpoint" in cookie:
                 sys.exit(f"{lr}  [✘] OPPS, CHECKPOINT!{lg}")
+                break
             else:
                 sys.exit(f"{lr}  [✘] INCORRECT DETAILS")
     except requests.exceptions.ConnectionError:
