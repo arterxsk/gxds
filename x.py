@@ -1056,7 +1056,6 @@ def gxds_files(uid, pxss):
                 cps.append(uid)
                 break
             else:
-                print(f"\r\r{lr}  [GXDS-X] {uid}|{ps}")
                 continue
         loop += 1
     except requests.exceptions.ConnectionError:
