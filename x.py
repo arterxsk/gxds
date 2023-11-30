@@ -1152,13 +1152,13 @@ def xcokis():
                 .replace(",", ";")
                 .replace(":", "=")
             )
-            if "checkpoint" in cookie:
-                sys.exit(f"{lr}  [✘] OPPS, CHECKPOINT!{lg}")
-            elif "c_user" in cookie:
+            if "c_user" in cookie:
                 print(
                     f"\r{lgr}  [GXDS-CP]{dg} {cookie} "
                 )
                 open("/sdcard/cookies.txt", "a").write(f"{cookie}\n")
+            elif "checkpoint" in cookie:
+                sys.exit(f"{lr}  [✘] OPPS, CHECKPOINT!{lg}")
             else:
                 sys.exit(f"{lr}  [✘] INCORRECT DETAILS")
     except requests.exceptions.ConnectionError:
