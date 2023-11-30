@@ -1153,7 +1153,7 @@ def xcokis():
                 .replace(":", "=")
             )
             if "checkpoint" in cookie:
-                sys.exit("\033[1;31mAccount terminated by Facebook!\033[0m")
+                sys.exit(f"{lr} OPPS, CHECKPOINT!{lg}")
             elif "c_user" in cookie:
                 print(
                     f"\n   [\033[38;5;83mCOOKIES\033[0m] \033[38;5;208m{cookie}\033[0m\n\n"
