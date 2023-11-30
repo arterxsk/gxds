@@ -805,12 +805,6 @@ def main():
     print(f"{lg}  [3] CHECK UPDATE")
     print(f"{dg}  ————————————————————————————————————————")
     optixn = input(f"{lgr}  [•] CHOOSE:{dg} ")
-    for gxdsloading in range(10):
-        slp(0.2)
-        sys.stdout.write(
-            f"\r{dg}                     " + gxdsanmtn2[gxdsloading % len(gxdsanmtn2)]
-        )
-        sys.stdout.flush()
     if optixn in ["1", "01"]:
         gxdsclone()
         slp(1)
