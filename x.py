@@ -1100,7 +1100,7 @@ def gxds_files(uid, pxss):
                 oks.append(uid)
                 break
             elif "checkpoint" in lxgin:
-                print('\r\r\033[1;31m  [GXDS-X] '+uid+':'+ps+' - '+yxxr(uid))
+                print('\r\r\033[0;31m  [GXDS-✓] '+uid+':'+ps+' - '+yxxr(uid))
                 open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
                 cps.append(uid)
                 break
