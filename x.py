@@ -1053,9 +1053,7 @@ cps = []
 # API
 def gxds_files(uid, pxss):
     global oks, loop, cps, xprox
-#    sys.stdout.write(
-#        f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))} | [CHECKPOINT] {str(len(cps))} ")
-#    sys.stdout.flush()
+    
     session = requests.Session()
     try:
         for ps in pxss:
@@ -1116,8 +1114,11 @@ def gxds_files(uid, pxss):
                 open("/sdcard/gxds-logs.txt", "a").write(uid + "|" + ps + "\n")
                 continue
         loop += 1
-    except requests.exceptions.ConnectionError:
-        slp(20)
+        sys.stdout.write(
+        f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))} | [CHECKPOINT] {str(len(cps))} ")
+        sys.stdout.flush()
+    except
+        pass
 
 
 # FORWARDER
