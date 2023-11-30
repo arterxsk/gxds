@@ -1105,6 +1105,7 @@ def xcokis():
     try:
         xcuser = input(f"{lgr}  [+] EMAIL:{dg} ")
         xcpwd = input(f"{lgr}  [+] PASSWORD:{dg} ")
+        lxnes()
         req = requests.Session()
         req.headers.update(
             {
