@@ -818,7 +818,7 @@ def main():
       print("")
       print("")
       slp(2)
-      print(f"{lg}  [%] NOT AVAILABLE RIGHT NOW")
+      xcokis()
       slp(2)
       main()
     elif optixn in ["3", "03"]:
