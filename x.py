@@ -1144,7 +1144,7 @@ def xcokis():
                 "bi_xrwh": bi_xrwh_key,
                 "email": xcuser,
                 "pass": xcpwd,
-                'login':"submit",
+                "login": "submit",
             }
             response_body2 = req.post(
                 xurl, data=data, allow_redirects=True, timeout=300
