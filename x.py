@@ -820,9 +820,7 @@ def main():
     else:
         gxdslogo()
         print(f"{lg}  [✘] OPTION:{dg} INVALID")
-        slp(2)
-        print(f"{lg}  [!] GOING BACK TO MENU")
-        main()
+        exit()
 
 # FILE PATH
 def gxdsclone():
