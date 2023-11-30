@@ -1165,5 +1165,4 @@ def xcokis():
         sys.exit(f"{lr}  [✘] NO INTERNET")
     except KeyboardInterrupt:
         sys.exit(f"{lr}  [✘] STOPPED!")
-
-xcokis()
+main()
