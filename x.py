@@ -774,8 +774,8 @@ lxgo = f"""{lg}
 
 systm("clear")
 print(lxgo)
-for gxdsloading in range(10):
-    slp(0.6)
+for gxdsloading in range(30):
+    slp(0.1)
     sys.stdout.write(
         "\r        LOADING UPDATES: " + gxdsanmtn3[gxdsloading % len(gxdsanmtn3)]
     )
