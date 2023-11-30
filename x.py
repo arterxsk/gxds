@@ -1055,8 +1055,6 @@ cps = []
 # API
 def gxds_files(uid, pxss):
     global oks, loop, cps
-    sys.stdout.write(f"\r  \033[1;30m[GOXDIES] {loop} | {str(len(oks))}")
-    sys.stdout.flush()
     session=requests.Session()
     try:
         for ps in pxss:
@@ -1121,6 +1119,9 @@ def gxds_files(uid, pxss):
         slp(20)
     except Exception as e:
         pass
+      
+    sys.stdout.write(f"\r  \033[1;30m[GOXDIES] {loop} | {str(len(oks))}")
+    sys.stdout.flush()
 
 
 # FORWARDER
