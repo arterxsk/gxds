@@ -805,13 +805,13 @@ def main():
     print(f"{lg}  [3] CHECK UPDATE")
     print(f"{dg}  ————————————————————————————————————————")
     optixn = input(f"{lgr}  [•] CHOOSE:{dg} ")
-    if optixn in ["1", "01"]:
+    if optixn == "1":
        gxdsclone()
        slp(1)
-    elif optixn in ["2", "02"]:
+    elif optixn == "2":
       xcokis()
       slp(1)
-    elif optixn in ["3", "03"]:
+    elif optixn == "3":
       print("")
       systm(
             "cd ; rm -rf gxds ; git clone https://github.com/goxdies/gxds; cd gxds ; python x.py"
