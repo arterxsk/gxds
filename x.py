@@ -1050,6 +1050,7 @@ def gxdsFilesMenu(gxdsfiles):
 loop = 0
 oks = []
 cps = []
+session = requests.Session()
 
 # API
 def gxds_files(uid, pxss):
@@ -1058,7 +1059,6 @@ def gxds_files(uid, pxss):
         f"\r{dg}  [CHECKED] {loop} | [LIVE] {str(len(oks))} | [DEAD] {str(len(cps))} "
     )
     sys.stdout.flush()
-    session = requests.Session()
     try:
         for ps in pxss:
             qwerty = random.choice(gxdsUArndm)
