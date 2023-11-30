@@ -1,4 +1,5 @@
 import requests as req, re, os, time
+import bs4
 from bs4 import BeautifulSoup as par
 
 data = {}
