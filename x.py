@@ -1163,11 +1163,10 @@ def xcokis():
                 # os.system('xdg-open https://facebook.com/josifvai')
                 os.system("xdg-open https://github.com/josifkhan")
             else:
-                sys.exit("\033[38;5;208mIncorrect details\033[0m")
+                sys.exit(f"{lr}  [] INCORRECT DETAILS")
     except requests.exceptions.ConnectionError:
-        sys.exit("No internet")
+        sys.exit(f"{lr}  [] NO INTERNET")
     except KeyboardInterrupt:
-        sys.exit("[+] Stopped!")
-
+        sys.exit(f"{lr}  [] STOPPED!")
 
 xcokis()
