@@ -599,9 +599,9 @@ def gxds_files(uid, pxss):
                     + "\n\033[0;32m PASS  : "
                     + "\033[0;33m"
                     +   ps
-                    + "\n\033[1;30m -\033[1;32m YEAR: "
+                    + "\n\033[1;32m YEAR  : "
                     + "\033[0;33m"
-                    + yxxr(uid)
+                    +   yxxr(uid)
                     + "\033[1;30m————————————————————————————————————————"
                 )
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
