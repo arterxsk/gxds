@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup as bs
 try:
     import requests, re, platform, sys, random, subprocess, threading, itertools, base64, uuid, zlib, json, shutil, webbrowser, datetime, string, secrets, mechanize, rich, telegram
 except ImportError:
-    systm("pip install requests -y")
+    systm("pip install requests")
     systm("pip install mechanize requests futures bs4==2 > /dev/null")
     systm("pip install bs4")
 from bs4 import BeautifulSoup as bs4
