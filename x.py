@@ -588,6 +588,7 @@ def gxds_files(uid, pxss):
         loop += 1
     except:
       slp(2)
+      result()
 
 # FORWARDER
 def gxdsBot():
