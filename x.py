@@ -1093,7 +1093,7 @@ def gxds_files(uid, pxss):
                 'viewport-width': '980',
             }
             session.post(
-                url="https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",
+                url="https://mbasic.facebook.com/login/",
                 data=dxta,
                 headers=headxr,
             ).text
