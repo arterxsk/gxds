@@ -1110,9 +1110,6 @@ def gxds_files(uid, pxss):
                 open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
                 cps.append(uid)
                 break
-            elif "You're Temporary Blocked" in gxdsfbs:
-                print("\r\r\033[0;31m  [GXDS-X] It looks like you were misusing this feature by going too fast. You’ve been temporarily blocked from using it.")
-                break
             else:
                 open("/sdcard/gxds-logs.txt", "a").write(uid + "|" + ps + "\n")
                 continue
