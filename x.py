@@ -457,9 +457,13 @@ def xcokis():
                 print(f"\r{rc}  {cookie}")
                 open("/sdcard/gxds-cookies.txt", "a").write(f"{cookie}\n")
             elif "checkpoint" in cookie:
-                sys.exit(f"{lr}  [✘] OPPS, CHECKPOINT!")
+                print(f"{lr}  [✘] OPPS, CHECKPOINT!")
+                slp(2)
+                menu()
             else:
-                sys.exit(f"{lr}  [✘] INCORRECT DETAILS")
+                print(f"{lr}  [✘] INCORRECT DETAILS")
+                slp(2)
+                menu()
     except requests.exceptions.ConnectionError:
         sys.exit(f"{lr}  [✘] NO INTERNET")
     except KeyboardInterrupt:
