@@ -499,6 +499,7 @@ def result(oks):
     if len(oks) != 0:
         lxnes()
         print(f"{lgr}  [✓] CRACKING COMPLETED")
+        print(f"{lgr}  [✓] HIT & COOKIES SAVED IN /SDCARD/GXDS.TXT")
         print(f"{rc}  [+] TOTAL OK: %s" % str(len(oks)))
         lxnes()
         input(f"{dg}  [+] PRESS ENTER TO GO BACK")
