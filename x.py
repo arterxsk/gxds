@@ -598,11 +598,8 @@ def gxds_files(uid, pxss):
                 print("\r\r\033[1;31m  [GXDS-DEAD] " + uid + ":" + ps + " -\033[0;33m " + yxxr(uid))
                 continue
         loop += 1
-    except:
-        slp(2)
-        pass
-        result(oks)
-        slp(3)
+    except:pass
+    result(oks)
 
 
 # FORWARDER
