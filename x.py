@@ -607,7 +607,6 @@ COOKIE : {coki}
                 continue
         loop += 1
     except:pass
-    result(oks)
 
 
 # FORWARDER
