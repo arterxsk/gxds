@@ -918,7 +918,7 @@ def xcokis():
     gxdslogo()
     url = "https://n.facebook.com"
     xurl = url + "/login.php"
-    ua = "Mozilla/5.0 (Linux; Android 4.1.2; GT-I8552 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
+    ua = random.choice(gxdsUArndm)
     print(f"{lg}  [•] FILE SAVE IN:{dg} /sdcard/gxds.txt")
     lxnes()
     try:
