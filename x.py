@@ -514,7 +514,7 @@ def gxds_files(uid, pxss):
         for ps in pxss:
             qwerty = random.choice(ugen)
             gxdsfbs = session.get("https://mbasic.facebook.com").text
-            fb = "n"
+            fb = "mbasic"
             info = {
                 "lsd": re.search('name="lsd" value="(.*?)"', str(gxdsfbs)).group(1),
                 "jazoest": re.search(
