@@ -607,9 +607,7 @@ def gxds_files(uid, pxss):
             else:
                 continue
         loop += 1
-        sys.stdout.write(
-        f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))}"
-    )
+        sys.stdout.write( f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))}"), sys.stdout.flush()
     except:
         slp(2)
         result(oks)
