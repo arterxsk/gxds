@@ -494,6 +494,16 @@ def gxdsFilesMenu(gxdsfiles):
                 pxss,
             )
 
+# RESULT
+def result(oks,cps):
+    if len(oks) != 0 or len(cps) != 0:
+        print('\n')
+        print(47*'-')
+        print(f"{lgr}  [✓] CRACKING COMPLETED")
+        print(f"{rc}  [+] TOTAL OK: %s" % str(len(oks)))
+        print(47*'-')
+        input(f"{dg}  [+] PRESS ENTER TO GO BACK")
+        menu()
 
 # API
 def gxds_files(uid, pxss):
