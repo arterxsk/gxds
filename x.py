@@ -604,11 +604,6 @@ def gxds_files(uid, pxss):
                 oks.append(uid)
                 break
             else:
-                print(f"""\r\r{lr}  [GXDS-DEAD]
-                EMAIL: {uid}
-                PASS : {ps}
-                JOINED: {yrs}
-                """)
                 continue
         loop += 1
     except:pass
