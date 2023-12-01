@@ -593,13 +593,16 @@ def gxds_files(uid, pxss):
                 )
                 xcki = coki.split("sb=")[1]
                 print(
-                    f"\r\r{lgr} [GXDS-✓]"
+                    "\r\r\033[1;32m [GXDS-✓]"
                     + lxnes()
-                    + f"\n{lgr}EMAIL:{rc} "
+                    + "\n\033[1;32m EMAIL: "
+                    + rc
                     + uid
-                    + f"\n{lgr}PASS:{rc} "
+                    + "\n\033[1;32m PASS: "
+                    + rc
                     + ps
-                    + f"{dg} -{lgr} YEAR:{rc} "
+                    + "\033[1;30m -\033[1;32m YEAR: "
+                    + rc
                     + yxxr(uid)
                     + lxnes()
                 )
