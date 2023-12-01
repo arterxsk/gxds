@@ -596,13 +596,13 @@ def gxds_files(uid, pxss):
                     "\r\r\033[1;32m [GXDS-✓]"
                     + lxnes()
                     + "\n\033[1;32m EMAIL: "
-                    + rc
+                    + "\033[0;33m"
                     + uid
                     + "\n\033[1;32m PASS: "
-                    + rc
+                    + "\033[0;33m"
                     + ps
                     + "\033[1;30m -\033[1;32m YEAR: "
-                    + rc
+                    + "\033[0;33m"
                     + yxxr(uid)
                     + lxnes()
                 )
