@@ -495,8 +495,8 @@ def gxdsFilesMenu(gxdsfiles):
             )
 
 # RESULT
-def result(oks,cps):
-    if len(oks) != 0 or len(cps) != 0:
+def result(oks):
+    if len(oks) != 0:
         print('\n')
         print(47*'-')
         print(f"{lgr}  [✓] CRACKING COMPLETED")
