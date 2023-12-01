@@ -589,7 +589,6 @@ def gxds_files(uid, pxss):
             continue
         loop += 1
     except:
-        slp(2)
         pass
         result(oks,cps)   
 
