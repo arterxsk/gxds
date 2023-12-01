@@ -595,8 +595,7 @@ def gxds_files(uid, pxss):
                 oks.append(uid)
                 break
             else:
-                print("\r\r\033[0;31m  [GXDS-DEAD] " + uid + ":" + ps + " -\033[0;35m
-              " + yxxr(uid))
+                print("\r\r\033[0;31m  [GXDS-DEAD] " + uid + ":" + ps + " -\033[0;35m " + yxxr(uid))
                 continue
         loop += 1
     except:
