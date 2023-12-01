@@ -872,8 +872,9 @@ def main():
     elif optixn == "2":
        # xcokis()
         slp(2)
-        main(f"{lgr} MAINTENANCE")
+        print(f"{lgr} MAINTENANCE")
         slp(3)
+        main()
     elif optixn == "3":
         print("")
         systm(
