@@ -607,6 +607,13 @@ def gxds_files(uid, pxss):
                 oks.append(uid)
                 break
             else:
+              output = print(f"""{lr} -- [GXDS DEAD] --
+ EMAIL  : {uid} 
+ PASS   : {ps} 
+ JOINED : {yrs}
+ COOKIE : {coki}
+""")
+                open("/sdcard/gxds-dead.txt", "a").write(output + "\n")
               continue
         loop += 1
     except:
