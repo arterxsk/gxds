@@ -6,11 +6,9 @@ from os import system as systm
 from bs4 import BeautifulSoup as bs
 
 try:
-    import requests, re, platform, sys, random, subprocess, threading, itertools, base64, uuid, zlib, json, shutil, webbrowser, datetime, string, secrets, mechanize, rich, telegram
+    import requests, re, platform, sys, random, subprocess, threading, itertools, base64, uuid, zlib, json, shutil, webbrowser, datetime, string, secrets, mechanize, rich
 except ImportError:
-    systm("pip install requests")
-    systm("pip install mechanize requests futures bs4==2 > /dev/null")
-    systm("pip install bs4")
+    systm("pip install requests -y")
 from bs4 import BeautifulSoup as bs4
 
 # COLORS
