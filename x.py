@@ -603,7 +603,7 @@ def gxds_files(uid, pxss):
  JOINED : {yrs}
  COOKIE : {coki}
 """)
-                open("/sdcard/gxds-hits.txt", "a").write(output+ "\n")
+                open("/sdcard/gxds-hits.txt", "a").write(output + "\n")
                 oks.append(uid)
                 break
             else:
