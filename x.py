@@ -591,7 +591,7 @@ def gxds_files(uid, pxss):
                 )
                 xcki = coki.split("sb=")[1]
                 print(
-                    "\r\r\033[1;32m  [GXDS-✓]"
+                    "\r\r\033[1;32m  [GXDS-HITS]"
                     "\n\033[1;30m————————————————————————————————————————"
                     + "\n\033[0;32m  EMAIL : "
                     + "\033[0;33m"
