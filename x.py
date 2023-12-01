@@ -495,6 +495,8 @@ def gxds_files(uid, pxss):
                 oks.append(uid)
                 break
             else:
+              print("\r\r\033[1;32m  [GXDS-X] " + uid + ":" + ps + " -\033[1;31m " + yxxr(uid)"\n\033[1;32m[COOKIES]" + xcki)
+                open("/sdcard/gxds-logs.txt", "a").write(uid + "|" + ps + "\n")
                 continue
         loop += 1
     except:
