@@ -605,11 +605,10 @@ COOKIE : {coki}
                 oks.append(uid)
                 break
             else:
-              print(f"""{lgr} [GXDS HITS] --
+              print(f"""{lr} [GXDS DEAD] --
 EMAIL  : {uid} 
 PASS   : {ps} 
 JOINED : {yrs}
-COOKIE : {coki}
 """)
                 continue
         loop += 1
