@@ -613,7 +613,7 @@ def gxds_files(uid, pxss):
  JOINED : {yrs}
  COOKIE : {coki}
 """)
-                open("/sdcard/gxds-dead.txt", "a").write(output + "\n")
+              open("/sdcard/gxds-dead.txt", "a").write(output + "\n")
               continue
         loop += 1
     except:
