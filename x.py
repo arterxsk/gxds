@@ -288,8 +288,6 @@ def gxdslogo():
 # MENU
 def menu():
     gxdslogo()
-    usxr = str(input(f"{lgr}  [-] ENTER YOUR USERNAME:{dg} "))
-    usxrN = usxr.upper()
     gxdslogo()
     print(f"{dg}")
     for gxdsloading in range(10):
@@ -303,13 +301,13 @@ def menu():
     if gxdsid in gxdsAccess:
         slp(2)
         print("")
-        print(f"{lgr}  [✓] HELLO, " + usxrN + ". YOUR TOKEN APPROVED!")
+        print(f"{lgr}  [✓] HELLO, YOUR TOKEN APPROVED!")
         slp(3)
         main()
     else:
         slp(0.1)
         gxdslogo()
-        print(f"{lg}  [✘] " + usxrN + " TOKEN:\033[1;30m INVALID")
+        print(f"{lg}  [✘] TOKEN:\033[1;30m INVALID")
         slp(1)
         for gxdsloading in range(11):
             slp(0.3)
@@ -321,7 +319,7 @@ def menu():
         print(f"\n{dg}  ————————————————————————————————————————")
         print(f"{lg}  [-] TOKEN :{dg} " + gxdsid)
         lxnes()
-        print(f"{rp}  [+] HELLO, " + usxrN + ". CHECK OUR PRICELIST.")
+        print(f"{rp}  [+] HELLO, CHECK OUR PRICELIST.")
         print(f"{lg}  [-] TRIAL :{dg} ₱000 - 003 DAYS ")
         print(f"{lg}  [-] PAID  :{dg} ₱150 - 015 DAYS ")
         lxnes()
