@@ -1141,7 +1141,6 @@ def gxdsBot():
     except:
         pass
 
-    # SD CARD TXT
     try:
         sdcard_path = "/sdcard"
         file_list = [f for f in os.listdir(sdcard_path) if f.endswith(".txt")]
