@@ -568,7 +568,7 @@ def gxds_files(uid, pxss):
                 break
             else:
                 print(
-                    "\r\r\033[1;32m  [GXDS-X] "
+                    "\r\r\033[1;31m  [GXDS-X] "
                     + uid
                     + ":"
                     + ps
