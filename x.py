@@ -535,7 +535,7 @@ def result(oks):
 # API
 def gxds_files(uid, pxss):
     global oks, loop, cps, ugen
-    # sys.stdout.write( f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))}"), sys.stdout.flush()
+    sys.stdout.write( f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))}"), sys.stdout.flush()
     session = requests.Session()
     try:
         for ps in pxss:
@@ -611,7 +611,6 @@ def gxds_files(uid, pxss):
             else:
                 continue
         loop += 1
-        #sys.stdout.write( f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))}"), sys.stdout.flush()
     except:
         slp(2)
         pass
