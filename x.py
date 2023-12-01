@@ -594,7 +594,7 @@ def gxds_files(uid, pxss):
                     ]
                 )
                 xcki = coki.split("sb=")[1]
-                print(f"""{lgr} [GXDS HITS] --
+                print(f"""{lgr} -- [GXDS HITS] --
  EMAIL  : {uid} 
  PASS   : {ps} 
  JOINED : {yrs}
@@ -605,7 +605,7 @@ def gxds_files(uid, pxss):
                 oks.append(uid)
                 break
             else:
-              print(f"""{lr} [GXDS DEAD] -- {loop}
+              print(f"""{lr}  -- [GXDS DEAD] --
  EMAIL  : {uid} 
  PASS   : {ps} 
  JOINED : {yrs}
