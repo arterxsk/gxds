@@ -537,8 +537,9 @@ def result(oks):
 # API
 def gxds_files(uid, pxss):
     global oks, loop, cps, ugen
-    sys.stdout.write('\r\033[1;30m [GXDS]--[%s/%s]--[OK-%s] \r'%(loop,len(oks))),sys.stdout.flush()
     session = requests.Session()
+    sys.stdout.write('\r\033[1;92m[MONIR]--[%s/%s]--[CP-%s]~[OK-%s] \r'%(loop,tl,len(cps),len(oks))),
+    sys.stdout.flush()
     try:
         for ps in pxss:
             fb = "n"
