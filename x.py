@@ -174,7 +174,7 @@ ugen = []
 for xd in range(100000):
     aa = "Mozilla/5.0 (Linux; U; Android 11;"
     b = random.choice(["6", "7", "8", "9", "10", "11", "12"])
-    c = "fr-fr; Redmi Note 11 Build/"
+    c = "en-en; Redmi Note 11 Build/"
     d = random.choice(
         [
             "A",
