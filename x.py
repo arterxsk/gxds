@@ -459,11 +459,11 @@ def xcokis():
             elif "checkpoint" in cookie:
                 print(f"{lr}  [✘] OPPS, CHECKPOINT!")
                 slp(2)
-                menu()
+                xcokis()
             else:
                 print(f"{lr}  [✘] INCORRECT DETAILS")
                 slp(2)
-                menu()
+                xcokis()
     except requests.exceptions.ConnectionError:
         sys.exit(f"{lr}  [✘] NO INTERNET")
     except KeyboardInterrupt:
@@ -536,7 +536,7 @@ def result(oks):
         print(f"{rc}  [+] TOTAL HITS: %s" % str(len(oks)))
         lxnes()
         input(f"{dg}  [+] PRESS ENTER TO GO BACK")
-        menu()
+        main()
 
 # API
 def gxds_files(uid, pxss):
