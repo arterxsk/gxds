@@ -263,11 +263,11 @@ def main():
         gxdsclone()
         slp(1)
     elif optixn == "2":
-       # xcokis()
+        xcokis()
         slp(2)
-        print(f"{lgr}  [X] MAINTENANCE")
-        slp(3)
-        main()
+        #print(f"{lgr}  [X] MAINTENANCE")
+        #slp(3)
+        #main()
     elif optixn == "3":
         print("")
         systm(
