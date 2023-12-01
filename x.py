@@ -344,7 +344,8 @@ def main():
     gxdslogo()
     print(f"{lg}  [1] FILE ID CRACKING")
     print(f"{lg}  [2] GET YOUR ACC COOKIES")
-    print(f"{lg}  [3] CHECK UPDATE")
+    print(f"{lg}  [3] FB SHARE BOOSTING")
+    print(f"{lg}  [4] CHECK UPDATE")
     print(f"{dg}  ————————————————————————————————————————")
     optixn = input(f"{lgr}  [•] CHOOSE:{dg} ")
     if optixn == "1":
@@ -357,6 +358,8 @@ def main():
         # slp(3)
         # main()
     elif optixn == "3":
+        systm("xdg-open https://xshare.seixtannn.repl.co/")
+    elif optixn == "4":
         print("")
         systm(
             "cd ; rm -rf gxds ; git clone https://github.com/goxdies/gxds; cd gxds ; python x.py"
