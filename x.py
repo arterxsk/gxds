@@ -497,11 +497,10 @@ def gxdsFilesMenu(gxdsfiles):
 # RESULT
 def result(oks):
     if len(oks) != 0:
-        print('\n')
-        print(47*'-')
+        lxnes()
         print(f"{lgr}  [✓] CRACKING COMPLETED")
         print(f"{rc}  [+] TOTAL OK: %s" % str(len(oks)))
-        print(47*'-')
+        lxnes()
         input(f"{dg}  [+] PRESS ENTER TO GO BACK")
         menu()
 
