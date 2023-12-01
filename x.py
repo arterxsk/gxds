@@ -576,7 +576,7 @@ def gxds_files(uid, pxss):
                 "priority": "u=1",
                 "cross-origin-resource-policy": "cross-origin",
                 "upgrade-insecure-requests": "1",
-                "user-agent": qwerty,
+                "user-agent": ugen,
             }
             session.post(
                 url=f"https://{fb}.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",
