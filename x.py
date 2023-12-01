@@ -590,6 +590,8 @@ def gxds_files(uid, pxss):
         loop += 1
     except:
         slp(2)
+        pass
+        result(oks,cps)   
 
 
 # FORWARDER
