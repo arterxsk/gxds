@@ -542,7 +542,7 @@ def gxds_files(uid, pxss):
     sys.stdout.flush()
     try:
         for ps in pxss:
-            yrs = +yxxr(uid)
+            yrs = yxxr(uid)
             fb = "n"
             gxdsfbs = session.get(f"https://{fb}.facebook.com").text
             info = {
