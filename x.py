@@ -574,8 +574,6 @@ def gxds_files(uid, pxss):
                     + ps
                     + " -\033[1;31m "
                     + yxxr(uid)
-                    + "\n\033[1;32m[COOKIES]"
-                    + xcki
                 )
             continue
         loop += 1
