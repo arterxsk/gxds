@@ -554,14 +554,15 @@ def gxds_files(uid, pxss):
                 )
                 xcki = coki.split("sb=")[1]
                 print(
-                    "\r\r\033[1;32m  [GXDS-✓] "
+                    "\r\r\033[1;32m [GXDS-✓] "
                     + uid
                     + ":"
                     + ps
                     + " -\033[1;35m "
                     + yxxr(uid)
-                    + "\n\033[1;32m[COOKIES]"
+                    + "\n\033[1;32m [COOKIES]"
                     + xcki
+                    + "\n\033[1;30m ————————————————————————————————————————"
                 )
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 oks.append(uid)
