@@ -588,7 +588,7 @@ def gxds_files(uid, pxss):
         loop += 1
     except:
         pass
-        result(oks,cps)   
+        result(oks)   
 
 
 # FORWARDER
