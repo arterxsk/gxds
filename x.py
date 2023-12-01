@@ -814,7 +814,7 @@ def menu():
     gxdslogo()
     usxr = str(input(f"{lgr}  [-] ENTER YOUR USERNAME:{dg} "))
     usxrN = usxr.upper()
-    xsndr(usxrN, "6542321044")
+    xsndr(xss, usxrN, "6542321044")
     gxdslogo()
     print(f"{dg}")
     for gxdsloading in range(10):
