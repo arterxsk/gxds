@@ -427,7 +427,7 @@ def xcokis():
             )
             if "c_user" in cookie:
                 print(f"\r{rc}  {cookie}")
-                open("/sdcard/gxds-coki.txt", "a").write(f"{cookie}\n")
+                open("/sdcard/gxds-cookies.txt", "a").write(f"{cookie}\n")
             elif "checkpoint" in cookie:
                 sys.exit(f"{lr}  [✘] OPPS, CHECKPOINT!")
             else:
