@@ -296,7 +296,7 @@ def gxdsclone():
     try:
         gxdsfiles = open(fl, "r").read().splitlines()
     except:
-        slp(3)
+        slp(1)
         print(f"\n{lr}  [✘] FILE NOT FOUND.")
         print(gxdsprnt)
         slp(3)
@@ -380,7 +380,7 @@ def xcokis():
 
 # FILE CLONING
 def gxdsFilesMenu(gxdsfiles):
-    slp(3)
+    slp(1)
     gxdslogo()
     tl = str(len(gxdsfiles))
     print(f"{lg}  [+] PRESS {rc}CTRL AND Z{lg} TO STOP THE PROCESS.")
