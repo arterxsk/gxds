@@ -538,8 +538,8 @@ def result(oks):
 def gxds_files(uid, pxss):
     global oks, loop, cps, ugen
     session = requests.Session()
-    #sys.stdout.write(f"\r{dg}  [CHECKED: %s] \r"%(loop)),
-    #sys.stdout.flush()
+    sys.stdout.write(f"\r{dg}  [CHECKED: %s] \r"%(loop)),
+    sys.stdout.flush()
     try:
         for ps in pxss:
             yrs = yxxr(uid)
