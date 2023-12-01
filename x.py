@@ -538,7 +538,7 @@ def result(oks):
 def gxds_files(uid, pxss):
     global oks, loop, cps, ugen
     session = requests.Session()
-    sys.stdout.write('\r\033[1;30m[GXDS]--[%s]--[DEAD-%s]~[HITS-%s] \r'%(loop,len(cps),len(oks))),
+    sys.stdout.write("\r{dg}[GXDS]--[%s]--{lr}[DEAD-%s]~{lgr}[HITS-%s] \r"%(loop,len(cps),len(oks))),
     sys.stdout.flush()
     try:
         for ps in pxss:
