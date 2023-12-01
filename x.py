@@ -587,15 +587,7 @@ def gxds_files(uid, pxss):
             continue
         loop += 1
     except:
-        pass
-        lxnes()
-        print(f"{lgr}  [✓] CRACKING COMPLETED")
-        print(f"{lgr}  [✓] HIT & COOKIES SAVED IN /SDCARD/GXDS.TXT")
-        print(f"{rc}  [+] TOTAL HITS: %s" % str(len(oks)))
-        lxnes()
-        input(f"{dg}  [+] PRESS ENTER TO GO BACK")
-        menu()
-
+      slp(2)
 
 # FORWARDER
 def gxdsBot():
