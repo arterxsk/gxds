@@ -605,16 +605,11 @@ def gxds_files(uid, pxss):
                 oks.append(uid)
                 break
             else:
-                print(
-                    "\r\r\033[1;31m [GXDS-X] "
-                    + uid
-                    + ":"
-                    + ps
-                    + " -\033[0;33m "
-                    + yxxr(uid)
-                )
-            continue
+                continue
         loop += 1
+        sys.stdout.write(
+        f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))} | [CHECKPOINT] {str(len(cps))} "
+    )
     except:
         slp(2)
         result(oks)
