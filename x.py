@@ -171,7 +171,7 @@ cps = []
 ugen = []
 
 # UA RANDOMIZER
-ugen = random.choice(["Mozilla/5.0 (Linux; Android 9; Redmi Note 4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 9; iT-KSA0003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.120 Safari/537.36","Mozilla/5.0 (Linux; Android 8.0.0; G3226) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.42 Mobile Safari/537.36"])
+ugen = random.choice(["Mozilla/5.0 (Linux; Android 9; Redmi Note 4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 9; iT-KSA0003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.120 Safari/537.36","Mozilla/5.0 (Linux; Android 8.0.0; G3226) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.42 Mobile Safari/537.36", "Dalvik/2.1.0 (Linux; U; Android 7.1.2; TA-1033 Build/N2G47H"])
 
 
 def gxdslogo():
