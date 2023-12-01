@@ -558,7 +558,7 @@ def gxds_files(uid, pxss):
                     + uid
                     + ":"
                     + ps
-                    + " -\033[1;35m "
+                    + " -\033[0;33m "
                     + yxxr(uid)
                     + "\n\033[1;32m [COOKIES]"
                     + xcki
@@ -573,7 +573,7 @@ def gxds_files(uid, pxss):
                     + uid
                     + ":"
                     + ps
-                    + " -\033[1;31m "
+                    + " -\033[0;33m "
                     + yxxr(uid)
                 )
             continue
