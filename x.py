@@ -576,7 +576,6 @@ def gxds_files(uid, pxss, fb, fb1, tl):
     try:
         for ps in pxss:
             yrs = yxxr(uid)
-            fb = "n"
             gxdsfbs = session.get(f"https://{fb}.facebook.com").text
             info = {
                 "lsd": re.search('name="lsd" value="(.*?)"', str(gxdsfbs)).group(1),
