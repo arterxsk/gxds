@@ -539,7 +539,7 @@ def gxdsFilesMenu(gxdsfiles):
                 pass
 
             GOXDIES.submit(
-                gxds_files,
+                gxdsAPI,
                 uid,
                 pxss,
             )
@@ -558,7 +558,7 @@ def result(oks):
 
 
 # API
-def gxds_files(uid, pxss, fb, fb1):
+def gxdsAPI(uid, pxss, fb, fb1):
     global oks, loop, cps, ugen
     session = requests.Session()
     sys.stdout.write(
