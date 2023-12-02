@@ -464,10 +464,6 @@ def gxdsclone():
         f"{lg}  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n  [-] USE A GOOD ID COMBO FOR A GOOD RESULT."
     )
     lxnes()
-    print(f"{lg}  [1] SERVER 1")
-    print(f"{lg}  [2] SERVER 2")
-    print(f"{lg}  [3] SERVER 3")
-    print(f"{dg}  ————————————————————————————————————————")
     fl = input(f"{lgr}  [+] FILE PATH:{dg} ")
     print(f"{dg}  [-] EXAMPLE PATH: /sdcard/yourFile.txt")
     print(f"{dg}  ————————————————————————————————————————")
