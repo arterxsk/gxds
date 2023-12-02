@@ -130,17 +130,22 @@ gxdsanmtn4 = [
 gxdsanmtn1 = "|/-\\"
 gxdsanmtn2 = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]
 
+# LINES
+def lxnes():
+    print(f"{dg}  ——————————————————————————————————————————————————")
+    print(f"{dg}  ——————————————————————————————————————————————————")
+
+def lxnes1():
+    print(f"{dg}  ——————————————————————————————————————————————————")
+
 lxgo = f"""{lg}
-                              d8b             
-                              88P             
-                             d88              
-      d888b8b  ?88,  88P d888888   .d888b,    
-     d8P' ?88   `?8bd8P'd8P' ?88   ?8b,       
-     88b  ,88b  d8P?{dg}8b, 88b  ,88b    `?8b     
-    `?88P'`88b d8P' `?8b`?88P'`88b`?888P'     
-           )88      
-{dg}           ,88P                               
-       `?8888P                  {white}              \n"""
+
+                    ┌──────────────────────────────┐
+  ░█▀▀░█░█░█▀▄░█▀▀® │ FACEBOOK   :     /GOXDIES    │
+  ░█░█░▄▀▄░█░█░▀▀█  │ GITHUB     :     /GOXDIES    │
+  ░▀▀▀░▀░▀░▀▀░░▀▀▀  │ STATUS     :     PAID        │
+      TOOLS V1      └──────────────────────────────┘
+   \n  ——————————————————————————————————————————————————"""
 
 systm("clear")
 print(lxgo)
@@ -157,12 +162,6 @@ uuidd = str(os.geteuid()) + str(os.getlogin())
 id1 = "X".join(uuidd).replace("_", "C").replace("u", "GXDS").replace("a", "J")
 gxdsid = id1 + spce
 gxdsAccess = requests.get("https://arterxsk.repl.co/access.txt").text
-
-
-def lxnes():
-    print(f"{dg}  ————————————————————————————————————————")
-    print(f"{dg}  ————————————————————————————————————————")
-
 
 # LOOP MENU
 loop = 0
