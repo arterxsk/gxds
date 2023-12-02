@@ -619,7 +619,7 @@ def gxds_files(uid, pxss, fb, fb1):
                     ]
                 )
                 print(
-                    f"""{lgr} -- [GXDS HITS] --
+                    f"""{lgr}  [GXDS HITS]
  EMAIL  : {uid} 
  PASS   : {ps} 
  JOINED : {yrs}
@@ -639,7 +639,7 @@ def gxds_files(uid, pxss, fb, fb1):
                     ]
                 )
                 print(
-                    f"""{lr} -- [GXDS CHECKPOINT] --
+                    f"""{lr}  [GXDS CHECKPOINT]
  EMAIL  : {uid} 
  PASS   : {ps} 
  JOINED : {yrs}
