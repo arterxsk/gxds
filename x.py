@@ -468,25 +468,9 @@ def gxdsclone():
     print(f"{lg}  [2] SERVER 2")
     print(f"{lg}  [3] SERVER 3")
     print(f"{dg}  ————————————————————————————————————————")
-    mxth = input(f"{lgr}  [+] CHOOSE SERVER:{dg} ")
-    if mxth == "1":
-        fb = "n"
-        fb1 = "S1"
-    elif mxth == "2":
-        fb = "mbasic"
-        fb1 = "S2"
-    elif mxth == "3":
-        fb = "free"
-        fb1 = "S3"
-    else:
-        print(f"{lr}  [!] PICK A SERVER!")
-        slp(2)
-        gxdsclone()
-    ##----------##
-    print(f"{dg}  ————————————————————————————————————————")
+    fl = input(f"{lgr}  [+] FILE PATH:{dg} ")
     print(f"{dg}  [-] EXAMPLE PATH: /sdcard/yourFile.txt")
     print(f"{dg}  ————————————————————————————————————————")
-    fl = input(f"{lgr}  [+] FILE PATH:{dg} ")
     print("  ")
     try:
         gxdsfiles = open(fl, "r").read().splitlines()
