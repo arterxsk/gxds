@@ -573,7 +573,7 @@ def gxdsAPI(uid, pxss, tl):
                 "referer": f"https://{fb}.facebook.com/",
                 "sec-ch-ua": '"Google Chrome";v="90", "Not)A;Brand";v="8", "Chromium";v="75"',
                 "sec-ch-ua-mobile": "?0",
-                "sec-ch-ua-platform": "Windows",
+                "sec-ch-ua-platform": "Android",
                 "sec-fetch-dest": "document",
                 "sec-fetch-mode": "navigate",
                 "sec-fetch-site": "same-origin",
