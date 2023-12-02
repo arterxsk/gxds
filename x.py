@@ -377,7 +377,7 @@ def method():
     print(f"{lg}  [2] MBASIC")
     print(f"{lg}  [3] FREE FB")
     print(f"{dg}  ————————————————————————————————————————")
-    mxth = input(f"{lgr} [+] CHOOSE METHOD:")
+    mxth = input(f"{lgr} [+] CHOOSE SERVER:")
     if mxth == "1":
         fb = "m"
         fb1 = "M1"
