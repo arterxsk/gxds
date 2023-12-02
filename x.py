@@ -287,7 +287,6 @@ def gxdslogo():
 # MENU
 def menu():
     gxdslogo()
-    gxdslogo()
     print(f"{dg}")
     for gxdsloading in range(10):
         slp(0.2)
