@@ -406,9 +406,8 @@ def gxdsclone():
     print(f"{lg}  [1] SERVER 1")
     print(f"{lg}  [2] SERVER 2")
     print(f"{lg}  [3] SERVER 3")
-    print(f"--------------------")
+    print(f"{dg}  ————————————————————————————————————————")
     print(f"{lg}  [-] EXAMPLE PATH: {dg}/sdcard/yourFile.txt")
-    
     mxth = input(f"{lgr} [+] CHOOSE SERVER:")
     if mxth == "1":
         fb = "m"
