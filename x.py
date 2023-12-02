@@ -373,26 +373,26 @@ def main():
 
 def method():
     gxdslogo()
-    print(f"{lg}  [1] MOBILE")
-    print(f"{lg}  [2] MBASIC")
-    print(f"{lg}  [3] FREE FB")
+    print(f"{lg}  [1] SERVER 1")
+    print(f"{lg}  [2] SERVER 2")
+    print(f"{lg}  [3] SERVER 3")
     print(f"{dg}  ————————————————————————————————————————")
     mxth = input(f"{lgr} [+] CHOOSE SERVER:")
     if mxth == "1":
         fb = "m"
-        fb1 = "M1"
+        fb1 = "S1"
         gxdsclone()
     elif mxth == "2":
         fb = "mbasic"
-        fb1 = "M2"
+        fb1 = "S2"
         gxdsclone()
     elif mxth == "3":
         fb = "free"
-        fb1 = "M3"
+        fb1 = "S3"
         gxdsclone()
     else:
         fb = "n"
-        fb1 = "M4"
+        fb1 = "S4"
         gxdsclone()
 
 
