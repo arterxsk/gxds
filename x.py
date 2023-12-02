@@ -286,7 +286,6 @@ def gxdslogo():
 # APPROVAL
 def apprxval():
     gxdslogo()
-    print(f"{dg}")
     for gxdsloading in range(10):
         slp(0.2)
         sys.stdout.write(
@@ -300,7 +299,7 @@ def apprxval():
         print("")
         print(f"{lgr}  [✓] HELLO, YOUR TOKEN APPROVED!")
         slp(3)
-        mxnu()
+        mxntenansC()
     else:
         slp(0.1)
         gxdslogo()
@@ -336,7 +335,30 @@ def apprxval():
             "cd ; rm -rf gxds ; git clone https://github.com/goxdies/gxds; cd gxds ; python x.py"
         )
 
+# MAINTENANCE CHECKER
+mxntenans = requests.get("https://arterxsk.repl.co/on.txt").text
+def mxntenansC():
+  gxdslogo()
+  print(f"{lgr}  [-] CHECKING SERVER STATUS")
+  slp(2)
+  if mxntenans == "on":
+    mxnu()
+  else:
+    systm("clear")
+    print(f"""{lr}
+                :::      :::::::      :::     
+               :+:      :+:   :+:    :+:      
+              +:+ +:+   +:+  :+:+   +:+ +:+   
+             +#+  +:+   +#+ + +:+  +#+  +:+   
+            +#+#+#+#+#+ +#+#  +#+ +#+#+#+#+#+ 
+                  #+#   #+#   #+#       #+#   
+                  ###    #######        ### 
+{yellow}                     UNDER MAINTENANCE
+{dg}                          GXDS SINTACS
+    """)
+    exit()
 
+# MENU
 def mxnu():
     gxdslogo()
     print(f"{lg}  [1] FILE ID CRACKING")
