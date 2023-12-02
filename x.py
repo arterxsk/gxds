@@ -370,47 +370,6 @@ def main():
         print(f"{lg}  [✘] OPTION:{dg} INVALID")
         main()
 
-# FILE PATH
-def gxdsclone():
-    gxdslogo()
-    print(
-        f"{lg}  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n  [-] USE A GOOD ID COMBO FOR A GOOD RESULT."
-    )
-    lxnes()
-    print(f"{lg}  [1] SERVER 1")
-    print(f"{lg}  [2] SERVER 2")
-    print(f"{lg}  [3] SERVER 3")
-    print(f"{dg}  ————————————————————————————————————————")
-    mxth = input(f"{lgr}  [+] CHOOSE SERVER:{dg} ")
-    if mxth == "1":
-        fb = "n"
-        fb1 = "S1"
-    elif mxth == "2":
-        fb = "mbasic"
-        fb1 = "S2"
-    elif mxth == "3":
-        fb = "free"
-        fb1 = "S3"
-    else:
-        fb = "m"
-        fb1 = "S?"
-    ##----------##
-    print(f"{dg}  ————————————————————————————————————————")
-    print(f"{dg}  [-] EXAMPLE PATH: /sdcard/yourFile.txt")
-    print(f"{dg}  ————————————————————————————————————————")
-    fl = input(f"{lgr}  [+] FILE PATH:{dg} ")
-    print("  ")
-    try:
-        gxdsfiles = open(fl, "r").read().splitlines()
-    except:
-        slp(1)
-        print(f"\n{lr}  [✘] FILE NOT FOUND.")
-        print(gxdsprnt)
-        slp(3)
-        gxdsclone()
-    gxdsFilesMenu(gxdsfiles)
-
-
 # GET COOKIES
 def xcokis():
     gxdslogo()
@@ -487,7 +446,47 @@ def xcokis():
     except KeyboardInterrupt:
         sys.exit(f"{lr}  [✘] STOPPED!")
 
-
+# FILE PATH
+def gxdsclone():
+    gxdslogo()
+    print(
+        f"{lg}  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n  [-] USE A GOOD ID COMBO FOR A GOOD RESULT."
+    )
+    lxnes()
+    print(f"{lg}  [1] SERVER 1")
+    print(f"{lg}  [2] SERVER 2")
+    print(f"{lg}  [3] SERVER 3")
+    print(f"{dg}  ————————————————————————————————————————")
+    mxth = input(f"{lgr}  [+] CHOOSE SERVER:{dg} ")
+    if mxth == "1":
+        fb = "n"
+        fb1 = "S1"
+    elif mxth == "2":
+        fb = "mbasic"
+        fb1 = "S2"
+    elif mxth == "3":
+        fb = "free"
+        fb1 = "S3"
+    else:
+        fb = "m"
+        fb1 = "S?"
+    ##----------##
+    print(f"{dg}  ————————————————————————————————————————")
+    print(f"{dg}  [-] EXAMPLE PATH: /sdcard/yourFile.txt")
+    print(f"{dg}  ————————————————————————————————————————")
+    fl = input(f"{lgr}  [+] FILE PATH:{dg} ")
+    print("  ")
+    try:
+        gxdsfiles = open(fl, "r").read().splitlines()
+    except:
+        slp(1)
+        print(f"\n{lr}  [✘] FILE NOT FOUND.")
+        print(gxdsprnt)
+        slp(3)
+        gxdsclone()
+    gxdsFilesMenu(gxdsfiles)
+    
+    
 # FILE CLONING
 def gxdsFilesMenu(gxdsfiles):
     slp(1)
