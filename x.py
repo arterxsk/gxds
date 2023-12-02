@@ -381,11 +381,11 @@ def method():
       fb = "m"
       fb1 = "M1"
       gxdsclone()
-      elif mxth = "2":
+    elif mxth == "2":
       fb = "mbasic"
       fb1 = "M2"
       gxdsclone()
-    elif mxth = "3":
+    elif mxth == "3":
       fb = "free"
       fb1 = "M3"
       gxdsclone()
