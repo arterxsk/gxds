@@ -349,7 +349,7 @@ def main():
     print(f"{dg}  ————————————————————————————————————————")
     optixn = input(f"{lgr}  [•] CHOOSE:{dg} ")
     if optixn == "1":
-        gxdsclone()
+        method()
         slp(1)
     elif optixn == "2":
         xcokis()
@@ -381,15 +381,19 @@ def method():
     if mxth == "1":
         fb = "m"
         fb1 = "M1"
-        elif mxth = "2":
+        gxdsclone()
+    elif mxth = "2":
         fb = "mbasic"
         fb1 = "M2"
-        elif mxth = "3":
+        gxdsclone()
+    elif mxth = "3":
         fb = "free"
         fb1 = "M3"
+        gxdsclone()
         else:
         fb = "n"
         fb1 = "M4"
+        gxdsclone()
 
 # FILE PATH
 def gxdsclone():
@@ -562,7 +566,7 @@ def result(oks):
 def gxds_files(uid, pxss, fb, fb1, tl):
     global oks, loop, cps, ugen
     session = requests.Session()
-    sys.stdout.write('\r\033[1;92m[GXDS-M1]--[%s/%s]--[CP-%s]~[OK-%s] \r'%(loop,tl,len(cps),len(oks))),
+    sys.stdout.write(f"\r\033[1;92m[GXDS-{fb1}]--[%s/%s]--[CP-%s]~[OK-%s] \r"%(loop,tl,len(cps),len(oks))),
     sys.stdout.flush()
     try:
         for ps in pxss:
