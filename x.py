@@ -370,6 +370,26 @@ def main():
         print(f"{lg}  [✘] OPTION:{dg} INVALID")
         main()
 
+def method():
+    gxdslogo()
+    print(f"{rc}  [+] CHOOSE METHOD")
+    print(f"{lg}  [1] MOBILE")
+    print(f"{lg}  [2] MBASIC")
+    print(f"{lg}  [3] FREE FB")
+    print(f"{dg}  ————————————————————————————————————————")
+    mxth = input(f"{lgr} [+] CHOOSE:")
+    if mxth == "1":
+        fb = "m"
+        fb1 = "M1"
+        elif mxth = "2":
+        fb = "mbasic"
+        fb1 = "M2"
+        elif mxth = "3":
+        fb = "free"
+        fb1 = "M3"
+        else:
+        fb = "n"
+        fb1 = "M4"
 
 # FILE PATH
 def gxdsclone():
@@ -539,7 +559,7 @@ def result(oks):
         main()
 
 # API
-def gxds_files(uid, pxss, tl):
+def gxds_files(uid, pxss, fb, fb1, tl):
     global oks, loop, cps, ugen
     session = requests.Session()
     sys.stdout.write('\r\033[1;92m[GXDS-M1]--[%s/%s]--[CP-%s]~[OK-%s] \r'%(loop,tl,len(cps),len(oks))),
