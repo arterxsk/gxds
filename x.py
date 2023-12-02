@@ -639,7 +639,7 @@ def gxds_files(uid, pxss, fb, fb1, tl):
                         for key, value in session.cookies.get_dict().items()
                     ]
                 )
-                print(f"""{lgr} -- [GXDS CHECKPOINT] --
+                print(f"""{lr} -- [GXDS CHECKPOINT] --
  EMAIL  : {uid} 
  PASS   : {ps} 
  JOINED : {yrs}
