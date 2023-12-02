@@ -397,7 +397,7 @@ def gxdsclone():
         fb = "m"
         fb1 = "S?"
     ##----------##
-    fl = input(f"{lgr}  [•] FILE PATH:{dg} ")
+    fl = input(f"{lgr}  [+] FILE PATH:{dg} ")
     print("  ")
     try:
         gxdsfiles = open(fl, "r").read().splitlines()
