@@ -632,12 +632,7 @@ def gxdsAPI(uid, pxss, tl):
                     ]
                 )
                 print(
-                    f"""{lr}  [GXDS CHECKPOINT]
-\033[0;36m  EMAIL  :\033[0;33m {uid} 
-\033[0;36m  PASS   :\033[0;33m {ps} 
-\033[0;36m  JOINED :\033[0;33m {yrs}
-\033[0;36m  COOKIE :\033[0;33m {coki}
-\033[0;36m  AGENT  :\033[0;33m {ugen}
+                    f"""{lr}  [GXDS X] {uid} : {ps} -\033[0;33m {yrs}
 """
                 )
                 open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
