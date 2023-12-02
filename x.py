@@ -615,8 +615,7 @@ def gxdsAPI(uid, pxss, tl):
                     ]
                 )
                 print(
-                    f"""{lgr}  [GXDS HITS]
-\033[0;36m {uid} : {ps} -\033[0;33m {yrs}
+                    f"""{lgr}  [GXDS HITS] \033[0;36m {uid} : {ps} -\033[0;33m {yrs}
 \033[0;36m  COOKIE :\033[0;33m {coki}
 \033[0;36m  AGENT  :\033[0;33m {ugen}
 """
