@@ -372,12 +372,11 @@ def main():
 
 def method():
     gxdslogo()
-    print(f"{rc}  [+] CHOOSE METHOD")
     print(f"{lg}  [1] MOBILE")
     print(f"{lg}  [2] MBASIC")
     print(f"{lg}  [3] FREE FB")
     print(f"{dg}  ————————————————————————————————————————")
-    mxth = input(f"{lgr} [+] CHOOSE:")
+    mxth = input(f"{lgr} [+] CHOOSE METHOD:")
     if mxth == "1":
         fb = "m"
         fb1 = "M1"
