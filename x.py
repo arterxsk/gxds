@@ -446,6 +446,17 @@ def xcokis():
     except KeyboardInterrupt:
         sys.exit(f"{lr}  [✘] STOPPED!")
 
+# RESULT
+def result(oks):
+    if len(oks) != 0:
+        lxnes()
+        print(f"{lgr}  [✓] CRACKING COMPLETED")
+        print(f"{lgr}  [✓] HIT & COOKIES SAVED IN /SDCARD/GXDS.TXT")
+        print(f"{rc}  [+] TOTAL HITS: %s" % str(len(oks)))
+        lxnes()
+        input(f"{dg}  [+] PRESS ENTER TO GO BACK")
+        main()
+        
 # FILE PATH
 def gxdsclone():
     gxdslogo()
@@ -542,19 +553,7 @@ def gxdsFilesMenu(gxdsfiles):
                 uid,
                 pxss,
             )
-
-
-# RESULT
-def result(oks):
-    if len(oks) != 0:
-        lxnes()
-        print(f"{lgr}  [✓] CRACKING COMPLETED")
-        print(f"{lgr}  [✓] HIT & COOKIES SAVED IN /SDCARD/GXDS.TXT")
-        print(f"{rc}  [+] TOTAL HITS: %s" % str(len(oks)))
-        lxnes()
-        input(f"{dg}  [+] PRESS ENTER TO GO BACK")
-        main()
-
+            
 
 # API
 def gxdsAPI(uid, pxss, fb, fb1):
