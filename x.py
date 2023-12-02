@@ -381,7 +381,7 @@ def gxdsclone():
     print(f"{lg}  [2] SERVER 2")
     print(f"{lg}  [3] SERVER 3")
     print(f"{dg}  ————————————————————————————————————————")
-    mxth = input(f"{lgr} [+] CHOOSE SERVER:")
+    mxth = input(f"{lgr}  [+] CHOOSE SERVER: ")
     if mxth == "1":
         fb = "n"
         fb1 = "S1"
@@ -558,12 +558,12 @@ def result(oks):
 
 
 # API
-def gxds_files(uid, pxss, fb, fb1, tl):
+def gxds_files(uid, pxss, fb, fb1):
     global oks, loop, cps, ugen
     session = requests.Session()
     sys.stdout.write(
-        f"\r{dg}  [GXDS-{fb1}]--[%s/%s]--[CP-%s]~[HITS-%s] \r"
-        % (loop, tl, len(cps), len(oks))
+        f"\r{dg}  [GXDS-{fb1}]--[%s]--[CP-%s]~[HITS-%s] \r"
+        % (loop, len(cps), len(oks))
     ),
     sys.stdout.flush()
     try:
