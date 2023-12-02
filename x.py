@@ -284,7 +284,7 @@ def gxdslogo():
     print(f"{dg}  ————————————————————————————————————————")
 
 
-# MENU
+# APPROVAL
 def menu():
     gxdslogo()
     print(f"{dg}")
