@@ -444,7 +444,7 @@ def xcokis():
         sys.exit(f"{lr}  [✘] STOPPED!")
 
 # RESULT
-def result(oks):
+def result(oks,cps):
     if len(oks) != 0:
         lxnes()
         print(f"{lgr}  [✓] CRACKING COMPLETED")
