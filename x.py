@@ -381,7 +381,7 @@ def gxdsclone():
     print(f"{lg}  [2] SERVER 2")
     print(f"{lg}  [3] SERVER 3")
     print(f"{dg}  ————————————————————————————————————————")
-    mxth = input(f"{lgr}  [+] CHOOSE SERVER: ")
+    mxth = input(f"{lgr}  [+] CHOOSE SERVER:{dg} ")
     if mxth == "1":
         fb = "n"
         fb1 = "S1"
