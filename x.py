@@ -349,7 +349,7 @@ def main():
     print(f"{dg}  ————————————————————————————————————————")
     optixn = input(f"{lgr}  [•] CHOOSE:{dg} ")
     if optixn == "1":
-        method()
+        gxdsclone()
         slp(1)
     elif optixn == "2":
         xcokis()
@@ -370,32 +370,6 @@ def main():
         print(f"{lg}  [✘] OPTION:{dg} INVALID")
         main()
 
-
-def method():
-    gxdslogo()
-    print(f"{lg}  [1] SERVER 1")
-    print(f"{lg}  [2] SERVER 2")
-    print(f"{lg}  [3] SERVER 3")
-    print(f"{dg}  ————————————————————————————————————————")
-    mxth = input(f"{lgr} [+] CHOOSE SERVER:")
-    if mxth == "1":
-        fb = "m"
-        fb1 = "S1"
-        gxdsclone()
-    elif mxth == "2":
-        fb = "mbasic"
-        fb1 = "S2"
-        gxdsclone()
-    elif mxth == "3":
-        fb = "free"
-        fb1 = "S3"
-        gxdsclone()
-    else:
-        fb = "n"
-        fb1 = "S?"
-        gxdsclone()
-
-
 # FILE PATH
 def gxdsclone():
     gxdslogo()
@@ -413,15 +387,12 @@ def gxdsclone():
     if mxth == "1":
         fb = "m"
         fb1 = "S1"
-        gxdsclone()
     elif mxth == "2":
         fb = "mbasic"
         fb1 = "S2"
-        gxdsclone()
     elif mxth == "3":
         fb = "free"
         fb1 = "S3"
-        gxdsclone()
     else:
         fb = "n"
         fb1 = "S?"
