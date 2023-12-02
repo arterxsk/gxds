@@ -474,11 +474,11 @@ def clxning():
         print(gxdsprnt)
         slp(3)
         clxning()
-    gxdsFilesMenu(gxdsfiles)
+    fxles(gxdsfiles)
     
     
 # FILE CLONING
-def gxdsFilesMenu(gxdsfiles):
+def fxles(gxdsfiles):
     slp(1)
     gxdslogo()
     tl = str(len(gxdsfiles))
