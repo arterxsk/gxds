@@ -479,8 +479,9 @@ def gxdsclone():
         fb = "free"
         fb1 = "S3"
     else:
-        fb = "m"
-        fb1 = "S?"
+        print(f"{lr}  [!] PICK A SERVER!")
+        slp(2)
+        gxdsclone()
     ##----------##
     print(f"{dg}  ————————————————————————————————————————")
     print(f"{dg}  [-] EXAMPLE PATH: /sdcard/yourFile.txt")
