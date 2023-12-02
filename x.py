@@ -378,21 +378,21 @@ def method():
     print(f"{dg}  ————————————————————————————————————————")
     mxth = input(f"{lgr} [+] CHOOSE METHOD:")
     if mxth == "1":
-        fb = "m"
-        fb1 = "M1"
-        gxdsclone()
-    elif mxth = "2":
-        fb = "mbasic"
-        fb1 = "M2"
-        gxdsclone()
+      fb = "m"
+      fb1 = "M1"
+      gxdsclone()
+      elif mxth = "2":
+      fb = "mbasic"
+      fb1 = "M2"
+      gxdsclone()
     elif mxth = "3":
-        fb = "free"
-        fb1 = "M3"
-        gxdsclone()
+      fb = "free"
+      fb1 = "M3"
+      gxdsclone()
     else:
-        fb = "n"
-        fb1 = "M4"
-        gxdsclone()
+      fb = "n"
+      fb1 = "M4"
+      gxdsclone()
 
 # FILE PATH
 def gxdsclone():
