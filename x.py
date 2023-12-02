@@ -392,7 +392,7 @@ def method():
         gxdsclone()
     else:
         fb = "n"
-        fb1 = "S4"
+        fb1 = "S?"
         gxdsclone()
 
 
