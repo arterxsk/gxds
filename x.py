@@ -277,9 +277,9 @@ def gxdslogo():
     systm("clear")
     print(lxgo)
     lxnes1()
-    print(f"{lg}  [-] GITHUB     :{dg}   /GOXDIES")
-    print(f"{lg}  [-] FACEBOOK   :{dg}   /GOXDIES")
-    print(f"{lg}  [-] VERSION    :{dg}   0.0.1")
+    print(f"{lg}  [-] PRESS {rc}CTRL AND Z{lg} TO STOP THE PROCESS.")
+    print(f"{lg}  [-] OFF/ON DATA BEFORE USING IT")
+    print(f"{lg}  [-] SALAMAT, MABUHAY!")
     lxnes1()
 
 
@@ -481,8 +481,6 @@ def fxles(gxdsfiles):
     slp(1)
     gxdslogo()
     tl = str(len(gxdsfiles))
-    print(f"{lg}  [+] PRESS {rc}CTRL AND Z{lg} TO STOP THE PROCESS.")
-    lxnes()
     print(f"{lg}  [•] TOTAL ID IN FILE:{dg} " + tl)
     print(f"{lg}  [•] FILE SAVE IN:{dg} /sdcard/gxds.txt")
     lxnes1()
