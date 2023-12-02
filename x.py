@@ -276,11 +276,11 @@ ugen = random.choice(
 def gxdslogo():
     systm("clear")
     print(lxgo)
-    print(f"{dg}  ————————————————————————————————————————")
+    lxnes1()
     print(f"{lg}  [-] GITHUB     :{dg}   /GOXDIES")
     print(f"{lg}  [-] FACEBOOK   :{dg}   /GOXDIES")
     print(f"{lg}  [-] VERSION    :{dg}   0.0.1")
-    print(f"{dg}  ————————————————————————————————————————")
+    lxnes1()
 
 
 # APPROVAL
@@ -322,7 +322,7 @@ def apprxval():
         lxnes()
         print(f"{lg}  [1] GET TOKEN ACCESS")
         print(f"{lg}  [2] PRESS ENTER TO REFRESH")
-        print(f"{dg}  ————————————————————————————————————————")
+        lxnes1()
         bxy = input(f"{lgr}  [?] CHOOSE:{dg} ")
         if bxy == "1":
             systm("xdg-open https://m.me/goxdies")
@@ -343,7 +343,7 @@ def mxnu():
     print(f"{lg}  [2] GET YOUR ACC COOKIES")
     print(f"{lg}  [3] FB SHARE BOOSTING")
     print(f"{lg}  [4] CHECK UPDATE")
-    print(f"{dg}  ————————————————————————————————————————")
+    lxnes1()
     optixn = input(f"{lgr}  [•] CHOOSE:{dg} ")
     if optixn == "1":
         clxning()
@@ -462,7 +462,7 @@ def clxning():
     )
     lxnes()
     print(f"{dg}  [-] EXAMPLE PATH: /sdcard/yourFile.txt")
-    print(f"{dg}  ————————————————————————————————————————")
+    lxnes1()
     fl = input(f"{lgr}  [+] FILE PATH:{dg} ")
     print("  ")
     try:
@@ -485,7 +485,7 @@ def fxles(gxdsfiles):
     lxnes()
     print(f"{lg}  [•] TOTAL ID IN FILE:{dg} " + tl)
     print(f"{lg}  [•] FILE SAVE IN:{dg} /sdcard/gxds.txt")
-    print(f"{dg}  ————————————————————————————————————————")
+    lxnes1()
     print(gxdsprnt)
 
     # PASSWORD LIST
