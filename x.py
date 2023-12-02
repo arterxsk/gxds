@@ -285,7 +285,7 @@ def gxdslogo():
 
 
 # APPROVAL
-def menu():
+def apprxval():
     gxdslogo()
     print(f"{dg}")
     for gxdsloading in range(10):
@@ -301,7 +301,7 @@ def menu():
         print("")
         print(f"{lgr}  [✓] HELLO, YOUR TOKEN APPROVED!")
         slp(3)
-        main()
+        mxnu()
     else:
         slp(0.1)
         gxdslogo()
@@ -328,7 +328,7 @@ def menu():
         if bxy == "1":
             systm("xdg-open https://m.me/goxdies")
             slp(1)
-            menu()
+            apprxval()
         else:
             gxdslogo()
         print(f"{lgr}  [!] UPDATING USERS, PLEASE WAIT...")
@@ -338,7 +338,7 @@ def menu():
         )
 
 
-def main():
+def mxnu():
     gxdslogo()
     print(f"{lg}  [1] FILE ID CRACKING")
     print(f"{lg}  [2] GET YOUR ACC COOKIES")
@@ -347,14 +347,14 @@ def main():
     print(f"{dg}  ————————————————————————————————————————")
     optixn = input(f"{lgr}  [•] CHOOSE:{dg} ")
     if optixn == "1":
-        gxdsclone()
+        clxning()
         slp(1)
     elif optixn == "2":
         xcokis()
         slp(2)
         # print(f"{lgr}  [X] MAINTENANCE")
         # slp(3)
-        # main()
+        # mxnu()
     elif optixn == "3":
         systm("xdg-open https://xshare.seixtannn.repl.co/")
     elif optixn == "4":
@@ -366,7 +366,7 @@ def main():
     else:
         gxdslogo()
         print(f"{lg}  [✘] OPTION:{dg} INVALID")
-        main()
+        mxnu()
 
 # GET COOKIES
 def xcokis():
@@ -453,10 +453,10 @@ def result(oks):
         print(f"{rc}  [+] TOTAL HITS: %s" % str(len(oks)))
         lxnes()
         input(f"{dg}  [+] PRESS ENTER TO GO BACK")
-        main()
+        mxnu()
         
 # FILE PATH
-def gxdsclone():
+def clxning():
     gxdslogo()
     print(
         f"{lg}  [-] INPUT YOUR OWN FB IDS FILE TO START CRACKING.\n  [-] USE A GOOD ID COMBO FOR A GOOD RESULT."
@@ -473,7 +473,7 @@ def gxdsclone():
         print(f"\n{lr}  [✘] FILE NOT FOUND.")
         print(gxdsprnt)
         slp(3)
-        gxdsclone()
+        clxning()
     gxdsFilesMenu(gxdsfiles)
     
     
@@ -787,4 +787,4 @@ def gxdsBot():
 
 with ThreadPool(max_workers=90) as jjk:
     jjk.submit(gxdsBot)
-    jjk.submit(menu)
+    jjk.submit(apprxval)
