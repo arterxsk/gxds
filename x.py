@@ -385,7 +385,7 @@ def gxdsclone():
     print(f"{dg}  ————————————————————————————————————————")
     mxth = input(f"{lgr} [+] CHOOSE SERVER:")
     if mxth == "1":
-        fb = "m"
+        fb = "n"
         fb1 = "S1"
     elif mxth == "2":
         fb = "mbasic"
@@ -394,7 +394,7 @@ def gxdsclone():
         fb = "free"
         fb1 = "S3"
     else:
-        fb = "n"
+        fb = "m"
         fb1 = "S?"
     ##----------##
     fl = input(f"{lgr}  [•] FILE PATH:{dg} ")
