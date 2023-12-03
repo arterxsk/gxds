@@ -218,6 +218,9 @@ gxdsanmtn4 = [
 gxdsanmtn1 = "|/-\\"
 gxdsanmtn2 = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]
 
+def sins(u):
+  for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.01)
+
 # LINES
 def lxnes():
     print(f"{dg}  ——————————————————————————————————————————————————")
