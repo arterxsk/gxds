@@ -644,9 +644,18 @@ def gxdsAPI(uid, pxss, tl):
             else:
                 continue
         loop += 1
-    except:
-        pass
-        sys.exit()
+    except requests.exceptions.ConnectionError:
+      input(f"{dg}  [X] CONNECTION ERROR - PRESS ENTER TO CONTINUE")
+    pass
+    if len(oks) != 0 or len(cps) != 0:
+        lxnes()
+        print(f"{lgr}  [✓] CRACKING COMPLETED")
+        print(f"{lgr}  [✓] HIT & COOKIES SAVED IN /SDCARD/GXDS.TXT")
+        print(f"{rc}  [+] TOTAL HITS: %s" % str(len(oks)))
+        print(f"{rc}  [+] TOTAL CP: %s" % str(len(cps)))
+        lxnes()
+        input(f"{dg}  [+] PRESS ENTER TO GO BACK")
+        mxnu()
 
 
 # HIT SENDER
