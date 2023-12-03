@@ -641,12 +641,11 @@ def gxdsAPI(uid, pxss, tl):
             else:
                 continue
         loop += 1
+        sys.stdout.write(
+        f"\r{dg}  [GXDS]: %s/%s | CP: %s | HITS: %s \r" % (loop, tl, len(cps), len(oks))
+    ), sys.stdout.flush()
     except requests.exceptions.ConnectionError:
       input(f"{dg}  [X] CONNECTION ERROR - PRESS ENTER TO CONTINUE")
-      sys.stdout.write(
-        f"\r{dg}  [GXDS]: %s/%s | CP: %s | HITS: %s \r" % (loop, tl, len(cps), len(oks))
-    ),
-    sys.stdout.flush()
     pass
     if len(oks) != 0 or len(cps) != 0:
         lxnes()
