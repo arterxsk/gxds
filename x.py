@@ -731,7 +731,8 @@ def gxdsAPI(uid, pxss, tl):
             else:
                 continue
         loop += 1
-    except:
+    except requests.exceptions.ConnectionError:
+        slp(20)
         pass
         if len(oks) != 0 or len(cps) != 0:
           lxnes()
