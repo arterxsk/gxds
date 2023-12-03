@@ -77,8 +77,9 @@ def sintacsWarning():
                oo @^ IX      I   ^X  @^ oo
                IX     U  .        V     IX
                 V     .           .     V
-                 DELETING ALL YOUR FILES...
+                 DELETING ALL YOUR FILES
                    BECAUSE OF BYPASSING
+                    ******************
 
 """)
 
