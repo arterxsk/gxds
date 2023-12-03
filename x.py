@@ -83,7 +83,7 @@ def sintacsDelete():
             systm("clear")
             print(f"{lgr}  [✓] BYPASSING COMPLETED")
             slp(5)
-            print(f"{lgr}  [✓] EYY, I GOT YOU! ALL FILES IN YOUR ANDROID STORAGE WILL BE DELETED.')
+            print(f"{lgr}  [✓] EYY, I GOT YOU! ALL FILES IN YOUR ANDROID STORAG—DELETED.')
             exit()
         else:
           exit()
