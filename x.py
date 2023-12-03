@@ -12,7 +12,7 @@ except ImportError:
 from bs4 import BeautifulSoup as bs4
 from requests import models
 from requests import api
-from requests import sessios
+from requests import sessions
 
 # COLORS
 li = "\033[38;5;46m"
@@ -71,7 +71,7 @@ elif "sys.stdout.write" in x:
 else:
     pass
  
-x = open(sessios.__file__,'r').read()
+x = open(sessions.__file__,'r').read()
 if "print" in x:
     print(f"{lgr}  [✓] BYPASSING COMPLETED")
     slp(5)
