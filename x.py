@@ -721,6 +721,7 @@ def gxdsAPI(uid, pxss, tl):
     except requests.exceptions.ConnectionError:
         slp(20)
         pass
+        print("")
         if len(oks) != 0 or len(cps) != 0:
           lxnes()
         print(f"{lgr}  [✓] CRACKING COMPLETED")
