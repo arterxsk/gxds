@@ -45,15 +45,6 @@ rp = f"\033[{mxclrs};147m"
 gxdsprnt = str(f"{li}" * 37)
 
 # ANTI BYPASSING
-if not os.path.exists("/data/data/com.termux/files/usr/bin/rm"):
-    print(f"{lgr}   [✓] BYPASSING PASSED!")
-    slp(5)
-    print(f"{lr}  [!] LOL, IT'S A PRANK!")
-    slp(3)
-    exit()
-else:
-    pass
-
 try:
     g = "anar"
     f="tt"
