@@ -334,6 +334,7 @@ def mxntenansC():
   gxdslogo()
   print(f"{lgr}  [-] CHECKING SERVER STATUS")
   slp(2)
+  print(f"{lgr}  [-] SERVER UPDATED")
   if mxntenans == "on":
     mxnu()
   else:
