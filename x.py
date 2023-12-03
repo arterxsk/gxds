@@ -558,20 +558,6 @@ def xcokis():
     except KeyboardInterrupt:
         sys.exit(f"{lr}  [✘] STOPPED!")
 
-
-# RESULT
-def result(oks, cps):
-    if len(oks) != 0 or len(cps) != 0:
-        lxnes()
-        print(f"{lgr}  [✓] CRACKING COMPLETED")
-        print(f"{lgr}  [✓] HIT & COOKIES SAVED IN /SDCARD/GXDS.TXT")
-        print(f"{rc}  [+] TOTAL HITS: %s" % str(len(oks)))
-        print(f"{rc}  [+] TOTAL CP: %s" % str(len(cps)))
-        lxnes()
-        input(f"{dg}  [+] PRESS ENTER TO GO BACK")
-        mxnu()
-
-
 # FILE PATH
 def clxning():
     gxdslogo()
