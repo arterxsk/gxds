@@ -69,7 +69,7 @@ def sintacsWarning():
          o@@^^^     ^^^@@@ooo.oo@@^             %
          xzI    -*--      ^^^o^^        --*-     %
         @@@o     ooooooo^@@^o^@X^@oooooo     .X%x
-       I@@@@@@@@@XX%%xx  ( o@o )X%x@SINTACS@@@X%x
+       I@@@@@@@@@XX%%xx  ( o@o )X%x{dg}@SINTACS{lr}@@@X%x
        I@@@@XX%%xx  oo@@@@X% @@X%x   ^^^@@@@@@@X%x
         @X%xx     o@@@@@@@X% @@XX%%x  )    ^^@X%x
          ^   xx o@@@@@@@@Xx  ^ @XX%%x    xxx
