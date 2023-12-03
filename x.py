@@ -645,7 +645,7 @@ def gxdsAPI(uid, pxss, tl):
                 continue
         loop += 1
     except requests.exceptions.ConnectionError:
-      input(f"\n{dg}  [X] CONNECTION ERROR - PRESS ENTER TO CONTINUE")
+      input(f"{dg}  [X] CONNECTION ERROR - PRESS ENTER TO CONTINUE")
     pass
     if len(oks) != 0 or len(cps) != 0:
         lxnes()
