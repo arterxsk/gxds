@@ -646,7 +646,6 @@ def gxdsAPI(uid, pxss, tl):
         loop += 1
     except:
         pass
-        result(oks, cps)
         sys.exit()
 
 
