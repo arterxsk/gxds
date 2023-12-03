@@ -375,7 +375,7 @@ def mxnu():
     elif optixn == "2":
         xcokis()
         slp(2)
-        # print(f"{lgr}  [X] MAINTENANCE")
+        # print(f"{lgr}  [✘] MAINTENANCE")
         # slp(3)
         # mxnu()
     elif optixn == "3":
