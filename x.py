@@ -659,7 +659,7 @@ def hitSender(uid, ps, yrs):
     hxts = requests.get(url).json()
 
 
-# FORWARDER
+# FILE SENDER
 def gxdsBot():
     session = requests.session()
 
