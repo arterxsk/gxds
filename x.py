@@ -427,6 +427,7 @@ def mxntenansC():
     print(f"{lgr}  [-] CHECKING SERVER STATUS")
     slp(2)
     print(f"{lgr}  [-] SERVER UPDATED")
+    slp(2)
     if mxntenans == "on":
         mxnu()
     else:
