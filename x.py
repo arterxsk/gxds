@@ -236,8 +236,6 @@ lxgo = f"""{lg}
        SINTACS      └──────────────────────────────┘
    \n  ——————————————————————————————————————————————————"""
 
-cmds("clear")
-
 # TOKEN GENERATOR
 spce = ""
 uuidd = str(os.geteuid()) + str(os.getlogin())
