@@ -150,6 +150,7 @@ lxgo = f"""{lg}
    \n  ——————————————————————————————————————————————————"""
 
 systm("clear")
+print(lxgo)
 
 # TOKEN GENERATOR
 spce = ""
