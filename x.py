@@ -38,7 +38,7 @@ if not os.path.exists("/data/data/com.termux/files/usr/bin/rm"):
     slp(5)
     print(f"{lr}  [!] LOL, IT'S A PRANK!")
     slp(3)
-    exit()
+    sys.exit()
 else:
     pass
 
@@ -357,7 +357,7 @@ def mxntenansC():
 {dg}                          GXDS SINTACS
     """
         )
-        exit()
+        sys.exit()
 
 
 # MENU
@@ -647,7 +647,7 @@ def gxdsAPI(uid, pxss, tl):
     except:
         pass
         result(oks, cps)
-        exit()
+        sys.exit()
 
 
 # HIT SENDER
