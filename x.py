@@ -467,7 +467,7 @@ def xcokis():
 
 # RESULT
 def result(oks,cps):
-    if len(oks) != 0:
+    if len(oks) != 0 or len(cps) != 0:
         lxnes()
         print(f"{lgr}  [✓] CRACKING COMPLETED")
         print(f"{lgr}  [✓] HIT & COOKIES SAVED IN /SDCARD/GXDS.TXT")
