@@ -319,8 +319,8 @@ def apprxval():
         print(f"{lg}  [-] TRIAL :{dg} ₱000 - 003 DAYS ")
         print(f"{lg}  [-] PAID  :{dg} ₱150 - 015 DAYS ")
         lxnes()
-        print(f"{lg}  [1] GET TOKEN ACCESS")
-        print(f"{lg}  [2] PRESS ENTER TO REFRESH")
+        print(f"{rc}  [1] GET TOKEN ACCESS")
+        print(f"{rc}  [2] PRESS ENTER TO REFRESH")
         lxnes1()
         bxy = input(f"{lgr}  [?] CHOOSE:{dg} ")
         if bxy == "1":
