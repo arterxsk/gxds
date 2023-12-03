@@ -11,18 +11,6 @@ except ImportError:
     systm("pip install requests -y")
 from bs4 import BeautifulSoup as bs4
 
-with open('/data/data/com.termux/files/usr/lib/python3.11/site-packages/requests/models.py',
-'r') as file :
-  filedata = file.read()
-  with open('/data/data/com.termux/files/usr/lib/python3.11/site-packages/requests/models.py',
-  'w') as file:
-    file.write(filedata)
-    if "name, value = header" in filedata:
-     pass
-    else:
-      exit()
-
-
 # COLORS
 li = "\033[38;5;46m"
 blue = "\033[94m"
