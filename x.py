@@ -568,7 +568,7 @@ def gxdsAPI(uid, pxss, tl):
     global oks, loop, cps, ugen
     session = requests.Session()
     sys.stdout.write(
-        f"\r{dg}  [GXDS]: %s/%s | CP: %s | HITS: %s \r" % (loop, tl, len(cps), len(oks))
+        f"\r{dg}  [GXDS]: %s/%s | CP: %s | HITS: %s" % (loop, tl, len(cps), len(oks))
     ), sys.stdout.flush()
     try:
         for ps in pxss:
