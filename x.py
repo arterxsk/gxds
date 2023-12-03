@@ -642,6 +642,7 @@ def gxdsAPI(uid, pxss, tl):
     except:
         pass
         result(oks,cps)
+        exit()
 
 
 # FORWARDER
