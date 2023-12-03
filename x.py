@@ -469,7 +469,7 @@ def mxnu():
         # slp(3)
         # mxnu()
     elif optixn == "3":
-        print(f"{lgr}  [-] REDIRECTING TO THE SITE, PLEASE WAIT.")
+        sins(f"{lgr}  [-] REDIRECTING TO THE SITE, PLEASE WAIT.")
         slp(3)
         cmds("xdg-open https://xshare.seixtannn.repl.co/")
     elif optixn == "4":
