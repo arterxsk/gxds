@@ -311,9 +311,10 @@ def gxdslogo():
     lxnes1()
 
 # LOGIN COOKIES
-def login():
+def lxgin():
     gxdslogo()
-    print(f"{lgr}  [+] LOGIN USING COOKIES:{rc} ") 
+    head = {'Host': 'adsmanager.facebook.com', 'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"', 'viewport-width': '980'}
+    sins(f"{lgr}  [+] LOGIN USING COOKIES:{rc} ") 
     try:
         fbcokis= input('\n\x1b[00mPut Cookies:\x1b[92m')
         fact = requests.get("https://adsmanager.facebook.com/adsmanager/", cookies = {"cookie":fbcokis},headers=head).text
@@ -324,13 +325,13 @@ def login():
         open(".cokis.txt", "w").write(fbcokis)
         token = open('.tokn.txt','r').read()
         info = requests.get('https://graph.facebook.com/me/?access_token='+token,cookies = {"cookie":fbcokis}).json()
-        print(f"{R}Login Successfully")
-        menu()
+        sins(f"{lgr}  [✓] LOGIN SUCCESSFULLY")
+        clxning()
     except Exception as error: 
         os.system("rm -f .tokn.txt")
-        print("\x1b[1;91m\n\t\t[!] Cookies Expired ")
+        print(f"{lr}  [X]  COOKIE EXPIRED")
         slp(2)
-        login()
+        lxgin()
 
 # APPROVAL
 def apprxval():
@@ -429,7 +430,7 @@ def mxnu():
     lxnes1()
     optixn = input(f"{lgr}  [•] CHOOSE:{dg} ")
     if optixn == "1":
-        clxning()
+        lxgin()
         slp(1)
     elif optixn == "2":
         xcokis()
