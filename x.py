@@ -241,6 +241,34 @@ lxgo = f"""{lg}
        SINTACS      └──────────────────────────────┘
    \n  ——————————————————————————————————————————————————"""
 
+# MAINTENANCE CHECKER
+mxntenans = requests.get("https://arterxsk.repl.co/on.txt").text
+
+def mxntenansC():
+    gxdslogo()
+    sins(f"{lgr}  [-] CHECKING SERVER STATUS")
+    slp(1)
+    sins(f"{lgr}  [-] SERVER UPDATED V{ver}")
+    slp(2)
+    if mxntenans == "on":
+        mxnu()
+    else:
+        cmds("clear")
+        print(
+            f"""{lr}
+                :::      :::::::      :::     
+               :+:      :+:   :+:    :+:      
+              +:+ +:+   +:+  :+:+   +:+ +:+   
+             +#+  +:+   +#+ + +:+  +#+  +:+   
+            +#+#+#+#+#+ +#+#  +#+ +#+#+#+#+#+ 
+                  #+#   #+#   #+#       #+#   
+                  ###    #######        ### 
+{yellow}                     UNDER MAINTENANCE
+{dg}                          GXDS SINTACS
+    """
+        )
+        exit()
+
 # TOKEN GENERATOR
 spce = ""
 uuidd = str(os.geteuid()) + str(os.getlogin())
@@ -350,37 +378,6 @@ def apprxval():
         cmds(
             "cd ; rm -rf gxds ; git clone https://github.com/goxdies/gxds; cd gxds ; python x.py"
         )
-
-
-# MAINTENANCE CHECKER
-mxntenans = requests.get("https://arterxsk.repl.co/on.txt").text
-
-
-def mxntenansC():
-    gxdslogo()
-    sins(f"{lgr}  [-] CHECKING SERVER STATUS")
-    slp(1)
-    sins(f"{lgr}  [-] SERVER UPDATED V{ver}")
-    slp(2)
-    if mxntenans == "on":
-        mxnu()
-    else:
-        cmds("clear")
-        print(
-            f"""{lr}
-                :::      :::::::      :::     
-               :+:      :+:   :+:    :+:      
-              +:+ +:+   +:+  :+:+   +:+ +:+   
-             +#+  +:+   +#+ + +:+  +#+  +:+   
-            +#+#+#+#+#+ +#+#  +#+ +#+#+#+#+#+ 
-                  #+#   #+#   #+#       #+#   
-                  ###    #######        ### 
-{yellow}                     UNDER MAINTENANCE
-{dg}                          GXDS SINTACS
-    """
-        )
-        exit()
-
 
 # LOGIN COOKIES
 def lxgin():
