@@ -420,6 +420,14 @@ def mxntenansC():
 # MENU
 def mxnu():
     gxdslogo()
+    try:
+      token = open('.tokn.txt','r').read()
+      fbcokis = open(".cokis.txt", "r").read()
+    except FileNotFoundError:
+        print(f"{lr}  [X] COOKIE NOT FOUND")
+        slp(1)
+        cmds('rm -rf .token.txt .cookie.txt')
+        lxgin()
     sins(f"{lg}  [1] FILE ID CRACKING")
     slp(0.1)
     sins(f"{lg}  [2] GET YOUR ACC COOKIES")
