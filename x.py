@@ -324,7 +324,7 @@ def lxgin():
         info = requests.get('https://graph.facebook.com/me/?access_token='+token,cookies = {"cookie":fbcokis}).json()
         sins(f"{lgr}  [✓] LOGIN SUCCESSFULLY")
         slp(2)
-        clxning()
+        mxnu()
     except Exception as error: 
         os.system("rm -f .tokn.txt")
         print(f"{lr}  [X] COOKIE EXPIRED")
@@ -436,7 +436,7 @@ def mxnu():
     lxnes1()
     optixn = input(f"{lgr}  [•] CHOOSE:{dg} ")
     if optixn == "1":
-        lxgin()
+        clxning()
         slp(1)
     elif optixn == "2":
         xcokis()
