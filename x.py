@@ -359,8 +359,8 @@ ugen = random.choice(
 
 for ulxa18b in range (1000):
 	a='Mozilla/5.0 (Linux; Android'
-	b=random.choice(['9','10','11','12','13','14','15'])
-	c='Redmi Note 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	b=random.choice(['9','10','11','12','13','14'])
+	c='SM-G925I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
 	d=random.randrange(40,115)
 	e='0'
 	f=random.randrange(3000,6000)
