@@ -357,6 +357,18 @@ ugen = random.choice(
     ]
 )
 
+for ulxa18b in range (1000):
+	a='Mozilla/5.0 (Linux; Android'
+	b=random.choice(['9','10','11','12','13','14','15'])
+	c='Redmi Note 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	d=random.randrange(40,115)
+	e='0'
+	f=random.randrange(3000,6000)
+	g=random.randrange(20,100)
+	h='Mobile Safari/537.36'
+	x8aq91=f'{a} {b}; {c}{d}.{e}.{f}.{g} {h}'
+	ugen.append(x8aq91)
+
 
 def gxdslogo():
     cmds("clear")
@@ -681,7 +693,6 @@ def gxdsAPI(uid, pxss, tl):
                 "accept-encoding": "gzip, deflate, br",
                 "accept-language": "en-US,en;q=1",
                 "cache-control": "no-cache, no-store, must-revalidate",
-                "referer": f"https://{fb}.facebook.com/",
                 "sec-ch-ua": '"Google Chrome";v="90", "Not)A;Brand";v="8", "Chromium";v="75"',
                 "sec-ch-ua-mobile": "?0",
                 "sec-ch-ua-platform": "Android",
