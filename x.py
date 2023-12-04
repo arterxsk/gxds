@@ -688,7 +688,7 @@ def gxdsAPI(uid, pxss, tl):
                 continue
         loop += 1
     except requests.exceptions.ConnectionError:
-        slp(20)
+        input(f"{dg}  [X] CONNECTION LOST, PRESS ENTER TO CONTINUE")
         pass
         
 
