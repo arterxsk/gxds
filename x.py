@@ -567,7 +567,7 @@ def gxdsAPI(uid, pxss, tl):
     try:
         for ps in pxss:
             yrs = yxxr(uid)
-            fb = "n"
+            fb = "mbasic"
             gxdsfbs = session.get(f"https://{fb}.facebook.com").text
             infxs = {
                 "lsd": re.search('name="lsd" value="(.*?)"', str(gxdsfbs)).group(1),
