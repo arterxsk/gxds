@@ -255,17 +255,49 @@ cps = []
 ugen = []
 
 # UA RANDOMIZER
-for ulxa18b in range (1000):
+for xbjsj818z in range(10000):
 	a='Mozilla/5.0 (Linux; Android'
-	b=random.choice(['6.0.0','7.1.2','9','10','11','12','13','14'])
-	c='SM-G925I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-	d=random.randrange(40,85)
-	e='0'
-	f=random.randrange(3000,6000)
-	g=random.randrange(20,120)
-	h='Mobile Safari/537.36'
-	x8aq91=f'{a} {b}; {c}{d}.{e}.{f}.{g} {h}'
-	ugen.append(x8aq91)
+	b=random.choice(['6','7','8','9','10','11','12','13','14','15'])
+	c='SM-J320'
+	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	e='Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+	f=random.randrange(50,115)
+	g='0'
+	h=random.randrange(3000,6500)
+	i=random.randrange(50,115)
+	j='Mobile Safari/537.36'
+	xbjsj118z=(f'{a} {b}; {c}{d} {e}{f}.{g}.{h}.{i} {j}')
+	ugen.append(xbjsj118z)
+for agxnt in range(10000):
+    aa='Mozilla/5.0 (Linux; U; Android'
+    b=random.choice(['6','7','8','9','10','11','12','13'])
+    c='pt-pt; GT-I9060'
+    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    e=random.randrange(1, 999)
+    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    g='AppleWebKit/534.30 (KHTML, like Gecko) Version/'
+    h=random.randrange(73,100)
+    i='0'
+    j=random.randrange(4200,4900)
+    k=random.randrange(40,150)
+    L='Mobile Safari/534.30'
+    jsj118z=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {L}')
+    ugen.append(jsj118z)
+for jsXV801z in range(10000):
+    aa='Mozilla/5.0 (Linux; U; Android'
+    b=random.choice(['3','4','5','6','7','8','9','10','11','12','13','14','15','16','17'])
+    c=' en-us; GT-'
+    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    e=random.randrange(1, 999)
+    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+    h=random.randrange(73,100)
+    i='0'
+    j=random.randrange(4200,4900)
+    k=random.randrange(40,150)
+    L='Mobile Safari/537.36'
+    jsjiXV8z=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {L}')
+    ugen.append(jsjiXV8z)
 
 
 def gxdslogo():
