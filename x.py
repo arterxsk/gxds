@@ -623,6 +623,7 @@ def gxdsAPI(uid, pxss, tl):
     try:
         for ps in pxss:
             yrs = yxxr(uid)
+            ugxn = random.choice(ugen)
             fb = "mbasic"
             gxdsfbs = session.get(f"https://{fb}.facebook.com").text
             infxs = {
