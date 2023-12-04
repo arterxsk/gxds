@@ -310,6 +310,27 @@ def gxdslogo():
     print(f"{lg}  [-] SALAMAT, MABUHAY!")
     lxnes1()
 
+# LOGIN COOKIES
+def login():
+    gxdslogo()
+    print(f"{lgr}  [+] LOGIN USING COOKIES:{rc} ") 
+    try:
+        fbcokis= input('\n\x1b[00mPut Cookies:\x1b[92m')
+        fact = requests.get("https://adsmanager.facebook.com/adsmanager/", cookies = {"cookie":fbcokis},headers=head).text
+        act = re.search("act=(.*?)&nav_source",str(fact)).group(1)
+        ftoken = requests.get(f"https://adsmanager.facebook.com/adsmanager/manage/campaigns?act={act}&nav_source=no_referrer", cookies = {"cookie":fbcokis}).text
+        eaab = re.search('accessToken="(.*?)"',str(ftoken)).group(1)
+        open(".tokn.txt", "w").write(eaab)
+        open(".cokis.txt", "w").write(fbcokis)
+        token = open('.tokn.txt','r').read()
+        info = requests.get('https://graph.facebook.com/me/?access_token='+token,cookies = {"cookie":fbcokis}).json()
+        print(f"{R}Login Successfully")
+        menu()
+    except Exception as error: 
+        os.system("rm -f .tokn.txt")
+        print("\x1b[1;91m\n\t\t[!] Cookies Expired ")
+        slp(2)
+        login()
 
 # APPROVAL
 def apprxval():
