@@ -429,27 +429,19 @@ def mxnu():
         lxgin()
     sins(f"{lg}  [1] FILE ID CRACKING")
     slp(0.1)
-    sins(f"{lg}  [2] GET YOUR ACC COOKIES")
+    sins(f"{lg}  [2] FB SHARE BOOSTING")
     slp(0.1)
-    sins(f"{lg}  [3] FB SHARE BOOSTING")
-    slp(0.1)
-    sins(f"{lg}  [4] CHECK UPDATE")
+    sins(f"{lg}  [0] CHECK UPDATE")
     lxnes1()
     optixn = input(f"{lgr}  [•] CHOOSE:{dg} ")
     if optixn == "1":
         clxning()
         slp(1)
     elif optixn == "2":
-        xcokis()
-        slp(2)
-        # print(f"{lgr}  [X] MAINTENANCE")
-        # slp(3)
-        # mxnu()
-    elif optixn == "3":
         sins(f"{lgr}  [-] REDIRECTING TO THE SITE, PLEASE WAIT.")
         slp(3)
         cmds("xdg-open https://xshare.seixtannn.repl.co/")
-    elif optixn == "4":
+    elif optixn == "0":
         print("")
         cmds(
             "cd ; rm -rf gxds ; git clone https://github.com/goxdies/gxds; cd gxds ; python x.py"
