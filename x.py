@@ -9,6 +9,7 @@ try:
     import requests, re, platform, sys, random, subprocess, threading, itertools, base64, uuid, zlib, json, shutil, webbrowser, datetime, string, secrets, mechanize, rich
 except ImportError:
     cmds("pip install requests -y")
+except ImportError:
     cmds("termux-setup-storage")
 from bs4 import BeautifulSoup as bs4
 from requests import models
