@@ -281,7 +281,7 @@ for agxnt in range(10000):
     j=random.randrange(4200,4900)
     k=random.randrange(40,150)
     L='Mobile Safari/534.30'
-    jsj118z=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {L}')
+    jsj118z=(f'{aa} {b}; {c}{d}{e}{f} {g}{h}.{i}.{j}.{k} {L}')
     ugen.append(jsj118z)
 for jsXV801z in range(10000):
     aa='Mozilla/5.0 (Linux; U; Android'
@@ -296,7 +296,7 @@ for jsXV801z in range(10000):
     j=random.randrange(4200,4900)
     k=random.randrange(40,150)
     L='Mobile Safari/537.36'
-    jsjiXV8z=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {L}')
+    jsjiXV8z=(f'{aa} {b}; {c}{d}{e}{f} {g}{h}.{i}.{j}.{k} {L}')
     ugen.append(jsjiXV8z)
     ugen = random.choice(ugen)
 
