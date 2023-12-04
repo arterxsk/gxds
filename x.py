@@ -298,6 +298,7 @@ for jsXV801z in range(10000):
     L='Mobile Safari/537.36'
     jsjiXV8z=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {L}')
     ugen.append(jsjiXV8z)
+    ugen = random.choice(ugen)
 
 
 def gxdslogo():
