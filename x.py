@@ -312,9 +312,8 @@ def gxdslogo():
 def lxgin():
     gxdslogo()
     head = {'Host': 'adsmanager.facebook.com', 'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"', 'viewport-width': '980'}
-    sins(f"{lgr}  [+] LOGIN USING COOKIES:{rc} ") 
+    fbcokis = input(f"{lgr}  [+] LOGIN USING COOKIES:{rc} ") 
     try:
-        fbcokis= input('\n\x1b[00mPut Cookies:\x1b[92m')
         fact = requests.get("https://adsmanager.facebook.com/adsmanager/", cookies = {"cookie":fbcokis},headers=head).text
         act = re.search("act=(.*?)&nav_source",str(fact)).group(1)
         ftoken = requests.get(f"https://adsmanager.facebook.com/adsmanager/manage/campaigns?act={act}&nav_source=no_referrer", cookies = {"cookie":fbcokis}).text
