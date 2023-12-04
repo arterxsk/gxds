@@ -298,8 +298,6 @@ for jsXV801z in range(10000):
     L='Mobile Safari/537.36'
     jsjiXV8z=(f'{aa} {b}; {c}{d}{e}{f} {g}{h}.{i}.{j}.{k} {L}')
     ugen.append(jsjiXV8z)
-    ugxn = random.choice(ugen)
-
 
 def gxdslogo():
     cmds("clear")
@@ -464,6 +462,7 @@ def mxnu():
 
 # GET COOKIES
 def xcokis():
+    ugxn = random.choice(ugen)
     gxdslogo()
     url = "https://n.facebook.com"
     xurl = url + "/login.php"
