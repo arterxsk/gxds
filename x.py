@@ -323,10 +323,11 @@ def lxgin():
         token = open('.tokn.txt','r').read()
         info = requests.get('https://graph.facebook.com/me/?access_token='+token,cookies = {"cookie":fbcokis}).json()
         sins(f"{lgr}  [✓] LOGIN SUCCESSFULLY")
+        slp(2)
         clxning()
     except Exception as error: 
         os.system("rm -f .tokn.txt")
-        print(f"{lr}  [X]  COOKIE EXPIRED")
+        print(f"{lr}  [X] COOKIE EXPIRED")
         slp(2)
         lxgin()
 
